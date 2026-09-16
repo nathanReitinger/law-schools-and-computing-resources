@@ -193,7 +193,7 @@
         block("Access notes", s.notes || "—") +
         (s.caveat ? '<div class="detail-block caveat-block"><div class="k">Caveat</div><div class="v">' + escapeHtml(s.caveat) + "</div></div>" : "") +
         '<div class="detail-block"><div class="k">Shared networks</div><div class="v">' + netHtml + "</div></div>" +
-        (s.link ? '<div class="detail-block"><div class="k">Source link</div><div class="v"><a href="' + escapeHtml(s.link) + '" target="_blank" rel="noopener">' + escapeHtml(s.link) + "</a></div></div>" : "") +
+        (s.sources && s.sources.length ? '<div class="detail-block detail-block-wide"><div class="k">Sources (' + s.sources.length + ')</div><div class="v">' + sourcesHtml(s.sources) + "</div></div>" : "") +
       "</div>";
     tr.appendChild(td);
     return tr;
@@ -201,6 +201,15 @@
 
   function block(label, value) {
     return '<div class="detail-block"><div class="k">' + escapeHtml(label) + '</div><div class="v">' + escapeHtml(value) + "</div></div>";
+  }
+
+  function sourcesHtml(sources) {
+    return '<ol class="source-list">' +
+      sources.map(function (url) {
+        var safe = escapeHtml(url);
+        return '<li><a href="' + safe + '" target="_blank" rel="noopener">' + safe + "</a></li>";
+      }).join("") +
+      "</ol>";
   }
 
   function toggleExpand(id) {

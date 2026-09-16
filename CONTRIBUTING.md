@@ -45,7 +45,9 @@ Each school is one object in the top-level JSON array:
   "slurm": "Yes",
   "hpcName": "Research Data Analysis Cluster (RDAC)",
   "specs": "24 compute nodes; 1TB user storage quota (Rocky Linux 9)",
-  "link": "https://www.du.edu/it/services/research-services/research-computing",
+  "sources": [
+    "https://www.du.edu/it/services/research-services/research-computing"
+  ],
   "notes": "Available to Faculty, Graduate and PhD Students; SLURM 25.11.4",
   "networks": []
 }
@@ -63,7 +65,7 @@ Each school is one object in the top-level JSON array:
 | `slurm` | string | e.g. `"Yes"`, `"Not confirmed"`, `"Likely (...)"` — say what you actually confirmed |
 | `hpcName` | string | the name of the cluster/center, e.g. `"Quest"`, `"HPC@LSU"` |
 | `specs` | string | cores, storage, RAM — whatever else is documented |
-| `link` | string | a real, working URL to the source. Leave `""` rather than guessing |
+| `sources` | array of strings | every URL you actually used to verify this row, most-authoritative first. Shown as a numbered list in the school's dropdown so anyone can re-check the claim. Don't collapse this to one link if you consulted several — that's the whole point |
 | `notes` | string | access policy, eligibility, anything else worth knowing |
 | `caveat` | string, optional | only add this if there's a real reason to doubt the resource applies cleanly (department-only, campus access unconfirmed, etc.) — omit the field entirely otherwise |
 | `networks` | array of strings | tag any shared multi-institution or multi-campus system this resource belongs to (see below); `[]` if none |
