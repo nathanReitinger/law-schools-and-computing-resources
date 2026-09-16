@@ -205,9 +205,12 @@
     "slurm": "No",
     "hpcName": "None found",
     "specs": "",
-    "notes": "Small teaching-focused university; no public research computing/HPC resource identified",
+    "notes": "Re-verified Sept 2026 — Faulkner is a small, teaching-focused private university (Christian liberal arts, ~2,300 students) with no research-computing mission; its own 2026 IT update announcement covers only classroom/lab PC refreshes, not HPC. No evidence of any shared research-computing cluster found.",
     "networks": [],
-    "sources": []
+    "sources": [
+      "https://www.faulkner.edu/summer-it-updates/",
+      "https://www.faulkner.edu/academics/computer-sciences/"
+    ]
   },
   {
     "state": "Alabama",
@@ -220,9 +223,12 @@
     "slurm": "No",
     "hpcName": "None found",
     "specs": "",
-    "notes": "No public research computing/HPC resource identified",
+    "notes": "Re-verified Sept 2026 — Samford's Technology Services department is entirely enterprise IT (classroom tech, wifi, email, printing, helpdesk); no mention of research computing, HPC, or GPU resources anywhere on the university's IT pages or its CS department page. Consistent with a teaching-focused university without a dedicated research-computing mission.",
     "networks": [],
-    "sources": []
+    "sources": [
+      "https://www.samford.edu/departments/technology-services/about",
+      "https://www.samford.edu/departments/technology-services/"
+    ]
   },
   {
     "state": "Alabama",
@@ -483,9 +489,10 @@
     "slurm": "No",
     "hpcName": "No dedicated on-prem SLURM/GPU HPC cluster found",
     "specs": "",
-    "notes": "LMU research computing is primarily cloud-based (AWS/GCP via Internet2), not an on-prem SLURM cluster",
+    "notes": "Re-verified Sept 2026 — LMU has a \"Research Computing Services\" team, but its own page directs researchers to commercial cloud providers (Google Cloud, AWS via a discounted Internet2 account, CloudBank for NSF grants) rather than describing any on-premise GPU cluster. This is consulting/brokering support, not a dedicated HPC resource, so \"no HPC resource identified\" still applies — but it is a genuinely different situation from a school with no research-computing support at all.",
     "networks": [],
     "sources": [
+      "https://its.lmu.edu/whatwedo/researchcomputing/",
       "https://its.lmu.edu/whatwedo/researchcomputing/systemmanagementcloudcomputing/"
     ]
   },
@@ -519,9 +526,12 @@
     "slurm": "No",
     "hpcName": "No dedicated institution-wide HPC/SLURM resource found",
     "specs": "",
-    "notes": "No public research computing center identified; some historical ad-hoc/lab-based parallel computing projects (e.g. FlashMob Computing) but not a persistent SLURM/GPU cluster",
+    "notes": "Re-verified Sept 2026 with a search explicitly excluding UCSF (the much larger, unrelated UC San Francisco medical campus, which otherwise dominates search results for this name) — USF is a private Jesuit university, master's-focused in CS (no PhD program), and no shared campus HPC/GPU cluster was found on its CS faculty pages or elsewhere.",
     "networks": [],
-    "sources": []
+    "sources": [
+      "https://www.usfca.edu/arts-sciences/programs/graduate/computer-science/faculty",
+      "https://en.wikipedia.org/wiki/University_of_San_Francisco"
+    ]
   },
   {
     "state": "California",
@@ -534,9 +544,12 @@
     "slurm": "No",
     "hpcName": "No dedicated public HPC/SLURM resource found",
     "specs": "",
-    "notes": "No public research computing center identified for this mid-size private university",
+    "notes": "Re-verified Sept 2026 — \"Pacific Technology\" (the university's IT department) explicitly describes itself as focused on wireless, classroom tech, and student computer labs (16 PCs, 4 Macs in the library); no shared research-computing or HPC resource found even on the School of Engineering and Computer Science pages.",
     "networks": [],
-    "sources": []
+    "sources": [
+      "https://www.pacific.edu/about-pacific/administrative-offices/pacific-technology",
+      "https://www.pacific.edu/engineering"
+    ]
   },
   {
     "state": "California",
@@ -549,24 +562,30 @@
     "slurm": "No",
     "hpcName": "None found",
     "specs": "",
-    "notes": "Small professional university (law/business/tax); no research computing center",
+    "notes": "Re-verified Sept 2026 — GGU is a small, professional-graduate-focused institution (business, law, taxation, psychology; founded 1901) with no STEM PhD programs. Its \"Applied and Agentic AI\" doctorate is a practice-oriented professional program for working technologists, not a research lab; no shared HPC/GPU infrastructure found anywhere.",
     "networks": [],
-    "sources": []
+    "sources": [
+      "https://catalog.ggu.edu/preview_program.php?catoid=9&poid=886",
+      "https://ggu.edu/programs/applied-and-agentic-ai-dtech/"
+    ]
   },
   {
     "state": "California",
     "school": "UC College of the Law San Francisco (fka UC Hastings)",
-    "university": "University of California-Hastings",
-    "standalone": false,
-    "tier": "none",
-    "tierLabel": "No HPC resource identified",
+    "university": "",
+    "standalone": true,
+    "tier": "standalone",
+    "tierLabel": "N/A — standalone (no parent university)",
     "gpu": "",
-    "slurm": "No",
-    "hpcName": "None found",
+    "slurm": "",
+    "hpcName": "",
     "specs": "",
-    "notes": "Standalone law-only UC campus; no broader research university HPC to draw on",
+    "notes": "RECLASSIFIED Sept 2026 — despite carrying the \"University of California\" name, UC Law SF (formerly Hastings) is not directly controlled by the UC Board of Regents and does not share a campus, governance, or infrastructure with any other UC campus; it was chartered in 1878 as an unusually autonomous entity within the UC system. This is structurally closer to this directory's standalone schools than to a law school with a true shared-resource parent university, so it moves there rather than staying in \"no resource identified,\" which implied a parent university that simply hadn't been checked thoroughly. UC Law SF does partner with UCSF, Berkeley, Davis, and UC Santa Cruz on specific joint-degree programs, but no evidence found that this extends to shared HPC/GPU infrastructure.",
     "networks": [],
-    "sources": []
+    "sources": [
+      "https://www.magnifiedmedia.net/uc-hastings-college-of-the-law/",
+      "https://www.uclawsf.edu/"
+    ]
   },
   {
     "state": "Colorado",
@@ -650,9 +669,12 @@
     "slurm": "No",
     "hpcName": "None found",
     "specs": "",
-    "notes": "No dedicated research computing/HPC center identified; teaching-focused School of Computing & Engineering",
+    "notes": "Re-verified Sept 2026 — Quinnipiac has an active School of Computing & Engineering with AI/CS research faculty, but its ITS pages describe only standard enterprise services (helpdesk, wifi, print) with no research-computing or HPC/GPU cluster page found across two search angles.",
     "networks": [],
-    "sources": []
+    "sources": [
+      "https://www.qu.edu/academics/about-our-programs/areas-of-interest/computing-and-technology/",
+      "https://www.qu.edu/schools/engineering/faculty-and-staff/"
+    ]
   },
   {
     "state": "District of Columbia",
@@ -713,14 +735,17 @@
     "university": "Howard University",
     "standalone": false,
     "tier": "undetailed",
-    "tierLabel": "HPC exists; GPU status not publicly detailed",
-    "gpu": "Not publicly detailed",
+    "tierLabel": "HPC exists, GPU support not publicly detailed",
+    "gpu": "No general-access campus GPU cluster found across three separate searches; Howard researchers instead use NSF ACCESS-allocated national resources (SDSC, Pittsburgh Supercomputing Center) for HPC-scale work",
     "slurm": "Unconfirmed",
-    "hpcName": "HPC infrastructure confirmed (recruiting dedicated HPC engineers); specific cluster name/specs not public",
-    "specs": "Not publicly detailed",
-    "notes": "Howard recently won $90M UARC (AI/ML/cyber) contract and is expanding research computing toward R1 status; active HPC engineer hiring confirms real infrastructure but no public specs page found",
+    "hpcName": "No named general-access campus cluster identified; RITA (UARC) has specialized HPC",
+    "specs": "A dedicated HPC resource exists for the Research Institute for Tactical Autonomy (RITA), a University Affiliated Research Center — but this is defense-research infrastructure tied to a specific institute, not a general campus cluster a law researcher could access",
+    "notes": "Re-verified Sept 2026 across three distinct search angles (general HPC/GPU, HBCU-specific coverage, Howard IT/research-computing pages) — found no publicly documented, general-access campus GPU cluster with its own specs page. What is documented: (1) Howard researchers publish work run on national ACCESS-allocated systems like SDSC and PSC rather than a campus-owned cluster, and (2) a specialized HPC role exists for RITA, a defense-focused University Affiliated Research Center, which is restricted infrastructure rather than a general campus resource. Distinguishing a school's own dedicated cluster from generic ACCESS/XSEDE eligibility (which is available to nearly any US research institution) matters here — this entry does not credit the latter as campus infrastructure.",
     "networks": [],
-    "sources": []
+    "sources": [
+      "https://access-ci.org/howard-university-oak-ridge-national-lab-use-access-resources-to-study-crystal-structures-of-solids/",
+      "https://howard.wd1.myworkdayjobs.com/en-US/HU/job/High-Performance-Computing-Engineer_JR104450-1"
+    ]
   },
   {
     "state": "District of Columbia",
@@ -733,9 +758,12 @@
     "slurm": "No",
     "hpcName": "None found",
     "specs": "",
-    "notes": "No dedicated institution-wide HPC/SLURM center identified; some lab-level computing (biomedical engineering)",
+    "notes": "Re-verified Sept 2026 — CUA's central Technology Services is thoroughly documented but is enterprise/administrative IT (network, virtualization for instructional use, helpdesk); its own infrastructure page explicitly says it \"provides guidance to schools and academic departments needing to run servers... for research purposes\" rather than describing a central shared HPC/GPU cluster — meaning any research computing at CUA is decentralized/departmental, not a shared resource this directory can point to.",
     "networks": [],
-    "sources": []
+    "sources": [
+      "https://technology.catholic.edu/services/infrastructure.html",
+      "https://technology.catholic.edu/about/whatwedo.html"
+    ]
   },
   {
     "state": "District of Columbia",
@@ -748,9 +776,12 @@
     "slurm": "No",
     "hpcName": "None found",
     "specs": "",
-    "notes": "No public research computing center identified (primarily teaching-focused public university)",
+    "notes": "Re-verified Sept 2026 across two angles (central IT services, and the School of Engineering & Applied Sciences' PhD in Computer Science and Engineering page) — UDC does have real doctoral CS/engineering research, but no shared campus HPC or GPU cluster is described anywhere; IT services are enterprise-only (helpdesk, network, Banner).",
     "networks": [],
-    "sources": []
+    "sources": [
+      "https://www.udc.edu/about/administration/it/about-our-services/",
+      "https://www.udc.edu/seas/phd-in-computer-science-and-engineering/"
+    ]
   },
   {
     "state": "Florida",
@@ -774,17 +805,20 @@
     "school": "Florida State University College of Law",
     "university": "Florida State University",
     "standalone": false,
-    "tier": "undetailed",
-    "tierLabel": "HPC exists; GPU status not publicly detailed",
-    "gpu": "GPU nodes (CUDA-enabled; models not itemized in public docs)",
+    "tier": "frontier",
+    "tierLabel": "Frontier — H100/H200/B200 confirmed",
+    "gpu": "NVIDIA H100 Tensor Core GPU (4x, 2/node) — limited/pilot-program access, request required; RTX A4500 Ada Generation (64x total across two pools); RTX A4000 (16x); GeForce GTX 1080 Ti (28x, legacy)",
     "slurm": "Yes",
-    "hpcName": "FSU Research Computing Center (RCC)",
-    "specs": "18,000+ cores; 700+ nodes; InfiniBand interconnect",
-    "notes": "Open to all FSU faculty/students with faculty sponsor + external collaborators; condo/investment model for priority",
+    "hpcName": "FSU Research Computing Center (RCC) HPC cluster",
+    "specs": ">18,000 cores, >700 nodes; InfiniBand interconnect; SLURM confirmed (sinfo/sbatch documented); GPU nodes cost $6,000/5yr to buy in, or free via backfill2/gpu_q general-access queues (4-hr limit unless approved)",
+    "notes": "Available to faculty and departments (paid buy-in, or free general-access queues with time limits); RCC documentation includes exact `sinfo` output naming every GPU model and node. CORRECTED Sept 2026 — confirmed by following the \"Compute GPU\" service page to its underlying RCC technical docs (docs.rcc.fsu.edu/hpc/gpus), which the ITS overview page alone did not show.",
     "networks": [],
     "sources": [
-      "https://docs.rcc.fsu.edu/hpc/"
-    ]
+      "https://docs.rcc.fsu.edu/hpc/gpus/",
+      "https://its.fsu.edu/services/compute-gpu",
+      "https://its.fsu.edu/services/high-performance-compute-cluster"
+    ],
+    "caveat": "The H100s are explicitly gated as \"Limited access for pilot programs; Request access\" per FSU's own GPU documentation — unlike this directory's other Frontier-tier schools, H100 access here is not yet general. The RTX A4500/A4000 pools are the realistic day-one access point for most researchers via the backfill2 queue."
   },
   {
     "state": "Florida",
@@ -792,15 +826,17 @@
     "university": "Florida International University",
     "standalone": false,
     "tier": "undetailed",
-    "tierLabel": "HPC exists; GPU status not publicly detailed",
-    "gpu": "GPU nodes available (specific models not itemized in public docs)",
+    "tierLabel": "HPC exists, GPU support not publicly detailed",
+    "gpu": "\"GPU nodes\" confirmed present and current (live 2026-copyrighted page) but no specific model named anywhere on IRCC's public site. Historical record: 2013 news posts describe 2, then 6 GPU nodes added with NVIDIA Tesla K20s; a 2020 facilities PDF describes a 12-node GPU cluster (model unnamed) — that hardware is almost certainly long since refreshed, so it is not used here as the current answer.",
     "slurm": "Yes",
-    "hpcName": "Instructional & Research Computing Center (IRCC)",
-    "specs": "200+ pre-installed software packages",
-    "notes": "SLURM Workload Manager confirmed",
+    "hpcName": "IRCC Panther Cluster",
+    "specs": "Panther Cluster: 3,000+ Intel cores, up to 1.5TB RAM/node, 500TB+ parallel storage, 56Gbps InfiniBand, SLURM confirmed",
+    "notes": "Re-verified Sept 2026 across three angles (general search, SLURM/partition-specific search, and a full fetch of the live HPC page itself to rule out a truncated snippet) — the current page genuinely just says \"GPU nodes\" with no model, confirming this is a real information gap on FIU's end rather than a search miss. Free to FIU faculty/students via hpcadmin@fiu.edu request.",
     "networks": [],
     "sources": [
-      "https://ircc.fiu.edu/hpc/"
+      "https://ircc.fiu.edu/hpc/",
+      "https://ircc.fiu.edu/gpu-expansion/",
+      "https://ircc.fiu.edu/wp-content/uploads/2020/10/IRCCFacilities.pdf"
     ]
   },
   {
@@ -826,15 +862,16 @@
     "university": "Nova Southeastern University",
     "standalone": false,
     "tier": "undetailed",
-    "tierLabel": "HPC exists; GPU status not publicly detailed",
-    "gpu": "Not detailed in public docs",
+    "tierLabel": "HPC exists, GPU support not publicly detailed",
+    "gpu": "No GPU model named anywhere across the main HPC page and the dedicated Sphyrna (research) sub-page — both are thorough on policy/access/SLURM but publish no hardware specs at all",
     "slurm": "Not confirmed",
-    "hpcName": "NSU Research Computing - Selachii (academic) + Sphyrna (research) clusters",
-    "specs": "Not detailed in public docs",
-    "notes": "Real dedicated HPC service exists (Office of Innovation & Information Technology); scheduler/GPU specifics not public",
+    "hpcName": "Selachii (academic) + Sphyrna (research)",
+    "specs": "Two named SLURM clusters: Selachii (academic/teaching) and Sphyrna (research); Red Hat Enterprise Linux 9; SCP/SFTP data transfer",
+    "notes": "Re-verified Sept 2026 — followed the site's own navigation into the dedicated Sphyrna (research cluster) sub-page specifically looking for a hardware/specs section; found detailed OS/access/policy info but no GPU (or even CPU) hardware specs published anywhere. NSU Faculty can sponsor accounts (students permitted on Selachii, not on Sphyrna).",
     "networks": [],
     "sources": [
-      "https://www.nova.edu/oiit/high-performance-computing/index.html"
+      "https://www.nova.edu/oiit/high-performance-computing/index.html",
+      "https://www.nova.edu/oiit/high-performance-computing/sphyrna/index.html"
     ]
   },
   {
@@ -848,9 +885,12 @@
     "slurm": "No",
     "hpcName": "None found",
     "specs": "",
-    "notes": "No public research computing center identified",
+    "notes": "Re-verified Sept 2026 — Barry's CS program is undergraduate-focused with a teaching lab described explicitly as \"virtual machine-based computer security simulation, 3D printing, Linux and Windows servers\" — no GPU/HPC. Law school's own technology page describes only a Windows computer lab and library printing/copying.",
     "networks": [],
-    "sources": []
+    "sources": [
+      "https://www.barry.edu/en/academics/arts-and-sciences/break-through-in-computer-science/",
+      "https://www.barry.edu/en/academics/law/technology/"
+    ]
   },
   {
     "state": "Florida",
@@ -863,9 +903,12 @@
     "slurm": "No",
     "hpcName": "None found",
     "specs": "",
-    "notes": "No public research computing center identified",
+    "notes": "Re-verified Sept 2026 — STU's AI initiatives (AiREN, Digital Education Council membership) are explicitly ethics/policy focused, not technical infrastructure; small (~6,000 student) teaching-focused Catholic university with no evidence of research-computing infrastructure anywhere.",
     "networks": [],
-    "sources": []
+    "sources": [
+      "https://www.stu.edu/stuai/",
+      "https://www.stu.edu/science/research/"
+    ]
   },
   {
     "state": "Florida",
@@ -878,24 +921,32 @@
     "slurm": "No",
     "hpcName": "None found",
     "specs": "",
-    "notes": "No public research computing center identified",
+    "notes": "Re-verified Sept 2026 — Stetson's IT department operates only general-access teaching computer labs (Windows 10, standard software); Computer Science is undergraduate-only with a career-prep focus rather than a PhD research program. No HPC/GPU infrastructure found.",
     "networks": [],
-    "sources": []
+    "sources": [
+      "https://www.stetson.edu/administration/information-technology/computer-labs/",
+      "https://www.stetson.edu/other/academics/undergraduate/computer-science.php"
+    ]
   },
   {
     "state": "Florida",
     "school": "Florida A&M University College of Law",
     "university": "Florida A&M University",
     "standalone": false,
-    "tier": "none",
-    "tierLabel": "No HPC resource identified",
-    "gpu": "",
+    "tier": "undetailed",
+    "tierLabel": "HPC exists, GPU support not publicly detailed",
+    "gpu": "No GPU model published. FAMU's Center for Plasma Science and Technology (CePaST) operates \"a computer cluster\" for laser-plasma simulation, quantum control/machine learning, and molecular physics — a real, current, active research center, though department-specific rather than a campus-wide general-access resource. FAMU is also a SSERCA (Sunshine State Education & Research Computing Alliance) member and its researchers separately use national ACCESS allocations (Stampede2 at TACC, Expanse at SDSC) for published computational chemistry work.",
     "slurm": "No",
-    "hpcName": "None found",
-    "specs": "",
-    "notes": "No public dedicated research computing center identified (shares regional XSEDE workshops with FSU historically)",
+    "hpcName": "Center for Plasma Science and Technology (CePaST)",
+    "specs": "CePaST: 32,000 sq ft facility incl. laser plasma lab; historical (2015) CePaST cluster was a 128-node/256-processor system, department-restricted (3 faculty + a few postdocs/grad students)",
+    "notes": "RECLASSIFIED Sept 2026 from \"no resource identified\" to \"undetailed\" — a 2015 planning presentation showing this cluster's history read initially like something defunct, but CePaST's current department page (2026) confirms the center and its compute infrastructure are still active.",
     "networks": [],
-    "sources": []
+    "sources": [
+      "https://cst.famu.edu/departments-and-centers/center-for-plasma-science-and-technology/index.php",
+      "https://www.slideshare.net/mjgrav2001/famuresearchcomputing",
+      "https://www.hpcwire.com/off-the-wire/florida-am-research-team-advances-renewable-energy-studies-using-access-supercomputers/"
+    ],
+    "caveat": "CePaST's cluster is a department/center-level resource (physics/plasma science), not a general campus-wide facility a law researcher would have standing access to — distinct from schools where the whole university shares one HPC pool."
   },
   {
     "state": "Georgia",
@@ -936,17 +987,21 @@
     "school": "Georgia State University College of Law",
     "university": "Georgia State University",
     "standalone": false,
-    "tier": "undetailed",
-    "tierLabel": "HPC exists; GPU status not publicly detailed",
-    "gpu": "GPU resources confirmed (~1.2M GPU hours/year); models not itemized publicly",
+    "tier": "modern",
+    "tierLabel": "Modern — A100/A40/L40-class confirmed",
+    "gpu": "NVIDIA A100 (8x per node on DGX-class node \"arctrddgxa001\"), NVIDIA V100 (2x/node, 13 nodes on gpu-v100/qGPU partitions), NVIDIA P100, NVIDIA A2000, plus RTX-class cards — confirmed via `sinfo`/`arc.hardware` output on three separate ARCTIC wiki job-submission pages",
     "slurm": "Not confirmed",
-    "hpcName": "ARCTIC (Advanced Research Computing Technology & Innovation Core)",
-    "specs": "~75M CPU hours/year provided",
-    "notes": "Condominium model available; aimed partly at non-traditional HPC users (social sciences, policy, psych)",
+    "hpcName": "ARCTIC (Advanced Research Computing Technology, Innovation & Collaboration)",
+    "specs": "75 million CPU-hours/year + 1.2 million GPU-hours/year available cluster-wide; condominium (buy-in) model; SLURM confirmed",
+    "notes": "Free startup allocation for every GSU researcher (capped at 1,000 GPU service-units), condo buy-in for more. CORRECTED Sept 2026 — A100 and V100 confirmed via SLURM command-output pages after the main hardware-specs page proved unfetchable.",
     "networks": [],
     "sources": [
-      "https://arctic.gsu.edu/"
-    ]
+      "https://arctic.gsu.edu/systems-and-services/",
+      "https://arcwiki.rs.gsu.edu/en/home/slurm/get-list-of-resources-in-node",
+      "https://arcwiki.rs.gsu.edu/en/gpu/gdn/running-gdn-model",
+      "https://arcwiki.rs.gsu.edu/en/policy/resource-allocations"
+    ],
+    "caveat": "ARCTIC's own dedicated 'Hardware Specifications' wiki page exists (arcwiki.rs.gsu.edu/en/home/acids/specifications) but blocks automated fetching (robots.txt); the GPU models above are confirmed instead via three separate job-submission documentation pages on the same wiki that show real sinfo/arc.hardware command output naming A100 and V100 directly."
   },
   {
     "state": "Georgia",
@@ -959,9 +1014,12 @@
     "slurm": "No",
     "hpcName": "None found",
     "specs": "",
-    "notes": "No public research computing center identified",
+    "notes": "Re-verified Sept 2026 across two search angles — Mercer IT is entirely enterprise/administrative (helpdesk, MyMercer, Workday, teaching computer labs); the \"Computational Science\" academic track name suggested a possible research center, but no dedicated HPC/GPU infrastructure was found associated with it.",
     "networks": [],
-    "sources": []
+    "sources": [
+      "https://it.mercer.edu/",
+      "https://liberalarts.mercer.edu/academic-programs/majors-and-minors/information-science-and-technology/"
+    ]
   },
   {
     "state": "Hawaii",
@@ -988,18 +1046,23 @@
     "university": "University of Idaho",
     "standalone": false,
     "tier": "undetailed",
-    "tierLabel": "HPC exists; GPU status not publicly detailed",
-    "gpu": "Specialized GPU nodes (models not itemized publicly)",
+    "tierLabel": "HPC exists, GPU support not publicly detailed",
+    "gpu": "IBEST CRC (on-campus): 'several GPU nodes' added 2017-2019, no model named on their own hardware page (dated hardware). Separately, as of April 2025 U of Idaho researchers get access to INL's Lemhi system — but Lemhi's own technical docs describe it as a CPU-only Dell C6420 cluster (dual Xeon Gold 6148), no GPUs mentioned, despite press coverage calling it a powerful 'supercomputer.' INL separately operates Sawtooth (V100 GPUs) and Hoodoo (44x A100), but broad university access to those specific systems (vs. just Lemhi) isn't confirmed in public sources.",
     "slurm": "Not confirmed",
-    "hpcName": "IBEST Computational Resources Core (CRC) + Lemhi supercomputer (via INL partnership)",
-    "specs": "Massive data storage; Lemhi hosted at Idaho National Laboratory",
-    "notes": "New (2026) INL partnership gives UI, Boise State & Idaho State researchers remote access to Lemhi supercomputer free of charge",
+    "hpcName": "IBEST Computational Resources Core (CRC) + INL Lemhi partnership",
+    "specs": "IBEST CRC: 1,500+ cores, 8+TB RAM, InfiniBand; Lemhi (INL, shared w/ Boise State + Idaho State): 504 nodes, 20,160 cores, 94.5TB RAM",
+    "notes": "Re-verified Sept 2026 across four searches covering the on-campus IBEST CRC, the 2025 Lemhi handoff, and INL's broader HPC portfolio — real GPU nodes exist on campus but are undated/unnamed, and the newly-touted Lemhi partnership appears to be CPU-only compute despite being framed as a major upgrade.",
     "networks": [
       "Idaho INL / Lemhi (statewide)"
     ],
     "sources": [
-      "https://researchcomputing.uidaho.edu/high-performance-computing/"
-    ]
+      "https://researchcomputing.uidaho.edu/high-performance-computing/",
+      "https://crc.ibest.uidaho.edu/general/Hardware/",
+      "https://docs.c3plus3.org/docs/general/Overviews/Lemhi.html",
+      "https://www.uidaho.edu/newsroom/lemhi-supercomputer",
+      "https://hpc.inl.gov/"
+    ],
+    "caveat": "News coverage of the April 2025 Lemhi handoff to Idaho's universities emphasizes dramatically increased compute power, but Lemhi's own technical specification (hosted by the C3+3 collaboration that manages it) lists no GPUs at all — this looks like a case where press framing ('supercomputer,' 'punch above its weight') outran the literal hardware spec. Confirmed GPUs at INL (Sawtooth's V100s, Hoodoo's A100s) are documented, but not confirmed as available to University of Idaho researchers specifically, as opposed to Lemhi alone."
   },
   {
     "state": "Illinois",
@@ -1195,17 +1258,21 @@
     "school": "Notre Dame Law School",
     "university": "University of Notre Dame",
     "standalone": false,
-    "tier": "undetailed",
-    "tierLabel": "HPC exists; GPU status not publicly detailed",
-    "gpu": "Not detailed in this search",
+    "tier": "frontier",
+    "tierLabel": "Frontier — H100/H200/B200 confirmed",
+    "gpu": "CRC/CAML (general access, NSF-funded \"Cyberinfrastructure to Accelerate Machine Learning\"): NVIDIA Quadro RTX 6000 confirmed via real job output; ACMS dept has priority access to 8 GPUs (model unspecified) on 800 dedicated cores. Separately, Mendoza College of Business has 2 dedicated machines with 8x NVIDIA H100 SXM GPUs each (640GB total GPU RAM) — confirms H100 exists on the Notre Dame network, though this specific pool is Mendoza-restricted, not general CRC access.",
     "slurm": "Not confirmed (established center,  specs not captured)",
-    "hpcName": "Center for Research Computing (CRC)",
-    "specs": "Not detailed in this search",
-    "notes": "Well-established (13+ year) multidisciplinary research computing center; also an Indiana CTSI core facility",
+    "hpcName": "Center for Research Computing (CRC) / CAML",
+    "specs": "CRC serves the whole Notre Dame research community incl. external/industry partners; CAML allocates 20% of capacity via Open Science Grid",
+    "notes": "CRC provides faculty-sponsored access to any Notre Dame community member, plus facilitates access to national XSEDE/ACCESS resources. CORRECTED Sept 2026 — confirmed RTX 6000 via live CAML job logs and H100 SXM via Mendoza's own resources page.",
     "networks": [],
     "sources": [
-      "https://crc.nd.edu/"
-    ]
+      "https://docs.crc.nd.edu/resources/caml.html",
+      "https://mendozaresearch.nd.edu/resources/computing/",
+      "https://acms.nd.edu/about/computational-facilities/",
+      "https://docs.crc.nd.edu/resources/gpu.html"
+    ],
+    "caveat": "The confirmed H100 SXM pool belongs specifically to Mendoza College of Business, not the general-access CRC pool a Law School researcher would default to — that general pool is confirmed only at RTX 6000. Listed as Frontier because H100s demonstrably exist on campus and CRC facilitates cross-department resource requests, but a Law School researcher's default access point (CAML/general CRC) is Modern-tier hardware, not Frontier."
   },
   {
     "state": "Iowa",
@@ -1276,16 +1343,18 @@
     "school": "University of Kentucky College of Law",
     "university": "University of Kentucky",
     "standalone": false,
-    "tier": "undetailed",
-    "tierLabel": "HPC exists; GPU status not publicly detailed",
-    "gpu": "GPU-accelerated resources available (models not itemized in these results)",
+    "tier": "modern",
+    "tierLabel": "Modern — A100/A40/L40-class confirmed",
+    "gpu": "NVIDIA P100/V100/A100 confirmed (34 GPU nodes, 128 GPUs total, mixed generations) per CCS's own internal state-of-the-center presentation; 120 GPU accelerators cluster-wide per CCS overview page (1.9 PFLOPS combined)",
     "slurm": "Not confirmed (traditional batch system; scheduler unspecified in snippets)",
-    "hpcName": "Center for Computational Sciences (CCS) - Lipscomb Compute Cluster (LCC)",
-    "specs": "~7,200 cores (CPU cluster); tens of PB total storage (12+PB raw)",
-    "notes": "Operated jointly by ITS-RCI and CCS; serves researchers across many disciplines",
+    "hpcName": "Center for Computational Sciences (CCS) — Lipscomb Compute Cluster (LCC)",
+    "specs": "LCC (Lipscomb Compute Cluster): ~25,000 processor cores; MCC (Morgan, AMD EPYC, CPU-focused); ECC (EduceLab); 5PB+ GPFS storage; condo model",
+    "notes": "Open to UK researchers via ITS-RCI/CCS partnership; condo buy-in for priority access; SLURM confirmed via CCS docs. CORRECTED Sept 2026 — A100 confirmed via a CCS staff conference presentation (\"State of Research Computing and Data at UK\") that names the exact P100/V100/A100 mix, where the public-facing overview pages only said \"GPU accelerators.\"",
     "networks": [],
     "sources": [
-      "https://www.ccs.uky.edu/"
+      "https://www.ccs.uky.edu/wp-content/uploads/2024/02/20240130-Griffioen-1.pdf",
+      "https://docs.ccs.uky.edu/display/HPC/Research+computing+infrastructure",
+      "https://www.ccs.uky.edu/?p=3153"
     ]
   },
   {
@@ -1728,15 +1797,17 @@
     "university": "Saint Louis University",
     "standalone": false,
     "tier": "undetailed",
-    "tierLabel": "HPC exists; GPU status not publicly detailed",
-    "gpu": "Advanced GPU nodes (models not itemized in these results)",
+    "tierLabel": "HPC exists, GPU support not publicly detailed",
+    "gpu": "\"Advanced GPU nodes\" confirmed on the new Libra cluster (installed/tested summer 2025, NSF-partially-funded) but no specific model named on SLU's own page; a vendor case-study PDF that might have had exact specs is no longer live (Silicon Mechanics was absorbed into Thinkmate in 2025, and the old whitepaper URL now redirects to a generic page)",
     "slurm": "Yes",
-    "hpcName": "Libra HPC Cluster (Research Computing Group, new 2025)",
-    "specs": "High-memory CPU nodes; 200Gbps storage network",
-    "notes": "NSF-funded; campus-wide for all SLU faculty and students; replaced older Aries cluster",
+    "hpcName": "Libra (SLU Research Computing Group)",
+    "specs": "Libra: 200Gbps network, GPU + high-memory CPU nodes; predecessor Aries: 678 cores, 3.6TB RAM, 56Gb/s EDR InfiniBand",
+    "notes": "Free to all SLU faculty and students; NSF grant written specifically to fund \"modern CPU and GPU nodes in support of AI/ML research.\" Re-verified Sept 2026 across three searches plus an attempt to retrieve a vendor spec sheet (now dead) — GPU presence is clearly real and recent (2025) but the specific chip model remains genuinely unpublished.",
     "networks": [],
     "sources": [
-      "https://www.slu.edu/research/faculty-resources/research-computing/high-performance-computing.php"
+      "https://www.slu.edu/research/faculty-resources/research-computing/high-performance-computing.php",
+      "https://www.slu.edu/science-and-engineering/academics/computer-science/research.php",
+      "https://www.slu.edu/research/faculty-resources/research-computing/index.php"
     ]
   },
   {
@@ -1780,15 +1851,16 @@
     "school": "University of Montana School of Law",
     "university": "University of Montana",
     "standalone": false,
-    "tier": "undetailed",
-    "tierLabel": "HPC exists; GPU status not publicly detailed",
-    "gpu": "GPU nodes confirmed (models not itemized)",
+    "tier": "modern",
+    "tierLabel": "Modern — A100/A40/L40-class confirmed",
+    "gpu": "Hellgate cluster, confirmed via live node-by-node table: 12 nodes x 4x NVIDIA RTX2080Ti (48 total, legacy); 1 node x 4x NVIDIA A40; 12 nodes x 4x NVIDIA A4500 Ada Generation (48 total) — ~25 GPU nodes total",
     "slurm": "Likely (standard for NSF CC* clusters)",
-    "hpcName": "Hellgate Shared Computing Cluster (formerly Griz/UM Shared Computing Cluster)",
-    "specs": "~1PB storage",
-    "notes": "NSF CC*-funded (2019); available to UM researchers and students; priority access via cost-sharing",
+    "hpcName": "Hellgate Shared Computing Cluster",
+    "specs": "45 CPU compute nodes + ~25 GPU nodes; grant-funded priority tiers (Reincarnation, Brinkerhoff, Martens, GSCC, INBRE); SLURM confirmed",
+    "notes": "Free/general access via \"gpu(all)\" and \"gpu(safe)\" partitions, though most nodes carry grant-funded priority tiers. CORRECTED Sept 2026 — the resources page itself is a live, complete, per-node hardware table (not a snippet), confirming A40 and A4500 Ada Generation GPUs directly rather than the vaguer \"GPU nodes\" description found in earlier research.",
     "networks": [],
     "sources": [
+      "https://www.umt.edu/it/rci/hellgate/resources/default.php",
       "https://www.umt.edu/it/rci/hellgate/"
     ]
   },
@@ -1831,17 +1903,21 @@
     "school": "William S. Boyd School of Law",
     "university": "University of Nevada Las Vegas",
     "standalone": false,
-    "tier": "undetailed",
-    "tierLabel": "HPC exists; GPU status not publicly detailed",
-    "gpu": "GPU resources (specific models not itemized in public results)",
+    "tier": "modern",
+    "tierLabel": "Modern — A100/A40/L40-class confirmed",
+    "gpu": "RebelX GPU cluster (NSF MRI #2117941-funded): 48 GPUs total — 16x NVIDIA A30 + 16x NVIDIA A40 + 16x NVIDIA A100. Separately, the older Cherry Creek/Cherry Creek II \"supercomputer\" (Intel/Switch SUPERNAP, since 2013) uses Intel Xeon Phi coprocessors, not GPUs, despite being widely publicized as a top-tier system.",
     "slurm": "Likely (job postings confirm SLURM expertise required)",
-    "hpcName": "National Supercomputing Institute (NSCEE) - Cherry Creek II supercomputer",
-    "specs": "1.3+PB storage (legacy); growing R1/EPSCoR investment",
-    "notes": "UNLV actively expanding cyberinfrastructure/HPC staff as of 2026; Altair PBS Works also used for workload management",
+    "hpcName": "RebelX (National Supercomputing Institute) + Cherry Creek II",
+    "specs": "RebelX open to any UNLV or Las Vegas-community AI researcher/educator via account request; Cherry Creek II: 26,000 cores, 500 TFLOPS theoretical",
+    "notes": "Request an account via rebelx.dataxlab.org for AI/deep-learning research; open to UNLV and the wider Las Vegas community. CORRECTED Sept 2026 — this was previously miscategorized under \"no GPU confirmed\" language associated with Cherry Creek's Xeon Phi hardware; RebelX is the real GPU resource and independently confirmed across three sources.",
     "networks": [],
     "sources": [
-      "https://www.unlv.edu/unit/national-supercomputing-institute"
-    ]
+      "https://www.unlv.edu/news/unlvtoday/unlv-gpu-cluster-rebelx-available-ai-ressearch-and-education",
+      "https://www.unlv.edu/engineering/research/big-data",
+      "https://rebelx.dataxlab.org/",
+      "https://msiexchange.nasa.gov/attachments/182281/Capability_Statement_UNLV Cyber Security_122022 Accessible (FY26 - 508) 2.pdf"
+    ],
+    "caveat": "UNLV's most publicized \"supercomputer,\" Cherry Creek/Cherry Creek II, is genuinely a top-tier system by Top500/Green500 standards, but its accelerators are Intel Xeon Phi coprocessors (many-core x86, deprecated by Intel since ~2020), not GPUs. The actual GPU hardware — A30/A40/A100 — lives on a separate, less-publicized resource (RebelX) confirmed via a 2023 announcement and cross-referenced against the RebelX site itself."
   },
   {
     "state": "New Hampshire",

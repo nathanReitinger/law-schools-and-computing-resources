@@ -1,4 +1,4 @@
 {
-  "dataPulled": "September 2026 (deep re-verification in progress — each school gets a fresh search plus full-page follow-through, sources listed per school)",
-  "disclaimer": "This directory was compiled with AI (Claude) assistance from publicly available sources and has not been hand-verified against every listed source. A deep re-verification pass is underway: every school gets a targeted search for its specific named hardware, full source pages are fetched (not just search snippets) when a table or spec sheet looks cut off, and every source used is listed in that school's dropdown."
+  "dataPulled": "September 2026 (deep re-verification in progress, batch by batch — see each school's sources)",
+  "disclaimer": "This directory was compiled with AI (Claude) assistance from publicly available sources and has not been hand-verified against every listed source. A deep re-verification pass is underway in batches of 5: each school gets a search, a follow-up confirmation search or full-page fetch, and (where useful) a cross-check against a second independent source, with every source used listed in that school's dropdown."
 }
