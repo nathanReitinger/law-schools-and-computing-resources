@@ -6,14 +6,6 @@
 <title>Law School Compute Index — which law schools can reach a GPU cluster</title>
 <meta name="description" content="A directory of US law schools and whether their parent university offers a SLURM/GPU research-computing cluster that law faculty can use.">
 
-<!--
-  ⚠ BEFORE YOU PUBLISH — replace these three placeholders (search this file
-  and CONTRIBUTING.md / README.md for the same strings):
-    YOUR_GITHUB_USERNAME   → your GitHub username
-    YOUR_REPO_NAME         → the repo you push this to
-    YOUR_NAME / YOUR_EMAIL → in the footer, near the bottom of this file
--->
-
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,400;0,600;1,400&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
@@ -33,13 +25,20 @@
   </div>
 </header>
 
-<div class="contribute-strip">
-  <div class="wrap contribute-inner">
-    <span><strong>See something outdated, or your school missing?</strong> This directory is community-maintained.</span>
-    <span class="contribute-links">
-      <a href="https://github.com/YOUR_GITHUB_USERNAME/YOUR_REPO_NAME/edit/main/data/schools.json" target="_blank" rel="noopener">Edit the data on GitHub</a>
-      <a href="https://github.com/YOUR_GITHUB_USERNAME/YOUR_REPO_NAME/issues/new?template=correction.yml" target="_blank" rel="noopener">Suggest a correction</a>
-    </span>
+<div class="notice-strip">
+  <div class="wrap">
+    <p class="disclaimer">
+      This directory was compiled with AI (Claude) assistance from publicly available sources and has
+      <strong>not been hand-verified</strong> against every listed source — treat it as a researched
+      starting point, not ground truth. If you spot an error, please help fix it.
+    </p>
+    <div class="notice-actions">
+      <span class="pulled-date">Data pulled: <strong id="pulled-date">—</strong></span>
+      <span class="notice-links">
+        <a href="mailto:nathan.reitinger@law.northwestern.edu?subject=Compute%20Index%20correction&body=School%3A%20%0AWhat's%20wrong%3A%20%0ASource%20(if%20any)%3A%20">Report an error</a>
+        <a href="https://github.com/nathanReitinger/law-schools-and-computing-resources/edit/main/data/schools.json" target="_blank" rel="noopener">Edit the data on GitHub</a>
+      </span>
+    </div>
   </div>
 </div>
 
@@ -48,13 +47,19 @@
   <div class="stats" id="stats-row" aria-hidden="true"></div>
 
   <div class="toolbar" role="search">
-    <input type="search" id="q" placeholder="Search a school, university, or network…" aria-label="Search a school, university, or network">
+    <input type="search" id="q" placeholder="Search a school, university, or shared network…" aria-label="Search a school, university, or shared network">
     <select id="filter-state" aria-label="Filter by state"><option value="">All states</option></select>
     <select id="filter-tier" aria-label="Filter by GPU support tier"><option value="">All GPU tiers</option></select>
-    <select id="filter-network" aria-label="Filter by shared compute network"><option value="">All networks</option></select>
+    <select id="filter-network" aria-label="Filter by shared multi-institution compute network"><option value="">All shared networks</option></select>
     <button class="reset-btn" id="reset-filters" type="button">Clear filters</button>
     <div class="result-count" id="result-count" role="status" aria-live="polite"></div>
   </div>
+  <p class="toolbar-hint">
+    <strong>Shared networks</strong> group schools that pool one resource across institutions — e.g.
+    <em>MGHPCC</em> (the Massachusetts datacenter Harvard, BU, Northeastern, and Yale all share),
+    <em>LONI</em> (Louisiana's statewide network), or <em>Empire AI</em> (New York State's). Pick one from
+    the dropdown above to see everyone on it.
+  </p>
 
   <div class="legend" aria-hidden="true">
     <span><i class="tier-dot" style="background:var(--tier-frontier)"></i>Frontier (H100/H200/B200)</span>
@@ -64,16 +69,19 @@
     <span><i class="tier-dot" style="background:var(--tier-neutral)"></i>No GPU / no resource / standalone</span>
   </div>
 
+  <p class="sort-hint">Click any column heading to sort — click again to reverse.</p>
+
   <div class="table-scroll">
     <table class="schools">
       <thead>
         <tr>
-          <th>State</th>
-          <th>Law school</th>
-          <th>Parent university</th>
-          <th>GPU tier</th>
-          <th>Hardware</th>
-          <th>SLURM</th>
+          <th data-key="state" tabindex="0" role="button" aria-sort="none">State</th>
+          <th data-key="school" tabindex="0" role="button" aria-sort="none">Law school</th>
+          <th data-key="university" tabindex="0" role="button" aria-sort="none">Parent university</th>
+          <th data-key="hpcName" tabindex="0" role="button" aria-sort="none">Resource</th>
+          <th data-key="tier" tabindex="0" role="button" aria-sort="none">GPU tier</th>
+          <th data-key="gpu" tabindex="0" role="button" aria-sort="none">Hardware</th>
+          <th data-key="slurm" tabindex="0" role="button" aria-sort="none">SLURM</th>
         </tr>
       </thead>
       <tbody id="rows"><!-- rendered by js/app.js --></tbody>
@@ -101,12 +109,13 @@
     </p>
     <p>
       Data lives in <a href="data/schools.json">data/schools.json</a> — see
-      <a href="https://github.com/YOUR_GITHUB_USERNAME/YOUR_REPO_NAME/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener">CONTRIBUTING.md</a>
+      <a href="https://github.com/nathanReitinger/law-schools-and-computing-resources/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener">CONTRIBUTING.md</a>
       for the field schema and how to add or fix a row.
     </p>
     <div class="footer-signoff">
-      Built by <strong>YOUR_NAME</strong>. Pull requests and corrections welcome — if you get stuck on the GitHub
-      side of a pull request, just email me at <a href="mailto:YOUR_EMAIL@example.com">YOUR_EMAIL@example.com</a>.
+      Built by <a href="https://www.law.northwestern.edu/faculty/profiles/nathanreitinger/" target="_blank" rel="noopener"><strong>Nathan Reitinger</strong></a>.
+      Pull requests and corrections welcome — if you get stuck on the GitHub side of a pull request, just
+      email me at <a href="mailto:nathan.reitinger@law.northwestern.edu">nathan.reitinger@law.northwestern.edu</a>.
     </div>
   </div>
 </footer>

@@ -19,7 +19,9 @@
     stateFilter: "",
     tierFilter: "",
     networkFilter: "",
-    expanded: null
+    expanded: null,
+    sortKey: "tier",
+    sortDir: "asc"
   };
 
   var els = {};
@@ -95,6 +97,23 @@
     return '<div class="stat"><span class="num">' + num + '</span><span class="label">' + label + "</span></div>";
   }
 
+  function compareValues(a, b, key) {
+    if (key === "tier") {
+      return tierMeta(a.tier).rank - tierMeta(b.tier).rank;
+    }
+    var av = (a[key] || "").toString().toLowerCase();
+    var bv = (b[key] || "").toString().toLowerCase();
+    // push blank values to the end regardless of sort direction, so an
+    // empty "Resource" or "SLURM" cell doesn't dominate whichever end
+    // ascending/descending happens to favor
+    if (av === "" && bv === "") return 0;
+    if (av === "") return 1;
+    if (bv === "") return -1;
+    if (av < bv) return -1;
+    if (av > bv) return 1;
+    return 0;
+  }
+
   function matches(s) {
     if (state.stateFilter && s.state !== state.stateFilter) return false;
     if (state.tierFilter && s.tier !== state.tierFilter) return false;
@@ -109,6 +128,11 @@
 
   function render() {
     var filtered = state.all.filter(matches);
+
+    filtered.sort(function (a, b) {
+      var cmp = compareValues(a, b, state.sortKey);
+      return state.sortDir === "desc" ? -cmp : cmp;
+    });
 
     els.resultCount.textContent = filtered.length === state.all.length
       ? "Showing all " + filtered.length + " schools"
@@ -128,8 +152,9 @@
         '<td class="col-state" data-label="State">' + escapeHtml(s.state) + "</td>" +
         '<td class="col-school" data-label="School">' + escapeHtml(s.school) + "</td>" +
         '<td class="col-univ" data-label="University">' + (escapeHtml(s.university) || "—") + "</td>" +
+        '<td class="col-resource" data-label="Resource">' + (escapeHtml(truncate(s.hpcName, 34)) || "—") + "</td>" +
         '<td class="col-tier" data-label="GPU tier"><span class="tier-chip ' + tm.cls + '"><i class="tier-dot"></i>' + tm.label + "</span></td>" +
-        '<td class="col-gpu" data-label="Hardware">' + (escapeHtml(truncate(s.gpu, 46)) || "—") + "</td>" +
+        '<td class="col-gpu" data-label="Hardware">' + (escapeHtml(truncate(s.gpu, 40)) || "—") + "</td>" +
         '<td class="col-slurm" data-label="SLURM">' + (escapeHtml(truncate(s.slurm, 18)) || "—") + "</td>";
 
       tr.addEventListener("click", function () { toggleExpand(s._id); });
@@ -158,7 +183,7 @@
       : "<span style=\"color:var(--ink-faint)\">none identified</span>";
 
     var td = document.createElement("td");
-    td.colSpan = 6;
+    td.colSpan = 7;
     td.innerHTML =
       '<div class="detail-grid">' +
         block("HPC / research-computing resource", s.hpcName || "—") +
@@ -185,11 +210,43 @@
 
   function resetFilters() {
     state.q = ""; state.stateFilter = ""; state.tierFilter = ""; state.networkFilter = "";
+    state.sortKey = "tier"; state.sortDir = "asc";
     els.q.value = ""; els.filterState.value = ""; els.filterTier.value = ""; els.filterNetwork.value = "";
+    updateSortIndicators();
     render();
   }
 
-  function init(data) {
+  function onSortClick(key) {
+    if (state.sortKey === key) {
+      state.sortDir = state.sortDir === "asc" ? "desc" : "asc";
+    } else {
+      state.sortKey = key;
+      state.sortDir = "asc";
+    }
+    updateSortIndicators();
+    render();
+  }
+
+  function updateSortIndicators() {
+    els.headers.forEach(function (th) {
+      var key = th.getAttribute("data-key");
+      th.setAttribute("aria-sort", key === state.sortKey ? (state.sortDir === "asc" ? "ascending" : "descending") : "none");
+    });
+  }
+
+  function setupSortHeaders() {
+    els.headers = Array.prototype.slice.call(document.querySelectorAll("table.schools thead th[data-key]"));
+    els.headers.forEach(function (th) {
+      var key = th.getAttribute("data-key");
+      th.addEventListener("click", function () { onSortClick(key); });
+      th.addEventListener("keydown", function (e) {
+        if (e.key === "Enter" || e.key === " ") { e.preventDefault(); onSortClick(key); }
+      });
+    });
+    updateSortIndicators();
+  }
+
+  function init(data, meta) {
     state.all = data.map(function (s, i) { s._id = i; return s; });
 
     els.q = $("q");
@@ -202,9 +259,13 @@
     els.empty = $("empty-state");
     els.stats = $("stats-row");
     els.masthead = $("masthead-meta");
+    els.pulledDate = $("pulled-date");
+
+    els.pulledDate.textContent = (meta && meta.dataPulled) || "unknown";
 
     buildFilterOptions();
     renderStats();
+    setupSortHeaders();
     render();
 
     els.q.addEventListener("input", function (e) { state.q = e.target.value; render(); });
@@ -214,12 +275,14 @@
     els.resetBtn.addEventListener("click", resetFilters);
   }
 
-  fetch("data/schools.json")
-    .then(function (r) { return r.json(); })
-    .then(init)
+  Promise.all([
+    fetch("data/schools.json").then(function (r) { return r.json(); }),
+    fetch("data/meta.json").then(function (r) { return r.json(); }).catch(function () { return {}; })
+  ])
+    .then(function (results) { init(results[0], results[1]); })
     .catch(function (err) {
       document.getElementById("rows").innerHTML =
-        '<tr><td colspan="6" style="padding:24px;color:var(--tier-frontier)">' +
+        '<tr><td colspan="7" style="padding:24px;color:var(--tier-frontier)">' +
         "Could not load data/schools.json (" + escapeHtml(err.message) + "). " +
         "If you're previewing this locally, serve the folder with a local server " +
         "(e.g. <code>python3 -m http.server</code>) rather than opening index.html directly — " +

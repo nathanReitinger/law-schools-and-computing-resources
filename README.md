@@ -6,12 +6,13 @@ use — the kind of thing a Denver Law professor taps via
 [DU's Research Data Analysis Cluster](https://www.du.edu/it/services/research-services/research-computing),
 or a Northwestern Law professor reaches through Quest.
 
-Live site: `https://YOUR_GITHUB_USERNAME.github.io/YOUR_REPO_NAME/` (once deployed — see below)
+Live site: `https://nathanReitinger.github.io/law-schools-and-computing-resources/` (once deployed — see below)
 
 ## What's here
 
-- **121 law schools researched** across ~31 states/territories as of Sept 2026 (of ~200 ABA-accredited
-  schools total — this is a starting point, not a finished census; see Contributing).
+- **121 law schools researched** across ~31 states/territories, data pulled September 2026 (of ~200
+  ABA-accredited schools total — this is a starting point, not a finished census; see Contributing).
+  The pull date is shown on the site itself and lives in `data/meta.json`.
 - Each school is tagged with a **GPU support tier** (Frontier / Modern / Older-gen / present-but-unnamed /
   no confirmed GPU / no resource / standalone), the specific hardware named in public sources, whether
   SLURM was confirmed as the scheduler, and a link back to the source.
@@ -21,6 +22,10 @@ Live site: `https://YOUR_GITHUB_USERNAME.github.io/YOUR_REPO_NAME/` (once deploy
 - Schools on a shared multi-institution resource (a state optical network, a regional green-computing
   center, a university system-wide cluster) are tagged with that **network**, so you can search
   "LONI" or "MGHPCC" and see everyone on it.
+- Every column (state, school, university, resource, tier, hardware, SLURM) is **sortable** — click a
+  heading, click again to reverse.
+- **This was compiled with AI (Claude) assistance and has not been hand-verified line by line.** Say so
+  on the site, on purpose — see the disclaimer banner at the top of the page.
 
 ## Running it locally
 
@@ -35,39 +40,45 @@ You need a local server (not just double-clicking `index.html`) because the page
 `data/schools.json`, and browsers block `fetch` against `file://` URLs. GitHub Pages always serves over
 HTTPS, so this is a local-preview-only issue — the deployed site works with no extra setup.
 
-## Deploying to GitHub Pages
+## Deploying to GitHub Pages (auto-updates on every push)
+
+This repo ships with `.github/workflows/deploy.yml`, so once it's turned on, **every push to `main`
+(including a merged correction PR) automatically rebuilds and redeploys the live site** — no manual
+steps after the one-time setup below.
 
 1. Push this folder to a new GitHub repo.
 2. In the repo, go to **Settings → Pages**.
-3. Under **Build and deployment**, set **Source** to "Deploy from a branch," branch `main`, folder `/ (root)`.
-4. Save. GitHub will publish to `https://<username>.github.io/<repo>/` within a minute or two.
-
-## Before you publish — 3 things to replace
-
-Search the repo for these placeholders and swap in your own values:
-
-| Placeholder | Where | Replace with |
-|---|---|---|
-| `YOUR_GITHUB_USERNAME` / `YOUR_REPO_NAME` | `index.html`, this file, `CONTRIBUTING.md` | your GitHub username and the repo name you push to |
-| `YOUR_NAME` | footer of `index.html` | your name |
-| `YOUR_EMAIL@example.com` | footer of `index.html` | an email people can reach you at |
+3. Under **Build and deployment → Source**, choose **"GitHub Actions"** (not "Deploy from a branch").
+4. Push to `main` (or click **Run workflow** on the "Deploy to GitHub Pages" workflow in the **Actions**
+   tab). The first run publishes to `https://<username>.github.io/<repo>/` within a minute or two, and
+   every push after that redeploys automatically.
 
 ## Project structure
 
 ```
-index.html          the page itself
-css/style.css        styling
-js/app.js            search/filter logic, reads data/schools.json, no dependencies
-data/schools.json     the actual data — this is what a pull request usually touches
-CONTRIBUTING.md       field schema + how to submit a correction or a new school
-.github/ISSUE_TEMPLATE/correction.yml   the form used by "Suggest a correction"
+index.html            the page itself
+css/style.css          styling
+js/app.js              search/filter/sort logic, reads data/*.json, no dependencies
+data/schools.json       the actual data — this is what a pull request usually touches
+data/meta.json          just the "data pulled" date shown at the top of the site
+CONTRIBUTING.md         field schema + how to submit a correction or a new school
+.github/workflows/deploy.yml       auto-deploys to Pages on every push to main
+.github/ISSUE_TEMPLATE/correction.yml   optional GitHub issue form (the site's primary
+                                        "report an error" link goes to email instead — see below)
 ```
 
 ## Updating the data
 
-See [CONTRIBUTING.md](CONTRIBUTING.md) — short version: edit `data/schools.json` directly (either locally
-and open a PR, or via GitHub's in-browser editor, which forks and proposes the change for you
-automatically), or open an issue with the correction if you'd rather not touch JSON.
+Two ways in, both described on the site itself and in [CONTRIBUTING.md](CONTRIBUTING.md):
+
+1. **Email a correction** — the "Report an error" link on the site opens a pre-addressed email with a
+   fill-in-the-blanks template. Good for anyone who'd rather not touch JSON or GitHub at all.
+2. **Edit `data/schools.json` directly** — via GitHub's in-browser editor (which forks and proposes a
+   pull request automatically if you don't have write access), or locally if you'd rather work in your
+   own editor and push a branch.
+
+Whichever path someone uses, once a change lands on `main` the site redeploys itself automatically (see
+Deploying, above) — nobody has to remember to republish.
 
 ## License
 

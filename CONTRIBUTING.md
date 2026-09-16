@@ -1,27 +1,33 @@
 # Contributing
 
 This directory is only useful if it stays accurate, and it covers about 121 of ~200 US law schools so
-far — corrections, missing schools, and updated specs are all welcome. Pick whichever path is easier for
-you.
+far. It was also compiled with AI (Claude) assistance and has **not** been hand-verified line by line —
+corrections, missing schools, and updated specs are all genuinely welcome. Pick whichever path is easier
+for you.
 
-## Option A — open an issue (no JSON required)
+## Option A — email a correction (no GitHub account needed)
 
-Click **Suggest a correction** on the site, or go straight to
-[open a new issue](https://github.com/YOUR_GITHUB_USERNAME/YOUR_REPO_NAME/issues/new?template=correction.yml).
-Fill in what's wrong or missing and a source if you have one. Someone (often the maintainer) will turn it
-into a data change.
+Click **Report an error** on the site — it opens your email client addressed to the maintainer with a
+short fill-in-the-blanks template (school / what's wrong / source). This is the easiest path if you don't
+want to touch JSON or GitHub at all. See the site footer for the address directly.
 
 ## Option B — edit `data/schools.json` directly
 
-This is the faster path if you're comfortable with a text editor and don't mind a bit of JSON.
+This is the faster path if you're comfortable with a text editor and don't mind a bit of JSON, and it
+skips the round-trip through the maintainer's inbox.
 
 1. Click **Edit the data on GitHub** on the site (or open `data/schools.json` in the repo and click the
    pencil icon). If you don't have write access, GitHub automatically forks the repo for you.
 2. Find or add the row for the school in question.
 3. Edit the fields (schema below), save, and GitHub will walk you through opening a pull request.
-4. If GitHub's in-browser editor gives you trouble, clone the repo, edit `data/schools.json` locally, and
-   push a branch + PR the normal way — or just email the maintainer (see the site footer) with what
-   should change and a source link, and they'll make the edit.
+4. Once the PR merges to `main`, the site redeploys itself automatically (see README) — no extra step.
+5. If GitHub's in-browser editor gives you trouble, clone the repo, edit `data/schools.json` locally, and
+   push a branch + PR the normal way — or fall back to Option A and email the maintainer instead.
+
+## Option C — open a GitHub issue
+
+`.github/ISSUE_TEMPLATE/correction.yml` still works if you'd rather file something in the repo's Issues
+tab than send an email — it's just not linked from the site's main "Report an error" button anymore.
 
 ### Field schema
 
@@ -92,6 +98,13 @@ exactly (so the filter groups schools together) rather than inventing a near-dup
 
 Prefer the university's own IT/research-computing pages over secondhand summaries. Link the most specific
 page you can (a cluster's own docs page beats the department's general homepage).
+
+### Updating "data pulled"
+
+`data/meta.json` holds the single line shown at the top of the site ("Data pulled: ..."). If you do a
+real pass of re-verifying or refreshing entries, update `dataPulled` to reflect that — don't bump it for
+a single one-line fix, since the date is meant to describe how recently the dataset as a whole was
+checked, not the repo's commit history.
 
 ## Adding a school that's missing entirely
 
