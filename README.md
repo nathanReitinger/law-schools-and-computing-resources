@@ -12,7 +12,7 @@ use.
 - Each school is tagged with a **GPU support tier** (Frontier / Modern / Older-gen / present-but-unnamed /
   no confirmed GPU / no resource / standalone), the specific hardware named in public sources, whether
   SLURM was confirmed as the scheduler, and a link back to the source.
-- A handful of entries carry a **caveat** flagging real uncertainty — e.g. a cluster that's really
+- A handful of entries carry a **caveat** flagging uncertainty — e.g., a cluster that's really
   department-level rather than campus-wide, or a shared multi-campus system where this specific campus's
   access wasn't independently confirmed.
 - Schools on a shared multi-institution resource (a state optical network, a regional green-computing
