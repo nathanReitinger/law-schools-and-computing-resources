@@ -2,9 +2,7 @@
 
 A directory of US law schools and whether their **parent university** runs a
 shared SLURM/GPU research-computing cluster that law faculty could plausibly
-use — the kind of thing a Denver Law professor taps via
-[DU's Research Data Analysis Cluster](https://www.du.edu/it/services/research-services/research-computing),
-or a Northwestern Law professor reaches through Quest.
+use.
 
 Live site: `https://nathanReitinger.github.io/law-schools-and-computing-resources/` (once deployed — see below)
 
