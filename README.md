@@ -41,20 +41,6 @@ This repo ships with `.github/workflows/deploy.yml`, so once it's turned on, **e
 (including a merged correction PR) automatically rebuilds and redeploys the live site** — no manual
 steps after the one-time setup below.
 
-## Project structure
-
-```
-index.html            the page itself
-css/style.css          styling
-js/app.js              search/filter/sort logic, reads data/*.json, no dependencies
-data/schools.json       the actual data — this is what a pull request usually touches
-data/meta.json          just the "data pulled" date shown at the top of the site
-CONTRIBUTING.md         field schema + how to submit a correction or a new school
-.github/workflows/deploy.yml       auto-deploys to Pages on every push to main
-.github/ISSUE_TEMPLATE/correction.yml   optional GitHub issue form (the site's primary
-                                        "report an error" link goes to email instead — see below)
-```
-
 ## Updating the data
 
 Two ways in, both described on the site itself and in [CONTRIBUTING.md](CONTRIBUTING.md):
