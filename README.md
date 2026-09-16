@@ -41,13 +41,6 @@ This repo ships with `.github/workflows/deploy.yml`, so once it's turned on, **e
 (including a merged correction PR) automatically rebuilds and redeploys the live site** — no manual
 steps after the one-time setup below.
 
-1. Push this folder to a new GitHub repo.
-2. In the repo, go to **Settings → Pages**.
-3. Under **Build and deployment → Source**, choose **"GitHub Actions"** (not "Deploy from a branch").
-4. Push to `main` (or click **Run workflow** on the "Deploy to GitHub Pages" workflow in the **Actions**
-   tab). The first run publishes to `https://<username>.github.io/<repo>/` within a minute or two, and
-   every push after that redeploys automatically.
-
 ## Project structure
 
 ```
