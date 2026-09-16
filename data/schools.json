@@ -494,17 +494,19 @@
     "school": "University of San Diego School of Law",
     "university": "University of San Diego",
     "standalone": false,
-    "tier": "undetailed",
-    "tierLabel": "HPC exists; GPU status not publicly detailed",
-    "gpu": "Not confirmed",
+    "tier": "cpuonly",
+    "tierLabel": "No GPU confirmed (CPU/RAM-only)",
+    "gpu": "None confirmed — SABER1 (USD's only documented central HPC cluster) is CPU-only: Intel Xeon E5-2630 v3, 18 nodes, 288 cores total, no GPU hardware listed anywhere in the technical specification",
     "slurm": "Not confirmed",
-    "hpcName": "Academic and Research Computing - SABER cluster (SABER3, 2022)",
-    "specs": "Modest (SABER1 predecessor: 6TFLOPS, 640GB memory, 25TB storage)",
-    "notes": "Small-scale HPC; bare-metal/VM/cloud nodes also offered; scheduler/GPU details not publicly confirmed",
+    "hpcName": "SABER1",
+    "specs": "SABER1: 18 nodes (17 compute + 1 master), 288 cores, 1,088GB cluster memory, TORQUE/MOAB scheduler (not SLURM)",
+    "notes": "Re-verified Sept 2026 by following USD's own site navigation to its dedicated \"Specifications\" page (not just the FAQ) — same stale 2015/2016 SABER1 CPU-only cluster confirmed both places. Moved from \"undetailed\" to \"no GPU confirmed\" since the spec sheet is actually complete, it just doesn't include a GPU.",
     "networks": [],
     "sources": [
-      "https://sites.sandiego.edu/hpc/"
-    ]
+      "https://sites.sandiego.edu/hpc/faq/",
+      "https://sites.sandiego.edu/hpc/technical-specifications/"
+    ],
+    "caveat": "USD's HPC website appears effectively abandoned — every dated page found (FAQ, technical specs) was last substantively updated in 2016-2017, and both list the exact same 2015-era SABER1 hardware. This could mean USD genuinely has no newer central GPU resource, or it could mean they have one that was never documented publicly. Distinct from a normal 'undetailed' case: this is a fully detailed spec sheet that explicitly shows no GPU, not an absence of detail."
   },
   {
     "state": "California",
@@ -1935,17 +1937,19 @@
     "standalone": false,
     "tier": "frontier",
     "tierLabel": "Frontier — H100/H200/B200 confirmed",
-    "gpu": "NYU's own Greene cluster: 292x RTX8000 (48GB); PLUS NYU is a founding member of Empire AI: 144x NVIDIA H100 + H200 nodes (Alpha), with 288x NVIDIA B200 'Beta' machine now coming online",
+    "gpu": "Torch (NYU's new flagship, Oct 2025): 232x NVIDIA H200 (80GB, 29 nodes x8) + 272x NVIDIA L40S (68 nodes x4) + 172x NVIDIA A100 (43 nodes, mixed 4/node configs) + 60x NVIDIA H100 (15 nodes x4) + 16x NVIDIA RTX Pro 6000 (2 nodes x8) = 752 GPUs total. Predecessor Greene cluster (292x RTX8000 + 40x V100) remains available. NYU is also an Empire AI founding member (144x H100/H200 \"Alpha\" + 288x B200 \"Beta\" statewide).",
     "slurm": "Yes",
-    "hpcName": "NYU HPC (Greene) + Empire AI allocation",
-    "specs": "27,000+ cores; up to 3TB RAM nodes; 4+ PFLOPS combined",
-    "notes": "SLURM confirmed on Greene; NYU researchers also get Empire AI allocation. CORRECTED Sept 2026 — as an Empire AI founding member, NYU has H100/H200/B200 access well beyond Greene's own RTX8000 nodes.",
+    "hpcName": "Torch (NYU HPC) — successor to Greene — plus Empire AI allocation",
+    "specs": "Torch: 43,072 total CPU cores (Intel Xeon Platinum 8592+), 280.1TB total memory, Infiniband NDR400; 10.79 PFLOPS realized on LINPACK (12.25 PFLOPS theoretical) — #133 on Top500 (June 2025), #40 on Green500; 5x more powerful than Greene",
+    "notes": "Allocated by stakeholder group: Tandon School of Engineering (112 H200+60 H100+60 A100), Courant/CS (88 H200+52 L40S), Center for Data Science, Chemistry, CILVR lab, and a 232-GPU \"IT Public\" general-access pool (24 H200 + 208 L40S) open campus-wide, which is the path a Law School researcher would use. SLURM confirmed. CORRECTED Sept 2026 — added Torch, NYU's new Oct-2025 flagship cluster, after being pointed to the official announcement; this replaces the earlier Greene-only + Empire AI framing as NYU's primary resource.",
     "networks": [],
     "sources": [
-      "https://sites.google.com/nyu.edu/nyu-hpc/hpc-systems/greene",
-      "https://www.empireai.edu/about/",
-      "https://foci.rpi.edu/computing-resources/empire-ai"
-    ]
+      "https://github.com/NYU-RTS/rts-docs/blob/main/docs/hpc/10_spec_sheet.md",
+      "https://www.nyu.edu/about/news-publications/news/2025/october/nyu-unveils--torch---the-most-powerful-supercomputer-in-new-york.html",
+      "https://www.datacenterdynamics.com/en/news/new-york-university-unveils-torch-supercomputer/",
+      "https://sites.google.com/nyu.edu/nyu-hpc/hpc-systems/greene"
+    ],
+    "caveat": "Press coverage (Data Center Dynamics, insideHPC) reported \"500+ NVIDIA H200 GPUs,\" but NYU's own technical spec sheet gives an exact, internally-consistent table showing 232 H200 GPUs specifically (752 GPUs total across all types) — the press number appears to conflate the H200 count with the cluster's total GPU count. This entry uses NYU's own table since it reconciles exactly (29 nodes x 8 H200/node = 232, and 232+272+172+60+16 = 752, matching the table's own total row)."
   },
   {
     "state": "New York",
