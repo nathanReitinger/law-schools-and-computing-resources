@@ -4,8 +4,6 @@ A directory of US law schools and whether their **parent university** runs a
 shared SLURM/GPU research-computing cluster that law faculty could plausibly
 use.
 
-Live site: `https://nathanReitinger.github.io/law-schools-and-computing-resources/` (once deployed — see below)
-
 ## What's here
 
 - **121 law schools researched** across ~31 states/territories, data pulled September 2026 (of ~200
