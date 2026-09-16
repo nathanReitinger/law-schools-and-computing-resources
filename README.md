@@ -20,8 +20,7 @@ use.
   "LONI" or "MGHPCC" and see everyone on it.
 - Every column (state, school, university, resource, tier, hardware, SLURM) is **sortable** — click a
   heading, click again to reverse.
-- **This was compiled with AI (Claude) assistance and has not been hand-verified line by line.** Say so
-  on the site, on purpose — see the disclaimer banner at the top of the page.
+- **This was compiled with AI (Claude) assistance and has not been hand-verified line by line.** 
 
 ## Running it locally
 
