@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Law School Compute Index — which law schools can reach a GPU cluster</title>
+<meta name="description" content="A directory of US law schools and whether their parent university offers a SLURM/GPU research-computing cluster that law faculty can use.">
+
+<!--
+  ⚠ BEFORE YOU PUBLISH — replace these three placeholders (search this file
+  and CONTRIBUTING.md / README.md for the same strings):
+    YOUR_GITHUB_USERNAME   → your GitHub username
+    YOUR_REPO_NAME         → the repo you push this to
+    YOUR_NAME / YOUR_EMAIL → in the footer, near the bottom of this file
+-->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,400;0,600;1,400&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="masthead">
+  <div class="wrap masthead-inner">
+    <div>
+      <h1>Law School Compute Index</h1>
+      <p class="tagline">Which law schools can reach a GPU cluster through their own university — and what's actually on it.</p>
+    </div>
+    <div class="masthead-meta" id="masthead-meta">
+      loading stats…
+    </div>
+  </div>
+</header>
+
+<div class="contribute-strip">
+  <div class="wrap contribute-inner">
+    <span><strong>See something outdated, or your school missing?</strong> This directory is community-maintained.</span>
+    <span class="contribute-links">
+      <a href="https://github.com/YOUR_GITHUB_USERNAME/YOUR_REPO_NAME/edit/main/data/schools.json" target="_blank" rel="noopener">Edit the data on GitHub</a>
+      <a href="https://github.com/YOUR_GITHUB_USERNAME/YOUR_REPO_NAME/issues/new?template=correction.yml" target="_blank" rel="noopener">Suggest a correction</a>
+    </span>
+  </div>
+</div>
+
+<main class="wrap">
+
+  <div class="stats" id="stats-row" aria-hidden="true"></div>
+
+  <div class="toolbar" role="search">
+    <input type="search" id="q" placeholder="Search a school, university, or network…" aria-label="Search a school, university, or network">
+    <select id="filter-state" aria-label="Filter by state"><option value="">All states</option></select>
+    <select id="filter-tier" aria-label="Filter by GPU support tier"><option value="">All GPU tiers</option></select>
+    <select id="filter-network" aria-label="Filter by shared compute network"><option value="">All networks</option></select>
+    <button class="reset-btn" id="reset-filters" type="button">Clear filters</button>
+    <div class="result-count" id="result-count" role="status" aria-live="polite"></div>
+  </div>
+
+  <div class="legend" aria-hidden="true">
+    <span><i class="tier-dot" style="background:var(--tier-frontier)"></i>Frontier (H100/H200/B200)</span>
+    <span><i class="tier-dot" style="background:var(--tier-modern)"></i>Modern (A100/A40/L40)</span>
+    <span><i class="tier-dot" style="background:var(--tier-older)"></i>Older-gen (V100/T4/P100)</span>
+    <span><i class="tier-dot" style="background:var(--tier-unspecified)"></i>GPUs present, model unnamed</span>
+    <span><i class="tier-dot" style="background:var(--tier-neutral)"></i>No GPU / no resource / standalone</span>
+  </div>
+
+  <div class="table-scroll">
+    <table class="schools">
+      <thead>
+        <tr>
+          <th>State</th>
+          <th>Law school</th>
+          <th>Parent university</th>
+          <th>GPU tier</th>
+          <th>Hardware</th>
+          <th>SLURM</th>
+        </tr>
+      </thead>
+      <tbody id="rows"><!-- rendered by js/app.js --></tbody>
+    </table>
+    <div class="empty-state" id="empty-state" hidden>No schools match those filters. Try clearing one.</div>
+  </div>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <h2>What this is, and what it isn't</h2>
+    <p>
+      For each US law school, this tracks whether its <em>parent university</em> runs a shared HPC/research-computing
+      cluster that law faculty could plausibly use — the way a Denver Law professor can request an account on
+      <a href="https://www.du.edu/it/services/research-services/research-computing" target="_blank" rel="noopener">DU's Research Data Analysis Cluster</a>,
+      or a Northwestern Law professor can get GPU time on Quest. Standalone law schools with no parent research
+      university are marked N/A, not "no GPUs" — there's simply nothing to check.
+    </p>
+    <p>
+      Specs, GPU tiers, and SLURM confirmation reflect what each university's own site stated at research time —
+      not a live feed, and not a guarantee that any specific professor gets frictionless access. Some resources are
+      department-level rather than campus-wide, or shared systems where this particular campus's access wasn't
+      independently confirmed; those are flagged in each school's caveat field. Click a row for the full detail.
+    </p>
+    <p>
+      Data lives in <a href="data/schools.json">data/schools.json</a> — see
+      <a href="https://github.com/YOUR_GITHUB_USERNAME/YOUR_REPO_NAME/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener">CONTRIBUTING.md</a>
+      for the field schema and how to add or fix a row.
+    </p>
+    <div class="footer-signoff">
+      Built by <strong>YOUR_NAME</strong>. Pull requests and corrections welcome — if you get stuck on the GitHub
+      side of a pull request, just email me at <a href="mailto:YOUR_EMAIL@example.com">YOUR_EMAIL@example.com</a>.
+    </div>
+  </div>
+</footer>
+
+<script src="js/app.js"></script>
+</body>
+</html>
