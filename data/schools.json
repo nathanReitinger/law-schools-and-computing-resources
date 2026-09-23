@@ -8,11 +8,19 @@
     "tierLabel": "N/A — standalone (no parent university)",
     "gpu": "",
     "slurm": "",
-    "hpcName": "",
+    "hpcName": "None — independent law school, no parent institution",
     "specs": "",
-    "notes": "Independent law school; no parent research university",
-    "networks": [],
-    "sources": []
+    "notes": "Re-verified Sept 2026, first sourcing for this row. Standalone is CONFIRMED on three independent footings: the school describes itself as an independent, nonprofit law school and repeats that independence as a selling point ('we operate independently, so we're able to innovate and adapt our curriculum more quickly'); its regional accreditor WSCUC lists its Sponsorship as 'No related entity'; and it holds its own separate WSCUC accreditation (candidacy 2019, accredited 2023) rather than sitting under a parent's. Founded 1924 as Balboa Law College, ABA-accredited since 1962, AALS member since 1967, roughly 670-830 JD students, San Diego's oldest law school. Historical note that can mislead: California Western is one of two successor organisations to the former California Western University, the other being Alliant International University — but that is a shared ancestor, not a current parent. ONE LEAD INVESTIGATED AND RULED OUT: the WSCUC accreditation record shows two joint degrees run WITH San Diego State University — a JD/MBA (2002) and a JD/MSW (1997) — and SDSU does have real research computing (Computational Science Research Center clusters including a dual P100 GPU server, an NSF-funded node in the NRP Kubernetes cluster, and the NSF TIDE project, a $991,749 CSU-wide GPU initiative SDSU leads with the San Diego Supercomputer Center). That looks like the Albany Law situation but is not. The Albany affiliation explicitly funds joint FACULTY research through a Collaborative Venture Fund; these SDSU arrangements are STUDENT degree programs, and nothing found extends them to California Western faculty or to compute. Recording it here so the next person doesn't have to re-investigate the same lead. || National floor: this tier describes the PARENT INSTITUTION's own resource, not the ceiling on what a faculty member here can reach — see the NSF ACCESS note in the site header and README. That national route is tagged in this row's shared-networks field; it is not evidence about this school specifically, and the sources listed below are only those used to verify this row.",
+    "networks": [
+      "NSF ACCESS (national — any US academic institution)"
+    ],
+    "sources": [
+      "https://www.cwsl.edu/about/index.html",
+      "https://www.wscuc.org/institutions/california-western-school-of-law/",
+      "https://www.wscuc.org/institutions/california-western-school-of-law/?print=pdf",
+      "https://www.cwsl.edu/academics/juris_doctor_jd_program/index.html",
+      "https://en.wikipedia.org/wiki/California_Western_School_of_Law"
+    ]
   },
   {
     "state": "California",
@@ -23,15 +31,21 @@
     "tierLabel": "N/A — standalone (no parent university)",
     "gpu": "",
     "slurm": "",
-    "hpcName": "",
+    "hpcName": "None — independent law school, no parent institution",
     "specs": "",
-    "notes": "Independent law school; no parent research university",
-    "networks": [],
-    "sources": []
+    "notes": "Re-verified Sept 2026, first sourcing for this row. Standalone CONFIRMED: Southwestern is described by LSAC and by itself as an independent, nonprofit, nonsectarian institution, founded 1911, roughly 950-1,000 students, Los Angeles' second-oldest law school, campus centred on the Bullocks Wilshire Art Deco landmark. It briefly held a university charter in 1913 when it expanded into other disciplines, but that is historical and it operates today as a law school alone. Not to be confused with Southwestern University, the liberal arts college in Georgetown, Texas. LEADS INVESTIGATED AND RULED OUT: Southwestern has an unusually long list of institutional partnerships — 3+3 BA/JD programs with California State University Northridge and CSU Dominguez Hills, a JD/MA in Negotiation with CSUDH, JD/MBA programs with the Drucker Graduate School of Management, a public policy certificate with the Pardee RAND Graduate School, and a bioscience certificate with the Keck Graduate Institute. Every one of these is a STUDENT degree or certificate pathway. None is a faculty research affiliation, and none was found to extend compute to Southwestern faculty. This is the same pattern as California Western's San Diego State ties, and the opposite of Albany Law's UAlbany affiliation, which explicitly funds joint faculty research. || National floor: this tier describes the PARENT INSTITUTION's own resource, not the ceiling on what a faculty member here can reach — see the NSF ACCESS note in the site header and README. That national route is tagged in this row's shared-networks field; it is not evidence about this school specifically, and the sources listed below are only those used to verify this row.",
+    "networks": [
+      "NSF ACCESS (national — any US academic institution)"
+    ],
+    "sources": [
+      "https://www.lsac.org/choosing-law-school/find-law-school/jd-programs/southwestern",
+      "https://en.wikipedia.org/wiki/Southwestern_Law_School",
+      "https://www.swlaw.edu/"
+    ]
   },
   {
     "state": "Georgia",
-    "school": "John Marshall Law School (Atlanta)",
+    "school": "Atlanta's John Marshall Law School",
     "university": "",
     "standalone": true,
     "tier": "standalone",
@@ -40,9 +54,16 @@
     "slurm": "",
     "hpcName": "",
     "specs": "",
-    "notes": "Independent law school (closed 2020); no parent research university",
-    "networks": [],
-    "sources": []
+    "notes": "CORRECTED Sept 2026 — the previous entry recorded this school as 'closed 2020', which is wrong. AJMLS is open and ABA-accredited (approved 2005), with roughly 379 JD students. It converted from for-profit to 501(c)(3) nonprofit status (operated by Atlanta Law Center Inc.), sold its Midtown building in 2020 and relocated to One Marquis Tower in Peachtree Center in August 2021, and launched the Criminal and Civil Justice Institute in 2025. The 'closed' note most likely conflated this school with two different institutions: Chicago's John Marshall Law School (acquired by UIC in 2019, renamed UIC School of Law in 2021) and AJMLS's own Savannah Law School branch campus (ceased operations 2021). Independent law school; no parent research university, so there is no campus HPC to check. || National floor: this tier describes the PARENT INSTITUTION's own resource, not the ceiling on what a faculty member here can reach — see the NSF ACCESS note in the site header and README. That national route is tagged in this row's shared-networks field; it is not evidence about this school specifically, and the sources listed below are only those used to verify this row.",
+    "networks": [
+      "NSF ACCESS (national — any US academic institution)"
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Atlanta's_John_Marshall_Law_School",
+      "https://www.justia.com/law-schools/georgia/atlantas-john-marshall-law-school/",
+      "https://www.americanbar.org/groups/legal_education/accreditation/approved-law-schools/archives/",
+      "https://en.wikipedia.org/wiki/Savannah_Law_School"
+    ]
   },
   {
     "state": "Massachusetts",
@@ -53,11 +74,17 @@
     "tierLabel": "N/A — standalone (no parent university)",
     "gpu": "",
     "slurm": "",
-    "hpcName": "",
+    "hpcName": "None — independent law school, no parent institution",
     "specs": "",
-    "notes": "Independent law school; no parent research university",
-    "networks": [],
-    "sources": []
+    "notes": "Re-verified Sept 2026, first sourcing for this row. Standalone CONFIRMED: New England Law | Boston is an independent, ABA-accredited law school with no parent university. It was founded in 1908 as Portia Law School — the first law school in the nation established exclusively for women — was ABA-accredited in 1969, and shortened its name from New England School of Law to New England Law | Boston during its centennial in September 2008. MASSACHUSETTS CONTEXT WORTH RECORDING: this is one of eight Massachusetts law schools in this dataset, five of which sit on parents with serious compute (Harvard, BU, BC, Northeastern, UMass). New England Law has no such parent, and the Massachusetts Green High Performance Computing Center — the obvious regional route — is a closed membership consortium of its founding universities, reached through a member institution's own research computing group rather than open to any Massachusetts school. Same finding as Suffolk. || National floor: this tier describes the PARENT INSTITUTION's own resource, not the ceiling on what a faculty member here can reach — see the NSF ACCESS note in the site header and README. That national route is tagged in this row's shared-networks field; it is not evidence about this school specifically, and the sources listed below are only those used to verify this row.",
+    "networks": [
+      "NSF ACCESS (national — any US academic institution)"
+    ],
+    "sources": [
+      "https://www.justia.com/law-schools/massachusetts/new-england-law-boston/",
+      "https://lawschool.uslegal.com/law-school-accreditaion/massachusetts-accredited-law-schools/",
+      "https://www.abajournal.com/web/article/independent-law-schools-seek-backup-accreditor-as-aba-council-under-review"
+    ]
   },
   {
     "state": "Minnesota",
@@ -70,9 +97,15 @@
     "slurm": "",
     "hpcName": "",
     "specs": "",
-    "notes": "Independent law school; no parent research university",
-    "networks": [],
-    "sources": []
+    "notes": "Re-verified Sept 2026 — standalone confirmed despite the shared name. Mitchell Hamline was formed in December 2015 by the combination of Hamline University School of Law and William Mitchell College of Law, and it retains an affiliation with Hamline University, but both institutions state plainly that they are separate entities operated independently and that Mitchell Hamline is an autonomous nonprofit governed by its own board of trustees. The affiliation delivers dual degrees, a 3+3 pathway, and student access to Hamline's library, athletic facilities and cultural programming — not research infrastructure. Hamline is itself a ~4,000-student institution offering 11 graduate degrees with no research-computing centre, so even a generous reading of the affiliation would not produce a compute pathway. || National floor: this tier describes the PARENT INSTITUTION's own resource, not the ceiling on what a faculty member here can reach — see the NSF ACCESS note in the site header and README. That national route is tagged in this row's shared-networks field; it is not evidence about this school specifically, and the sources listed below are only those used to verify this row.",
+    "networks": [
+      "NSF ACCESS (national — any US academic institution)"
+    ],
+    "sources": [
+      "https://mitchellhamline.edu/about/affiliation-with-hamline-university/",
+      "https://www.hamline.edu/academics/college-schools/mitchell-hamline-school-law",
+      "https://en.wikipedia.org/wiki/Mitchell_Hamline_School_of_Law"
+    ]
   },
   {
     "state": "New York",
@@ -85,9 +118,18 @@
     "slurm": "",
     "hpcName": "",
     "specs": "",
-    "notes": "Independent law school; no parent research university",
-    "networks": [],
-    "sources": []
+    "notes": "Re-verified Sept 2026. Albany Law School remains legally independent — it is the nation's oldest independent law school and has no parent university — so the standalone classification stands. However, the flat 'no parent research university' note undersold the situation: since September 2015 Albany Law has had a formal affiliation with the University at Albany (SUNY) that explicitly covers joint faculty research and grant-seeking, including a dedicated Collaborative Venture Fund that has funded cross-institution faculty teams, alongside cross-registration and joint degrees. UAlbany itself is well resourced: its AI Supercomputer is 24 NVIDIA DGX A100 systems (8 A100 GPUs each, 192 A100s total), it runs a separate on-premises HPC cluster with its own ITS access-request path, and UAlbany faculty can request allocations on New York State's Empire AI (Alpha at UB, plus Beta on NVIDIA DGX GB200 SuperPOD). See the caveat for what this does and does not mean for a law faculty member. || National floor: this tier describes the PARENT INSTITUTION's own resource, not the ceiling on what a faculty member here can reach — see the NSF ACCESS note in the site header and README. That national route is tagged in this row's shared-networks field; it is not evidence about this school specifically, and the sources listed below are only those used to verify this row.",
+    "networks": [
+      "NSF ACCESS (national — any US academic institution)"
+    ],
+    "sources": [
+      "https://www.albanylaw.edu/about/faq-the-university-albany-affiliation",
+      "https://albany.atlassian.net/wiki/spaces/askit/pages/305168385/AI+Supercomputer",
+      "https://tdx.albany.edu/TDClient/184/ITS/Requests/ServiceDet?ID=623",
+      "https://www.albany.edu/news-center/news/2024-ualbany-unveils-powerful-new-ai-supercomputer",
+      "https://tdx.albany.edu/TDClient/184/ITS/Requests/ServiceOffering/621/Empire-AI-Access-Request"
+    ],
+    "caveat": "Affiliation, not ownership — access unconfirmed. UAlbany's DGX A100 access page is written for UAlbany faculty, staff, postdocs and students, and its SUNY-wide extension is described for other SUNY campuses at a price. Albany Law is neither. The realistic route is a co-investigator relationship with a UAlbany faculty member under the affiliation, which the affiliation is explicitly designed to support but which no public page confirms as an account-granting path. Worth a direct ask to UAlbany ITS."
   },
   {
     "state": "New York",
@@ -98,11 +140,18 @@
     "tierLabel": "N/A — standalone (no parent university)",
     "gpu": "",
     "slurm": "",
-    "hpcName": "",
+    "hpcName": "None — independent law school, no parent institution",
     "specs": "",
-    "notes": "Independent law school; no parent research university",
-    "networks": [],
-    "sources": []
+    "notes": "Re-verified Sept 2026, first sourcing for this row. Standalone is CONFIRMED in the school's own words: Brooklyn Law School states it is 'an independent institution, unaffiliated with any university or college, and the only law school in Brooklyn.' Founded 1901. The independence is deliberate rather than incidental — St. Lawrence University operated the school and conferred its degrees until 1968, when it decided to shut the school down; alumni organised and negotiated a repurchase of the school's assets specifically to keep it operating as an independent institution, and it moved to 250 Joralemon Street in 1969. So there is no parent university, and no prospect of one. ONE LEAD RULED OUT: New York State's Empire AI would be the obvious route for a New York law school, and it is a large one — Alpha at the University at Buffalo has supported 130+ projects, and Beta is a $40M NVIDIA system. But Empire AI is a closed consortium of exactly ten members: Columbia, Cornell, CUNY, the Icahn School of Medicine at Mount Sinai, NYU, Rochester Institute of Technology, RPI, the University of Rochester, SUNY and the Flatiron Institute. Brooklyn Law School is not among them, and the 2026 expansion of access was to SUNY campuses, not to unaffiliated private institutions. Unlike Albany Law, Brooklyn Law also has no affiliation agreement with a member institution to work through. || National floor: this tier describes the PARENT INSTITUTION's own resource, not the ceiling on what a faculty member here can reach — see the NSF ACCESS note in the site header and README. That national route is tagged in this row's shared-networks field; it is not evidence about this school specifically, and the sources listed below are only those used to verify this row.",
+    "networks": [
+      "NSF ACCESS (national — any US academic institution)"
+    ],
+    "sources": [
+      "https://www.brooklaw.edu/about-us/a-legacy-of-excellence/",
+      "https://en.wikipedia.org/wiki/Brooklyn_Law_School",
+      "https://www.empireai.edu/about/",
+      "https://www.governor.ny.gov/news/governor-hochul-announces-empire-ai-suny-campus-partnerships-expand-access"
+    ]
   },
   {
     "state": "New York",
@@ -113,11 +162,18 @@
     "tierLabel": "N/A — standalone (no parent university)",
     "gpu": "",
     "slurm": "",
-    "hpcName": "",
+    "hpcName": "None — independent law school, no parent institution",
     "specs": "",
-    "notes": "Independent law school; no parent research university",
-    "networks": [],
-    "sources": []
+    "notes": "Re-verified Sept 2026, first sourcing for this row. Standalone CONFIRMED in the school's own words: NYLS describes itself as 'an independent law school' and 'an independently operated institution', founded 1891, Tribeca campus, marking its 135th anniversary in 2026. IMPORTANT DISAMBIGUATION: New York Law School is NOT New York University School of Law. They are entirely separate institutions with similar names in the same city — exactly the kind of confusion that produced this dataset's 'John Marshall closed 2020' error, so it is worth stating explicitly. MATERIAL DEVELOPMENT: NYLS has received institutional accreditation from the Middle States Commission on Higher Education, which its dean called a landmark moment in the school's 134-year history. It is now dual-accredited by both MSCHE and the ABA, and the school states this gives it 'the flexibility to create robust interdisciplinary programs and degrees typically available at law schools within larger universities.' That matters for this directory: an independent school building interdisciplinary and technology-adjacent programs is more likely to need compute over time. Worth re-checking. NYLS Dean and President Anthony W. Crowell is also founding president of the National Association of Standalone Graduate Schools. Empire AI ruled out — a closed ten-member consortium that does not include NYLS. || National floor: this tier describes the PARENT INSTITUTION's own resource, not the ceiling on what a faculty member here can reach — see the NSF ACCESS note in the site header and README. That national route is tagged in this row's shared-networks field; it is not evidence about this school specifically, and the sources listed below are only those used to verify this row.",
+    "networks": [
+      "NSF ACCESS (national — any US academic institution)"
+    ],
+    "sources": [
+      "https://www.nyls.edu/?p=617",
+      "https://news.nyls.edu/new-york-law-school-receives-accreditation-from-middle-states-commission-on-higher-education/",
+      "https://nyls.edu",
+      "https://www.empireai.edu/about/"
+    ]
   },
   {
     "state": "South Carolina",
@@ -130,9 +186,15 @@
     "slurm": "",
     "hpcName": "",
     "specs": "",
-    "notes": "Independent law school; no parent research university",
-    "networks": [],
-    "sources": []
+    "notes": "Re-verified Sept 2026 — standalone confirmed, and the obvious merger hypothesis checked and closed. In October 2013 South Carolina's Commission on Higher Education waived a licence condition to permit exploration of a merger with the College of Charleston or another public school; that merger never happened. The school instead remained independent, survived a contested near-sale to InfiLaw, and converted from for-profit to nonprofit status in December 2024 following ABA acquiescence. It is ABA-accredited, has roughly 700 JD students, and lists no parent institution. Nothing to check for campus HPC — there is no parent university. || National floor: this tier describes the PARENT INSTITUTION's own resource, not the ceiling on what a faculty member here can reach — see the NSF ACCESS note in the site header and README. That national route is tagged in this row's shared-networks field; it is not evidence about this school specifically, and the sources listed below are only those used to verify this row.",
+    "networks": [
+      "NSF ACCESS (national — any US academic institution)"
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Charleston_School_of_Law",
+      "https://che.sc.gov/sites/che/files/Documents/Meetings/2024/CAAL/July%2018/5.a.Charleston%20School%20of%20Law_Final.pdf",
+      "https://www.justia.com/law-schools/south-carolina/charleston-school-of-law/"
+    ]
   },
   {
     "state": "Texas",
@@ -143,11 +205,19 @@
     "tierLabel": "N/A — standalone (no parent university)",
     "gpu": "",
     "slurm": "",
-    "hpcName": "",
+    "hpcName": "None — independent law school, no parent institution",
     "specs": "",
-    "notes": "Independent law school; no parent research university",
-    "networks": [],
-    "sources": []
+    "notes": "Re-verified Sept 2026, first sourcing for this row. Standalone CONFIRMED: STCL Houston describes itself, and is described by LSAC and AALS, as a private, nonprofit, independent institution. Founded 1923, Houston's first and oldest law school, the only one in downtown Houston, roughly 350 first-year JD students, occupying a full city block. THE TEXAS A&M QUESTION, RESOLVED: this row needed care because STCL signed an affiliation agreement with Texas A&M University in 1998 and attempted a private/public merger under which it would have been branded the Texas A&M Law Center and awarded degrees under the A&M seal. That deal FELL THROUGH. Texas A&M instead acquired Texas Wesleyan's law school in 2013 to create today's Texas A&M School of Law, which is a separate institution from this one. What survives of the A&M relationship is student-facing: a joint JD/MBA with A&M's Mays Business School (and another with the University of St. Thomas Cameron School of Business), plus a 3+3 bachelor's/JD. No faculty research affiliation and no compute pathway. Also noted: MSCHE was approved as a secondary institutional accreditor in May 2025 and granted accreditation in October 2025 — the same backstop-accreditation move NYLS made. || National floor: this tier describes the PARENT INSTITUTION's own resource, not the ceiling on what a faculty member here can reach — see the NSF ACCESS note in the site header and README. That national route is tagged in this row's shared-networks field; it is not evidence about this school specifically, and the sources listed below are only those used to verify this row.",
+    "networks": [
+      "NSF ACCESS (national — any US academic institution)"
+    ],
+    "sources": [
+      "https://www.stcl.edu/about/",
+      "https://www.lsac.org/choosing-law-school/find-law-school/jd-programs/south-texas",
+      "https://en.wikipedia.org/wiki/South_Texas_College_of_Law_Houston",
+      "https://www.msche.org/institution/13052/",
+      "https://www.tshaonline.org/handbook/entries/south-texas-college-of-law"
+    ]
   },
   {
     "state": "Vermont",
@@ -158,11 +228,18 @@
     "tierLabel": "N/A — standalone (no parent university)",
     "gpu": "",
     "slurm": "",
-    "hpcName": "",
+    "hpcName": "None — independent law school, no parent institution",
     "specs": "",
-    "notes": "Independent law school; no parent research university",
-    "networks": [],
-    "sources": []
+    "notes": "Re-verified Sept 2026, first sourcing for this row. Standalone CONFIRMED: VLGS is a private, independent law and graduate institution in South Royalton, founded 1972, the only ABA-accredited law school in Vermont, with roughly 720 students. It has been institutionally accredited by the New England Association of Schools and Colleges since 1980, so unlike NYLS and South Texas it has long had the accreditation backstop independent schools rely on for Title IV eligibility. NAME CHANGE EXPLAINED: the row's name is current. Vermont Law School rebranded to Vermont Law and Graduate School in 2022, funded in part by an anonymous $8 million gift — its largest ever — adding master's programs in environmental policy and animal law policy and putting equal weight on non-JD offerings. Anyone searching the older name will still find it. GOVERNANCE NOTE FOR RE-CHECKING: the school is between presidents. Rod Smolla led it from 2022 and stepped down in 2025 to return to teaching; Law Dean Beth McCormack and Graduate Dean Dan Bromberg are jointly managing day-to-day operations while a national search, launched April 2026, runs. Strategy can shift with a new president, so this row has a natural re-check trigger. No compute resource of its own was found. || National floor: this tier describes the PARENT INSTITUTION's own resource, not the ceiling on what a faculty member here can reach — see the NSF ACCESS note in the site header and README. That national route is tagged in this row's shared-networks field; it is not evidence about this school specifically, and the sources listed below are only those used to verify this row.",
+    "networks": [
+      "NSF ACCESS (national — any US academic institution)"
+    ],
+    "sources": [
+      "https://www.vermontlaw.edu/news-and-events/vermont-law-and-graduate-school-launches-search-for-next-president",
+      "https://en.wikipedia.org/wiki/Vermont_Law_and_Graduate_School",
+      "https://vtdigger.org/2022/06/21/vermont-law-school-to-rebrand-add-masters-degree-programs/",
+      "https://www.lsac.org/choosing-law-school/find-law-school/llm-and-other-law-programs-us-canada/vermont-law-and-graduate"
+    ]
   },
   {
     "state": "Virginia",
@@ -175,24 +252,37 @@
     "slurm": "",
     "hpcName": "",
     "specs": "",
-    "notes": "Independent law school; no parent research university",
-    "networks": [],
-    "sources": []
+    "notes": "Re-verified Sept 2026 — standalone confirmed and the school is operating. ASL is a small private, independent, ABA-accredited law school in Grundy, Virginia, founded in 1994 with first students in 1997, currently enrolling roughly 180 students. It has no parent university and none of the acquisition or teach-out activity that affected other small independents. Under Virginia Code 23.1-219(D) it is exempt from a further SCHEV certificate because it has maintained a main campus under the same ownership for 20 years while remaining accredited. It does offer a Cybersecurity certificate among its five certificate programs, but that is curricular, not a compute resource. No parent university, so nothing to check. || National floor: this tier describes the PARENT INSTITUTION's own resource, not the ceiling on what a faculty member here can reach — see the NSF ACCESS note in the site header and README. That national route is tagged in this row's shared-networks field; it is not evidence about this school specifically, and the sources listed below are only those used to verify this row.",
+    "networks": [
+      "NSF ACCESS (national — any US academic institution)"
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Appalachian_School_of_Law",
+      "https://www.lsac.org/choosing-law-school/find-law-school/jd-programs/appalachian",
+      "https://www.asl.edu/wp-content/uploads/2024/08/202425-Catalog-Student-Handbook-082024.pdf"
+    ]
   },
   {
     "state": "California",
-    "school": "Western State University College of Law",
+    "school": "Western State College of Law at Westcliff University",
     "university": "Westcliff University",
-    "standalone": true,
-    "tier": "standalone",
-    "tierLabel": "N/A — standalone (no parent university)",
+    "standalone": false,
+    "tier": "none",
+    "tierLabel": "No HPC resource identified",
     "gpu": "",
-    "slurm": "",
-    "hpcName": "",
+    "slurm": "No",
+    "hpcName": "None found",
     "specs": "",
-    "notes": "Small independent college; no research computing center found",
-    "networks": [],
-    "sources": []
+    "notes": "RECLASSIFIED Sept 2026 — schema fix plus a status check. The old row was internally inconsistent: tier 'standalone' and standalone=true, while also naming Westcliff University as the parent. Westcliff is a real parent institution, so standalone is now false and the tier is 'none' (parent exists, no research computing found) rather than 'standalone' (no parent at all). On status: the school survived. After parent Argosy University went into federal receivership in 2019 the ABA approved teach-out plans that would have closed it in December 2022, but Westcliff University acquired it instead, an acquisition approved by a federal court in Ohio; it hired five new full-time faculty in 2022 and continues to operate as an ABA-approved law school, now in Tustin, California. Westcliff is a career-focused private university offering bachelor's, master's and doctorate degrees with no research-computing center, HPC cluster or scheduler found. || National floor: this tier describes the PARENT INSTITUTION's own resource, not the ceiling on what a faculty member here can reach — see the NSF ACCESS note in the site header and README. That national route is tagged in this row's shared-networks field; it is not evidence about this school specifically, and the sources listed below are only those used to verify this row.",
+    "networks": [
+      "NSF ACCESS (national — any US academic institution)"
+    ],
+    "sources": [
+      "https://www.westcliff.edu/academics/college-of-law/",
+      "https://www.lsac.org/choosing-law-school/find-law-school/jd-programs/western-state",
+      "https://nationaljurist.com/western-state-lives/",
+      "https://www.businesswire.com/news/home/20220622005329/en/Western-State-College-of-Law-Adds-Five-New-Full-time-Faculty"
+    ]
   },
   {
     "state": "Alabama",
@@ -205,8 +295,10 @@
     "slurm": "No",
     "hpcName": "None found",
     "specs": "",
-    "notes": "Re-verified Sept 2026 — Faulkner is a small, teaching-focused private university (Christian liberal arts, ~2,300 students) with no research-computing mission; its own 2026 IT update announcement covers only classroom/lab PC refreshes, not HPC. No evidence of any shared research-computing cluster found.",
-    "networks": [],
+    "notes": "Re-verified Sept 2026 — Faulkner is a small, teaching-focused private university (Christian liberal arts, ~2,300 students) with no research-computing mission; its own 2026 IT update announcement covers only classroom/lab PC refreshes, not HPC. No evidence of any shared research-computing cluster found. || National floor: this tier describes the PARENT INSTITUTION's own resource, not the ceiling on what a faculty member here can reach — see the NSF ACCESS note in the site header and README. That national route is tagged in this row's shared-networks field; it is not evidence about this school specifically, and the sources listed below are only those used to verify this row.",
+    "networks": [
+      "NSF ACCESS (national — any US academic institution)"
+    ],
     "sources": [
       "https://www.faulkner.edu/summer-it-updates/",
       "https://www.faulkner.edu/academics/computer-sciences/"
@@ -223,8 +315,10 @@
     "slurm": "No",
     "hpcName": "None found",
     "specs": "",
-    "notes": "Re-verified Sept 2026 — Samford's Technology Services department is entirely enterprise IT (classroom tech, wifi, email, printing, helpdesk); no mention of research computing, HPC, or GPU resources anywhere on the university's IT pages or its CS department page. Consistent with a teaching-focused university without a dedicated research-computing mission.",
-    "networks": [],
+    "notes": "Re-verified Sept 2026 — Samford's Technology Services department is entirely enterprise IT (classroom tech, wifi, email, printing, helpdesk); no mention of research computing, HPC, or GPU resources anywhere on the university's IT pages or its CS department page. Consistent with a teaching-focused university without a dedicated research-computing mission. || National floor: this tier describes the PARENT INSTITUTION's own resource, not the ceiling on what a faculty member here can reach — see the NSF ACCESS note in the site header and README. That national route is tagged in this row's shared-networks field; it is not evidence about this school specifically, and the sources listed below are only those used to verify this row.",
+    "networks": [
+      "NSF ACCESS (national — any US academic institution)"
+    ],
     "sources": [
       "https://www.samford.edu/departments/technology-services/about",
       "https://www.samford.edu/departments/technology-services/"
@@ -235,17 +329,22 @@
     "school": "University of Alabama School of Law",
     "university": "University of Alabama (Tuscaloosa)",
     "standalone": false,
-    "tier": "construction",
-    "tierLabel": "Under construction / not yet operational",
-    "gpu": "",
-    "slurm": "Unconfirmed",
-    "hpcName": "UA High Performance Computing and Data Center",
-    "specs": "Petascale system",
-    "notes": "Brand-new $100M+ center; construction/ramp-up as of 2025-26 with opening targeted ~2027, so resource is very new/limited availability now but will be university-wide once online",
+    "tier": "modern",
+    "tierLabel": "Modern — A100/A40/L40-class confirmed",
+    "gpu": "NVIDIA A100 tensor core GPUs on CHPC, exposed through a dedicated 'gpu' QoS (limit 3 jobs / 3 GPUs / 192 cores, up to 2 days)",
+    "slurm": "Yes — Slurm QoS tiers (main, long, highmem, gpu) documented on CHPC",
+    "hpcName": "UAHPC and CHPC clusters (UA Office for Research & Economic Development)",
+    "specs": "Two clusters, UAHPC and CHPC, with published CPU and GPU specification tables. CHPC QoS limits: main 5 days / 1,000 jobs or cores; long 14 days / 100 jobs or cores; highmem 1 week with up to 6,000 GB RAM per user. A separate $96M, 40,000 sq ft High Performance Computing and Data Center at 709 Johnny Stallings Drive was completed in 2026 and is slated to open in early 2027 — a 5 MW facility scalable to 14.6 MW, funded by a $44.5M NIST disbursement plus $46M in state appropriation, intended to be petascale and the only Alabama system meeting Top500 benchmarks.",
+    "notes": "RECLASSIFIED Sept 2026 — this row was scored 'construction', which was wrong in a way worth explaining. The new UA High Performance Computing and Data Center genuinely is still opening (early 2027), but 'construction' implies the university has no operational resource, and it does: UA already supervises two advanced computing clusters, UAHPC and CHPC, and CHPC's own technical specifications page documents an NVIDIA A100 'gpu' QoS available to users today. So the correct reading is 'modern hardware now, frontier-class facility pending'. The new centre is also explicitly designed to support research across all campuses of the University of Alabama System and statewide collaborations, so it may become a network-tagged resource once operational. Re-check this row in 2027 — it is the most predictable upgrade in the dataset.",
     "networks": [],
     "sources": [
-      "https://hpc.ua.edu/"
-    ]
+      "https://hpc.ua.edu/current-services/technical-specifications/chpc/",
+      "https://hpc.ua.edu/current-services/technical-specifications/",
+      "https://hpc.ua.edu/",
+      "https://news.ua.edu/2024/11/stage-iv-approval-for-high-performance-computing-center/",
+      "https://hpc.ua.edu/about/"
+    ],
+    "caveat": "The 2027 facility is not the current resource. Do not read the petascale/Top500 language in press coverage as describing what a researcher can use today; that describes the building opening in early 2027. Today's confirmed hardware is the CHPC A100 QoS. Primary users named for the new centre are science and engineering institutes (Alabama Life Research Institute, Alabama Materials Institute, Alabama Water Institute, Alabama Transportation Institute), so law-faculty access is unconfirmed."
   },
   {
     "state": "Arkansas",
@@ -292,32 +391,42 @@
     "standalone": false,
     "tier": "frontier",
     "tierLabel": "Frontier — H100/H200/B200 confirmed",
-    "gpu": "580+ GPU accelerators incl. NVIDIA A100 80GB, V100, H100-class on Sol; A100/V100 on Phoenix",
-    "slurm": "Yes",
-    "hpcName": "ASU Research Computing (Sol + Phoenix supercomputers)",
-    "specs": "38,200+ CPU cores; 10PB research data storage; 2PB scratch (Phoenix)",
-    "notes": "Campus-wide core facility; condo model available for dedicated priority nodes; FISMA-high enclave available",
+    "gpu": "Sol: over 290 GPUs — 80GB A100s (224 at launch across 56 nodes of four), 24GB A30s (15 across four nodes of three), and a smaller number of 80GB H100s. Phoenix: 360 GPUs (A100, V100, GTX 1080, RTX 2080). Agave's GPUs are gone with the cluster.",
+    "slurm": "Yes — Slurm with a job submit plugin, high-availability slurmctld with failover, MariaDB backend, and depth-oblivious Fairshare priority",
+    "hpcName": "ASU Research Computing — Sol (flagship) and Phoenix; Agave decommissioned",
+    "specs": "Sol: Dell-built, 21,000+ AMD EPYC (Zen3/7713) cores, most nodes 512GB RAM, seven high-memory nodes at 2TB, 200GB/s HDR InfiniBand, 4PB Dell BeeGFS scratch plus 2PB Dell PowerScale, observed GPU-only HPL of 2.272 PFLOP/s. Housed OFF-CAMPUS in a Tier 3+ Iron Mountain commercial datacenter in Phoenix providing FISMA High security, in twenty APC 42U racks with CoolIT liquid-chilled doors. Phoenix: 17,000+ heterogeneous Intel cores, 128–384GB per node, three high-memory nodes at 1.5TB.",
+    "notes": "Re-verified Sept 2026 and the headline figure corrected. The old '580+ GPU accelerators' was an aggregate that no longer describes the estate: it appears to have summed Sol against the older Agave cluster, and ASU Research Computing's own documentation now states plainly that AGAVE HAS BEEN DECOMMISSIONED, with users migrated to the Iron Mountain datacenter. The current picture is Sol (over 290 GPUs) plus Phoenix (360 GPUs, public access listed as coming soon). Frontier is CONFIRMED but on a narrow basis — ASU's own wiki describes Sol as carrying A30s, 80GB A100s 'and a few H100s', so the Hopper-class presence is real but small, and the bulk of the fleet is Ampere. Access is excellent for a law faculty member: Sol is free for researchers, ASU describes AI applications as 'freely available for faculty use', and the launch framing was explicitly that Sol gives 'researchers across all disciplines' additional resources. GPU time is metered in core-hour equivalents (an A100 hour counts as 25 CHE, an A30 hour 20, a MIG slice 3) rather than billed in dollars.",
     "networks": [],
     "sources": [
-      "https://cores.research.asu.edu/research-computing/about"
-    ]
+      "https://docs.rc.asu.edu/intro",
+      "https://asurc.atlassian.net/wiki/spaces/RC/pages/1852637228/The+Sol+supercomputer",
+      "https://dl.acm.org/doi/fullHtml/10.1145/3569951.3597573",
+      "https://cores.research.asu.edu/computing-and-data-services/research-computing/capabilities/",
+      "https://www.hpcwire.com/2022/07/13/asu-launching-sol-supercomputer/"
+    ],
+    "caveat": "Frontier rests on 'a few H100s'. Sol's GPU fleet is overwhelmingly A100/A30; the H100 count is not published and ASU's capability page describes Sol as 'over 290 NVIDIA A100 GPUs' without mentioning Hopper at all. If you need H100-class hardware specifically rather than GPU access generally, confirm availability before relying on this row. Phoenix is also listed as 'public access coming soon', so its 360 GPUs may not yet be generally requestable."
   },
   {
     "state": "Arizona",
     "school": "James E. Rogers College of Law",
     "university": "University of Arizona",
     "standalone": false,
-    "tier": "frontier",
-    "tierLabel": "Frontier — H100/H200/B200 confirmed",
-    "gpu": "Multi-generation fleet incl. NVIDIA H200, A100, V100, P100 GPUs",
-    "slurm": "Yes",
-    "hpcName": "University of Arizona Research Computing (HPC: Ocelote/Puma/El Gato)",
-    "specs": "Large-memory nodes up to 3TB RAM; DDN storage arrays",
-    "notes": "Open to campus researchers; SLURM-based batch scheduling; Open OnDemand web portal",
+    "tier": "older",
+    "tierLabel": "Older-gen GPUs confirmed (V100/T4/P100/K-series/etc.)",
+    "gpu": "Currently operational: NVIDIA V100/V100S 32GB on Puma — 6 Altus XE2214GT GPU nodes with four V100S each. The H200s referenced in the previous version of this row belong to LYNX, which is not yet in service: two 8-GPU H200 nodes (16 H200 total) alongside 40 CPU-compute nodes and one 3TB high-memory node. Ocelote's 46 P100 nodes and El Gato's K20X GPUs are gone — both clusters have been decommissioned.",
+    "slurm": "Yes — Slurm across UArizona HPC clusters since July 2021",
+    "hpcName": "UArizona HPC — Puma (current); Lynx arriving late Fall 2026",
+    "specs": "Puma (Penguin Computing, 2020): 48 Altus XE2242 CPU nodes at 96 cores and 512GB RAM each, 6 GPU nodes, 2 high-memory nodes at 3TB, originally 19,200 AMD EPYC 7642 Rome cores and grown by researcher buy-in to roughly 28,950 cores, Rocky Linux 9. Housed in the Research Data Center. In FY2025 UArizona HPC supported over 300 million compute hours for 80+ departments, 500 PIs and 1,500 users; Puma passed its 10 millionth job. Lynx: assembly and installation scheduled September 2026, testing and integration to follow, public rollout expected late in the Fall semester.",
+    "notes": "RECLASSIFIED Sept 2026, frontier -> older. This is the mirror image of the Alabama error found earlier in this project. Alabama was scored 'construction' while A100s were already running; Arizona was scored 'frontier' on hardware that has not arrived. UArizona's own HPC documentation is explicit on both halves: the H200 nodes belong to Lynx, which as of this check is 'scheduled for assembly and installation in September 2026, followed by testing and integration', with public rollout expected 'sometime in late Fall semester' and no firm release date announced; meanwhile 'both El Gato and Ocelote have been decommissioned'. What a researcher can actually use today is Puma, whose GPU nodes carry V100S — which is precisely the 'older' tier definition. Access itself is very good and unchanged: HPC services are at no cost, every faculty member gets a free standard allocation of CPU time and storage, systems are open to all university faculty, staff and students, and windfall hours are available on idle capacity. THIS ROW SHOULD FLIP TO FRONTIER once Lynx is live — it is the most predictable upgrade in the dataset after Alabama's, and worth re-checking in early 2027.",
     "networks": [],
     "sources": [
-      "https://hpcdocs.hpc.arizona.edu/"
-    ]
+      "https://hpc.arizona.edu/",
+      "https://hpcdocs.hpc.arizona.edu",
+      "https://hpcdocs.static.arizona.edu/",
+      "https://uarizona.atlassian.net/wiki/spaces/UAHPC/pages/75990208/Compute+Resources",
+      "https://hpcdocs.hpc.arizona.edu/support_and_training/grants/files/University_Arizona_Cyberinfrastructure_Report.pdf"
+    ],
+    "caveat": "Announced is not operational. Sixteen H200 GPUs are coming on Lynx, but no firm release date had been published at the time of this check, and new clusters routinely slip. Do not cite Arizona as an H200 site yet. Equally, do not rely on Ocelote or El Gato documentation found elsewhere — both machines are decommissioned and their P100/K20X GPUs are no longer available."
   },
   {
     "state": "California",
@@ -450,13 +559,15 @@
     "university": "Pepperdine University",
     "standalone": false,
     "tier": "cpuonly",
-    "tierLabel": "No GPU confirmed (CPU/RAM-only HPC)",
+    "tierLabel": "No GPU confirmed (CPU/RAM-only)",
     "gpu": "None confirmed",
     "slurm": "Not confirmed",
     "hpcName": "Pepperdine IT Research Computing (small on-prem cluster)",
     "specs": "2 Cisco blades; 1TB RAM each; ~30TB storage",
-    "notes": "Small-scale, request-based on-prem system; no confirmed SLURM/GPU (R2 research institution, limited HPC compared to R1 peers)",
-    "networks": [],
+    "notes": "Small-scale, request-based on-prem system; no confirmed SLURM/GPU (R2 research institution, limited HPC compared to R1 peers) || National floor: this tier describes the PARENT INSTITUTION's own resource, not the ceiling on what a faculty member here can reach — see the NSF ACCESS note in the site header and README. That national route is tagged in this row's shared-networks field; it is not evidence about this school specifically, and the sources listed below are only those used to verify this row.",
+    "networks": [
+      "NSF ACCESS (national — any US academic institution)"
+    ],
     "sources": [
       "https://community.pepperdine.edu/it/services/research-computing.htm"
     ]
@@ -489,8 +600,10 @@
     "slurm": "No",
     "hpcName": "No dedicated on-prem SLURM/GPU HPC cluster found",
     "specs": "",
-    "notes": "Re-verified Sept 2026 — LMU has a \"Research Computing Services\" team, but its own page directs researchers to commercial cloud providers (Google Cloud, AWS via a discounted Internet2 account, CloudBank for NSF grants) rather than describing any on-premise GPU cluster. This is consulting/brokering support, not a dedicated HPC resource, so \"no HPC resource identified\" still applies — but it is a genuinely different situation from a school with no research-computing support at all.",
-    "networks": [],
+    "notes": "Re-verified Sept 2026 — LMU has a \"Research Computing Services\" team, but its own page directs researchers to commercial cloud providers (Google Cloud, AWS via a discounted Internet2 account, CloudBank for NSF grants) rather than describing any on-premise GPU cluster. This is consulting/brokering support, not a dedicated HPC resource, so \"no HPC resource identified\" still applies — but it is a genuinely different situation from a school with no research-computing support at all. || National floor: this tier describes the PARENT INSTITUTION's own resource, not the ceiling on what a faculty member here can reach — see the NSF ACCESS note in the site header and README. That national route is tagged in this row's shared-networks field; it is not evidence about this school specifically, and the sources listed below are only those used to verify this row.",
+    "networks": [
+      "NSF ACCESS (national — any US academic institution)"
+    ],
     "sources": [
       "https://its.lmu.edu/whatwedo/researchcomputing/",
       "https://its.lmu.edu/whatwedo/researchcomputing/systemmanagementcloudcomputing/"
@@ -507,8 +620,10 @@
     "slurm": "Not confirmed",
     "hpcName": "SABER1",
     "specs": "SABER1: 18 nodes (17 compute + 1 master), 288 cores, 1,088GB cluster memory, TORQUE/MOAB scheduler (not SLURM)",
-    "notes": "Re-verified Sept 2026 by following USD's own site navigation to its dedicated \"Specifications\" page (not just the FAQ) — same stale 2015/2016 SABER1 CPU-only cluster confirmed both places. Moved from \"undetailed\" to \"no GPU confirmed\" since the spec sheet is actually complete, it just doesn't include a GPU.",
-    "networks": [],
+    "notes": "Re-verified Sept 2026 by following USD's own site navigation to its dedicated \"Specifications\" page (not just the FAQ) — same stale 2015/2016 SABER1 CPU-only cluster confirmed both places. Moved from \"undetailed\" to \"no GPU confirmed\" since the spec sheet is actually complete, it just doesn't include a GPU. || National floor: this tier describes the PARENT INSTITUTION's own resource, not the ceiling on what a faculty member here can reach — see the NSF ACCESS note in the site header and README. That national route is tagged in this row's shared-networks field; it is not evidence about this school specifically, and the sources listed below are only those used to verify this row.",
+    "networks": [
+      "NSF ACCESS (national — any US academic institution)"
+    ],
     "sources": [
       "https://sites.sandiego.edu/hpc/faq/",
       "https://sites.sandiego.edu/hpc/technical-specifications/"
@@ -526,8 +641,10 @@
     "slurm": "No",
     "hpcName": "No dedicated institution-wide HPC/SLURM resource found",
     "specs": "",
-    "notes": "Re-verified Sept 2026 with a search explicitly excluding UCSF (the much larger, unrelated UC San Francisco medical campus, which otherwise dominates search results for this name) — USF is a private Jesuit university, master's-focused in CS (no PhD program), and no shared campus HPC/GPU cluster was found on its CS faculty pages or elsewhere.",
-    "networks": [],
+    "notes": "Re-verified Sept 2026 with a search explicitly excluding UCSF (the much larger, unrelated UC San Francisco medical campus, which otherwise dominates search results for this name) — USF is a private Jesuit university, master's-focused in CS (no PhD program), and no shared campus HPC/GPU cluster was found on its CS faculty pages or elsewhere. || National floor: this tier describes the PARENT INSTITUTION's own resource, not the ceiling on what a faculty member here can reach — see the NSF ACCESS note in the site header and README. That national route is tagged in this row's shared-networks field; it is not evidence about this school specifically, and the sources listed below are only those used to verify this row.",
+    "networks": [
+      "NSF ACCESS (national — any US academic institution)"
+    ],
     "sources": [
       "https://www.usfca.edu/arts-sciences/programs/graduate/computer-science/faculty",
       "https://en.wikipedia.org/wiki/University_of_San_Francisco"
@@ -544,8 +661,10 @@
     "slurm": "No",
     "hpcName": "No dedicated public HPC/SLURM resource found",
     "specs": "",
-    "notes": "Re-verified Sept 2026 — \"Pacific Technology\" (the university's IT department) explicitly describes itself as focused on wireless, classroom tech, and student computer labs (16 PCs, 4 Macs in the library); no shared research-computing or HPC resource found even on the School of Engineering and Computer Science pages.",
-    "networks": [],
+    "notes": "Re-verified Sept 2026 — \"Pacific Technology\" (the university's IT department) explicitly describes itself as focused on wireless, classroom tech, and student computer labs (16 PCs, 4 Macs in the library); no shared research-computing or HPC resource found even on the School of Engineering and Computer Science pages. || National floor: this tier describes the PARENT INSTITUTION's own resource, not the ceiling on what a faculty member here can reach — see the NSF ACCESS note in the site header and README. That national route is tagged in this row's shared-networks field; it is not evidence about this school specifically, and the sources listed below are only those used to verify this row.",
+    "networks": [
+      "NSF ACCESS (national — any US academic institution)"
+    ],
     "sources": [
       "https://www.pacific.edu/about-pacific/administrative-offices/pacific-technology",
       "https://www.pacific.edu/engineering"
@@ -562,8 +681,10 @@
     "slurm": "No",
     "hpcName": "None found",
     "specs": "",
-    "notes": "Re-verified Sept 2026 — GGU is a small, professional-graduate-focused institution (business, law, taxation, psychology; founded 1901) with no STEM PhD programs. Its \"Applied and Agentic AI\" doctorate is a practice-oriented professional program for working technologists, not a research lab; no shared HPC/GPU infrastructure found anywhere.",
-    "networks": [],
+    "notes": "Re-verified Sept 2026 — GGU is a small, professional-graduate-focused institution (business, law, taxation, psychology; founded 1901) with no STEM PhD programs. Its \"Applied and Agentic AI\" doctorate is a practice-oriented professional program for working technologists, not a research lab; no shared HPC/GPU infrastructure found anywhere. || National floor: this tier describes the PARENT INSTITUTION's own resource, not the ceiling on what a faculty member here can reach — see the NSF ACCESS note in the site header and README. That national route is tagged in this row's shared-networks field; it is not evidence about this school specifically, and the sources listed below are only those used to verify this row.",
+    "networks": [
+      "NSF ACCESS (national — any US academic institution)"
+    ],
     "sources": [
       "https://catalog.ggu.edu/preview_program.php?catoid=9&poid=886",
       "https://ggu.edu/programs/applied-and-agentic-ai-dtech/"
@@ -580,8 +701,10 @@
     "slurm": "",
     "hpcName": "",
     "specs": "",
-    "notes": "RECLASSIFIED Sept 2026 — despite carrying the \"University of California\" name, UC Law SF (formerly Hastings) is not directly controlled by the UC Board of Regents and does not share a campus, governance, or infrastructure with any other UC campus; it was chartered in 1878 as an unusually autonomous entity within the UC system. This is structurally closer to this directory's standalone schools than to a law school with a true shared-resource parent university, so it moves there rather than staying in \"no resource identified,\" which implied a parent university that simply hadn't been checked thoroughly. UC Law SF does partner with UCSF, Berkeley, Davis, and UC Santa Cruz on specific joint-degree programs, but no evidence found that this extends to shared HPC/GPU infrastructure.",
-    "networks": [],
+    "notes": "RECLASSIFIED Sept 2026 — despite carrying the \"University of California\" name, UC Law SF (formerly Hastings) is not directly controlled by the UC Board of Regents and does not share a campus, governance, or infrastructure with any other UC campus; it was chartered in 1878 as an unusually autonomous entity within the UC system. This is structurally closer to this directory's standalone schools than to a law school with a true shared-resource parent university, so it moves there rather than staying in \"no resource identified,\" which implied a parent university that simply hadn't been checked thoroughly. UC Law SF does partner with UCSF, Berkeley, Davis, and UC Santa Cruz on specific joint-degree programs, but no evidence found that this extends to shared HPC/GPU infrastructure. || National floor: this tier describes the PARENT INSTITUTION's own resource, not the ceiling on what a faculty member here can reach — see the NSF ACCESS note in the site header and README. That national route is tagged in this row's shared-networks field; it is not evidence about this school specifically, and the sources listed below are only those used to verify this row.",
+    "networks": [
+      "NSF ACCESS (national — any US academic institution)"
+    ],
     "sources": [
       "https://www.magnifiedmedia.net/uc-hastings-college-of-the-law/",
       "https://www.uclawsf.edu/"
@@ -628,16 +751,20 @@
     "standalone": false,
     "tier": "frontier",
     "tierLabel": "Frontier — H100/H200/B200 confirmed",
-    "gpu": "NVIDIA A100 80GB, H200 (80 cards, 140GB VRAM each) on Bouchet; various GPUs on Grace/McCleary/Milgram",
-    "slurm": "Yes",
-    "hpcName": "Yale Center for Research Computing (YCRC) - Grace/Bouchet/McCleary/Milgram clusters",
-    "specs": "Bouchet: 4000+ liquid-cooled cores growing; multiple PB storage across clusters",
-    "notes": "Grace serves Faculty of Arts & Sciences 'and a number of professional schools'; Priority Tier available; Open OnDemand portal",
+    "gpu": "80 NVIDIA H200 GPUs on Bouchet plus 48 A5000 Ada, with a b200 Slurm constraint also documented on the Bouchet gpu partition; 32 H200 on Hopper (for NIST 800-171 / HIPAA / sensitive data); 12 H100 on Milgram. A100 80GB, L40S, RTX 5000 Ada and A5000 cards appear across partitions. All YCRC GPU nodes carry four GPUs except the H200 nodes, which carry eight.",
+    "slurm": "Yes — Slurm across all YCRC clusters, with a Priority Tier 'fast-lane' since Dec 2024",
+    "hpcName": "Yale Center for Research Computing (YCRC) — Bouchet (primary), Hopper, Milgram, Misha",
+    "specs": "Bouchet: ~10,000 direct-liquid-cooled cores at MGHPCC, growing. Multiple PB of shared storage. Open OnDemand web portal.",
+    "notes": "UPDATED Sept 2026 — the cluster lineup has changed materially and the old row was going stale. Grace and McCleary are being decommissioned in 2026 and have been replaced by Bouchet, YCRC's first installation at the MGHPCC datacenter in Holyoke; new Grace accounts are now only approved for groups with dedicated nodes. Bouchet opened to all Yale researchers in July 2025 and is the general-purpose cluster for low-risk data, which is the relevant one for a law faculty member. The 80 H200 GPUs came from the Provost's AI Initiative following an AI Task Force recommendation that the university invest in high-end GPUs, so further expansion is likely. Anyone re-checking this row should look at Bouchet, not Grace.",
     "networks": [
       "MGHPCC (Massachusetts consortium)"
     ],
     "sources": [
-      "https://research.computing.yale.edu/services/support-high-performance-computing"
+      "https://docs.ycrc.yale.edu/news",
+      "https://docs.ycrc.yale.edu/clusters/bouchet/",
+      "https://docs.ycrc.yale.edu/ai/resources/",
+      "https://research.computing.yale.edu/ycrc-computing-systems",
+      "https://docs.ycrc.yale.edu/clusters/grace/"
     ]
   },
   {
@@ -669,8 +796,10 @@
     "slurm": "No",
     "hpcName": "None found",
     "specs": "",
-    "notes": "Re-verified Sept 2026 — Quinnipiac has an active School of Computing & Engineering with AI/CS research faculty, but its ITS pages describe only standard enterprise services (helpdesk, wifi, print) with no research-computing or HPC/GPU cluster page found across two search angles.",
-    "networks": [],
+    "notes": "Re-verified Sept 2026 — Quinnipiac has an active School of Computing & Engineering with AI/CS research faculty, but its ITS pages describe only standard enterprise services (helpdesk, wifi, print) with no research-computing or HPC/GPU cluster page found across two search angles. || National floor: this tier describes the PARENT INSTITUTION's own resource, not the ceiling on what a faculty member here can reach — see the NSF ACCESS note in the site header and README. That national route is tagged in this row's shared-networks field; it is not evidence about this school specifically, and the sources listed below are only those used to verify this row.",
+    "networks": [
+      "NSF ACCESS (national — any US academic institution)"
+    ],
     "sources": [
       "https://www.qu.edu/academics/about-our-programs/areas-of-interest/computing-and-technology/",
       "https://www.qu.edu/schools/engineering/faculty-and-staff/"
@@ -687,13 +816,15 @@
     "slurm": "Yes",
     "hpcName": "HPC@GU (Google Cloud Platform-based)",
     "specs": "Cloud-based elastic compute/storage",
-    "notes": "GCP-based (elastic), open to all Georgetown faculty/staff as PIs, SLURM confirmed. Re-verified Sept 2026: the \"Current Clusters\" and \"How to Use GPU Resources\" pages both exist but are embedded Google Docs gated behind Georgetown NetID login (\"contents are restricted to Georgetown University members\") — genuinely not publicly readable, not a case of under-research. Because it's GCP-based, the actual GPU family in use could be anything GCP offers (T4 through H100) and isn't confirmable from outside the institution.",
+    "notes": "Re-verified Sept 2026 — 'unspecified' is CORRECT, and the reason is worth recording rather than leaving as a shrug. Georgetown runs HPC@GU on Google Cloud Platform, and the access position is unusually good: HPC@GU states that ALL faculty or staff doing research at Georgetown University are eligible for access as Principal Investigators, with other users authorised through an associated PI. That phrasing is university-wide and not discipline-limited, so a Law Center faculty member qualifies on its face. The GPU model cannot be confirmed because the cluster specification pages are themselves access-restricted: HPC@GU states its contents are restricted to Georgetown University members and require a NetID sign-in, so the Current Clusters page returns nothing to an outside reader. This is therefore a documented 'cannot be determined publicly', not an unchecked row — confirming the hardware would need a Georgetown login or a direct question to UIS Research Technologies. Separately, Georgetown's Massive Data Institute provides Google and Microsoft cloud infrastructure specifically for faculty research related to public policy, including Spark clusters, Linux servers, private servers and BigQuery — a route that is unusually well aligned with empirical legal scholarship.",
     "networks": [],
     "sources": [
       "https://hpc.georgetown.edu/",
       "https://hpc.georgetown.edu/current-clusters",
-      "https://hpc.georgetown.edu/how-to-run-jobs-slurm/how-to-use-gpu-resources"
-    ]
+      "https://mdi.georgetown.edu/resources-and-training/enabling-research/compute/",
+      "https://uis.georgetown.edu/research/"
+    ],
+    "caveat": "Cloud-based and quota-metered, with hardware unverifiable from outside. HPC@GU runs on GCP rather than an on-premises cluster, and the site points to Current Allocation and Overage Rates, so costs can be incurred above an allocation. Because the specification pages are behind Georgetown authentication, no public source establishes the GPU generation available — treat any assumption about A100/H100-class hardware here as unverified."
   },
   {
     "state": "District of Columbia",
@@ -758,8 +889,10 @@
     "slurm": "No",
     "hpcName": "None found",
     "specs": "",
-    "notes": "Re-verified Sept 2026 — CUA's central Technology Services is thoroughly documented but is enterprise/administrative IT (network, virtualization for instructional use, helpdesk); its own infrastructure page explicitly says it \"provides guidance to schools and academic departments needing to run servers... for research purposes\" rather than describing a central shared HPC/GPU cluster — meaning any research computing at CUA is decentralized/departmental, not a shared resource this directory can point to.",
-    "networks": [],
+    "notes": "Re-verified Sept 2026 — CUA's central Technology Services is thoroughly documented but is enterprise/administrative IT (network, virtualization for instructional use, helpdesk); its own infrastructure page explicitly says it \"provides guidance to schools and academic departments needing to run servers... for research purposes\" rather than describing a central shared HPC/GPU cluster — meaning any research computing at CUA is decentralized/departmental, not a shared resource this directory can point to. || National floor: this tier describes the PARENT INSTITUTION's own resource, not the ceiling on what a faculty member here can reach — see the NSF ACCESS note in the site header and README. That national route is tagged in this row's shared-networks field; it is not evidence about this school specifically, and the sources listed below are only those used to verify this row.",
+    "networks": [
+      "NSF ACCESS (national — any US academic institution)"
+    ],
     "sources": [
       "https://technology.catholic.edu/services/infrastructure.html",
       "https://technology.catholic.edu/about/whatwedo.html"
@@ -776,8 +909,10 @@
     "slurm": "No",
     "hpcName": "None found",
     "specs": "",
-    "notes": "Re-verified Sept 2026 across two angles (central IT services, and the School of Engineering & Applied Sciences' PhD in Computer Science and Engineering page) — UDC does have real doctoral CS/engineering research, but no shared campus HPC or GPU cluster is described anywhere; IT services are enterprise-only (helpdesk, network, Banner).",
-    "networks": [],
+    "notes": "Re-verified Sept 2026 across two angles (central IT services, and the School of Engineering & Applied Sciences' PhD in Computer Science and Engineering page) — UDC does have real doctoral CS/engineering research, but no shared campus HPC or GPU cluster is described anywhere; IT services are enterprise-only (helpdesk, network, Banner). || National floor: this tier describes the PARENT INSTITUTION's own resource, not the ceiling on what a faculty member here can reach — see the NSF ACCESS note in the site header and README. That national route is tagged in this row's shared-networks field; it is not evidence about this school specifically, and the sources listed below are only those used to verify this row.",
+    "networks": [
+      "NSF ACCESS (national — any US academic institution)"
+    ],
     "sources": [
       "https://www.udc.edu/about/administration/it/about-our-services/",
       "https://www.udc.edu/seas/phd-in-computer-science-and-engineering/"
@@ -790,14 +925,16 @@
     "standalone": false,
     "tier": "frontier",
     "tierLabel": "Frontier — H100/H200/B200 confirmed",
-    "gpu": "504 NVIDIA B200 GPUs; 600 NVIDIA L4 GPUs; A100 GPUs (8/DGX node); RTX6000 GPUs",
+    "gpu": "504 NVIDIA B200 'Blackwell' GPUs — 63 NVIDIA DGX B200 nodes at 8 GPUs each, forming the first DGX B200 SuperPOD at a US university. Also 600 NVIDIA L4 GPUs and A100/RTX6000 cards elsewhere in HiPerGator.",
     "slurm": "Yes",
     "hpcName": "HiPerGator (UFIT Research Computing)",
     "specs": "~60,000 CPU cores (HPG4); 11PB all-flash parallel filesystem",
-    "notes": "One of the largest academic HPC systems in the US (NVIDIA-partnered); open to UF faculty and Florida colleges/universities; free for teaching, paid tiers for research",
+    "notes": "Re-verified Sept 2026 and the headline number checks out exactly: 63 DGX B200 nodes x 8 GPUs = 504 Blackwell GPUs, a $33M upgrade unveiled at UF East Campus on 14 October 2025 after an early-access phase from June 2025. Note one nuance for anyone updating this row: the B200 SuperPOD REPLACED the 2020-era NVIDIA DGX A100 'Ampere' SuperPOD rather than adding to it, so A100 references should be read as applying to other parts of HiPerGator, not the SuperPOD. UF reports 8,000+ users and 33 million research requests in a year, with more than 60% of university research projects relying on HiPerGator. Access is open to UF faculty across every academic discipline, free for teaching with paid tiers for research.",
     "networks": [],
     "sources": [
-      "https://www.it.ufl.edu/research-computing/"
+      "https://www.hpcwire.com/off-the-wire/university-of-florida-expands-ai-leadership-with-new-hipergator-blackwell-supercomputer/",
+      "https://news.ufl.edu/2025/05/the-fourth-generation-model-of-ufs-hipergator/",
+      "https://news.ufl.edu/2025/01/fastest-academic-supercomputer-arrives-at-uf/"
     ]
   },
   {
@@ -846,14 +983,17 @@
     "standalone": false,
     "tier": "older",
     "tierLabel": "Older-gen GPUs confirmed (V100/T4/P100/K-series/etc.)",
-    "gpu": "NVIDIA Tesla V100 (2/node) on Triton (IBM Power9 system)",
+    "gpu": "NVIDIA Tesla V100 (Volta), 2 per node, across 96 IBM Power Systems AC922 nodes on Triton",
     "slurm": "Not confirmed",
     "hpcName": "Frost Institute for Data Science & Computing (IDSC) - Pegasus + Triton clusters",
-    "specs": "73+ compute nodes (Pegasus)",
-    "notes": "Shared among all authorized UM users; scheduler type not explicitly confirmed as SLURM in public docs",
+    "specs": "Triton: 96 AC922 nodes, each with two 20-core POWER9 processors and two V100 GPUs; Red Hat Enterprise Linux 8.6. Pegasus: 340 iDataPlex nodes (Intel Xeon E5-2670), later augmented with 1,024 cores and 6TB memory plus 1PB IBM ESS storage — CPU-only. 10+ PB high-performance storage; 500+ users. Hosted at the NAP of the Americas datacenter in downtown Miami.",
+    "notes": "Re-verified Sept 2026 — 'older' is CORRECT and was worth confirming rather than assuming decay. IDSC's current cluster documentation still lists Triton as IBM Power9 with NVIDIA Tesla V100 GPUs at 2 per node, and Pegasus remains a CPU-only Intel Xeon system. Triton was rated a top-5 US academic institution supercomputer at purchase in 2019 and was UM's first GPU-accelerated HPC system, but it has not been refreshed to Ampere or Hopper class. IDSC references a 'planned investment' to enhance its infrastructure, so this row is a good candidate for re-checking. Access is by IDSC account with per-service-unit charging; the scheduler is still not named as Slurm in public docs.",
     "networks": [],
     "sources": [
-      "https://hpc.idsc.miami.edu/"
+      "https://acs-docs.readthedocs.io/clusters/general-usage/1-intro.html",
+      "https://idsc.miami.edu/magazine/enhancing-the-universitys-computing-capabilities/",
+      "https://idsc.miami.edu/triton/",
+      "https://it-resources.research.miami.edu/services/high-performance-computing/index.html"
     ]
   },
   {
@@ -885,8 +1025,10 @@
     "slurm": "No",
     "hpcName": "None found",
     "specs": "",
-    "notes": "Re-verified Sept 2026 — Barry's CS program is undergraduate-focused with a teaching lab described explicitly as \"virtual machine-based computer security simulation, 3D printing, Linux and Windows servers\" — no GPU/HPC. Law school's own technology page describes only a Windows computer lab and library printing/copying.",
-    "networks": [],
+    "notes": "Re-verified Sept 2026 — Barry's CS program is undergraduate-focused with a teaching lab described explicitly as \"virtual machine-based computer security simulation, 3D printing, Linux and Windows servers\" — no GPU/HPC. Law school's own technology page describes only a Windows computer lab and library printing/copying. || National floor: this tier describes the PARENT INSTITUTION's own resource, not the ceiling on what a faculty member here can reach — see the NSF ACCESS note in the site header and README. That national route is tagged in this row's shared-networks field; it is not evidence about this school specifically, and the sources listed below are only those used to verify this row.",
+    "networks": [
+      "NSF ACCESS (national — any US academic institution)"
+    ],
     "sources": [
       "https://www.barry.edu/en/academics/arts-and-sciences/break-through-in-computer-science/",
       "https://www.barry.edu/en/academics/law/technology/"
@@ -903,8 +1045,10 @@
     "slurm": "No",
     "hpcName": "None found",
     "specs": "",
-    "notes": "Re-verified Sept 2026 — STU's AI initiatives (AiREN, Digital Education Council membership) are explicitly ethics/policy focused, not technical infrastructure; small (~6,000 student) teaching-focused Catholic university with no evidence of research-computing infrastructure anywhere.",
-    "networks": [],
+    "notes": "Re-verified Sept 2026 — STU's AI initiatives (AiREN, Digital Education Council membership) are explicitly ethics/policy focused, not technical infrastructure; small (~6,000 student) teaching-focused Catholic university with no evidence of research-computing infrastructure anywhere. || National floor: this tier describes the PARENT INSTITUTION's own resource, not the ceiling on what a faculty member here can reach — see the NSF ACCESS note in the site header and README. That national route is tagged in this row's shared-networks field; it is not evidence about this school specifically, and the sources listed below are only those used to verify this row.",
+    "networks": [
+      "NSF ACCESS (national — any US academic institution)"
+    ],
     "sources": [
       "https://www.stu.edu/stuai/",
       "https://www.stu.edu/science/research/"
@@ -921,8 +1065,10 @@
     "slurm": "No",
     "hpcName": "None found",
     "specs": "",
-    "notes": "Re-verified Sept 2026 — Stetson's IT department operates only general-access teaching computer labs (Windows 10, standard software); Computer Science is undergraduate-only with a career-prep focus rather than a PhD research program. No HPC/GPU infrastructure found.",
-    "networks": [],
+    "notes": "Re-verified Sept 2026 — Stetson's IT department operates only general-access teaching computer labs (Windows 10, standard software); Computer Science is undergraduate-only with a career-prep focus rather than a PhD research program. No HPC/GPU infrastructure found. || National floor: this tier describes the PARENT INSTITUTION's own resource, not the ceiling on what a faculty member here can reach — see the NSF ACCESS note in the site header and README. That national route is tagged in this row's shared-networks field; it is not evidence about this school specifically, and the sources listed below are only those used to verify this row.",
+    "networks": [
+      "NSF ACCESS (national — any US academic institution)"
+    ],
     "sources": [
       "https://www.stetson.edu/administration/information-technology/computer-labs/",
       "https://www.stetson.edu/other/academics/undergraduate/computer-science.php"
@@ -1014,8 +1160,10 @@
     "slurm": "No",
     "hpcName": "None found",
     "specs": "",
-    "notes": "Re-verified Sept 2026 across two search angles — Mercer IT is entirely enterprise/administrative (helpdesk, MyMercer, Workday, teaching computer labs); the \"Computational Science\" academic track name suggested a possible research center, but no dedicated HPC/GPU infrastructure was found associated with it.",
-    "networks": [],
+    "notes": "Re-verified Sept 2026 across two search angles — Mercer IT is entirely enterprise/administrative (helpdesk, MyMercer, Workday, teaching computer labs); the \"Computational Science\" academic track name suggested a possible research center, but no dedicated HPC/GPU infrastructure was found associated with it. || National floor: this tier describes the PARENT INSTITUTION's own resource, not the ceiling on what a faculty member here can reach — see the NSF ACCESS note in the site header and README. That national route is tagged in this row's shared-networks field; it is not evidence about this school specifically, and the sources listed below are only those used to verify this row.",
+    "networks": [
+      "NSF ACCESS (national — any US academic institution)"
+    ],
     "sources": [
       "https://it.mercer.edu/",
       "https://liberalarts.mercer.edu/academic-programs/majors-and-minors/information-science-and-technology/"
@@ -1026,19 +1174,24 @@
     "school": "William S. Richardson School of Law",
     "university": "University of Hawaii",
     "standalone": false,
-    "tier": "frontier",
-    "tierLabel": "Frontier — H100/H200/B200 confirmed",
-    "gpu": "148 GPUs (NVIDIA RTX 2070 through L40, plus H100 condo additions)",
-    "slurm": "Yes",
+    "tier": "modern",
+    "tierLabel": "Modern — A100/A40/L40-class confirmed",
+    "gpu": "Roughly 147-148 GPUs across 22 GPU nodes, spanning NVIDIA GeForce RTX 2070 at the low end up to NVIDIA L40 at the high end — an Ada Lovelace ceiling, not a Hopper one. Two H100 GPUs do exist on Koa, but they arrived as part of a five-node researcher condo purchase rather than as community hardware. Note published GPU counts drift with condo additions: 139 (late 2023), 148 (post-CC* upgrade), 147 (current cluster wiki).",
+    "slurm": "Yes — Slurm Workload Manager with a fair-share algorithm; Open OnDemand available alongside ssh",
     "hpcName": "Koa HPC Cluster (formerly Mana) - ITS Cyberinfrastructure",
-    "specs": "~275-298 nodes; 53-62TB aggregate RAM; 6+PB storage",
-    "notes": "Free for all active UH faculty/staff/students across all 10 UH campuses (incl. Richardson School of Law); condo model for priority",
+    "specs": "275-295 nodes, 7,683-9,312 cores spanning Intel Ivy Bridge through Sapphire Rapids and AMD EPYC Milan, 53-62TB aggregate RAM, 6PB+ storage. Fully online 8 December 2023, succeeding the Mana cluster deployed in late 2014, whose components were folded in. Funded by the University, an NSF MRI award (#1920304) and two NSF CC* awards (#2201428, #2232862) totalling $900,000. Storage: 50GB per user home, 500GB free per lab, Cray ClusterStor E1000 flash scratch, KoaStore Lustre. Heterogeneous networking — all nodes 1GbE, 7 at 25GbE, the newest 76 on HDR100 InfiniBand. Managed with open-source xCAT. UH is also a regional Jetstream 2 host site.",
+    "notes": "RECLASSIFIED Sept 2026, frontier -> modern. The row's '148 GPUs' headline is CORRECT and verified in three places including a peer-reviewed ACM paper by the Koa architects — but the tier drawn from it was not. The same paper states the fleet runs 'from Nvidia GeForce RTX 2070 up to Nvidia Tesla L40 GPUs', and L40 is Ada Lovelace, which this project's own tier table places in 'modern', not 'frontier'. The only Hopper hardware found is two H100s included in a five-node condo purchase by a researcher. That is real but it is not a community H100 resource, so scoring the whole row frontier overstated what a law faculty member would find. Access itself is excellent and unchanged: Koa is free to all active UH faculty, staff and students across all ten campuses, supports over 90 disciplines, and needs only a self-paced onboarding to get an account. Community users get uninterrupted access to the 215 University-owned machines and can also run on the 130 PI-owned condo nodes when idle, subject to preemption — which is the only route to those two H100s. Worth noting UH ITS Research Cyberinfrastructure explicitly offers to help researchers apply for national ACCESS allocations, making it one of the few universities in this dataset that actively signposts the national floor.",
     "networks": [
       "University of Hawaii System (Koa)"
     ],
     "sources": [
-      "https://datascience.hawaii.edu/about-koa/"
-    ]
+      "https://dl.acm.org/doi/fullHtml/10.1145/3626203.3670611",
+      "https://datascience.hawaii.edu/facilities/",
+      "https://uhawaii.atlassian.net/wiki/spaces/HPC/pages/429752517",
+      "https://datascience.hawaii.edu/about-koa/",
+      "https://uhawaii.atlassian.net/wiki/spaces/HPC/pages/1073840152/"
+    ],
+    "caveat": "Condo nodes are preemptible, and GPUs are scarce. The 130 PI-owned nodes — including the two H100s — are available to community users only when idle and jobs there can be preempted. UH states directly that 'due to the limited supply of GPUs in Koa, we do not currently lease GPU nodes', so buying guaranteed GPU capacity is not currently an option either. Also note sensitive or regulated data cannot be stored on Koa's standard storage — relevant for law faculty working with confidential case or client material."
   },
   {
     "state": "Idaho",
@@ -1071,14 +1224,17 @@
     "standalone": false,
     "tier": "frontier",
     "tierLabel": "Frontier — H100/H200/B200 confirmed",
-    "gpu": "200 NVIDIA GPU cards: A100 (80GB SXM4/40GB PCIe) and H100 (80GB SXM) in General Access, plus dedicated buy-in GPUs",
+    "gpu": "269 NVIDIA GPU cards across 91 GPU nodes (General Access + Priority Access combined); 200 of those cards are available to General Access users. General Access GPU nodes: 24 nodes x 4 H100 SXM (80GB), 18 nodes x 4 A100 SXM (80GB), 16 nodes x 2 A100 PCIe (40GB).",
     "slurm": "Yes",
     "hpcName": "Quest High-Performance Computing Cluster",
-    "specs": "1200+ nodes; 80,000+ cores; 12PB GPFS storage (IBM ESS)",
-    "notes": "No-cost General Access to GPUs for all researchers incl. professional schools; buy-in for dedicated priority GPUs; 3000+ researchers/year -- matches the example cited in the request",
+    "specs": "1,200+ compute nodes, 80,000+ cores, 7 login nodes, 22 high-memory nodes; Red Hat Enterprise Linux 8.10; InfiniBand HDR; newest nodes are Intel Emerald Rapids Xeon Platinum 8592+. Serves 3,000+ researchers per year.",
+    "notes": "Re-verified Sept 2026 and corrected upward. The previous '200 GPU cards' figure was the General Access subset; Quest's own technical specifications page gives 269 GPU cards on 91 GPU nodes in total. Access is favourable for a law faculty member: Northwestern provides dedicated Quest resources for the entire Northwestern research community at no cost, with roughly half the CPU and most of the GPU nodes reserved for General Access, allocated for one year and renewable. The Genomics Compute Cluster on the same infrastructure is separately open to researchers 'from any Northwestern school'. Short jobs under 4 hours can also backfill onto reserved capacity. This is the Quest example named in the site's own footer.",
     "networks": [],
     "sources": [
-      "https://www.it.northwestern.edu/departments/it-services-support/research/computing/quest/"
+      "https://www.it.northwestern.edu/departments/it-services-support/research/computing/quest/specs.html",
+      "https://www.it.northwestern.edu/departments/it-services-support/research/computing/quest/",
+      "https://www.it.northwestern.edu/departments/it-services-support/research/computing/gpu/",
+      "https://rcdsdocs.it.northwestern.edu/systems/quest/user-guide/gpu/gpu.html"
     ]
   },
   {
@@ -1158,15 +1314,19 @@
     "school": "Chicago-Kent College of Law",
     "university": "Illinois Institute of Technology",
     "standalone": false,
-    "tier": "none",
-    "tierLabel": "No HPC resource identified",
+    "tier": "undetailed",
+    "tierLabel": "HPC exists, GPU support not publicly detailed",
     "gpu": "",
-    "slurm": "No",
-    "hpcName": "No central university-wide HPC service confirmed",
-    "specs": "",
-    "notes": "HPC is a CS research specialty area at IIT (joint Argonne appointments) rather than a confirmed shared campus service open to all faculty",
+    "slurm": "Not confirmed",
+    "hpcName": "Ocient Computational Center (CS dept); Active Computational Thinking (ACT) Center",
+    "specs": "Not published — no node, core or GPU counts on Illinois Tech's public pages",
+    "notes": "RECLASSIFIED Sept 2026 (was 'none'). Illinois Tech's College of Computing does operate real computational infrastructure: the Ocient Computational Center is described as housing the backbone of the computer science department, containing the networks, architecture and servers behind its AI, cloud computing and HPC teaching and research. Separately, the Active Computational Thinking (ACT) Center is described as a campus hub that works to physically connect Illinois Tech to regional and national computing facilities and research networks. HPC is also a named CS research area, reinforced by joint faculty appointments with Argonne National Laboratory. Moved off 'none' because a genuine computational center exists; kept at 'undetailed' rather than a GPU tier because nothing public names GPU models or a scheduler, and see the caveat on who can actually use it.",
     "networks": [],
-    "sources": []
+    "sources": [
+      "https://www.iit.edu/computing/research/research-centers",
+      "https://www.iit.edu/computer-science/research/research-areas/high-performance-and-parallel-computing"
+    ],
+    "caveat": "Department-level, not confirmed campus-wide. The Ocient Computational Center is described as CS-department infrastructure, and the Argonne tie is a faculty-appointment relationship rather than a general access route. No public page establishes that a Chicago-Kent law faculty member could request an account. Treat as unconfirmed for law until someone checks with Illinois Tech OTS."
   },
   {
     "state": "Illinois",
@@ -1302,9 +1462,15 @@
     "slurm": "No",
     "hpcName": "None found",
     "specs": "",
-    "notes": "No public research computing center identified",
-    "networks": [],
-    "sources": []
+    "notes": "Re-verified Sept 2026 against both the central-IT and department angles — the pattern that caught Creighton's cluster. Neither turned anything up. Drake ITS is enterprise support (passwords, software downloads, classroom response, a service portal and support centre) with no research-computing service, no cluster, no scheduler and no account-request path. The Department of Mathematics and Computer Science is undergraduate-focused; its published research is student-led group work (VR apps, game development, data mining of tweets, robotics in Collier-Scripps Hall) of a kind that runs on workstations. No HPC resource found. || National floor: this tier describes the PARENT INSTITUTION's own resource, not the ceiling on what a faculty member here can reach — see the NSF ACCESS note in the site header and README. That national route is tagged in this row's shared-networks field; it is not evidence about this school specifically, and the sources listed below are only those used to verify this row.",
+    "networks": [
+      "NSF ACCESS (national — any US academic institution)"
+    ],
+    "sources": [
+      "https://www.drake.edu/its/facstaff/",
+      "https://www.drake.edu/cs/research/",
+      "https://www.drake.edu/cs/about/"
+    ]
   },
   {
     "state": "Kansas",
@@ -1328,15 +1494,21 @@
     "school": "Washburn University School of Law",
     "university": "Washburn University",
     "standalone": false,
-    "tier": "none",
-    "tierLabel": "No HPC resource identified",
-    "gpu": "",
-    "slurm": "No",
-    "hpcName": "None found",
-    "specs": "",
-    "notes": "No public research computing center identified",
-    "networks": [],
-    "sources": []
+    "tier": "cpuonly",
+    "tierLabel": "No GPU confirmed (CPU/RAM-only)",
+    "gpu": "None — the published hardware inventory is entirely CPU; no GPU of any generation is listed",
+    "slurm": "Not confirmed — no scheduler named in the public documentation",
+    "hpcName": "HiPACE — High-Performance Academic Computing Environment (Natural Sciences Division)",
+    "specs": "Three parts: (1) a cluster with a master node and 34 compute nodes, each with two dual-core Opteron processors and 4GB RAM; (2) an SMP system of 8 dual-core Opterons (16 cores) with 64GB RAM for large-memory jobs; (3) a 12TB file system. Paired gigabit Ethernet per machine, one for data and one for control. All nodes run OpenSuSE Linux 10.2.",
+    "notes": "RECLASSIFIED Sept 2026, none -> cpuonly. Washburn DOES have a named research-computing resource, which the previous 'none' missed: HiPACE, the High-Performance Academic Computing Environment, operated and administered by faculty and students primarily in Washburn's Natural Sciences Division, with its own site at hipace.washburn.edu. Its stated mission is to enrich science and technology education for Washburn students and enhance the capabilities of faculty, staff and community members. BUT READ THE SPECS BEFORE GETTING EXCITED — and this is exactly why the row is 'cpuonly' rather than 'undetailed'. The hardware is fully enumerated on the public page and contains no GPU at all: dual-core Opterons with 4GB of RAM per node. HiPACE was funded by a Washburn Innovation Grant covering 2006 to 2009, and the nodes are documented as running OpenSuSE Linux 10.2, a release that reached end of life in 2008. So this is a genuine resource on paper but an eighteen-year-old CPU cluster on an unsupported OS. A fast pass that saw the words 'high-performance computing system' and stopped there would have upgraded this row wrongly; reading the actual specification page is what produced the correct tier.",
+    "networks": [
+      "NSF ACCESS (national — any US academic institution)"
+    ],
+    "sources": [
+      "https://hipace.washburn.edu/hipace/home.php",
+      "https://www.washburn.edu/academics/college-schools/arts-sciences/computer-information-sciences/index.html"
+    ],
+    "caveat": "Possibly dormant, and CPU-only regardless. The public documentation describes 2006-2009 funding and an operating system that went end-of-life in 2008, with no evidence of subsequent refresh. Before relying on this row, confirm with the HiPACE Steering Committee that the system is still running. Even if it is, there is no GPU here — a law faculty member with an AI or machine-learning workload would need a different resource."
   },
   {
     "state": "Kentucky",
@@ -1364,14 +1536,15 @@
     "standalone": false,
     "tier": "frontier",
     "tierLabel": "Frontier — H100/H200/B200 confirmed",
-    "gpu": "NVIDIA H200 and H100 GPUs (flagship CRC); V100 GPUs (BDAP)",
+    "gpu": "UofL ITS describes its flagship HPC system as featuring NVIDIA H200 and H100 GPUs alongside AMD CPUs. The most concretely confirmed Hopper hardware is LARCC (Louisville Academic Research Compute Cluster), NSF CC*-funded, delivering twenty NVIDIA H100 GPUs, which ITS states is ready for use by researchers. A further DGX H200 platform is a separate $3.8M investment described as under development.",
     "slurm": "Not confirmed",
-    "hpcName": "Cardinal Research Cluster (CRC) + BDAP + Zurada + LARCC",
-    "specs": "High-memory nodes up to 6TB; ~5PB CARDS storage",
-    "notes": "Free to all UofL-affiliated faculty, students, and staff",
+    "hpcName": "Cardinal Research Cluster (CRC) + LARCC + CARDS — ITS Research Computing",
+    "specs": "High-memory compute nodes at 6TB, 3TB and 1.5TB. CARDS (Cardinal Academic Research Data Storage), also NSF CC*-funded, provides roughly 6PB of shared storage and is ready for use; the in-development DGX H200 platform adds 5PB of parallel distributed storage and up to 6TB RAM per node. ITS has also worked with Google and CDW on assured workloads for secure, compliant research environments.",
+    "notes": "Re-verified Sept 2026 — frontier CONFIRMED, with a distinction the old row blurred. Two different Hopper deployments are in play and they are at different stages. LARCC's twenty H100 GPUs are explicitly stated by ITS to be ready for use by researchers, so Hopper-class hardware is genuinely available today and the tier is correct on that basis alone. The DGX H200 platform is a separate $3.8M investment that ITS describes as under development, even though the main Research Computing page already advertises the flagship as featuring H200 and H100. Anyone updating this row should keep those apart rather than reading the marketing line as a single delivered system. Access is unusually clean for a law faculty member: ITS Research Computing states its HPC, storage and consulting are provided at no cost to UofL-affiliated faculty, students and staff, with no disciplinary restriction, plus support for grant applications and regulated-data requirements.",
     "networks": [],
     "sources": [
-      "https://louisville.edu/its/services/research-computing/computing-and-research"
+      "https://louisville.edu/its/services/research-computing/computing-and-research",
+      "https://louisville.edu/its/news/major-research-computing-advancements"
     ]
   },
   {
@@ -1385,9 +1558,15 @@
     "slurm": "No",
     "hpcName": "None found",
     "specs": "",
-    "notes": "No public research computing center identified",
-    "networks": [],
-    "sources": []
+    "notes": "Re-verified Sept 2026. No campus HPC or research-computing center was found at Northern Kentucky University. NKU's School of Computing and Analytics is an active unit with an NSA Center of Excellence in Cybersecurity designation, but its published student and faculty research uses commercial cloud (Amazon ECS/Fargate container clusters) rather than an on-campus scheduler-managed cluster, and no NKU page advertises HPC accounts. Worth flagging one unresolved statewide thread: the University of Kentucky's Center for Computational Sciences states that its supercomputing facilities are available to UK faculty and to research institutions throughout the Commonwealth of Kentucky. That language is broad enough that an NKU-affiliated researcher might have a route in, but CCS does not publish eligibility terms for non-UK institutions and nothing confirms NKU or Chase specifically, so this is logged as a lead rather than scored as access. || National floor: this tier describes the PARENT INSTITUTION's own resource, not the ceiling on what a faculty member here can reach — see the NSF ACCESS note in the site header and README. That national route is tagged in this row's shared-networks field; it is not evidence about this school specifically, and the sources listed below are only those used to verify this row.",
+    "networks": [
+      "NSF ACCESS (national — any US academic institution)"
+    ],
+    "sources": [
+      "https://www.nku.edu/academics/informatics/schools/sca/beyond-the-classroom/research.html",
+      "https://www.ccs.uky.edu/?p=39",
+      "https://www.ccs.uky.edu/services-and-support/research-computing"
+    ]
   },
   {
     "state": "Louisiana",
@@ -1456,11 +1635,17 @@
     "tierLabel": "No HPC resource identified",
     "gpu": "",
     "slurm": "No",
-    "hpcName": "None found",
+    "hpcName": "None found (LONI membership not established)",
     "specs": "",
-    "notes": "No public dedicated research computing center identified; small private university",
-    "networks": [],
-    "sources": []
+    "notes": "Re-verified Sept 2026, specifically to test the obvious hypothesis that a New Orleans university would ride Louisiana's statewide LONI network. It does not appear to. LONI's own cyberinfrastructure documentation names its research-university members as LSU, Louisiana Tech, LSU Health Sciences Center New Orleans, LSU HSC Shreveport, Southern University, Tulane, UL Lafayette and the University of New Orleans; Loyola University New Orleans is not among them, and no Loyola page claims LONI access. Loyola's own Department of Mathematics and Computer Science is an undergraduate teaching department (BS degrees in Mathematics, Computer Information Systems and Computer Science) with no research cluster, scheduler or GPU inventory published. Tulane, by contrast, documents both its own Cypress cluster and LONI access — so the New Orleans institution with compute is Tulane, not Loyola. || National floor: this tier describes the PARENT INSTITUTION's own resource, not the ceiling on what a faculty member here can reach — see the NSF ACCESS note in the site header and README. That national route is tagged in this row's shared-networks field; it is not evidence about this school specifically, and the sources listed below are only those used to verify this row.",
+    "networks": [
+      "NSF ACCESS (national — any US academic institution)"
+    ],
+    "sources": [
+      "https://loni.laregents.edu/wp-content/uploads/LONI-Cyberinfrastructure-Plan-2023-02-27.pdf",
+      "https://cas.loyno.edu/departments/natural-sciences/mathematics-computer-science",
+      "https://it.tulane.edu/technology-delivery/research-computing"
+    ]
   },
   {
     "state": "Maine",
@@ -1486,14 +1671,18 @@
     "standalone": false,
     "tier": "frontier",
     "tierLabel": "Frontier — H100/H200/B200 confirmed",
-    "gpu": "80 NVIDIA A100 (40GB) GPUs + 32 NVIDIA H100 GPUs",
-    "slurm": "Yes",
+    "gpu": "80 NVIDIA A100 GPUs (20 GPU nodes x 4, 40 GiB each, Ampere, CUDA capability 8.0) and 32 NVIDIA H100 GPUs (8 GPU nodes x 4, 80 GiB each, CUDA capability 9.0). All SXM models supporting NVLink. A100s can be subdivided into a100_1g.5gb multi-instance slices of 5 GiB.",
+    "slurm": "Yes — Slurm with named partitions (standard, gpu, bigmem, debug, scavenger) and --constraint feature flags",
     "hpcName": "Zaratan HPC Cluster",
-    "specs": "360 compute nodes; 6 large-memory nodes (2TiB RAM each); 3.5 PFLOPS peak",
-    "notes": "Open OnDemand web portal; flagship campus-wide resource",
+    "specs": "Online since August 2022, replacing the 160-teraflop Deepthought2. 360 standard compute nodes at 128 cores and 512 GiB each (46,080 cores), 6 large-memory nodes at 2 TiB, 2PB BeeGFS scratch, 3.5 PFLOPS theoretical peak. Standard, large-memory and A100 nodes use dual AMD EPYC 7763 Zen3; H100 nodes use dual Intel Xeon Platinum 8468 Sapphire Rapids. HDR100 interconnect on compute nodes, HDR on GPU nodes. Housed off campus in the DataBank IAD2 facility in McLean, Virginia, maintained by UMD's Division of Information Technology.",
+    "notes": "Re-verified Sept 2026 — the GPU figures in this row are EXACT and check out against UMD's own cluster page: 20 nodes x 4 A100 = 80, and 8 nodes x 4 H100 = 32. Access is good and well-documented: all faculty are eligible for a free 50 KSU allocation from the campus Allocations and Advisory Committee, with up to 500 KSU more available through a proposal process (550 KSU total), and HPC staff explicitly encourage new users to take a free allocation to test-drive the cluster before committing funds. Note the GPU accounting: a KSU is 1,000 CPU core-hours, and GPU time carries a premium of 48x for an A100 and 144x for an H100, so a free 50 KSU allocation buys roughly 347 H100-hours. Encouraging for a law faculty member, UMD names Public Policy among the departments Zaratan already serves, alongside the expected Mathematics, Physics and Astronomy. Unused service units do not roll over between quarters. Cross-reference: this is the same cluster whose access rules were used to rule OUT a pathway for the University of Baltimore, since Zaratan requires a UMD directory ID — an entitlement the Carey School of Law has and UBalt does not, despite both being in the USM.",
     "networks": [],
     "sources": [
-      "https://hpcc.umd.edu/home/clusters/zaratan/"
+      "https://hpcc.umd.edu/home/clusters/zaratan/",
+      "https://hpcc.umd.edu/",
+      "https://ask.eng.umd.edu/124188",
+      "https://hpcc.umd.edu/kb/queues/",
+      "https://www.datacenterdynamics.com/en/news/university-of-maryland-deploys-supercomputer-in-databank-data-center-in-mclean-virginia/"
     ]
   },
   {
@@ -1505,30 +1694,42 @@
     "tierLabel": "No HPC resource identified",
     "gpu": "",
     "slurm": "No",
-    "hpcName": "None found",
+    "hpcName": "None found (USM membership does not confer UMD Zaratan access)",
     "specs": "",
-    "notes": "No public dedicated research computing center identified",
-    "networks": [],
-    "sources": []
+    "notes": "Re-verified Sept 2026 against the system-membership hypothesis, which fails. The University of Baltimore is a public institution inside the University System of Maryland, which invites the assumption that its faculty can use UMD's flagship Zaratan HPC cluster. UMD's own access documentation rules that out: Zaratan requires a UMD TerpConnect/Glue account tied to a University of Maryland Directory ID, allocations are granted to UMD faculty, and confirmations are sent to a @umd.edu address. HPC@UMD describes its customers as the University of Maryland community. Non-UMD people need a UMD faculty sponsor, which is a collaboration route rather than an institutional entitlement. No UBalt research-computing center of its own was found; UBalt is a roughly 3,200-student institution with colleges in applied arts and sciences, business, law and public affairs. || National floor: this tier describes the PARENT INSTITUTION's own resource, not the ceiling on what a faculty member here can reach — see the NSF ACCESS note in the site header and README. That national route is tagged in this row's shared-networks field; it is not evidence about this school specifically, and the sources listed below are only those used to verify this row.",
+    "networks": [
+      "NSF ACCESS (national — any US academic institution)"
+    ],
+    "sources": [
+      "https://hpcc.umd.edu/faq/access/",
+      "https://hpcc.umd.edu/",
+      "https://hpcc.umd.edu/home/get-access/",
+      "https://en.wikipedia.org/wiki/University_of_Baltimore"
+    ]
   },
   {
     "state": "Massachusetts",
     "school": "Harvard Law School",
     "university": "Harvard University",
     "standalone": false,
-    "tier": "older",
-    "tierLabel": "Older-gen GPUs confirmed (V100/T4/P100/K-series/etc.)",
-    "gpu": "1000+ GPUs (NVIDIA V100 and newer generations)",
-    "slurm": "Yes",
+    "tier": "frontier",
+    "tierLabel": "Frontier — H100/H200/B200 confirmed",
+    "gpu": "1,000+ GPUs on Cannon spanning NVIDIA V100, A40, A100, H100 and H200 (4 GPUs per node). FASRC's own GPU training deck lists GPUs/node as A100, H100, H200. Named partitions include gpu_h200 (24 Lenovo nodes), kempner (132 A100 80GB across water-cooled 4-GPU nodes), kempner_h100, kempner_h200, seas_gpu (244 GPUs ranging A100 to H200), itc_gpu (4 nodes x 4 A100), and hsph_gpu. 144 additional A100 80GB GPUs were added in November 2025.",
+    "slurm": "Yes — Slurm job manager, Rocky 8, Spack package manager",
     "hpcName": "FAS Research Computing (FASRC) - Cannon cluster",
-    "specs": "100,000+ cores; 40+ PB storage; housed at MGHPCC Holyoke",
-    "notes": "Billing done at school level so HLS-specific arrangement may vary; broadly available to Harvard research community",
+    "specs": "100,000+ CPU cores (Intel Sapphire Rapids/Cascade Lake/Skylake/Icelake, AMD Genoa/Zen); 48–112 cores per node; 184GB–2TB RAM per node; 200 GB/s HDR and NDR InfiniBand across three data centers; multi-PB Lustre. Separate FASSE secure enclave (Harvard data security level 3) adds 48 nodes / 2,304 cores plus 4 nodes of 4x A100. 25+ RC staff supporting 600+ research groups and 5,500+ users.",
+    "notes": "RECLASSIFIED Sept 2026 — this row was previously scored 'older' on the strength of a '1000+ GPUs (V100 and newer generations)' line, which badly understated Cannon. Harvard FAS Research Computing now runs A100, H100 and H200 hardware with dedicated H200 partitions, and the Kempner Institute for the Study of Natural and Artificial Intelligence holds its own purchased A100/H100/H200 partitions on the same cluster. On any reading of the tier definitions this is frontier, not older-gen. Access is by FASRC account, billed per project at the school level, with fairshare scheduling — but see the caveat about which schools FASRC actually lists as supported.",
     "networks": [
       "MGHPCC (Massachusetts consortium)"
     ],
     "sources": [
-      "https://www.rc.fas.harvard.edu/"
-    ]
+      "https://docs.rc.fas.harvard.edu/wp-content/uploads/2013/10/GPU_Computing_9_2025.pdf",
+      "https://www.rc.fas.harvard.edu/wp-content/uploads/2024/07/FASRC-Services-One-Pager.pdf",
+      "https://docs.rc.fas.harvard.edu/kb/kempner-partitions/",
+      "https://docs.rc.fas.harvard.edu/kb/seas-compute-resources/",
+      "https://www.rc.fas.harvard.edu/services/cluster-computing/"
+    ],
+    "caveat": "Law is not among the schools FASRC names. FASRC's own materials describe it as a Faculty of Arts and Sciences department supporting '600+ research groups and 5500+ users across FAS, SEAS, HSPH, HBS, GSE' — Harvard Law School is not in that list, and cluster access is stated as open to PIs 'from a supported Harvard School'. Billing is per project at the school level, so an HLS arrangement would likely need to be negotiated rather than simply requested. The hardware tier here is real; the law-specific access route is the open question."
   },
   {
     "state": "Massachusetts",
@@ -1537,15 +1738,19 @@
     "standalone": false,
     "tier": "frontier",
     "tierLabel": "Frontier — H100/H200/B200 confirmed",
-    "gpu": "400+ GPUs incl. new NVIDIA H200 (4/node), plus P100/K40m legacy",
+    "gpu": "470+ GPUs (RCS June 2025 figure; MGHPCC's page says 500). The SCC's live `qgpus` inventory shows A100, A100-80G, A40, A6000 and H200 among others, with H200 nodes carrying 4 GPUs each at 144GB GPU memory. Older P100/K40m cards remain in the heterogeneous mix.",
     "slurm": "Yes",
     "hpcName": "Shared Computing Cluster (SCC)",
-    "specs": "28,000+ CPU cores; ~14PB storage; housed at MGHPCC Holyoke",
-    "notes": "Available to all BU faculty, students, and collaborators for research and coursework",
+    "specs": "1,056 compute nodes as of 2025 (up from 189 in 2013); 29,000+ CPU cores; 15 PB storage; AlmaLinux 8; InfiniBand fabrics for multi-node parallel work, 25 GbE for data-intensive jobs. Serves 3,800 researchers in 1,200 projects across 90+ departments plus 70 courses; 110M+ core hours computed in the past year. Housed at the LEED Platinum MGHPCC in Holyoke.",
+    "notes": "Re-verified Sept 2026 and revised upward. The old row's '400+ GPUs / 28,000 cores / 14PB' came from BU's September 2024 facilities document; the June 2025 RCS brochure gives 470+ GPUs, 29,000+ cores and 15PB, and MGHPCC's own project page says 500 GPUs. Frontier is confirmed either way — H200 nodes are live in the scheduler. Access is good for a law faculty member: the SCC is stated as available to all University faculty, their students and their collaborators, for research and for educational use in courses, with shared (centrally funded, no cost) nodes alongside researcher-owned buy-in nodes. Users must be a member of an RCS research project, and BU faculty can create projects and serve as Lead Project Investigator.",
     "networks": [
       "MGHPCC (Massachusetts consortium)"
     ],
     "sources": [
+      "https://www.bu.edu/tech/files/2025/06/RCS-Brochure-1122-rev-6.25.25.pdf",
+      "https://www.bu.edu/tech/support/research/software-and-programming/gpu-computing/",
+      "https://mghpcc.org/project/bu-research-computing-services/",
+      "https://www.bu.edu/tech/support/research/computing-resources/scc/",
       "https://www.bu.edu/tech/services/research/"
     ]
   },
@@ -1556,17 +1761,18 @@
     "standalone": false,
     "tier": "frontier",
     "tierLabel": "Frontier — H100/H200/B200 confirmed",
-    "gpu": "525+ GPUs (Explorer, various gens); 400 GPUs incl. 248 NVIDIA B200 + 152 RTX Pro (AICR, new)",
+    "gpu": "Explorer: 525+ GPUs across mixed generations. AICR (new AI compute cluster): 400 GPUs comprising 248 NVIDIA B200 and 152 NVIDIA RTX Pro GPUs.",
     "slurm": "Yes",
     "hpcName": "Explorer HPC cluster + new AICR HPC cluster",
-    "specs": "45,000+ CPU cores; housed at MGHPCC Holyoke",
-    "notes": "Free to all Northeastern faculty and students; among the most cutting-edge GPU fleets (B200) of any university reviewed",
+    "specs": "Explorer: 45,000+ CPU cores, Intel Xeon spanning Sapphire Rapids, Ice Lake, Cascade Lake, Skylake, Broadwell and Haswell. Explorer and Discovery are both in production. Explorer is located at the MGHPCC.",
+    "notes": "Re-verified Sept 2026. Access here is among the most straightforward in the dataset: Northeastern Research Computing states that Explorer's 45,000+ CPU cores and 525+ GPUs are available to ALL Northeastern faculty and students free of charge, with no discipline restriction, which covers the School of Law directly. The newer AICR cluster is a separate and more selective tier — 400 GPUs including 248 NVIDIA B200s — where a PI must submit a Project Proposal and the team onboards users in reviewed cohorts. So the honest reading is 'frontier hardware exists and free general-access hardware exists, but they are not the same pool'. B200 presence confirms the frontier tier either way. Support includes weekly office hours, user guides, training sessions and one-on-one consultations.",
     "networks": [
       "MGHPCC (Massachusetts consortium)"
     ],
     "sources": [
       "https://rc.northeastern.edu/"
-    ]
+    ],
+    "caveat": "Two tiers with different doors. Explorer is free and open to all Northeastern faculty, but its 525+ GPUs are mixed-generation. The frontier-class B200 hardware sits in AICR, which requires an approved Project Proposal and cohort onboarding. Do not read the B200 count as generally available on request."
   },
   {
     "state": "Massachusetts",
@@ -1576,12 +1782,15 @@
     "tier": "frontier",
     "tierLabel": "Frontier — H100/H200/B200 confirmed",
     "gpu": "NVIDIA H200 GPUs (doubled in 2025 upgrade)",
-    "slurm": "Not confirmed (recently upgraded 2025)",
-    "hpcName": "Andromeda Linux HPC Cluster",
-    "specs": "High-RAM CPU nodes added 2025; ~400 active researchers",
-    "notes": "Major 2025 upgrade specifically to support AI/LLM research; used campus-wide",
+    "slurm": "Yes — Slurm job scheduler with fair-share priority, plus Open OnDemand",
+    "hpcName": "Andromeda (Andromeda 2) Linux HPC Cluster — ITS Research Services",
+    "specs": "Weka (WekaFS) file system with an NVMe frontend, 1.5 PB initial capacity expandable to 3 PB, built on 12 frontend servers of which 10 are needed for peak performance (resilient to a double node failure); replaced the Pixstor GPFS storage in service since 2020. Geographically redundant backup added. High-RAM CPU nodes added in the 2025 upgrade. ~400 active researchers.",
+    "notes": "Re-verified Sept 2026 and upgraded from 'SLURM not confirmed' — Boston College's own Andromeda documentation now shows a Slurm job scheduler with time-based partitions, sbatch CPU and GPU job examples, sinfo/squeue/sacct/scontrol/sprio tooling and fair-share job priority, alongside Open OnDemand for GUI-based interactive jobs. ITS completed a two-year upgrade in June 2025 that doubled GPU resources and added H200 cards, explicitly framed as preparing for AI research including training large language models. Note the generational change: the old cluster ('Andromeda 1') has been permanently offline since 15 September 2025, so any older documentation refers to a machine that no longer exists. Cluster use is guided by a faculty Cluster Policy Committee and each research group submits a short abstract describing its work.",
     "networks": [],
     "sources": [
+      "https://www.bc.edu/bc-web/offices/its/about/its-news/2025/hpc-cluster-upgrade.html",
+      "https://rs.bc.edu/andromeda/",
+      "https://rs.bc.edu/",
       "https://www.bc.edu/bc-web/offices/its/services/research-services/linux-cluster.html"
     ]
   },
@@ -1616,11 +1825,16 @@
     "tierLabel": "No HPC resource identified",
     "gpu": "",
     "slurm": "No",
-    "hpcName": "None found",
+    "hpcName": "None found (not an MGHPCC member)",
     "specs": "",
-    "notes": "No public dedicated research computing center identified",
-    "networks": [],
-    "sources": []
+    "notes": "Re-verified Sept 2026. No Suffolk research-computing service, cluster or scheduler was found; the College of Arts & Sciences computer science program is undergraduate-focused. Worth recording the negative finding on the obvious Boston hypothesis: the Massachusetts Green High Performance Computing Center is a membership consortium, and its members are the founding universities (BU, Harvard, MIT, Northeastern, UMass, with Yale now installing there) — Suffolk is not among them, and MGHPCC access runs through a member institution's own research computing group rather than being available to any Massachusetts school. || National floor: this tier describes the PARENT INSTITUTION's own resource, not the ceiling on what a faculty member here can reach — see the NSF ACCESS note in the site header and README. That national route is tagged in this row's shared-networks field; it is not evidence about this school specifically, and the sources listed below are only those used to verify this row.",
+    "networks": [
+      "NSF ACCESS (national — any US academic institution)"
+    ],
+    "sources": [
+      "https://www.suffolk.edu/cas/degrees-programs/computer-science",
+      "https://www.bu.edu/tech/services/research/"
+    ]
   },
   {
     "state": "Massachusetts",
@@ -1633,9 +1847,15 @@
     "slurm": "No",
     "hpcName": "None found",
     "specs": "",
-    "notes": "No public dedicated research computing center identified",
-    "networks": [],
-    "sources": []
+    "notes": "Re-verified Sept 2026, first sourcing for this row. 'None' is CONFIRMED. Western New England University is a roughly 3,700-student private institution in Springfield with colleges of Arts and Sciences, Business, Engineering, Law and Pharmacy, classified by US News in the North Region master's category rather than as a doctoral research university. No research-computing service, cluster, scheduler or GPU inventory was found on either the central IT side or in the academic units. The Department of Computer Science & Information Technology and the Computer Engineering program are teaching-focused; faculty research areas listed (RF/wireless, signal and image processing, embedded systems, robotics, integrated circuit design, photonics) are lab-based rather than cluster-based, and no shared computational facility is documented. Structural note: the law school has a real parent university, so this row is correctly 'none' rather than 'standalone'. Historically the institution began in 1919 as a branch of Northeastern University and received an independent charter in 1951 — that Northeastern tie is long severed and confers nothing today, which is worth recording since Northeastern's Explorer cluster would otherwise look like a tempting connection. MGHPCC is likewise a closed consortium and does not reach WNE. || National floor: this tier describes the PARENT INSTITUTION's own resource, not the ceiling on what a faculty member here can reach — see the NSF ACCESS note in the site header and README. That national route is tagged in this row's shared-networks field; it is not evidence about this school specifically, and the sources listed below are only those used to verify this row.",
+    "networks": [
+      "NSF ACCESS (national — any US academic institution)"
+    ],
+    "sources": [
+      "https://wne.edu/",
+      "https://en.wikipedia.org/wiki/Western_New_England_University_School_of_Law",
+      "https://wne.edu/arts-and-sciences/departments/computer-science-and-information-technology/clubs-and-organizations.cfm"
+    ]
   },
   {
     "state": "Michigan",
@@ -1685,9 +1905,14 @@
     "slurm": "No",
     "hpcName": "None found (only standard academic computing labs)",
     "specs": "",
-    "notes": "No dedicated HPC/research computing center identified",
-    "networks": [],
-    "sources": []
+    "notes": "Re-verified Sept 2026. Detroit Mercy ITS operates academic computing laboratories only — roughly 117 desktop machines across teaching labs in Commerce & Finance, Health Professions and Quad Commons, all running an identical computing image, reservable by faculty for class use. That is instructional computing, not research computing: there is no cluster, no scheduler, no GPU inventory and no account-request path. The College of Engineering & Science houses Electrical & Computer Engineering and Computer Science with a Center for Cybersecurity & Intelligence Studies, but no shared computational facility is documented. The existing 'only standard academic computing labs' description was accurate and is now sourced. || National floor: this tier describes the PARENT INSTITUTION's own resource, not the ceiling on what a faculty member here can reach — see the NSF ACCESS note in the site header and README. That national route is tagged in this row's shared-networks field; it is not evidence about this school specifically, and the sources listed below are only those used to verify this row.",
+    "networks": [
+      "NSF ACCESS (national — any US academic institution)"
+    ],
+    "sources": [
+      "https://www.udmercy.edu/about/its/computing/academic-labs/index.php",
+      "https://eng-sci.udmercy.edu/academics/engineering/computer-science/index"
+    ]
   },
   {
     "state": "Michigan",
@@ -1735,11 +1960,17 @@
     "tierLabel": "No HPC resource identified",
     "gpu": "",
     "slurm": "No",
-    "hpcName": "None found",
+    "hpcName": "None found (no campuswide HPC centre)",
     "specs": "",
-    "notes": "No public dedicated research computing center identified",
-    "networks": [],
-    "sources": []
+    "notes": "Re-verified Sept 2026. St. Thomas is the largest private university in Minnesota and has visible AI activity — a Center for Applied AI directed by Manjeet Rege and a chief data and AI officer — but that is applied/advisory rather than a compute facility. The clearest evidence is a documented case of a St. Thomas chemistry professor building his own HP ProLiant cluster precisely because the university 'doesn't yet have a campuswide high-performance computing center'. STELAR, the unit that mentions applying computing resources to research, is an instructional-technology group (course design, media production, VR). No shared cluster, scheduler or GPU inventory is published. Note the self-built-cluster evidence is from 2015, so this row is worth a periodic re-check; nothing newer indicates a campus HPC service exists. || National floor: this tier describes the PARENT INSTITUTION's own resource, not the ceiling on what a faculty member here can reach — see the NSF ACCESS note in the site header and README. That national route is tagged in this row's shared-networks field; it is not evidence about this school specifically, and the sources listed below are only those used to verify this row.",
+    "networks": [
+      "NSF ACCESS (national — any US academic institution)"
+    ],
+    "sources": [
+      "https://edtechmagazine.com/higher/article/2015/10/high-performance-computing-powers-university-research",
+      "https://www.stthomas.edu/stelar/about/ourservices/research/",
+      "https://stthomas.edu/academics/research/index.html"
+    ]
   },
   {
     "state": "Mississippi",
@@ -1768,11 +1999,18 @@
     "tierLabel": "No HPC resource identified",
     "gpu": "",
     "slurm": "No",
-    "hpcName": "None found",
+    "hpcName": "None found (MCSR is restricted to public institutions)",
     "specs": "",
-    "notes": "No public dedicated research computing center identified",
-    "networks": [],
-    "sources": []
+    "notes": "Re-verified Sept 2026 against the obvious statewide hypothesis, which fails on eligibility. Mississippi does run a statewide supercomputing center — MCSR, based at the University of Mississippi, whose Maple cluster carries 140 compute nodes, 5,454 CPU cores and a mix of NVIDIA K20, P100 and V100S GPUs — but MCSR states repeatedly and specifically that free accounts are for students, faculty and staff at Mississippi's PUBLIC institutions of higher learning, with account requests required to come from an email address at a Mississippi public IHL. Mississippi College is a private Baptist institution and is therefore outside that eligibility line. No separate Mississippi College research-computing resource was found. || National floor: this tier describes the PARENT INSTITUTION's own resource, not the ceiling on what a faculty member here can reach — see the NSF ACCESS note in the site header and README. That national route is tagged in this row's shared-networks field; it is not evidence about this school specifically, and the sources listed below are only those used to verify this row.",
+    "networks": [
+      "NSF ACCESS (national — any US academic institution)"
+    ],
+    "sources": [
+      "https://mcsr.olemiss.edu/docs/getting-an-account/",
+      "https://mcsr.olemiss.edu/",
+      "https://mcsr.olemiss.edu/supercomputers/",
+      "https://mcsr.olemiss.edu/apply-for-accounts/"
+    ]
   },
   {
     "state": "Missouri",
@@ -1871,16 +2109,20 @@
     "standalone": false,
     "tier": "frontier",
     "tierLabel": "Frontier — H100/H200/B200 confirmed",
-    "gpu": "6 NVIDIA H200 + 52 NVIDIA L40S (new PLUMAGE, 2026) + 24 NVIDIA A6000",
-    "slurm": "Yes",
+    "gpu": "PLUMAGE: 6 NVIDIA H200 GPUs (3 nodes x 2) and 52 NVIDIA L40S 48GB GPUs (13 nodes x 4) available in Swan's general-access gpu partition. PLUMAGE was procured as 15 L40S nodes in total; the two not in Swan are allocated to the National Research Platform, which is how the published '52 L40S' and a 15-node purchase reconcile.",
+    "slurm": "Yes — Swan uses a traditional scheduler-based batch system. PLUMAGE is unusual in offering a second, non-Slurm route: the same GPUs can be reached through the National Research Platform's Kubernetes-managed environment, and PLUMAGE can shift GPUs between the two.",
     "hpcName": "Holland Computing Center (HCC) - Swan cluster + new PLUMAGE GPU infrastructure",
-    "specs": "Serves entire University of Nebraska system (UNL/UNO/UNK/UNMC)",
-    "notes": "Free shared access to all NU researchers; priority/dedicated access available for cost-recovery; dual access via SLURM batch or Kubernetes-based National Research Platform",
+    "specs": "PLUMAGE funded by a National Science Foundation grant of nearly $700,000. Swan is HCC's flagship general-purpose cluster with 256GB RAM per node. HCC operates from two sites — the Peter Kiewit Institute in Omaha and the Schorr Center in Lincoln — and also runs Red, which stores over 7PB for the CMS project.",
+    "notes": "Re-verified Sept 2026 — the figures in this row are EXACT and now reconciled against two levels of source. The headline '6 H200 + 52 L40S' appears verbatim in UNL's own announcement and in trade coverage; HCC's December 2025 newsletter explains the underlying arithmetic (fifteen four-GPU L40S nodes procured, thirteen live in Swan's general access gpu partition for 52 cards, two diverted to the National Research Platform, plus three nodes of two H200 each). PLUMAGE stands for Promoting Learning Using Mixed Advanced GPU Environments. Access is strong for a law faculty member on two counts. First, it is free: HCC states PLUMAGE is available at no cost to NU researchers, with access arrangeable even for collaborators outside the NU system. Second, the framing is explicitly cross-disciplinary — UNL describes PLUMAGE as benefiting 'researchers across the disciplinary spectrum, from computer scientists and engineers to scholars in business, architecture, the social sciences and more', which is unusually inclusive language for a GPU resource. HCC serves the whole University of Nebraska system (UNK, UNL, UNMC, UNO), consistent with this row's existing network tag. HCC also runs webinars on requesting NAIRR Pilot resources, so staff there are an informed route to national allocations as well as local ones.",
     "networks": [
       "University of Nebraska System (HCC)"
     ],
     "sources": [
-      "https://hcc.unl.edu/"
+      "https://news.hcc.unl.edu/publications/hcc-newsletter-december-2025",
+      "https://news.unl.edu/article/hollands-new-nsf-funded-resource-to-boost-ai-machine-learning-research",
+      "https://newsroom.unl.edu/announce/cse/20335/107976",
+      "https://hcc.unl.edu/hcc",
+      "https://www.hpcwire.com/off-the-wire/university-of-nebraska-deploys-nsf-funded-plumage-gpu-infrastructure-for-ai-research/"
     ]
   },
   {
@@ -1888,15 +2130,18 @@
     "school": "Creighton University School of Law",
     "university": "Creighton University",
     "standalone": false,
-    "tier": "none",
-    "tierLabel": "No HPC resource identified",
+    "tier": "undetailed",
+    "tierLabel": "HPC exists, GPU support not publicly detailed",
     "gpu": "",
-    "slurm": "No",
-    "hpcName": "None found",
-    "specs": "",
-    "notes": "No public dedicated research computing center identified",
+    "slurm": "Not confirmed",
+    "hpcName": "Creighton High Performance Computing (Division of IT)",
+    "specs": "Not published — DoIT lists an HPC FAQ, an 'Add Software to HPC' request path and an 'HPC Cluster Metrics' page, but no node, core or storage counts are public",
+    "notes": "RECLASSIFIED Sept 2026 (was 'No HPC resource identified' — that was wrong). Creighton's Division of Information Technology explicitly states it offers High Performance Research Computing to faculty, staff and students university-wide, with consulting from Creighton's RaD Lab team. The DoIT navigation carries dedicated HPC, HPC FAQ, Add Software to HPC and HPC Cluster Metrics pages, and the same site lists Law among the university's schools. A 2018 Creighton posting for a Research Computing Analyst reporting to a Faculty Chair of Research Computing describes a shared, faculty-federated research computing environment including schedulers and Linux server environments, which corroborates a real cluster. Downgraded only to 'undetailed' rather than a GPU tier because no public page names a GPU model, node count or scheduler. Note separately that Nebraska's statewide Holland Computing Center (HCC) is a University of Nebraska system resource and Creighton is a private Jesuit university, so HCC is not an access path here.",
     "networks": [],
-    "sources": []
+    "sources": [
+      "https://doit.creighton.edu/HighPerformanceComputing",
+      "https://www.txgen.tamu.edu/jobs/bioinformatics-research-computing-analyst-school-of-medicine"
+    ]
   },
   {
     "state": "Nevada",
@@ -1983,11 +2228,17 @@
     "tierLabel": "No HPC resource identified",
     "gpu": "",
     "slurm": "No",
-    "hpcName": "None found",
+    "hpcName": "None found (research computing is cloud-based, no named cluster)",
     "specs": "",
-    "notes": "No public dedicated research computing center identified",
-    "networks": [],
-    "sources": []
+    "notes": "Re-verified Sept 2026. Seton Hall's CIO describes the university as enhancing its research computing infrastructure through innovative use of cloud computing, providing advanced computational resources, high-performance computing clusters and scalable data storage. That is a stated direction rather than a documented facility: no cluster is named, no node, core or GPU inventory is published, no scheduler is identified, and there is no account-request page. Both relevant academic units — the Department of Mathematics and Computer Science and the Stillman School's Department of Computing and Decision Sciences — describe research in software engineering, programming languages, symbolic computation and data science without reference to a shared cluster. Kept at 'none' because there is nothing a law faculty member could actually request, but re-check this one: a cloud-backed HPC offering could become real and visible at short notice. || National floor: this tier describes the PARENT INSTITUTION's own resource, not the ceiling on what a faculty member here can reach — see the NSF ACCESS note in the site header and README. That national route is tagged in this row's shared-networks field; it is not evidence about this school specifically, and the sources listed below are only those used to verify this row.",
+    "networks": [
+      "NSF ACCESS (national — any US academic institution)"
+    ],
+    "sources": [
+      "https://www.shu.edu/technology/message-cio.html",
+      "https://www.shu.edu/math-compsci/faculty.html",
+      "https://www.shu.edu/computing/index.html"
+    ]
   },
   {
     "state": "New Mexico",
@@ -2017,13 +2268,17 @@
     "slurm": "Yes",
     "hpcName": "Torch (NYU HPC) — successor to Greene — plus Empire AI allocation",
     "specs": "Torch: 43,072 total CPU cores (Intel Xeon Platinum 8592+), 280.1TB total memory, Infiniband NDR400; 10.79 PFLOPS realized on LINPACK (12.25 PFLOPS theoretical) — #133 on Top500 (June 2025), #40 on Green500; 5x more powerful than Greene",
-    "notes": "Allocated by stakeholder group: Tandon School of Engineering (112 H200+60 H100+60 A100), Courant/CS (88 H200+52 L40S), Center for Data Science, Chemistry, CILVR lab, and a 232-GPU \"IT Public\" general-access pool (24 H200 + 208 L40S) open campus-wide, which is the path a Law School researcher would use. SLURM confirmed. CORRECTED Sept 2026 — added Torch, NYU's new Oct-2025 flagship cluster, after being pointed to the official announcement; this replaces the earlier Greene-only + Empire AI framing as NYU's primary resource.",
-    "networks": [],
+    "notes": "Allocated by stakeholder group: Tandon School of Engineering (112 H200+60 H100+60 A100), Courant/CS (88 H200+52 L40S), Center for Data Science, Chemistry, CILVR lab, and a 232-GPU \"IT Public\" general-access pool (24 H200 + 208 L40S) open campus-wide, which is the path a Law School researcher would use. SLURM confirmed. CORRECTED Sept 2026 — added Torch, NYU's new Oct-2025 flagship cluster, after being pointed to the official announcement; this replaces the earlier Greene-only + Empire AI framing as NYU's primary resource. || NETWORK TAG ADDED Sept 2026: this row already named NYU's Empire AI membership in its resource and hardware fields but carried no `networks` entry, so the site's shared-networks filter did not group NYU with Columbia, Cornell and CUNY. NYU is confirmed as one of the seven FOUNDING members of Empire AI (alongside SUNY, CUNY, Columbia, Cornell, RPI and the Flatiron Institute), in a consortium that now totals ten with the addition of the University of Rochester, Rochester Institute of Technology and the Icahn School of Medicine at Mount Sinai. Tag added so the filter is accurate. Worth noting the consortium is closed at those ten — that is precisely why the unaffiliated New York law schools in this dataset (Brooklyn, New York Law School, Albany) cannot reach Empire AI directly.",
+    "networks": [
+      "Empire AI (New York State)"
+    ],
     "sources": [
       "https://github.com/NYU-RTS/rts-docs/blob/main/docs/hpc/10_spec_sheet.md",
       "https://www.nyu.edu/about/news-publications/news/2025/october/nyu-unveils--torch---the-most-powerful-supercomputer-in-new-york.html",
       "https://www.datacenterdynamics.com/en/news/new-york-university-unveils-torch-supercomputer/",
-      "https://sites.google.com/nyu.edu/nyu-hpc/hpc-systems/greene"
+      "https://sites.google.com/nyu.edu/nyu-hpc/hpc-systems/greene",
+      "https://www.empireai.edu/about/",
+      "https://www.suny.edu/suny-news/press-releases/1-26/1-30-26-2/empireai.html"
     ],
     "caveat": "Press coverage (Data Center Dynamics, insideHPC) reported \"500+ NVIDIA H200 GPUs,\" but NYU's own technical spec sheet gives an exact, internally-consistent table showing 232 H200 GPUs specifically (752 GPUs total across all types) — the press number appears to conflate the H200 count with the cluster's total GPU count. This entry uses NYU's own table since it reconciles exactly (29 nodes x 8 H200/node = 232, and 232+272+172+60+16 = 752, matching the table's own total row)."
   },
@@ -2032,17 +2287,23 @@
     "school": "Cornell Law School",
     "university": "Cornell University",
     "standalone": false,
-    "tier": "older",
-    "tierLabel": "Older-gen GPUs confirmed (V100/T4/P100/K-series/etc.)",
-    "gpu": "755 GPUs across 120 GPU servers (G2 cluster); NVIDIA T4/V100 (Red Cloud)",
+    "tier": "frontier",
+    "tierLabel": "Frontier — H100/H200/B200 confirmed",
+    "gpu": "G2 cluster exposes Slurm constraints for a100 (40/80GB) and h100 (94GB) alongside older cards, with gpu-low/gpu-mid/gpu-high feature tiers. Through Empire AI, Cornell PIs can also request the extended 'Alpha' machine (144 H100 GPUs) and 'Beta' (288 B200 GPUs with Grace CPU nodes for data processing). Weill Cornell's separate SCU core runs 251 NVIDIA GPUs (H200, H100, A100, L40S, A40).",
     "slurm": "Yes",
-    "hpcName": "Center for Advanced Computing (CAC) - G2 cluster + Red Cloud",
-    "specs": "9,500+ CPU cores; 1.9PB Ceph storage (Red Cloud)",
-    "notes": "Community-purchased/driven shared cluster across Cornell campuses (Ithaca + Cornell Tech); serves 80+ departments",
-    "networks": [],
+    "hpcName": "Center for Advanced Computing (CAC) — G2 cluster + Red Cloud; Empire AI (Alpha/Beta)",
+    "specs": "G2: 9,500+ CPU cores; Red Cloud 1.9PB Ceph. Weill SCU: 26PB Lustre/GPFS, 200Gb/s InfiniBand, 1.5TB RAM high-memory nodes. Empire AI SUs priced at 1 SU per H100-hour, 2 SU per B200-hour.",
+    "notes": "RECLASSIFIED Sept 2026 — previously scored 'older' on a '755 GPUs ... T4/V100' line that is now out of date. Cornell's G2 cluster documents A100 and H100 Slurm constraints directly, and Cornell is one of nine New York State institutions in the Empire AI consortium. Cornell has run open calls for Empire AI allocations explicitly stating that any faculty member with PI status from Cornell, Cornell Tech or Weill Cornell Medicine can apply, with SU costs covered by the Provost through November 2026 and expected to run about $0.50/SU afterwards — well below commercial H100 rates. That is an unusually clean access path for a non-STEM faculty member, which is exactly what this directory is trying to surface.",
+    "networks": [
+      "Empire AI (New York State)"
+    ],
     "sources": [
-      "https://www.cac.cornell.edu/"
-    ]
+      "https://it.coecis.cornell.edu/researchit/g2cluster/g2-faqs/",
+      "https://cvg.cornell.edu/?p=241",
+      "https://scu.med.cornell.edu/",
+      "https://www.cac.cornell.edu/services/HPCsystems.aspx"
+    ],
+    "caveat": "The Empire AI application route is open to 'any faculty member with PI status', which on its face includes Law, but the calls circulate through science units and no page confirms a Law School allocation has been made. CAC also hosts privately procured group clusters that are not generally accessible. Worth confirming with CAC before relying on it."
   },
   {
     "state": "New York",
@@ -2121,6 +2382,269 @@
       "https://www.csi.cuny.edu/academics-and-research/research-centers/cuny-high-performance-computing-center",
       "https://foci.rpi.edu/computing-resources/empire-ai",
       "https://ai.cornell.edu/empire-ai-cornell-call-for-compute-resource-proposals"
+    ]
+  },
+  {
+    "state": "Ohio",
+    "school": "The Ohio State University Moritz College of Law",
+    "university": "The Ohio State University",
+    "standalone": false,
+    "tier": "frontier",
+    "tierLabel": "Frontier — H100/H200/B200 confirmed",
+    "gpu": "128 NVIDIA H100 (Hopper) GPUs on Cardinal — 94GB HBM2e each with NVLink, four per node across 32 Dell PowerEdge XE9640 nodes. 776 NVIDIA A100s on Ascend (four each on 24 nodes, three each on 84 nodes, two each on 214 nodes). NVIDIA V100 32GB on Pitzer.",
+    "slurm": "Yes — Slurm on Cardinal (RHEL 9); PBS compatibility disabled on Cardinal",
+    "hpcName": "Ohio Supercomputer Center (OSC) — Cardinal, Ascend, Pitzer",
+    "specs": "Cardinal: 378 Dell nodes, 39,312 cores, Intel Xeon CPU Max 9470 (Sapphire Rapids) with 128GB HBM2e and 512GB DDR5 per dense node, NDR200 InfiniBand (400Gb/s on GPU nodes), RHEL 9. Ascend: 322-node Dell AMD EPYC machine, 40,448 cores, 16.0 PFLOPS theoretical peak. Roughly 20PB storage plus 23PB expandable backup. Open OnDemand originated at OSC.",
+    "sources": [
+      "https://www.osc.edu/supercomputing/support/account",
+      "https://www.osc.edu/services/cluster_computing",
+      "https://www.osc.edu/resources/technical_support/supercomputers/cardinal",
+      "https://www.osc.edu/content/available_service_categories",
+      "https://casc.org/member/ohio-supercomputer-center-osc/"
+    ],
+    "notes": "ADDED Sept 2026. Ohio was one of sixteen states missing entirely from this directory. Access for The Ohio State University runs through the Ohio Supercomputer Center, which is the strongest statewide access story in this dataset — stronger than LONI or MCSR, both of which failed on eligibility when tested. OSC's stated mission is to serve Ohio higher education institutions 'both public and private', and an eligible PI is any full-time, permanent academic researcher, tenure-track faculty member or emeritus professor at an Ohio college or university. Ohio academic clients receive highly subsidised access with fees generally charged only above certain thresholds, and classroom use is always free. Critically, that eligibility rule is written at the level of the institution and the appointment, not the discipline — OSC explicitly says it reaches out to academic disciplines that have not traditionally used HPC. A law faculty member appears to qualify on its face. OSC is a member of the Ohio Department of Higher Education's technology consortium and sits alongside Ohio State's own research computing; OSU's campus-level resources were not separately verified in this pass.",
+    "caveat": "Statewide resource; campus-level resources not separately checked. OSC eligibility is confirmed at the institution level, but OSC notes an Ohio academic client's request 'may need to be approved by their host institution', which is an approval step this row cannot verify. This row also does not reflect any cluster the university may run itself — that was out of scope for this pass and should be checked separately before the row is considered complete.",
+    "networks": [
+      "OSC (Ohio statewide)"
+    ]
+  },
+  {
+    "state": "Ohio",
+    "school": "Case Western Reserve University School of Law",
+    "university": "Case Western Reserve University",
+    "standalone": false,
+    "tier": "frontier",
+    "tierLabel": "Frontier — H100/H200/B200 confirmed",
+    "gpu": "128 NVIDIA H100 (Hopper) GPUs on Cardinal — 94GB HBM2e each with NVLink, four per node across 32 Dell PowerEdge XE9640 nodes. 776 NVIDIA A100s on Ascend (four each on 24 nodes, three each on 84 nodes, two each on 214 nodes). NVIDIA V100 32GB on Pitzer.",
+    "slurm": "Yes — Slurm on Cardinal (RHEL 9); PBS compatibility disabled on Cardinal",
+    "hpcName": "Ohio Supercomputer Center (OSC) — Cardinal, Ascend, Pitzer",
+    "specs": "Cardinal: 378 Dell nodes, 39,312 cores, Intel Xeon CPU Max 9470 (Sapphire Rapids) with 128GB HBM2e and 512GB DDR5 per dense node, NDR200 InfiniBand (400Gb/s on GPU nodes), RHEL 9. Ascend: 322-node Dell AMD EPYC machine, 40,448 cores, 16.0 PFLOPS theoretical peak. Roughly 20PB storage plus 23PB expandable backup. Open OnDemand originated at OSC.",
+    "sources": [
+      "https://www.osc.edu/supercomputing/support/account",
+      "https://www.osc.edu/services/cluster_computing",
+      "https://www.osc.edu/resources/technical_support/supercomputers/cardinal",
+      "https://www.osc.edu/content/available_service_categories",
+      "https://casc.org/member/ohio-supercomputer-center-osc/"
+    ],
+    "notes": "ADDED Sept 2026. Ohio was one of sixteen states missing entirely from this directory. Access for Case Western Reserve University runs through the Ohio Supercomputer Center, which is the strongest statewide access story in this dataset — stronger than LONI or MCSR, both of which failed on eligibility when tested. OSC's stated mission is to serve Ohio higher education institutions 'both public and private', and an eligible PI is any full-time, permanent academic researcher, tenure-track faculty member or emeritus professor at an Ohio college or university. Ohio academic clients receive highly subsidised access with fees generally charged only above certain thresholds, and classroom use is always free. Critically, that eligibility rule is written at the level of the institution and the appointment, not the discipline — OSC explicitly says it reaches out to academic disciplines that have not traditionally used HPC. A law faculty member appears to qualify on its face. Case Western is a private institution, which matters here — OSC's public-and-private mission is what makes this row work, where an equivalent private school in Mississippi or Louisiana would score 'none'.",
+    "caveat": "Statewide resource; campus-level resources not separately checked. OSC eligibility is confirmed at the institution level, but OSC notes an Ohio academic client's request 'may need to be approved by their host institution', which is an approval step this row cannot verify. This row also does not reflect any cluster the university may run itself — that was out of scope for this pass and should be checked separately before the row is considered complete.",
+    "networks": [
+      "OSC (Ohio statewide)"
+    ]
+  },
+  {
+    "state": "Ohio",
+    "school": "University of Cincinnati College of Law",
+    "university": "University of Cincinnati",
+    "standalone": false,
+    "tier": "frontier",
+    "tierLabel": "Frontier — H100/H200/B200 confirmed",
+    "gpu": "128 NVIDIA H100 (Hopper) GPUs on Cardinal — 94GB HBM2e each with NVLink, four per node across 32 Dell PowerEdge XE9640 nodes. 776 NVIDIA A100s on Ascend (four each on 24 nodes, three each on 84 nodes, two each on 214 nodes). NVIDIA V100 32GB on Pitzer.",
+    "slurm": "Yes — Slurm on Cardinal (RHEL 9); PBS compatibility disabled on Cardinal",
+    "hpcName": "Ohio Supercomputer Center (OSC) — Cardinal, Ascend, Pitzer",
+    "specs": "Cardinal: 378 Dell nodes, 39,312 cores, Intel Xeon CPU Max 9470 (Sapphire Rapids) with 128GB HBM2e and 512GB DDR5 per dense node, NDR200 InfiniBand (400Gb/s on GPU nodes), RHEL 9. Ascend: 322-node Dell AMD EPYC machine, 40,448 cores, 16.0 PFLOPS theoretical peak. Roughly 20PB storage plus 23PB expandable backup. Open OnDemand originated at OSC.",
+    "sources": [
+      "https://www.osc.edu/supercomputing/support/account",
+      "https://www.osc.edu/services/cluster_computing",
+      "https://www.osc.edu/resources/technical_support/supercomputers/cardinal",
+      "https://www.osc.edu/content/available_service_categories",
+      "https://casc.org/member/ohio-supercomputer-center-osc/"
+    ],
+    "notes": "ADDED Sept 2026. Ohio was one of sixteen states missing entirely from this directory. Access for University of Cincinnati runs through the Ohio Supercomputer Center, which is the strongest statewide access story in this dataset — stronger than LONI or MCSR, both of which failed on eligibility when tested. OSC's stated mission is to serve Ohio higher education institutions 'both public and private', and an eligible PI is any full-time, permanent academic researcher, tenure-track faculty member or emeritus professor at an Ohio college or university. Ohio academic clients receive highly subsidised access with fees generally charged only above certain thresholds, and classroom use is always free. Critically, that eligibility rule is written at the level of the institution and the appointment, not the discipline — OSC explicitly says it reaches out to academic disciplines that have not traditionally used HPC. A law faculty member appears to qualify on its face.",
+    "caveat": "Statewide resource; campus-level resources not separately checked. OSC eligibility is confirmed at the institution level, but OSC notes an Ohio academic client's request 'may need to be approved by their host institution', which is an approval step this row cannot verify. This row also does not reflect any cluster the university may run itself — that was out of scope for this pass and should be checked separately before the row is considered complete.",
+    "networks": [
+      "OSC (Ohio statewide)"
+    ]
+  },
+  {
+    "state": "Ohio",
+    "school": "Cleveland State University College of Law",
+    "university": "Cleveland State University",
+    "standalone": false,
+    "tier": "frontier",
+    "tierLabel": "Frontier — H100/H200/B200 confirmed",
+    "gpu": "128 NVIDIA H100 (Hopper) GPUs on Cardinal — 94GB HBM2e each with NVLink, four per node across 32 Dell PowerEdge XE9640 nodes. 776 NVIDIA A100s on Ascend (four each on 24 nodes, three each on 84 nodes, two each on 214 nodes). NVIDIA V100 32GB on Pitzer.",
+    "slurm": "Yes — Slurm on Cardinal (RHEL 9); PBS compatibility disabled on Cardinal",
+    "hpcName": "Ohio Supercomputer Center (OSC) — Cardinal, Ascend, Pitzer",
+    "specs": "Cardinal: 378 Dell nodes, 39,312 cores, Intel Xeon CPU Max 9470 (Sapphire Rapids) with 128GB HBM2e and 512GB DDR5 per dense node, NDR200 InfiniBand (400Gb/s on GPU nodes), RHEL 9. Ascend: 322-node Dell AMD EPYC machine, 40,448 cores, 16.0 PFLOPS theoretical peak. Roughly 20PB storage plus 23PB expandable backup. Open OnDemand originated at OSC.",
+    "sources": [
+      "https://www.osc.edu/supercomputing/support/account",
+      "https://www.osc.edu/services/cluster_computing",
+      "https://www.osc.edu/resources/technical_support/supercomputers/cardinal",
+      "https://www.osc.edu/content/available_service_categories",
+      "https://casc.org/member/ohio-supercomputer-center-osc/"
+    ],
+    "notes": "ADDED Sept 2026. Ohio was one of sixteen states missing entirely from this directory. Access for Cleveland State University runs through the Ohio Supercomputer Center, which is the strongest statewide access story in this dataset — stronger than LONI or MCSR, both of which failed on eligibility when tested. OSC's stated mission is to serve Ohio higher education institutions 'both public and private', and an eligible PI is any full-time, permanent academic researcher, tenure-track faculty member or emeritus professor at an Ohio college or university. Ohio academic clients receive highly subsidised access with fees generally charged only above certain thresholds, and classroom use is always free. Critically, that eligibility rule is written at the level of the institution and the appointment, not the discipline — OSC explicitly says it reaches out to academic disciplines that have not traditionally used HPC. A law faculty member appears to qualify on its face.",
+    "caveat": "Statewide resource; campus-level resources not separately checked. OSC eligibility is confirmed at the institution level, but OSC notes an Ohio academic client's request 'may need to be approved by their host institution', which is an approval step this row cannot verify. This row also does not reflect any cluster the university may run itself — that was out of scope for this pass and should be checked separately before the row is considered complete.",
+    "networks": [
+      "OSC (Ohio statewide)"
+    ]
+  },
+  {
+    "state": "Ohio",
+    "school": "University of Akron School of Law",
+    "university": "University of Akron",
+    "standalone": false,
+    "tier": "frontier",
+    "tierLabel": "Frontier — H100/H200/B200 confirmed",
+    "gpu": "128 NVIDIA H100 (Hopper) GPUs on Cardinal — 94GB HBM2e each with NVLink, four per node across 32 Dell PowerEdge XE9640 nodes. 776 NVIDIA A100s on Ascend (four each on 24 nodes, three each on 84 nodes, two each on 214 nodes). NVIDIA V100 32GB on Pitzer.",
+    "slurm": "Yes — Slurm on Cardinal (RHEL 9); PBS compatibility disabled on Cardinal",
+    "hpcName": "Ohio Supercomputer Center (OSC) — Cardinal, Ascend, Pitzer",
+    "specs": "Cardinal: 378 Dell nodes, 39,312 cores, Intel Xeon CPU Max 9470 (Sapphire Rapids) with 128GB HBM2e and 512GB DDR5 per dense node, NDR200 InfiniBand (400Gb/s on GPU nodes), RHEL 9. Ascend: 322-node Dell AMD EPYC machine, 40,448 cores, 16.0 PFLOPS theoretical peak. Roughly 20PB storage plus 23PB expandable backup. Open OnDemand originated at OSC.",
+    "sources": [
+      "https://www.osc.edu/supercomputing/support/account",
+      "https://www.osc.edu/services/cluster_computing",
+      "https://www.osc.edu/resources/technical_support/supercomputers/cardinal",
+      "https://www.osc.edu/content/available_service_categories",
+      "https://casc.org/member/ohio-supercomputer-center-osc/"
+    ],
+    "notes": "ADDED Sept 2026. Ohio was one of sixteen states missing entirely from this directory. Access for University of Akron runs through the Ohio Supercomputer Center, which is the strongest statewide access story in this dataset — stronger than LONI or MCSR, both of which failed on eligibility when tested. OSC's stated mission is to serve Ohio higher education institutions 'both public and private', and an eligible PI is any full-time, permanent academic researcher, tenure-track faculty member or emeritus professor at an Ohio college or university. Ohio academic clients receive highly subsidised access with fees generally charged only above certain thresholds, and classroom use is always free. Critically, that eligibility rule is written at the level of the institution and the appointment, not the discipline — OSC explicitly says it reaches out to academic disciplines that have not traditionally used HPC. A law faculty member appears to qualify on its face.",
+    "caveat": "Statewide resource; campus-level resources not separately checked. OSC eligibility is confirmed at the institution level, but OSC notes an Ohio academic client's request 'may need to be approved by their host institution', which is an approval step this row cannot verify. This row also does not reflect any cluster the university may run itself — that was out of scope for this pass and should be checked separately before the row is considered complete.",
+    "networks": [
+      "OSC (Ohio statewide)"
+    ]
+  },
+  {
+    "state": "Ohio",
+    "school": "University of Toledo College of Law",
+    "university": "University of Toledo",
+    "standalone": false,
+    "tier": "frontier",
+    "tierLabel": "Frontier — H100/H200/B200 confirmed",
+    "gpu": "128 NVIDIA H100 (Hopper) GPUs on Cardinal — 94GB HBM2e each with NVLink, four per node across 32 Dell PowerEdge XE9640 nodes. 776 NVIDIA A100s on Ascend (four each on 24 nodes, three each on 84 nodes, two each on 214 nodes). NVIDIA V100 32GB on Pitzer.",
+    "slurm": "Yes — Slurm on Cardinal (RHEL 9); PBS compatibility disabled on Cardinal",
+    "hpcName": "Ohio Supercomputer Center (OSC) — Cardinal, Ascend, Pitzer",
+    "specs": "Cardinal: 378 Dell nodes, 39,312 cores, Intel Xeon CPU Max 9470 (Sapphire Rapids) with 128GB HBM2e and 512GB DDR5 per dense node, NDR200 InfiniBand (400Gb/s on GPU nodes), RHEL 9. Ascend: 322-node Dell AMD EPYC machine, 40,448 cores, 16.0 PFLOPS theoretical peak. Roughly 20PB storage plus 23PB expandable backup. Open OnDemand originated at OSC.",
+    "sources": [
+      "https://www.osc.edu/supercomputing/support/account",
+      "https://www.osc.edu/services/cluster_computing",
+      "https://www.osc.edu/resources/technical_support/supercomputers/cardinal",
+      "https://www.osc.edu/content/available_service_categories",
+      "https://casc.org/member/ohio-supercomputer-center-osc/"
+    ],
+    "notes": "ADDED Sept 2026. Ohio was one of sixteen states missing entirely from this directory. Access for University of Toledo runs through the Ohio Supercomputer Center, which is the strongest statewide access story in this dataset — stronger than LONI or MCSR, both of which failed on eligibility when tested. OSC's stated mission is to serve Ohio higher education institutions 'both public and private', and an eligible PI is any full-time, permanent academic researcher, tenure-track faculty member or emeritus professor at an Ohio college or university. Ohio academic clients receive highly subsidised access with fees generally charged only above certain thresholds, and classroom use is always free. Critically, that eligibility rule is written at the level of the institution and the appointment, not the discipline — OSC explicitly says it reaches out to academic disciplines that have not traditionally used HPC. A law faculty member appears to qualify on its face.",
+    "caveat": "Statewide resource; campus-level resources not separately checked. OSC eligibility is confirmed at the institution level, but OSC notes an Ohio academic client's request 'may need to be approved by their host institution', which is an approval step this row cannot verify. This row also does not reflect any cluster the university may run itself — that was out of scope for this pass and should be checked separately before the row is considered complete.",
+    "networks": [
+      "OSC (Ohio statewide)"
+    ]
+  },
+  {
+    "state": "Ohio",
+    "school": "University of Dayton School of Law",
+    "university": "University of Dayton",
+    "standalone": false,
+    "tier": "frontier",
+    "tierLabel": "Frontier — H100/H200/B200 confirmed",
+    "gpu": "128 NVIDIA H100 (Hopper) GPUs on Cardinal — 94GB HBM2e each with NVLink, four per node across 32 Dell PowerEdge XE9640 nodes. 776 NVIDIA A100s on Ascend (four each on 24 nodes, three each on 84 nodes, two each on 214 nodes). NVIDIA V100 32GB on Pitzer.",
+    "slurm": "Yes — Slurm on Cardinal (RHEL 9); PBS compatibility disabled on Cardinal",
+    "hpcName": "Ohio Supercomputer Center (OSC) — Cardinal, Ascend, Pitzer",
+    "specs": "Cardinal: 378 Dell nodes, 39,312 cores, Intel Xeon CPU Max 9470 (Sapphire Rapids) with 128GB HBM2e and 512GB DDR5 per dense node, NDR200 InfiniBand (400Gb/s on GPU nodes), RHEL 9. Ascend: 322-node Dell AMD EPYC machine, 40,448 cores, 16.0 PFLOPS theoretical peak. Roughly 20PB storage plus 23PB expandable backup. Open OnDemand originated at OSC.",
+    "sources": [
+      "https://www.osc.edu/supercomputing/support/account",
+      "https://www.osc.edu/services/cluster_computing",
+      "https://www.osc.edu/resources/technical_support/supercomputers/cardinal",
+      "https://www.osc.edu/content/available_service_categories",
+      "https://casc.org/member/ohio-supercomputer-center-osc/"
+    ],
+    "notes": "ADDED Sept 2026. Ohio was one of sixteen states missing entirely from this directory. Access for University of Dayton runs through the Ohio Supercomputer Center, which is the strongest statewide access story in this dataset — stronger than LONI or MCSR, both of which failed on eligibility when tested. OSC's stated mission is to serve Ohio higher education institutions 'both public and private', and an eligible PI is any full-time, permanent academic researcher, tenure-track faculty member or emeritus professor at an Ohio college or university. Ohio academic clients receive highly subsidised access with fees generally charged only above certain thresholds, and classroom use is always free. Critically, that eligibility rule is written at the level of the institution and the appointment, not the discipline — OSC explicitly says it reaches out to academic disciplines that have not traditionally used HPC. A law faculty member appears to qualify on its face. Dayton is private; see the Case Western note on why OSC's public-and-private mission matters.",
+    "caveat": "Statewide resource; campus-level resources not separately checked. OSC eligibility is confirmed at the institution level, but OSC notes an Ohio academic client's request 'may need to be approved by their host institution', which is an approval step this row cannot verify. This row also does not reflect any cluster the university may run itself — that was out of scope for this pass and should be checked separately before the row is considered complete.",
+    "networks": [
+      "OSC (Ohio statewide)"
+    ]
+  },
+  {
+    "state": "Ohio",
+    "school": "Capital University Law School",
+    "university": "Capital University",
+    "standalone": false,
+    "tier": "frontier",
+    "tierLabel": "Frontier — H100/H200/B200 confirmed",
+    "gpu": "128 NVIDIA H100 (Hopper) GPUs on Cardinal — 94GB HBM2e each with NVLink, four per node across 32 Dell PowerEdge XE9640 nodes. 776 NVIDIA A100s on Ascend (four each on 24 nodes, three each on 84 nodes, two each on 214 nodes). NVIDIA V100 32GB on Pitzer.",
+    "slurm": "Yes — Slurm on Cardinal (RHEL 9); PBS compatibility disabled on Cardinal",
+    "hpcName": "Ohio Supercomputer Center (OSC) — Cardinal, Ascend, Pitzer",
+    "specs": "Cardinal: 378 Dell nodes, 39,312 cores, Intel Xeon CPU Max 9470 (Sapphire Rapids) with 128GB HBM2e and 512GB DDR5 per dense node, NDR200 InfiniBand (400Gb/s on GPU nodes), RHEL 9. Ascend: 322-node Dell AMD EPYC machine, 40,448 cores, 16.0 PFLOPS theoretical peak. Roughly 20PB storage plus 23PB expandable backup. Open OnDemand originated at OSC.",
+    "sources": [
+      "https://www.osc.edu/supercomputing/support/account",
+      "https://www.osc.edu/services/cluster_computing",
+      "https://www.osc.edu/resources/technical_support/supercomputers/cardinal",
+      "https://www.osc.edu/content/available_service_categories",
+      "https://casc.org/member/ohio-supercomputer-center-osc/"
+    ],
+    "notes": "ADDED Sept 2026. Ohio was one of sixteen states missing entirely from this directory. Access for Capital University runs through the Ohio Supercomputer Center, which is the strongest statewide access story in this dataset — stronger than LONI or MCSR, both of which failed on eligibility when tested. OSC's stated mission is to serve Ohio higher education institutions 'both public and private', and an eligible PI is any full-time, permanent academic researcher, tenure-track faculty member or emeritus professor at an Ohio college or university. Ohio academic clients receive highly subsidised access with fees generally charged only above certain thresholds, and classroom use is always free. Critically, that eligibility rule is written at the level of the institution and the appointment, not the discipline — OSC explicitly says it reaches out to academic disciplines that have not traditionally used HPC. A law faculty member appears to qualify on its face. Capital is a small private university in Columbus with no research-computing centre of its own that this pass found; OSC is the entire access story here, which makes the statewide eligibility rule unusually load-bearing for this row.",
+    "caveat": "Statewide resource; campus-level resources not separately checked. OSC eligibility is confirmed at the institution level, but OSC notes an Ohio academic client's request 'may need to be approved by their host institution', which is an approval step this row cannot verify. This row also does not reflect any cluster the university may run itself — that was out of scope for this pass and should be checked separately before the row is considered complete.",
+    "networks": [
+      "OSC (Ohio statewide)"
+    ]
+  },
+  {
+    "state": "Texas",
+    "school": "University of Texas at Austin School of Law",
+    "university": "University of Texas at Austin",
+    "standalone": false,
+    "tier": "frontier",
+    "tierLabel": "Frontier — H100/H200/B200 confirmed",
+    "gpu": "Vista is built on NVIDIA Grace Hopper (GH200) and Grace Superchips — an Arm-based departure from the x86 architecture of Frontera, Stampede and Lonestar6 — connected with NVIDIA NDR InfiniBand at up to 400 Gbps. Frontera and Lonestar6 carry additional GPU subsystems with separately allocated GPU node-hours.",
+    "slurm": "Yes",
+    "hpcName": "Texas Advanced Computing Center (TACC) — Vista, Frontera, Lonestar6, Ranch",
+    "specs": "TACC is a research centre of UT Austin itself, so this is an in-house resource rather than a consortium. Ranch tape archive fronted by roughly 30PB of disk cache. Vista is positioned as the bridge between Frontera (the current NSF leadership-class system) and Horizon, the planned primary system of the NSF Leadership-Class Computing Facility.",
+    "sources": [
+      "https://tacc.utexas.edu/use-tacc/allocations/",
+      "https://tacc.utexas.edu/systems/vista/",
+      "https://frontera-portal.tacc.utexas.edu/allocations/policy/",
+      "https://tacc.utexas.edu/use-tacc/getting-started/"
+    ],
+    "notes": "ADDED Sept 2026. Texas had exactly one entry in this directory (South Texas College of Law Houston, a standalone school listed separately) despite having around ten ABA-accredited law schools — UT Austin, the state's flagship, was missing. TACC is a research centre of UT Austin, so a UT Austin law faculty member is an in-house user rather than a guest. Two distinct allocation routes exist: TxRAS handles requests from UT Austin, UT System and TACC Partner Institutions, while Vista allocations for UT and UT System researchers go through UT-Austin's Center for Generative AI on a monthly rolling basis. Frontera is separately and broadly available to any US researcher doing open research, with the expectation that work results in publication in a broadly available journal or conference — a condition legal scholarship can generally meet.",
+    "caveat": "Allocation is competitive and framed around science and engineering. Frontera's policy describes a project PI as 'typically a faculty member or research scientist at a US-based academic institution' and its tracks (LRAC, Pathways, LSCP) are written around code readiness and scaling, with Pathways requiring demonstrated existing research funding for code and algorithm development. Startup and Director Discretionary allocations are the realistic entry points. No evidence was found of a law-school allocation.",
+    "networks": [
+      "TACC / UT System (Texas)"
+    ]
+  },
+  {
+    "state": "Pennsylvania",
+    "school": "Penn State Law (University Park)",
+    "university": "Pennsylvania State University",
+    "standalone": false,
+    "tier": "modern",
+    "tierLabel": "Modern — A100/A40/L40-class confirmed",
+    "gpu": "NVIDIA A100 and P100, available as single-GPU and Multi-Instance GPU (MIG) compute on Roar Collab",
+    "slurm": "Yes — Roar Collab uses Slurm (the older Roar/ACI-b used PBS)",
+    "hpcName": "Roar Collab (Institute for Computational and Data Sciences)",
+    "specs": "Basic, Standard and High Memory core types; Red Hat Enterprise Linux 8; software stack of roughly 240 applications updated on a schedule. Housed in a University Park data centre with 2.4MW redundant power and 12,000 sq ft of environmentally controlled space, about half of which is dedicated to ICDS infrastructure. GPU pricing includes the Standard cores needed alongside the GPU — 28 for P100, 24 for a full A100, 12 for a half A100.",
+    "sources": [
+      "https://icds.psu.edu/services/roar/roar-collab-cluster/",
+      "https://icds.psu.edu/funding/new-read-credits/",
+      "https://www.icds.psu.edu/about/",
+      "https://icds.psu.edu/services/roar/details-rates/",
+      "https://sites.psu.edu/cnmg/hpc/"
+    ],
+    "notes": "ADDED Sept 2026. Pennsylvania was missing entirely from this directory despite having roughly nine ABA-accredited law schools. Penn State's Institute for Computational and Data Sciences runs Roar Collab, and ICDS states that it supports faculty from dozens of departments in nearly all of Penn State's twenty-four campuses — which is what brings both of Penn State's law schools into scope. The access model is notably open: every user receives an automatic monthly allocation of READ (Research Exploration And Discovery) credits usable on all hardware types including GPUs, with no action required, and faculty needing more can request additional credits through an online form that ICDS describes as not difficult, with requests under 50 credits processed quickly and minimal information required. One credit is one Basic core-month and costs about $3 if purchased. Note that 'Roar' and 'Roar Collab' are different systems: Roar is a restricted-data environment available only through a paid allocation, while Roar Collab is the general cluster most users should use.",
+    "caveat": "GPU generation is A100/P100, and the credit economics matter. Roar Collab documents single-GPU and Multi-Instance GPU compute on A100 and P100 only — no H100 was found — so this is 'modern', not frontier. GPU work consumes credits faster than Basic cores, and the automatic monthly READ allocation was being reduced during a transition period, with ongoing amounts from April 2026 announced separately. Check current credit levels before assuming free GPU time.",
+    "networks": [
+      "Penn State ICDS (multi-campus)"
+    ]
+  },
+  {
+    "state": "Pennsylvania",
+    "school": "Penn State Dickinson Law (Carlisle)",
+    "university": "Pennsylvania State University",
+    "standalone": false,
+    "tier": "modern",
+    "tierLabel": "Modern — A100/A40/L40-class confirmed",
+    "gpu": "NVIDIA A100 and P100, available as single-GPU and Multi-Instance GPU (MIG) compute on Roar Collab",
+    "slurm": "Yes — Roar Collab uses Slurm (the older Roar/ACI-b used PBS)",
+    "hpcName": "Roar Collab (Institute for Computational and Data Sciences)",
+    "specs": "Basic, Standard and High Memory core types; Red Hat Enterprise Linux 8; software stack of roughly 240 applications updated on a schedule. Housed in a University Park data centre with 2.4MW redundant power and 12,000 sq ft of environmentally controlled space, about half of which is dedicated to ICDS infrastructure. GPU pricing includes the Standard cores needed alongside the GPU — 28 for P100, 24 for a full A100, 12 for a half A100.",
+    "sources": [
+      "https://icds.psu.edu/services/roar/roar-collab-cluster/",
+      "https://icds.psu.edu/funding/new-read-credits/",
+      "https://www.icds.psu.edu/about/",
+      "https://icds.psu.edu/services/roar/details-rates/",
+      "https://sites.psu.edu/cnmg/hpc/"
+    ],
+    "notes": "ADDED Sept 2026. Pennsylvania was missing entirely from this directory despite having roughly nine ABA-accredited law schools. Penn State's Institute for Computational and Data Sciences runs Roar Collab, and ICDS states that it supports faculty from dozens of departments in nearly all of Penn State's twenty-four campuses — which is what brings both of Penn State's law schools into scope. The access model is notably open: every user receives an automatic monthly allocation of READ (Research Exploration And Discovery) credits usable on all hardware types including GPUs, with no action required, and faculty needing more can request additional credits through an online form that ICDS describes as not difficult, with requests under 50 credits processed quickly and minimal information required. One credit is one Basic core-month and costs about $3 if purchased. Note that 'Roar' and 'Roar Collab' are different systems: Roar is a restricted-data environment available only through a paid allocation, while Roar Collab is the general cluster most users should use.",
+    "caveat": "GPU generation is A100/P100, and the credit economics matter. Roar Collab documents single-GPU and Multi-Instance GPU compute on A100 and P100 only — no H100 was found — so this is 'modern', not frontier. GPU work consumes credits faster than Basic cores, and the automatic monthly READ allocation was being reduced during a transition period, with ongoing amounts from April 2026 announced separately. Check current credit levels before assuming free GPU time.",
+    "networks": [
+      "Penn State ICDS (multi-campus)"
     ]
   }
 ]

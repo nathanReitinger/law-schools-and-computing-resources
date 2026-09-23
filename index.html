@@ -30,7 +30,17 @@
     <p class="disclaimer">
       This directory was compiled with AI (Claude) assistance from publicly available sources and has
       <strong>not been hand-verified</strong> against every listed source — treat it as a researched
-      starting point, not ground truth. If you spot an error, please help fix it.
+      starting point, not ground truth. It currently covers <strong>132 of roughly 198</strong>
+      ABA-accredited law schools, and the gap is systematic: the first pass worked alphabetically by
+      state and stopped after New York. If you spot an error, please help fix it.
+    </p>
+    <p class="disclaimer">
+      <strong>&ldquo;No HPC resource&rdquo; means no <em>institutional</em> resource — not no compute.</strong>
+      Every US law faculty member can apply to <a href="https://allocations.access-ci.org/allocations-policy" target="_blank" rel="noopener">NSF ACCESS</a>,
+      whose policy states that work from any field of study and funding from any source is eligible, at
+      no cost. The entry-level tier needs only a short abstract, and the hardware behind it is
+      frontier-class (NCSA DeltaAI: 608 GH200 superchips). Filter by the
+      <em>NSF ACCESS</em> network to see the 40 schools where that is the operative route.
     </p>
     <div class="notice-actions">
       <span class="pulled-date">Data pulled: <strong id="pulled-date">—</strong></span>
@@ -58,7 +68,11 @@
     <strong>Shared networks</strong> group schools that pool one resource across institutions — e.g.
     <em>MGHPCC</em> (the Massachusetts datacenter Harvard, BU, Northeastern, and Yale all share),
     <em>LONI</em> (Louisiana's statewide network), or <em>Empire AI</em> (New York State's). Pick one from
-    the dropdown above to see everyone on it.
+    the dropdown above to see everyone on it. Eligibility varies sharply and is the thing to check:
+    <em>OSC</em> covers every Ohio college <strong>public and private</strong>, which is why eight Ohio
+    law schools rank frontier — whereas Mississippi's MCSR is public-only and LONI runs a closed member
+    list, so private schools in those states score none. <em>NSF ACCESS</em> is the national floor open
+    to everyone.
   </p>
 
   <div class="legend" aria-hidden="true">
@@ -66,7 +80,7 @@
     <span><i class="tier-dot" style="background:var(--tier-modern)"></i>Modern (A100/A40/L40)</span>
     <span><i class="tier-dot" style="background:var(--tier-older)"></i>Older-gen (V100/T4/P100)</span>
     <span><i class="tier-dot" style="background:var(--tier-unspecified)"></i>GPUs present, model unnamed</span>
-    <span><i class="tier-dot" style="background:var(--tier-neutral)"></i>No GPU / no resource / standalone</span>
+    <span><i class="tier-dot" style="background:var(--tier-neutral)"></i>No institutional resource / standalone</span>
   </div>
 
   <p class="sort-hint">Click any column heading to sort — click again to reverse.</p>
@@ -100,6 +114,17 @@
       <a href="https://www.du.edu/it/services/research-services/research-computing" target="_blank" rel="noopener">DU's Research Data Analysis Cluster</a>,
       or a Northwestern Law professor can get GPU time on Quest. Standalone law schools with no parent research
       university are marked N/A, not "no GPUs" — there's simply nothing to check.
+    </p>
+    <p>
+      That institutional framing is the point, but it has a limit worth stating plainly: a grey chip on
+      this page means <em>your university</em> runs nothing, not that you can't get a GPU. NSF ACCESS
+      allocates national supercomputing time to any researcher at a US academic institution, in any
+      field, at no cost and with no supporting grant required — a standalone law school's own email
+      domain satisfies the affiliation requirement. Those rows are tagged <em>NSF ACCESS</em> in the
+      shared-networks filter. Conversely, a bright chip doesn't guarantee <em>you</em> can use it:
+      Harvard's Cannon cluster is H100/H200-class, but FAS Research Computing lists the schools it
+      serves as FAS, SEAS, HSPH, HBS and GSE — Law is not among them. Read the caveat field before
+      drawing conclusions from the colour.
     </p>
     <p>
       Specs, GPU tiers, and SLURM confirmation reflect what each university's own site stated at research time —
