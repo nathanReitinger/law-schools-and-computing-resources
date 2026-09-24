@@ -1,0 +1,58 @@
+state,school,university,likely_resource_to_check,lead_notes
+Texas,Texas A&M University School of Law,Texas A&M University,Texas A&M HPRC (Grace / FASTER / Launch / ACES),"Law school is in Fort Worth, HPRC is College Station — check whether HPRC access is system-wide or campus-bound. ACES is an NSF-funded accelerator testbed also open via ACCESS."
+Texas,SMU Dedman School of Law,Southern Methodist University,SMU M3 / NVIDIA SuperPOD,SMU publicised an NVIDIA DGX SuperPOD. Confirm whether it is general-access or reserved.
+Texas,Baylor Law School,Baylor University,Baylor Kodiak cluster,Check Baylor Research Computing Services.
+Texas,University of Houston Law Center,University of Houston,UH HPE Data Science Institute (Carya / Sabine / Opuntia),Carya is the current flagship.
+Texas,Texas Tech University School of Law,Texas Tech University,TTU HPCC (RedRaider: Nocona / Matador / Quanah),HPCC publishes detailed node tables.
+Texas,St. Mary's University School of Law,St. Mary's University,unknown,"Small private; apply the central-IT-first pattern that found Creighton and Washburn."
+Texas,UNT Dallas College of Law,University of North Texas,UNT Talon cluster,"Law school is UNT Dallas; Talon is UNT Denton. Check whether UNT System membership confers access — this assumption failed for Missouri and UBalt."
+Texas,Thurgood Marshall School of Law,Texas Southern University,unknown,HBCU; check TSU research computing and any Texas statewide/LEARN network route.
+Pennsylvania,University of Pennsylvania Carey Law School,University of Pennsylvania,Penn PMACS LPC / Wharton HPC3,"Penn has multiple school-level clusters rather than one campus system — check which, if any, serve Law."
+Pennsylvania,University of Pittsburgh School of Law,University of Pittsburgh,Pitt CRC + Pittsburgh Supercomputing Center,"PSC is a major NSF ACCESS resource provider (Bridges-2) co-located with Pitt — potentially the strongest PA row."
+Pennsylvania,Temple University Beasley School of Law,Temple University,Temple HPC (Owlsnest),Check Temple Research Computing.
+Pennsylvania,Villanova University Charles Widger School of Law,Villanova University,unknown,Check Villanova UNIT research computing.
+Pennsylvania,Drexel University Thomas R. Kline School of Law,Drexel University,Drexel Picotte cluster (URCF),Picotte is the current URCF system.
+Pennsylvania,Duquesne University Thomas R. Kline School of Law,Duquesne University,unknown,Check Duquesne CTS.
+Pennsylvania,Widener University Commonwealth Law School,Widener University,unknown,Widener has two law schools (this and Delaware Law) — verify both separately.
+Virginia,University of Virginia School of Law,University of Virginia,UVA Research Computing (Rivanna / Afton),Afton is the newer system; check GPU partitions on both.
+Virginia,William & Mary Law School,College of William & Mary,W&M HPC (Bora / Femto / Astral),W&M IT publishes cluster specs.
+Virginia,University of Richmond School of Law,University of Richmond,unknown,Small private; central-IT-first pattern.
+Virginia,Washington and Lee University School of Law,Washington and Lee University,unknown,Small liberal arts parent; likely none or cpuonly.
+Virginia,Antonin Scalia Law School,George Mason University,GMU ORC (Hopper cluster),GMU's cluster is named Hopper — do not confuse the name with the GPU architecture.
+Virginia,Regent University School of Law,Regent University,unknown,Check central IT.
+Virginia,Liberty University School of Law,Liberty University,unknown,Check central IT.
+New York,Fordham University School of Law,Fordham University,Fordham research computing,Not an Empire AI member — confirm.
+New York,Benjamin N. Cardozo School of Law,Yeshiva University,Yeshiva research computing,Not an Empire AI member — confirm.
+New York,St. John's University School of Law,St. John's University,unknown,Not an Empire AI member — confirm.
+New York,Elisabeth Haub School of Law,Pace University,unknown,Not an Empire AI member — confirm.
+New York,University at Buffalo School of Law,University at Buffalo (SUNY),UB CCR + Empire AI Alpha,"HIGH PRIORITY: UB HOSTS Empire AI Alpha (144 H100). Likely a frontier row and the strongest missing school in the backlog."
+New York,Touro Law Center,Touro University,unknown,Check Touro central IT.
+North Carolina,Wake Forest University School of Law,Wake Forest University,WFU DEAC cluster,DEAC is well documented.
+North Carolina,Campbell University Norman Adrian Wiggins School of Law,Campbell University,unknown,Small private; central-IT-first.
+North Carolina,North Carolina Central University School of Law,North Carolina Central University,NCCU research computing,"HBCU; check MCNC/NCREN and any UNC System shared route."
+North Carolina,Elon University School of Law,Elon University,unknown,Small private; central-IT-first.
+Tennessee,Vanderbilt University Law School,Vanderbilt University,Vanderbilt ACCRE,ACCRE is long-established and well documented.
+Tennessee,University of Tennessee College of Law,University of Tennessee Knoxville,UTK ISAAC (Open Enclave / Secure Enclave),"Also check the Oak Ridge National Laboratory relationship — UT-Battelle manages ORNL."
+Tennessee,University of Memphis Cecil C. Humphreys School of Law,University of Memphis,U Memphis HPC,Check central IT.
+Tennessee,Belmont University College of Law,Belmont University,unknown,Small private; central-IT-first.
+Tennessee,Lincoln Memorial University Duncan School of Law,Lincoln Memorial University,unknown,Small private; central-IT-first.
+Washington,University of Washington School of Law,University of Washington,UW Hyak (klone),Hyak runs a condo/checkpoint model — check the free tier.
+Washington,Seattle University School of Law,Seattle University,unknown,Small private; central-IT-first.
+Washington,Gonzaga University School of Law,Gonzaga University,unknown,Small private; central-IT-first.
+Oregon,University of Oregon School of Law,University of Oregon,UO Talapas,Talapas is documented by Research Advanced Computing Services.
+Oregon,Lewis & Clark Law School,Lewis & Clark College,unknown,Liberal arts parent; likely none.
+Oregon,Willamette University College of Law,Willamette University,unknown,Liberal arts parent; likely none.
+Puerto Rico,University of Puerto Rico School of Law,University of Puerto Rico,UPR HPCf,"UPR High Performance Computing facility exists; also check Puerto Rico's NSF EPSCoR cyberinfrastructure."
+Puerto Rico,Inter American University of Puerto Rico School of Law,Inter American University of Puerto Rico,unknown,Check any PR statewide EPSCoR route.
+Puerto Rico,Pontifical Catholic University of Puerto Rico School of Law,Pontifical Catholic University of Puerto Rico,unknown,Check any PR statewide EPSCoR route.
+Utah,J. Reuben Clark Law School,Brigham Young University,BYU Fulton Supercomputing Lab,Fulton publishes node and GPU inventories.
+Utah,S.J. Quinney College of Law,University of Utah,Utah CHPC (Notchpeak / Kingspeak / Lonepeak),CHPC is well documented and runs a general allocation.
+Wisconsin,University of Wisconsin Law School,University of Wisconsin-Madison,UW-Madison CHTC,"CHTC is the home of HTCondor and the Open Science Pool — check both the campus cluster and OSPool access."
+Wisconsin,Marquette University Law School,Marquette University,Marquette Raj cluster,Check Marquette research computing.
+Delaware,Widener University Delaware Law School,Widener University,unknown,"Verify separately from Widener Commonwealth in Pennsylvania — same parent, two law schools."
+North Dakota,University of North Dakota School of Law,University of North Dakota,UND Computational Research Center / NDSU CCAST,"Check whether North Dakota has a shared state route between UND and NDSU."
+Rhode Island,Roger Williams University School of Law,Roger Williams University,unknown,Small private; central-IT-first.
+South Dakota,University of South Dakota Knudson School of Law,University of South Dakota,USD/SDSU shared HPC,"South Dakota has a Board of Regents shared cyberinfrastructure — check whether it is genuinely statewide, as OSC and OneOCII were and MCSR was not."
+West Virginia,West Virginia University College of Law,West Virginia University,WVU Thorny Flat / Dolly Sods,WVU Research Computing publishes cluster specs.
+Wyoming,University of Wyoming College of Law,University of Wyoming,UW ARCC (Beartooth) + NCAR-Wyoming Supercomputing Center,"NWSC hosts Derecho — check whether Wyoming researchers have an allocation path, which would be a strong row."
+Florida,Ave Maria School of Law,Ave Maria School of Law,unknown,"Verify whether it is standalone — it separated from Ave Maria University; check current structure."

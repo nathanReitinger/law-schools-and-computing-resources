@@ -353,17 +353,22 @@
     "standalone": false,
     "tier": "modern",
     "tierLabel": "Modern — A100/A40/L40-class confirmed",
-    "gpu": "NVIDIA V100 (Pinnacle I) and Ampere-class/A100 (Pinnacle II) GPUs",
-    "slurm": "Yes",
+    "gpu": "Pinnacle II (2022): 71 AMD-based nodes with 74 NVIDIA Ampere-class GPUs (A100-generation). Pinnacle I (2019): roughly 100-106 mostly Intel-based nodes with 20-26 NVIDIA Volta (V100) GPUs across its GPU nodes. Combined floating-point capacity exceeds 1 PetaFLOPS, contributed mostly by the GPUs. No Hopper-class hardware was found, which is why this is modern rather than frontier.",
+    "slurm": "Yes — Slurm across Pinnacle and Karpinski",
     "hpcName": "Arkansas High Performance Computing Center (AHPCC)",
-    "specs": "13.4 TB aggregate memory; 93TB long-term + 374TB scratch + 96TB backup storage",
-    "notes": "Campus-wide core facility, free to eligible researchers; ~5000 cores, >1 PFLOP/s with GPUs",
+    "specs": "Pinnacle I also carries 8 big-memory nodes at 768GB RAM each. InfiniBand fabric at 100 Gb/s. Slurm scheduling across Pinnacle and the newer Karpinski system. Pinnacle offers the Open OnDemand 'Pinnacle Portal' web interface giving GUI access to applications such as MATLAB without any command-line work, alongside virtual machines, containers and remote desktop. Older Trestles and Razor systems remain listed. AHPCC is a University of Arkansas Core Facility directed by Rick McMullen.",
+    "notes": "Re-verified Sept 2026 — modern CONFIRMED, and the statewide access claim in this row is GENUINE, which is worth stating because several comparable claims in this dataset failed when tested. AHPCC states repeatedly and in its own words that it is available to faculty, staff and students at ALL OF THE ARKANSAS PUBLIC UNIVERSITIES, and to their collaborators inside and outside the state, with most services provided free of charge to eligible researchers and priority condo access available on top. Accounts are requested through an internal form. The eligibility line is institutional and carries no disciplinary limit, so a law faculty member qualifies on its face. Contrast with Mississippi's MCSR, which is also public-institution-only and therefore excluded private Mississippi College — the difference here is simply that both Arkansas law schools sit at public universities. Useful secondary benefit: AHPCC participates in the NSF Campus Champions programme and explicitly assists researchers in acquiring and using resources at national supercomputer centres, making it a practical on-ramp to the national ACCESS allocations described in this site's header. Fayetteville is AHPCC's home campus — the centre is a University of Arkansas core facility located there, so this is an on-campus resource and the strongest position of the two Arkansas rows.",
     "networks": [
       "AHPCC (Arkansas statewide)"
     ],
     "sources": [
-      "https://hpc.uark.edu/"
-    ]
+      "https://hpc.uark.edu/",
+      "https://aralliance.org/core-facilities/ua-arkansas-high-performance-computing-center/",
+      "https://hpc.uark.edu/hpc-resources/",
+      "https://hpc.uark.edu/hpc-about/",
+      "https://hpcwiki.uark.edu/"
+    ],
+    "caveat": "Public institutions only, and Karpinski is unverified here. AHPCC's eligibility is scoped to Arkansas PUBLIC universities and their collaborators — fine for both Arkansas law schools, but it would not extend to a private institution in the state. Separately, AHPCC's documentation references a newer system named Karpinski alongside Pinnacle in its Slurm scheduler pages; its specifications were not established in this pass, so the GPU inventory here may understate current capacity. Worth re-checking."
   },
   {
     "state": "Arkansas",
@@ -372,17 +377,22 @@
     "standalone": false,
     "tier": "modern",
     "tierLabel": "Modern — A100/A40/L40-class confirmed",
-    "gpu": "Shared statewide GPU resources (V100/A100-class)",
-    "slurm": "Yes",
+    "gpu": "Pinnacle II (2022): 71 AMD-based nodes with 74 NVIDIA Ampere-class GPUs (A100-generation). Pinnacle I (2019): roughly 100-106 mostly Intel-based nodes with 20-26 NVIDIA Volta (V100) GPUs across its GPU nodes. Combined floating-point capacity exceeds 1 PetaFLOPS, contributed mostly by the GPUs. No Hopper-class hardware was found, which is why this is modern rather than frontier.",
+    "slurm": "Yes — Slurm across Pinnacle and Karpinski",
     "hpcName": "Arkansas High Performance Computing Center (AHPCC) - statewide access",
-    "specs": "Shared with UA System",
-    "notes": "AHPCC is available to faculty/staff/students at all Arkansas public universities incl. UA Little Rock",
+    "specs": "Pinnacle I also carries 8 big-memory nodes at 768GB RAM each. InfiniBand fabric at 100 Gb/s. Slurm scheduling across Pinnacle and the newer Karpinski system. Pinnacle offers the Open OnDemand 'Pinnacle Portal' web interface giving GUI access to applications such as MATLAB without any command-line work, alongside virtual machines, containers and remote desktop. Older Trestles and Razor systems remain listed. AHPCC is a University of Arkansas Core Facility directed by Rick McMullen.",
+    "notes": "Re-verified Sept 2026 — modern CONFIRMED, and the statewide access claim in this row is GENUINE, which is worth stating because several comparable claims in this dataset failed when tested. AHPCC states repeatedly and in its own words that it is available to faculty, staff and students at ALL OF THE ARKANSAS PUBLIC UNIVERSITIES, and to their collaborators inside and outside the state, with most services provided free of charge to eligible researchers and priority condo access available on top. Accounts are requested through an internal form. The eligibility line is institutional and carries no disciplinary limit, so a law faculty member qualifies on its face. Contrast with Mississippi's MCSR, which is also public-institution-only and therefore excluded private Mississippi College — the difference here is simply that both Arkansas law schools sit at public universities. Useful secondary benefit: AHPCC participates in the NSF Campus Champions programme and explicitly assists researchers in acquiring and using resources at national supercomputer centres, making it a practical on-ramp to the national ACCESS allocations described in this site's header. Bowen is at UA Little Rock, a different Arkansas public university from AHPCC's Fayetteville home. That is exactly the situation the statewide eligibility rule is written to cover, so this row rests on the published policy rather than on campus co-location — a stronger footing than the cross-campus assumptions that failed for Missouri and the University of Baltimore, because here the policy is explicit.",
     "networks": [
       "AHPCC (Arkansas statewide)"
     ],
     "sources": [
-      "https://hpc.uark.edu/"
-    ]
+      "https://hpc.uark.edu/",
+      "https://aralliance.org/core-facilities/ua-arkansas-high-performance-computing-center/",
+      "https://hpc.uark.edu/hpc-resources/",
+      "https://hpc.uark.edu/hpc-about/",
+      "https://hpcwiki.uark.edu/"
+    ],
+    "caveat": "Public institutions only, and Karpinski is unverified here. AHPCC's eligibility is scoped to Arkansas PUBLIC universities and their collaborators — fine for both Arkansas law schools, but it would not extend to a private institution in the state. Separately, AHPCC's documentation references a newer system named Karpinski alongside Pinnacle in its Slurm scheduler pages; its specifications were not established in this pass, so the GPU inventory here may understate current capacity. Worth re-checking."
   },
   {
     "state": "Arizona",
@@ -463,7 +473,8 @@
     "sources": [
       "https://docs-research-it.berkeley.edu/services/high-performance-computing/user-guide/hardware-config",
       "https://docs-research-it.berkeley.edu/services/high-performance-computing/user-guide/running-your-jobs/specific-resources"
-    ]
+    ],
+    "caveat": "The H200s are department condo nodes, not the general pool. Savio's general Faculty Computing Allowance pool tops out at L40 and A5000 (136 A5000, 16 A40, 2 V100, plus legacy consumer cards). Newer Hopper hardware — such as the Statistics department's 8x H200 — sits in individually owned condo partitions. This row is therefore scored modern on what a law faculty member could actually request through the FCA, by the same reasoning applied to Hawai'i and New Hampshire. Reaching the H200s would mean a collaboration with an owning department."
   },
   {
     "state": "California",
@@ -525,15 +536,19 @@
     "standalone": false,
     "tier": "modern",
     "tierLabel": "Modern — A100/A40/L40-class confirmed",
-    "gpu": "180+ NVIDIA GPUs (V100, A40, etc.) across 200+ GPU nodes",
-    "slurm": "Yes",
-    "hpcName": "USC Center for Advanced Research Computing (CARC) - Discovery/Endeavour clusters",
-    "specs": "~20,000 CPU cores across ~500 nodes; 200 Gbps NDR InfiniBand",
-    "notes": "University-wide; OnDemand web portal; condo program for priority nodes",
+    "gpu": "Over 180 NVIDIA GPUs across more than 200 GPU-equipped nodes on Discovery: A100 in both 40GB and 80GB variants, A40, and V100. Slurm exposes them as selectable types (for example --gpus-per-task=a40:1, or a100:1 with a 40GB/80GB constraint). No Hopper-class hardware was found on the general-use cluster, which is why this is modern rather than frontier. Endeavour, the condo cluster, may carry other GPU types or more than two per node depending on what each condo group bought.",
+    "slurm": "Yes — Slurm with named partitions (gpu, epyc-64, largemem, main) and GPU type selection",
+    "hpcName": "CARC — Discovery (general use) and Endeavour (condo)",
+    "specs": "Discovery: 2 shared login nodes, roughly 20,000 CPU cores across about 500 compute nodes, typically dual 8-to-16-core processors. Includes AMD EPYC 7513 (32-core) and EPYC 7282 (16-core) nodes at 256GB, plus large-memory nodes at 1TB. Launched August 2020. A user may hold at most 36 GPUs at one time across all their jobs. CARC supports over 100 research groups across a range of academic disciplines and runs an annual project and allocation review cycle plus summer training workshops.",
+    "notes": "Re-verified Sept 2026 — modern CONFIRMED and the '180+ GPUs' figure in this row matches CARC's own services page. Discovery is the general-use cluster open to USC researchers, with Endeavour available as a condo option for groups that buy hardware. CARC describes its user base as spanning a variety of academic disciplines rather than being science-limited, so a Gould faculty member is in scope. CARC is also building out a regional role through an NSF CC* Regional Computing award aimed at forging a research computing alliance across Southern California, which is worth watching as a possible future network tag for other California schools in this dataset.",
     "networks": [],
     "sources": [
+      "https://www.carc.usc.edu/about/services",
+      "https://www.carc.usc.edu/user-guides/advanced-hpc-programming/gpu-programming",
+      "https://www.carc.usc.edu/user-guides/hpc-systems/discovery/resource-overview-discovery",
       "https://www.carc.usc.edu/"
-    ]
+    ],
+    "caveat": "No sensitive data, which matters more for law than for most fields. CARC states plainly that its systems DO NOT currently support the use or storage of sensitive data, explicitly including HIPAA-, FERPA- and CUI-regulated material, and that a secure computing environment is still being built. A law researcher working with confidential client files, sealed records, protected student data or any regulated dataset cannot use Discovery for it and should contact CARC before starting. This is the sharpest data-handling restriction found on any row in this dataset."
   },
   {
     "state": "California",
@@ -560,17 +575,20 @@
     "standalone": false,
     "tier": "cpuonly",
     "tierLabel": "No GPU confirmed (CPU/RAM-only)",
-    "gpu": "None confirmed",
-    "slurm": "Not confirmed",
-    "hpcName": "Pepperdine IT Research Computing (small on-prem cluster)",
-    "specs": "2 Cisco blades; 1TB RAM each; ~30TB storage",
-    "notes": "Small-scale, request-based on-prem system; no confirmed SLURM/GPU (R2 research institution, limited HPC compared to R1 peers) || National floor: this tier describes the PARENT INSTITUTION's own resource, not the ceiling on what a faculty member here can reach — see the NSF ACCESS note in the site header and README. That national route is tagged in this row's shared-networks field; it is not evidence about this school specifically, and the sources listed below are only those used to verify this row.",
+    "gpu": "None — the published system description lists CPU blades only, with no GPU of any generation",
+    "slurm": "Not confirmed — no scheduler named in the public documentation",
+    "hpcName": "Pepperdine IT research computing environment (no named cluster)",
+    "specs": "Two Cisco blades, each with 1TB of RAM and Intel Xeon Gold 6238 CPUs providing up to 44 cores per blade, plus 30TB of storage — described by Pepperdine IT as roughly eight times the processing power of a standard workstation. Housed in an energy-efficient data centre designed for high-density research computing clusters and storage.",
+    "notes": "Re-verified Sept 2026 — cpuonly CONFIRMED, and now with exact hardware rather than an assumption. Pepperdine IT, in partnership with the offices of the Vice Provost and of Research, Grants and Foundation Relations, offers a high-performance computing environment for qualified university research projects, and works directly with faculty to design and manage projects at scale. The full published system description is two Cisco blades with Xeon Gold 6238 CPUs — no GPU appears anywhere in it, which is what confirms the tier rather than merely failing to contradict it. Worth noting that Pepperdine is a Carnegie R2 institution with real AI activity: the Keck Data Science Institute is directed by Fabien Scalzo, whose work is in AI for medical imaging, and an undergraduate mentored there published 18 peer-reviewed articles and won an NSF GRFP. That AI work is evidently not running on these two blades, so there is likely lab-level or cloud GPU capacity somewhere at Pepperdine that public IT pages do not describe. The Caruso School of Law is one of Pepperdine's four graduate schools.",
     "networks": [
       "NSF ACCESS (national — any US academic institution)"
     ],
     "sources": [
-      "https://community.pepperdine.edu/it/services/research-computing.htm"
-    ]
+      "https://community.pepperdine.edu/it/services/research-computing.htm",
+      "https://www.pepperdine.edu/academics/research/",
+      "https://en.wikipedia.org/wiki/Pepperdine_University"
+    ],
+    "caveat": "Project-qualified, not open-access, and no scheduler is named. Pepperdine frames this as a service for 'qualified university research projects' designed and deployed with IT on a per-project basis, rather than a cluster with a standing account-request path. No scheduler, queue structure or allocation policy is published. A law faculty member with a GPU workload would need to look outside Pepperdine — the national NSF ACCESS route tagged on this row is the realistic option."
   },
   {
     "state": "California",
@@ -579,14 +597,17 @@
     "standalone": false,
     "tier": "modern",
     "tierLabel": "Modern — A100/A40/L40-class confirmed",
-    "gpu": "24 NVIDIA Tesla GPU modules (A100/V100)",
-    "slurm": "Not confirmed",
-    "hpcName": "Keck Computational Research Cluster",
-    "specs": "12.8 TB RAM; 2560+ Intel Xeon/AMD EPYC cores; all-flash + disk SAN storage",
-    "notes": "Open to Chapman researchers via IS&T Research Computing; scheduler not explicitly confirmed as SLURM in public docs; also has separate NVIDIA-donated AI supercomputer",
+    "gpu": "24 NVIDIA Tesla GPU modules (A100 and V100) — matching this row's original figure exactly against Chapman's own cluster page.",
+    "slurm": "Not confirmed — no scheduler named on Chapman's public cluster pages",
+    "hpcName": "Keck Computational Research Cluster — IS&T Research Computing; plus Chapman SRE",
+    "specs": "Over 2,560 Intel Xeon and AMD EPYC compute cores, 12.8TB of RAM, and direct access to all-flash and disk-storage SAN arrays. Located in the 140,000 sq ft Keck Center for Science & Engineering, opened 2018. Chapman can also instantiate up to 1,000 additional on-demand cloud nodes in AWS, Azure or Google, and can reserve dedicated physical, virtual or cloud instances for individual researchers or projects.",
+    "notes": "Re-verified Sept 2026 — modern CONFIRMED and the '24 Tesla A100/V100' figure in this row is EXACT, matching Chapman's own Keck Computational Research Cluster page word for word. Access and management run through the University's IS&T Research Computing team, which describes itself as mainly supporting faculty members and graduate students needing HPC for applications specific to their academic disciplines — a phrasing that neither excludes nor specifically invites law. NOTABLE FOR A LAW AUDIENCE: Chapman operates a Secure Research Environment on Microsoft Azure supporting NIST 800-171, CMMC, HIPAA and Controlled Unclassified Information, tailored per project with security logging, MFA and encryption, and explicitly supporting HPC, machine learning and AI use cases. Along with Emory's HIPAA-compliant HyPER C3 and Michigan's Armis2, that puts Chapman in the small group of institutions in this dataset where a researcher can compute on regulated or confidential material — directly relevant to legal work involving protected records. DISAMBIGUATION: Chapman has two units named for Dale E. Fowler. This row is the Dale E. Fowler School of LAW. The Keck Center houses Schmid College of Science and Technology and the Dale E. and Sarah Ann Fowler School of ENGINEERING — a different school, same donor.",
     "networks": [],
     "sources": [
-      "https://www.chapman.edu/campus-services/information-systems/research-technology-support/computational-resources/keck-cluster.aspx"
+      "https://www.chapman.edu/campus-services/information-systems/research-technology-support/computational-resources/keck-cluster.aspx",
+      "https://www.chapman.edu/campus-services/information-systems/research-technology-support/computational-resources/index.aspx",
+      "https://blogs.chapman.edu/information-systems/2024/05/01/chapman-universitys-research-computing-services-and-resources/",
+      "https://en.wikipedia.org/wiki/Chapman_University"
     ]
   },
   {
@@ -715,16 +736,20 @@
     "school": "University of Colorado Law School",
     "university": "University of Colorado Boulder",
     "standalone": false,
-    "tier": "modern",
-    "tierLabel": "Modern — A100/A40/L40-class confirmed",
-    "gpu": "NVIDIA A100, NVIDIA L40, AMD MI100 GPUs",
-    "slurm": "Yes",
-    "hpcName": "CU Research Computing - Alpine cluster",
-    "specs": "489 compute nodes; 32,368 cores; HDR-100 InfiniBand",
-    "notes": "Jointly funded w/ CU Anschutz, Colorado State, NSF; Open OnDemand + SSH access; campus-wide",
+    "tier": "frontier",
+    "tierLabel": "Frontier — H100/H200/B200 confirmed",
+    "gpu": "Alpine's Slurm resource types now include a100, l40, mi100, H200 and RTX Pro 6000, with dedicated partitions --partition=ah200, --partition=artxpro6000 and --partition=gh200 alongside aa100, al40 and ami100. CU Boulder's facilities statement records 23 compute nodes carrying multiple GPUs each (NVIDIA L40, NVIDIA A100, AMD MI100) plus 2 NVIDIA GRACE-HOPPER nodes. Both H200 and Grace Hopper are frontier-tier parts under this project's table.",
+    "slurm": "Yes — Slurm with gres directives (--gres=gpu:<type>:N) and QoS tiers extending walltime to 7 days",
+    "hpcName": "CU Boulder Research Computing — Alpine (+ Blanca condo, The Preserve secure enclave)",
+    "specs": "406 standard CPU compute nodes, 24 high-memory nodes, 23 multi-GPU nodes and 2 Grace-Hopper nodes. Mellanox InfiniBand at 200 Gb/s; 3PB high-performance IBM GPFS. RedHat Enterprise Linux 8. Alpine is funded jointly by CU Boulder, Colorado State University, CU Anschutz and the NSF, and CU Anschutz's contribution alone adds 16 AMD Milan compute nodes, 2 nodes at 1TB RAM and 4 GPU nodes of 3x A100. Research Computing also runs Blanca, a 229-node condo cluster, and The Preserve, a secure computing environment.",
+    "notes": "RECLASSIFIED Sept 2026, modern -> frontier. Like Minnesota and Indiana, this row was an understatement rather than an overclaim: it recorded Alpine's A100, L40 and MI100 hardware accurately, but Alpine has since grown H200 and Grace-Hopper capacity, which CU Boulder's own quick-start documentation now exposes as first-class Slurm feature tags and partitions (ah200, gh200, artxpro6000). Two access points are notably good. First, CU Boulder states that ALL NODES ARE AVAILABLE TO ALL USERS, including hardware contributed by partner campuses, governed by a published FairShare policy rather than by who paid. Second, Alpine is explicitly hosted for students, staff and researchers at CU Boulder AND PARTNER INSTITUTIONS, the partners being Colorado State and CU Anschutz. Research Computing also provides training workshops and consultation as part of its educational mission, and offers compile/test partitions (acompile, atesting) that give near-immediate access for trying things out — a practical on-ramp for a researcher outside the usual HPC disciplines.",
     "networks": [],
     "sources": [
-      "https://curc.readthedocs.io/en/latest/clusters/alpine/index.html"
+      "https://curc.readthedocs.io/en/latest/clusters/alpine/alpine-hardware.html",
+      "https://curc.readthedocs.io/en/latest/clusters/alpine/quick-start.html",
+      "https://www.colorado.edu/rc/media/110",
+      "https://colorado.edu/rc/sites/default/files/attached-files/facilities_statement.pdf",
+      "https://research-computing-user-tutorials.readthedocs.io/en/stable/clusters/alpine/quick-start.html"
     ]
   },
   {
@@ -738,7 +763,7 @@
     "slurm": "Yes",
     "hpcName": "Research Data Analysis Cluster (RDAC)",
     "specs": "24 compute nodes; 1TB user storage quota (Rocky Linux 9)",
-    "notes": "Available to Faculty, Graduate and PhD Students; SLURM 25.11.4; the example resource cited by the user",
+    "notes": "Re-verified Sept 2026 — modern CONFIRMED. This row matters more than most because DU's Research Data Analysis Cluster is the worked example used in this site's own footer and in CONTRIBUTING.md's field schema, so an error here would propagate into every contributor's mental model. It holds up. DU IT states that the University of Denver hosts a High Performance Computing cluster available to faculty members, researchers and students engaged in research activities, with the stated goal of providing the computational resources needed to construct, analyse and interpret complex data — no disciplinary restriction, which is what makes the Sturm College of Law example in the footer legitimate rather than aspirational. On the hardware: the A100 80GB nodes place this firmly in the modern tier, and the RTX PRO 6000 96GB nodes stay modern too rather than promoting the row, because CONTRIBUTING.md's tier table lists RTX PRO 6000 under modern — it is a large-memory workstation-class part rather than a datacentre training GPU. Same classification logic applied to Michigan's Armis2.",
     "networks": [],
     "sources": [
       "https://www.du.edu/it/services/research-services/research-computing"
@@ -833,15 +858,20 @@
     "standalone": false,
     "tier": "frontier",
     "tierLabel": "Frontier — H100/H200/B200 confirmed",
-    "gpu": "NVIDIA Tesla V100 (16 small-GPU + 21 large-GPU nodes); NVIDIA Grace Hopper superchip; L40S GPU",
-    "slurm": "Yes",
+    "gpu": "Pegasus now incorporates NVIDIA Grace Hopper 'superchip' nodes (2 in the cluster) and L40S GPUs, alongside 2 eight-GPU nodes. GW describes the Grace Hopper systems as delivering 10x higher performance than the previous generation by combining a Grace CPU with a Hopper GPU. The V100 inventory previously recorded in this row describes the earlier Pegasus build.",
+    "slurm": "Yes — Slurm across Pegasus; Raptor uses HTCondor instead (Open Science Grid based)",
     "hpcName": "Pegasus HPC Cluster",
-    "specs": "200+ nodes; 2.14 PFLOPs single precision",
-    "notes": "Open to all GW researchers, faculty, students; SLURM scheduler; also Cerberus (teaching) and Raptor (HTCondor/OSG) clusters",
+    "specs": "Pegasus: 200+ nodes (about 210 compute), Dell R740 and C4140, reachable through 4 high-availability login nodes with 2 HA head nodes, 2.14 PFLOPS single precision. Node breakdown includes 54 medium-memory, 2 high-memory, 6 high-throughput, 2 eight-GPU and 2 Grace Hopper nodes. Lenovo DSS scratch with 2PB. GW also runs Cerberus (a teaching cluster mirroring Pegasus technologies at smaller scale) and Raptor (HTCondor high-throughput computing on the Open Science Grid). Networking via CAAREN, GW's Capital Area Advanced Research and Education Network, connecting the DC region to Internet2.",
+    "notes": "UPDATED Sept 2026. This row was internally inconsistent — scored 'frontier' while its hardware field listed only NVIDIA Tesla V100, which is the 'older' tier by this project's own table. Checking resolved it in favour of the TIER, not the hardware string: GW IT states that the Pegasus expansion implements the NVIDIA Grace Hopper superchip and L40S GPUs, and Grace Hopper is explicitly a frontier-tier part. The V100 text was simply describing the pre-expansion cluster and has been replaced. Access is among the more clearly stated in this dataset: GW IT says HPC resources are available to all GW researchers, faculty and students, and describes open access to the university community for research, academic classroom use and student projects, with no discipline restriction. GW reports over $350M in annual research expenditures. Note for anyone re-checking: GW has three or four clusters and the documentation is spread across it.gwu.edu, hpc.gwu.edu and the legacy colonialone.gwu.edu, with OS versions reported inconsistently (CentOS 7.4 in older material, CentOS 8 in newer).",
     "networks": [],
     "sources": [
-      "https://it.gwu.edu/hpc-pegasus"
-    ]
+      "https://it.gwu.edu/hpc-pegasus",
+      "https://it.gwu.edu/hpc-expansion",
+      "https://it.gwu.edu/hpc",
+      "https://colonialone.gwu.edu/",
+      "https://hpc.gwu.edu/about-hpc-at-gw/"
+    ],
+    "caveat": "Law is not among the contributing schools. GW states Pegasus is professionally managed by GW Information Technology 'with additional support from Columbian College of Arts and Sciences, School of Engineering and Applied Science, School of Public Health, and School of Medicine and Health Sciences' — the Law School is not in that list of school-level contributors. Unlike Harvard's FASRC, GW's access language is explicitly university-wide, so this is a note about where the embedded support staff sit rather than an access barrier; a law researcher may simply have less local expertise to draw on. Also note Pegasus storage is explicitly not for long-term use and backups are the user's responsibility."
   },
   {
     "state": "District of Columbia",
@@ -850,15 +880,18 @@
     "standalone": false,
     "tier": "frontier",
     "tierLabel": "Frontier — H100/H200/B200 confirmed",
-    "gpu": "2x NVIDIA H100 (80GB) + 6 nodes of 4x NVIDIA L40 (40GB)",
+    "gpu": "One node with dual NVIDIA H100 GPUs (80GB each) and six nodes with quad NVIDIA L40 GPUs (40GB) — 2 H100 and 24 L40 in total, matching AU's published specification exactly.",
     "slurm": "Uncertain (LSF-like scheduler mentioned; not confirmed SLURM)",
     "hpcName": "Lovelace HPC System",
-    "specs": "512GB RAM/node; 2TB big-memory node; 500GB-1TB user/project storage",
-    "notes": "Open to AU researchers via CTRL Research Support Group; six queues, three open to all users",
+    "specs": "Red Hat Enterprise Linux. One 2TB big-memory node. Every compute node carries 512GB RAM and dual-socket Intel Xeon Platinum 8462Y+ CPUs at 32 cores per socket. Storage: 500GB per user home directory, with faculty able to request up to a 1TB project directory for collaborative work. Software includes OpenMPI, OpenBLAS, R, Anaconda/Miniconda Python, Mathematica, Stata MP, and a broad MATLAB licence whose toolboxes include Econometrics, Statistics and Machine Learning, and an unlimited 32-worker MDCS licence.",
+    "notes": "Re-verified Sept 2026 — frontier CONFIRMED and the figures in this row are EXACT, matching AU's own system specifications page verbatim. Access is one of the cleanest statements in this entire dataset: AU says plainly that 'Lovelace supports research projects in ALL ACADEMIC UNITS', and the Washington College of Law is listed among AU's schools, so a law faculty member is unambiguously in scope. Accounts are requested through a single ServiceNow form rather than a proposal process. Worth flagging for empirical legal scholarship specifically: Lovelace's licensed software stack includes Stata MP and MATLAB's Econometrics and Statistics & Machine Learning toolboxes, which is a better fit for law-and- economics or quantitative legal work than the molecular-dynamics-heavy stacks typical of larger clusters. Historical note for anyone searching older material: Lovelace succeeded an earlier AU system called Zorro, whose name still appears in page metadata and in the HPC team site URL.",
     "networks": [],
     "sources": [
-      "https://www.american.edu/cas/hpc/"
-    ]
+      "https://www.american.edu/cas/hpc/software.cfm",
+      "https://www.american.edu/cas/hpc/",
+      "https://www.american.edu/cas/hpc/procedures.cfm"
+    ],
+    "caveat": "Small and administratively housed in Arts & Sciences. This is a modest system — two H100s, not a partition of them — so a large training run is out of scope even though the tier is frontier. The HPC service also sits under the College of Arts & Sciences (its pages live at american.edu/cas/hpc), so while the 'all academic units' language is explicit, day-to-day support is CAS-based rather than centrally run."
   },
   {
     "state": "District of Columbia",
@@ -1101,15 +1134,20 @@
     "standalone": false,
     "tier": "modern",
     "tierLabel": "Modern — A100/A40/L40-class confirmed",
-    "gpu": "NVIDIA A100 and A10 GPUs",
-    "slurm": "Yes",
-    "hpcName": "HyPER C3 (Hybrid HPC Platform, AWS cloud-based)",
-    "specs": "Ultra-fast FSx storage; cloud-elastic scaling",
-    "notes": "Free-tier access for all active Emory faculty, academic staff, and students; fair-share partitions",
+    "gpu": "A mix of nodes featuring NVIDIA A100 and A10 GPUs; HyPER C3's start guide also documents an L40S partition alongside A100. Resources are upgraded on a regular cadence because the cluster is cloud-provisioned rather than fixed hardware.",
+    "slurm": "Yes — Slurm, with a head/logon node and several partitions",
+    "hpcName": "HyPER C3 — community cloud HPC cluster on Emory's AWS environment",
+    "specs": "Hosted on AWS with FSx for Lustre storage. /users home directories at 50GB, backed up nightly; /scratch on FSx for Lustre at 1TB per user, purged after 60 days and not backed up. Usage governed by community fair-share policies. Emory also runs HySci, a dedicated Science DMZ with data transfer nodes and Globus for large dataset movement, plus separate core facilities (the EICC cluster on RHEL 8 with Slurm, and CSIC nodes carrying P100, A40 and L40S GPUs).",
+    "notes": "Re-verified Sept 2026 — modern CONFIRMED. HyPER C3 stands for Hybrid High-Performance Computing Platform for Education and Research Community Cloud Cluster, and it is unusual in this dataset for being genuinely cloud-native rather than an on-premises cluster. Access is excellent: Emory states shared base-level usage is offered AT NO COST to active Emory faculty, academic staff and students, for research and teaching, with a team of HPC engineers handling onboarding and training. A PI requests accounts through an application form. TWO POINTS THAT MATTER PARTICULARLY FOR A LAW AUDIENCE. First, HyPER C3 IS HIPAA COMPLIANT and designed to protect patient health information — one of only a handful of rows in this dataset where regulated data is permitted rather than forbidden, and the direct opposite of USC's position. Second, the cluster underpins Emory's AI.Humanity initiative, which is explicitly framed around AI across disciplines rather than AI in engineering, so the institutional posture is welcoming to non-STEM computational work.",
     "networks": [],
     "sources": [
-      "https://it.emory.edu/catalog/cloud-services/hyper-c3.html"
-    ]
+      "https://it.emory.edu/catalog/cloud-services/hyper-c3.html",
+      "https://aihumanity.emory.edu/resources/computing-infrastructure.html",
+      "https://it.emory.edu/research-services/index.html",
+      "https://yanglab-emory.github.io/assets/ComputationSlides/HyPER_C3_StartGuide.html",
+      "https://aws.amazon.com/blogs/publicsector/emory-university-supports-ai-humanity-initiative-with-high-performance-computing-on-aws"
+    ],
+    "caveat": "Free tier is capped, and cloud means metering. The maximum is 500 GPU hours per user on the A100 and L40S partitions, enforced for fair access. /scratch is purged after 60 days and cannot be administratively restored. Accounts inactivate if unused for 60 days, with a 30-day grace period. Note that while AWS can supply H100-class hardware and Emory's cloud materials mention it, HyPER C3's documented partitions are A100, A10 and L40S — so do not read general AWS capability as an available Emory partition."
   },
   {
     "state": "Georgia",
@@ -1118,14 +1156,18 @@
     "standalone": false,
     "tier": "frontier",
     "tierLabel": "Frontier — H100/H200/B200 confirmed",
-    "gpu": "NVIDIA L4, A100, H100 GPUs",
-    "slurm": "Yes",
+    "gpu": "215 GPUs of various models across Sapelo2 (July 2025 figure). A $2.4M 2024 investment added 26 GPU compute nodes: 12 quad-H100, 2 quad-A100 and 12 quad-L4 (48 H100, 8 A100, 48 L4), plus three 3TB high-memory nodes, operational from the fall 2024 semester. Older V100 nodes remain in the mix. The separate teaching cluster carries 2 quad-A30 nodes.",
+    "slurm": "Yes — Slurm (sbatch, squeue, sacct) on Rocky Linux 9.5, with Open OnDemand and Globus",
     "hpcName": "Georgia Advanced Computing Resource Center (GACRC) - Sapelo2 cluster",
-    "specs": "46,000+ cores; up to 3TB RAM high-mem nodes; 2.4PB flash + 9.6PB spinning Lustre storage",
-    "notes": "Open to UGA faculty (PI registers lab); Buy-In program for priority nodes",
+    "specs": "Sapelo2: roughly 46,000–51,060 cores and 268.1TB total memory, spanning general-purpose nodes (128–512GB RAM) and high-memory nodes (1TB, 2TB, 3TB), EDR InfiniBand in a 2:1 fat tree, over 1,400 software packages. Storage: Aeon hybrid Lustre appliance (2.4PB flash + 9.6PB spinning) providing /scratch (no quota, 30-day purge) and /work (500GB per group); /home 200GB per user with backup; /project 1TB per group with backup; /lscratch local NVMe up to 3.5TB on GPU nodes. Housed at the Boyd Data Center on campus. Over 120 nodes come from the Faculty Buy-In program.",
+    "notes": "Re-verified Sept 2026 — frontier CONFIRMED and the hardware list in this row is accurate. GACRC is a partnership between the Offices of the VP for Information Technology and for Research, and its policy states its resources are for use in direct support of research programs at the University of Georgia, with support also provided for classes teaching computational methods — no disciplinary limit, so a law faculty member is in scope. The access mechanism is a two-step process worth knowing before starting: a UGA faculty member registers a lab as PI through the TeamDynamix service portal, then requests user accounts for group members. GACRC runs a full-time staff of systems administrators and scientific computing consultants and publishes grant-proposal boilerplate, which is a practical convenience for anyone writing UGA computing resources into a funding application.",
     "networks": [],
     "sources": [
-      "https://gacrc.uga.edu/systems/index.php"
+      "https://gacrc.uga.edu/systems/index.php",
+      "https://gacrc.uga.edu/about/proposal_info.php",
+      "https://wiki.gacrc.uga.edu/wiki/Policies",
+      "https://news.uga.edu/new-investments-in-high-performance-computing-to-advance-ai-research-efforts-at-uga",
+      "https://wiki.gacrc.uga.edu/images/9/99/GACRC_overview_20251117_Anthropology.pdf"
     ]
   },
   {
@@ -1299,15 +1341,17 @@
     "standalone": false,
     "tier": "frontier",
     "tierLabel": "Frontier — H100/H200/B200 confirmed",
-    "gpu": "NVIDIA H100, H100 NVL, A100 GPUs",
+    "gpu": "Data-center clusters with NVIDIA H100 NVL and A100 GPUs",
     "slurm": "Not confirmed",
-    "hpcName": "School of Computing HPCC (dept-level)",
-    "specs": "Not detailed publicly",
-    "notes": "Appears to be School of Computing-specific cluster rather than university-wide resource; access policy for Law faculty unclear",
+    "hpcName": "School of Computing HPCC (Jarvis College of Computing and Digital Media)",
+    "specs": "Positioned around fine-tuning and running open-weight large language models, deep learning, CUDA programming and coding assistants. Services include hosted containers and VMs, DevOps infrastructure for classes and research, Kubernetes, and Metal-as-a-Service via Chameleon. Based at the Jarvis College of Computing and Digital Media, 243 South Wabash Avenue.",
+    "notes": "Re-verified Sept 2026. The hardware claim holds — DePaul's HPCC site confirms data-center clusters with NVIDIA H100 NVL and A100 GPUs, so the frontier tier is correct on hardware. The question for this directory is access, and that is where the row needs its caveat: the cluster lives at hpcc.cs.depaul.edu, is run by the School of Computing within the Jarvis College of Computing and Digital Media, and its published services are framed around computing coursework and research. No university-wide access policy was found. ONE REAL PATHWAY WORTH RECORDING, and it is unusually concrete: DePaul's Cybersecurity Clinic is described by the university as an interdisciplinary collaboration between the School of Computing, the Driehaus College of Business AND THE COLLEGE OF LAW. That is a standing, documented working relationship between the law school and the unit that owns the H100s — a better-evidenced route than most affiliation leads examined in this project, and the obvious place for a DePaul law faculty member to start.",
     "networks": [],
     "sources": [
-      "https://hpcc.cs.depaul.edu/"
-    ]
+      "https://hpcc.cs.depaul.edu/",
+      "https://www.cdm.depaul.edu/academics/Pages/School-of-Computing.aspx"
+    ],
+    "caveat": "Departmental resource, not a campus service. This is a School of Computing cluster with a named School of Computing contact, not a central-IT offering with a public account-request path for all DePaul faculty. Same situation as Chicago-Kent's Ocient Computational Center. The frontier tier describes hardware that exists at DePaul; it does not establish that a College of Law researcher can request time on it. Ask via the Cybersecurity Clinic relationship rather than assuming an account."
   },
   {
     "state": "Illinois",
@@ -1367,33 +1411,41 @@
     "school": "Southern Illinois University School of Law",
     "university": "Southern Illinois University",
     "standalone": false,
-    "tier": "modern",
-    "tierLabel": "Modern — A100/A40/L40-class confirmed",
-    "gpu": "Some Nvidia A6000 in affiliated labs",
-    "slurm": "Not confirmed",
-    "hpcName": "BigDawg HPCC (School of Computing)",
-    "specs": "90TB+ (older SIHPCI docs)",
-    "notes": "Primarily School of Computing resource; R1 university but HPC service appears dept-level rather than broad campus-wide utility",
+    "tier": "older",
+    "tierLabel": "Older-gen GPUs confirmed (V100/T4/P100/K-series/etc.)",
+    "gpu": "BigDawg's documented GPU complement is 2 NVIDIA K40 GPU nodes, from the Cisco UCS build. The NVIDIA A6000 previously cited in this row is not on BigDawg — it is a single Dell server in one School of Computing research laboratory (Engineering Building A0405C, Dr. Daren Che's group, access limited to permitted students). GPU inventory after the Dell/OpenHPC transition is not published.",
+    "slurm": "Yes — SLURM, adopted during the BigDog-to-BigDawg transition which replaced Rocks with OpenHPC and SGE with SLURM",
+    "hpcName": "BigDawg HPCC — Office of Research Computing and Cyber Infrastructure (RCC)",
+    "specs": "BigDawg is rated at 34.7 TeraFLOPS. Its predecessor BigDog went into production in December 2015 with 40 Cisco servers and 800 CPU cores; the Cisco UCS build is documented as 40 nodes of two Intel Xeon E-5 with 64GB RAM, 2 nodes at 768GB RAM, and 2 K40 GPU nodes. The transition to BigDawg replaced some Cisco hardware with Dell for sustainability and security reasons. SIU also runs a separate Dell Linux cluster of 106 nodes (Intel Xeon dual quad-core 2.3GHz, 8GB RAM, 90TB storage). Data centre network capability is 560 Gbps with headroom to double. Housed in the Wham Data Center.",
+    "notes": "RECLASSIFIED Sept 2026, modern -> older. This is the same failure mode found at Missouri and Tulane: hardware from a narrower context recorded as though it belonged to the university's shared cluster. The row's modern tier rested on an NVIDIA A6000, but SIU's own laboratory listing places that card in a single Dell server inside one faculty member's research lab, available to his permitted students — not on BigDawg and not requestable by a law faculty member. BigDawg's own documented GPUs are 2 NVIDIA K40 nodes, which is squarely the older tier. THE ACCESS STORY IS GENUINELY GOOD THOUGH, and better than the tier suggests: SIU's RCC states that unlike larger institutions where HPC access is limited and often scheduled, SIU offers BigDawg FREE, and the RCC assists campus researchers with research data storage, high performance computing and scientific data visualization. SIU Carbondale is an R1 institution. So a law faculty member here has easy, free access to a modest older-generation cluster — a different and arguably more useful situation than restricted access to newer hardware.",
     "networks": [],
     "sources": [
-      "https://soc.siu.edu/research/research-areas/hpc.php"
-    ]
+      "https://oit.siu.edu/rcc/",
+      "https://soc.siu.edu/laboratories.php",
+      "https://bigdata.asa.siu.edu/about/index.php",
+      "https://www.researchgate.net/publication/334782074_From_BigDog_to_BigDawg_Transitioning_an_HPC_Cluster_for_Sustainability",
+      "https://soc.siu.edu/research/research-areas/index.php"
+    ],
+    "caveat": "GPU inventory is stale and possibly incomplete. The 2 K40 figure comes from the Cisco UCS era, and the BigDog-to-BigDawg migration replaced some Cisco hardware with Dell without publishing a refreshed GPU list. BigDawg may now hold newer cards than this row records, or fewer. Anyone relying on this should ask RCC directly. Do not treat the School of Computing lab A6000 as an available resource."
   },
   {
     "state": "Indiana",
     "school": "Indiana University Maurer School of Law (Bloomington)",
     "university": "Indiana University Bloomington",
     "standalone": false,
-    "tier": "modern",
-    "tierLabel": "Modern — A100/A40/L40-class confirmed",
-    "gpu": "256 NVIDIA A100 GPUs (64 nodes x 4 GPUs) on Big Red 200",
+    "tier": "frontier",
+    "tierLabel": "Frontier — H100/H200/B200 confirmed",
+    "gpu": "Big Red 200: 256 NVIDIA A100 GPUs across 64 GPU nodes of four. Quartz: 22-24 GPU nodes with four NVIDIA V100 each, PLUS a dedicated HOPPER GPU PARTITION of 12 nodes with four NVIDIA H100 each (48 H100) — described by IU as being for intensive work that cannot fit on the V100s or A100s.",
     "slurm": "Yes",
-    "hpcName": "Big Red 200 + Quartz + Big Red 3 (UITS Research Technologies)",
-    "specs": "640 compute nodes; 22,000+ cores (Big Red 3); 6-7 PFLOPS",
-    "notes": "System-wide IU resource available to faculty, staff, students across all IU campuses incl. Maurer Law",
+    "hpcName": "Big Red 200 + Quartz (incl. Hopper H100 partition) — UITS Research Technologies",
+    "specs": "Big Red 200 (HPE Cray EX/Shasta, AMD Rome CPUs, ~6 PFLOPS): 640 compute nodes with 256GB RAM and two 64-core CPUs each, 4-day job limit; 64 GPU nodes with a 2-day limit. It was the first Cray EX installed at a US university. Quartz: ~90-92 general compute nodes with two 64-core CPUs and 512GB RAM, 4-day limit; GPU nodes carry 768GB RAM with a 2-day limit. Slate provides additional attached storage, with a tape archive for long-term retention. Research Desktop (RED) gives GUI-based interactive access for users who would rather not work at the command line.",
+    "notes": "RECLASSIFIED Sept 2026, modern -> frontier. This row is the first UNDERSTATEMENT found in the tier-claim group, and it came from stopping at Big Red 200. That machine's 256 A100s are real and correctly recorded, but IU's supercomputing documentation also describes a HOPPER GPU PARTITION on Quartz — 12 nodes with four NVIDIA H100 each — explicitly positioned for work that cannot fit on the V100s or A100s. H100 presence makes this frontier under this project's own tier table. Access is excellent and explicitly universal: IU describes Quartz and Research Desktop as OPEN TO ALL STUDENTS, FACULTY AND STAFF, and characterises its supercomputing generally as easy to get access to, generally free to use, with unlimited access. That is an unusually low barrier for a law faculty member, and the Research Desktop route means no command- line expertise is strictly required to start. Maurer sits on the Bloomington campus where Big Red 200 and Quartz are operated by UITS Research Technologies, so this is a same-campus resource.",
     "networks": [],
     "sources": [
-      "https://kb.iu.edu/d/brcc"
+      "https://scholarworks.iu.edu/iuswrrest/api/core/bitstreams/d16228a0-bf79-4772-a136-9656e6c49ee0/content",
+      "https://cl.indiana.edu/Supercomputing_at_IU.pdf",
+      "https://uits.iu.edu/services/technology-for-research/high-performance-computing-and-storage/index.html",
+      "https://news.iu.edu/it/live/news/29064-big-red-200-is-a-leap-forward-for-indiana"
     ]
   },
   {
@@ -1401,16 +1453,19 @@
     "school": "IU Robert H. McKinney School of Law (Indianapolis)",
     "university": "Indiana University Indianapolis",
     "standalone": false,
-    "tier": "modern",
-    "tierLabel": "Modern — A100/A40/L40-class confirmed",
-    "gpu": "256 NVIDIA A100 GPUs (shared system-wide)",
+    "tier": "frontier",
+    "tierLabel": "Frontier — H100/H200/B200 confirmed",
+    "gpu": "Big Red 200: 256 NVIDIA A100 GPUs across 64 GPU nodes of four. Quartz: 22-24 GPU nodes with four NVIDIA V100 each, PLUS a dedicated HOPPER GPU PARTITION of 12 nodes with four NVIDIA H100 each (48 H100) — described by IU as being for intensive work that cannot fit on the V100s or A100s.",
     "slurm": "Yes",
-    "hpcName": "Big Red 200 + Quartz (shared IU system resource)",
-    "specs": "Same system-wide resource as IU Bloomington",
-    "notes": "Shared IU system-wide resource",
+    "hpcName": "Big Red 200 + Quartz (incl. Hopper H100 partition) — UITS Research Technologies",
+    "specs": "Big Red 200 (HPE Cray EX/Shasta, AMD Rome CPUs, ~6 PFLOPS): 640 compute nodes with 256GB RAM and two 64-core CPUs each, 4-day job limit; 64 GPU nodes with a 2-day limit. It was the first Cray EX installed at a US university. Quartz: ~90-92 general compute nodes with two 64-core CPUs and 512GB RAM, 4-day limit; GPU nodes carry 768GB RAM with a 2-day limit. Slate provides additional attached storage, with a tape archive for long-term retention. Research Desktop (RED) gives GUI-based interactive access for users who would rather not work at the command line.",
+    "notes": "RECLASSIFIED Sept 2026, modern -> frontier. This row is the first UNDERSTATEMENT found in the tier-claim group, and it came from stopping at Big Red 200. That machine's 256 A100s are real and correctly recorded, but IU's supercomputing documentation also describes a HOPPER GPU PARTITION on Quartz — 12 nodes with four NVIDIA H100 each — explicitly positioned for work that cannot fit on the V100s or A100s. H100 presence makes this frontier under this project's own tier table. Access is excellent and explicitly universal: IU describes Quartz and Research Desktop as OPEN TO ALL STUDENTS, FACULTY AND STAFF, and characterises its supercomputing generally as easy to get access to, generally free to use, with unlimited access. That is an unusually low barrier for a law faculty member, and the Research Desktop route means no command- line expertise is strictly required to start. McKinney is on the Indianapolis campus rather than Bloomington. UITS systems are described as open to all IU students, faculty and staff rather than being campus-restricted, so this should apply — but a McKinney researcher may wish to confirm with UITS, since cross-campus assumptions have proved wrong elsewhere in this dataset (see Missouri and University of Baltimore).",
     "networks": [],
     "sources": [
-      "https://kb.iu.edu/d/brcc"
+      "https://scholarworks.iu.edu/iuswrrest/api/core/bitstreams/d16228a0-bf79-4772-a136-9656e6c49ee0/content",
+      "https://cl.indiana.edu/Supercomputing_at_IU.pdf",
+      "https://uits.iu.edu/services/technology-for-research/high-performance-computing-and-storage/index.html",
+      "https://news.iu.edu/it/live/news/29064-big-red-200-is-a-leap-forward-for-indiana"
     ]
   },
   {
@@ -1480,14 +1535,19 @@
     "tier": "modern",
     "tierLabel": "Modern — A100/A40/L40-class confirmed",
     "gpu": "NVIDIA T4, V100, A40, RTX A6000, L40S, A100, GTX 1080 Ti GPUs",
-    "slurm": "Yes",
-    "hpcName": "Center for Research Computing (CRC) - KU Community Cluster",
-    "specs": "2.8PB+ storage class (via ecosystem); condo model",
-    "notes": "Serves all KU campuses; NSF MRI-funded; owner-partition + shared sixhour/bigjay partitions",
+    "slurm": "Yes — Slurm, with named partitions including sixhour and bigjay",
+    "hpcName": "KU Community Cluster (condo) — Center for Research Computing; also Bigjay and Hawk",
+    "specs": "Housed in the NIH-funded Advanced Computing Facility at Nichols Hall, completed 2013, which added 32 high-density racks and capacity for more than 24,000 processing cores. The ACF also houses Information and Telecommunications Technology Center servers. Two sibling systems: Bigjay, an NSF-funded cluster (MRI Award #2117449) currently restricted to its PIs, Co-PIs and collaborators but contributing to the shared sixhour partition; and Hawk, a small condo cluster built for Research Health Information and research-identifiable data.",
+    "notes": "Re-verified Sept 2026 — modern retained, but the significant finding on this row is ACCESS, not hardware. The KU Community Cluster runs a pure condo model, and KU's HPC documentation states the rule bluntly: YOU MUST BE AN OWNER OF HARDWARE IN THE KU COMMUNITY CLUSTER OR BE SPONSORED BY AN OWNER GROUP WITHIN THE CLUSTER TO GAIN ACCESS. There is no free general tier of the kind Nebraska, New Mexico, Indiana or Northeastern offer. A law faculty member would need either to buy nodes or to find a sponsoring owner group — a materially higher barrier than most rows in this dataset, and the thing worth knowing before approaching CRC. What owners and their sponsored users get is good: dedicated use of purchased nodes plus the ability to run larger jobs on other owners' idle hardware, with CRC staff handling administration, training sessions and one-to-one support. The ACF is described as serving an exceptionally diverse range of researchers from all KU campuses.",
     "networks": [],
     "sources": [
-      "https://crc.ku.edu/"
-    ]
+      "https://docs.crc.ku.edu/clusters/",
+      "https://crc.ku.edu/systems-services/ku-community-cluster",
+      "https://crc.ku.edu/systems-services",
+      "https://technology.ku.edu/research/advanced-computing-facility",
+      "https://docs.crc.ku.edu/"
+    ],
+    "caveat": "Condo-only access, and the GPU inventory is unverified. Two separate cautions. First, ownership or owner-group sponsorship is a stated precondition of access, so the tier describes hardware a law researcher may not be able to reach without buying in. Second, CRC's public pages describe the cluster's structure and policies but do not publish a GPU model inventory, so the specific cards recorded in this row could not be independently confirmed in this pass and should be treated as provisional."
   },
   {
     "state": "Kansas",
@@ -1545,7 +1605,8 @@
     "sources": [
       "https://louisville.edu/its/services/research-computing/computing-and-research",
       "https://louisville.edu/its/news/major-research-computing-advancements"
-    ]
+    ],
+    "caveat": "Two Hopper deployments at different stages — do not conflate them. LARCC's 20 H100 GPUs are stated by UofL ITS to be ready for use by researchers, and that is what carries the frontier tier. The separate $3.8M DGX H200 platform with 5PB of storage is described as UNDER DEVELOPMENT, even though the main Research Computing page already advertises the flagship as featuring H200 and H100. Treat the H200 capacity as pending until confirmed with ITS."
   },
   {
     "state": "Kentucky",
@@ -1595,17 +1656,22 @@
     "standalone": false,
     "tier": "modern",
     "tierLabel": "Modern — A100/A40/L40-class confirmed",
-    "gpu": "960 NVIDIA Tesla K20x (Cypress, legacy); 144 NVIDIA A100 GPUs (QB4 via LONI)",
+    "gpu": "CORRECTED: Tulane's own Cypress cluster has NO NVIDIA GPUs — each node carries dual Intel Xeon Phi 7120P COPROCESSORS, not GPUs. GPU access comes through LONI, where Queen Bee 4 provides 10 four-GPU NVIDIA A100 nodes (40 A100) alongside 480 CPU compute nodes and 5 big-memory 2TB nodes, at no cost to Tulane researchers. The '960 NVIDIA Tesla K20x' figure previously attributed to Cypress belongs to LONI's earlier Queen Bee 2 generation, not to any Tulane machine.",
     "slurm": "Yes",
-    "hpcName": "Cypress cluster + statewide LONI (incl. QB4 supercomputer)",
-    "specs": "QB4: 35,008 cores, 4.3 PFLOPS, 6.5PB Lustre; Cypress: 1PB Lustre",
-    "notes": "Free to all Tulane researchers (PI-sponsored); LONI account available with Tulane email",
+    "hpcName": "LONI (Queen Bee 4) for GPUs; Cypress (Tulane's own cluster, CPU/Xeon Phi only)",
+    "specs": "Cypress: 124 nodes, each with dual 10-core 2.8GHz Intel Xeon E5-2680 v2 (Ivy Bridge) CPUs, 64GB RAM and dual Xeon Phi 7120P coprocessors, on 40 Gigabit Ethernet through a single Dell Z9500 fabric switch. 699TB-1.476PB Lustre with Intel Enterprise Edition, 1TB and 1 million inodes allocated per research group, 10GB backed-up home directories. Cypress ranked 271st on the TOP500 in November 2014. Located in Tulane's downtown New Orleans datacenter. Tulane notes Cypress was designed to resemble larger LONI and TACC machines so code ports upward easily.",
+    "notes": "CORRECTED Sept 2026. The tier stands at modern, but the hardware attribution in this row was wrong in the same way Missouri's was — GPUs from a shared regional machine were recorded as if they belonged to the university's own cluster. Tulane's Cypress is a 2014-era Ivy Bridge system whose accelerators are Intel Xeon Phi coprocessors; it has no NVIDIA GPUs at all. What justifies 'modern' is LONI: Tulane is a confirmed member institution of the Louisiana Optical Network Infrastructure (the same membership check that ruled OUT Loyola New Orleans elsewhere in this dataset), and Tulane IT lists LONI's Queen Bee 4 — 480 CPU nodes, 10 four-GPU A100 nodes, 5 big-memory nodes — as an advanced computing system available to its researchers at no cost. Access to Cypress requires association with a Tulane faculty PI, and accounts are available to any Tulanian on that basis; Tulane runs periodic HPC workshops and offers consultation through its Center for Research and Scientific Computing. Encouragingly for a law audience, Tulane's own list of projects enabled by its HPC services includes financial market trade data analysis, so non-laboratory quantitative work is already represented.",
     "networks": [
       "LONI (Louisiana)"
     ],
     "sources": [
-      "https://it.tulane.edu/technology-delivery/research-computing"
-    ]
+      "https://wiki.hpc.tulane.edu/trac/wiki/cypress/about",
+      "https://it.tulane.edu/resources/research-resources",
+      "https://wiki.hpc.tulane.edu/trac/wiki/cypress",
+      "https://it.tulane.edu/technology-delivery/research-computing",
+      "https://crsc.tulane.edu/"
+    ],
+    "caveat": "The GPUs are LONI's, not Tulane's, and Cypress is aging. A Tulane law researcher wanting NVIDIA GPU time should be pointed at LONI's Queen Bee 4 rather than at Cypress, which is a decade-old CPU/Xeon Phi machine. Xeon Phi is a discontinued Intel line, so code written for it has no forward path."
   },
   {
     "state": "Louisiana",
@@ -1761,18 +1827,22 @@
     "standalone": false,
     "tier": "frontier",
     "tierLabel": "Frontier — H100/H200/B200 confirmed",
-    "gpu": "Explorer: 525+ GPUs across mixed generations. AICR (new AI compute cluster): 400 GPUs comprising 248 NVIDIA B200 and 152 NVIDIA RTX Pro GPUs.",
-    "slurm": "Yes",
-    "hpcName": "Explorer HPC cluster + new AICR HPC cluster",
-    "specs": "Explorer: 45,000+ CPU cores, Intel Xeon spanning Sapphire Rapids, Ice Lake, Cascade Lake, Skylake, Broadwell and Haswell. Explorer and Discovery are both in production. Explorer is located at the MGHPCC.",
-    "notes": "Re-verified Sept 2026. Access here is among the most straightforward in the dataset: Northeastern Research Computing states that Explorer's 45,000+ CPU cores and 525+ GPUs are available to ALL Northeastern faculty and students free of charge, with no discipline restriction, which covers the School of Law directly. The newer AICR cluster is a separate and more selective tier — 400 GPUs including 248 NVIDIA B200s — where a PI must submit a Project Proposal and the team onboards users in reviewed cohorts. So the honest reading is 'frontier hardware exists and free general-access hardware exists, but they are not the same pool'. B200 presence confirms the frontier tier either way. Support includes weekly office hours, user guides, training sessions and one-on-one consultations.",
+    "gpu": "Explorer: over 525 GPUs spanning NVIDIA Pascal (P100), Volta (V100), Turing (T4), Ampere (A100), RTX (A5000, A6000), Ada Lovelace (L40) and Hopper (H100 and H200) — including 32 new H200 chips at 140GB each on the gpu and multigpu partitions. AICR: 400 GPUs comprising 248 NVIDIA B200 and 152 NVIDIA RTX6000 Pro.",
+    "slurm": "Yes — Slurm on both Explorer and AICR, each with SSH and Open OnDemand access",
+    "hpcName": "Explorer (Northeastern HPC) + AICR (shared MGHPCC AI cluster)",
+    "specs": "Explorer: 45,000+ CPU cores across Intel Xeon (Sapphire Rapids, Ice Lake, Cascade Lake, Skylake, Broadwell, Haswell, Sandy Bridge, Ivy Bridge) and AMD (Zen through Zen4); Rocky Linux 9.3; 6PB high-performance storage; 10GbE to the university network with compute nodes on 10GbE or 100/200 Gbps InfiniBand. Explorer superseded the older Discovery cluster in 2025. AICR adds dedicated project storage and a CPU-only partition for data cleaning and analysis. Both sit in the MGHPCC, a 90,000 sq ft, 15MW facility in Holyoke.",
+    "notes": "Re-verified Sept 2026, and RE-SOURCED after a random consistency audit flagged this row as carrying a 248-B200 claim on a single source — a fair criticism for the largest GPU number in the Massachusetts entries. It now checks out against four independent Northeastern pages plus a training repository. Frontier is confirmed twice over: Explorer itself carries 32 H200 chips at 140GB, and AICR adds 248 B200. Access splits cleanly into two tiers. Explorer is FREE TO ALL NORTHEASTERN FACULTY AND STUDENTS with no disciplinary restriction, so a law faculty member can simply request an account. AICR requires a PI to submit a Project Proposal, and Northeastern advises developing and testing work on Explorer first before using AICR for production runs, since it is shared. CROSS-REFERENCE FOR OTHER MASSACHUSETTS ROWS: AICR is not a Northeastern machine. It was commissioned by the Healey-Driscoll Administration, built by Cambridge Computer, and is shared among ALL SIX MGHPCC MEMBER UNIVERSITIES (Northeastern, BU, Harvard, MIT, UMass, Yale) plus the Massachusetts AI Hub and partners. That means the BU, Harvard, UMass and Yale rows in this dataset may each have an AICR pathway that none of them currently records. Worth checking — it would be the single largest unrecorded resource in the dataset.",
     "networks": [
       "MGHPCC (Massachusetts consortium)"
     ],
     "sources": [
-      "https://rc.northeastern.edu/"
+      "https://rc.northeastern.edu/",
+      "https://rc.northeastern.edu/aicr/",
+      "https://rc.northeastern.edu/2026/05/21/aicr-hpc-cluster-updates-from-the-avp/",
+      "https://rc.northeastern.edu/2025/04/30/all-about-explorer-and-the-new-h200-gpus/",
+      "https://rc.northeastern.edu/2026/02/04/research-computing-developments-aicr-hpc-cluster-and-power-cooling-upgrades/"
     ],
-    "caveat": "Two tiers with different doors. Explorer is free and open to all Northeastern faculty, but its 525+ GPUs are mixed-generation. The frontier-class B200 hardware sits in AICR, which requires an approved Project Proposal and cohort onboarding. Do not read the B200 count as generally available on request."
+    "caveat": "Two tiers with different doors. Explorer is free and open to all Northeastern faculty, but its 525+ GPUs are mixed-generation and only 32 are H200. The B200 hardware sits in AICR, which needs an approved PI Project Proposal and is shared across six universities and the Massachusetts AI Hub, so contention will be real. Do not read the 248 B200 count as generally available on request."
   },
   {
     "state": "Massachusetts",
@@ -1887,7 +1957,7 @@
     "slurm": "Yes",
     "hpcName": "Great Lakes HPC Cluster (ITS Advanced Research Computing)",
     "specs": "~13,000-16,000+ cores; 2PB scratch @ 80GB/s; HDR100 InfiniBand",
-    "notes": "Campus-wide resource available to all researchers on all campuses incl. Law School; SLURM confirmed; 80,000 free CPU hours via UMRCP. CORRECTED Sept 2026 — A40/A100 confirmed on Great Lakes, cutting-edge RTX6000 Pro Blackwell now on Armis2.",
+    "notes": "Campus-wide resource available to all researchers on all campuses incl. Law School; SLURM confirmed; 80,000 free CPU hours via UMRCP. CORRECTED Sept 2026 — A40/A100 confirmed on Great Lakes, cutting-edge RTX6000 Pro Blackwell now on Armis2. || CLASSIFICATION NOTE (Sept 2026, from a consistency audit): Armis2 carries NVIDIA RTX6000 Pro BLACKWELL nodes, and an automated check flagged this row for naming a Blackwell part while scored modern. That is correct as written — CONTRIBUTING.md's tier table lists RTX PRO 6000 under 'modern', not 'frontier', because it is a workstation/visualization part rather than a datacenter training GPU like the B200. Recorded here so the same flag is not 'fixed' into an incorrect upgrade later. Worth noting separately for a law audience that Armis2 is Michigan's SECURE cluster for PHI and other sensitive data — unusual among the rows in this dataset, most of which (USC's CARC most explicitly) forbid regulated data entirely.",
     "networks": [],
     "sources": [
       "https://documentation.its.umich.edu/node/4976",
@@ -1939,16 +2009,20 @@
     "school": "University of Minnesota Law School",
     "university": "University of Minnesota",
     "standalone": false,
-    "tier": "modern",
-    "tierLabel": "Modern — A100/A40/L40-class confirmed",
-    "gpu": "NVIDIA A100 and A40 GPUs (10 interactive nodes w/ 8x A40 each)",
+    "tier": "frontier",
+    "tierLabel": "Frontier — H100/H200/B200 confirmed",
+    "gpu": "Agate's mid-cycle upgrade added 80 nodes carrying NVIDIA H100 and L40S accelerators, with the H100s configured for double-precision work and the L40S for single-precision. Alongside these, Agate runs A100 batch GPU nodes, 10 A40 nodes for interactive use via command line or Jupyter, 8 L40S nodes and 15 V100 nodes; an earlier phase added 80 A40 single-precision GPUs for server-side rendering and interactive machine learning.",
     "slurm": "Yes",
-    "hpcName": "Minnesota Supercomputing Institute (MSI) - Agate cluster",
-    "specs": "416 nodes; 7 PFLOPS theoretical peak; 125M free compute hours/year",
-    "notes": "Free to University of Minnesota faculty and collaborators; fair-share SLURM scheduling; dedicated purchase option available",
+    "hpcName": "Minnesota Supercomputing Institute (MSI) — Agate",
+    "specs": "Agate is a heterogeneous HPE Linux cluster on AMD 7763 processors with 64-128 CPU cores per node, local solid-state scratch on every node and a high-speed interconnect. In service since Spring 2022, expanded in Summer 2024 with hardware absorbed from the decommissioned Mangi nodes, then upgraded again with the 80-node GPU phase. Storage built on Panasas Ultra with well over 10PB raw. MSI sits in Walter Library on the Twin Cities campus and is part of Research Computing within the Research and Innovation Office, alongside U-Spatial, the Data Science Initiative and the International Institute for Biosensing.",
+    "notes": "RECLASSIFIED Sept 2026, modern -> frontier. The row recorded Agate's A100 and A40 hardware, which was right when written, but MSI has since run a mid-cycle upgrade of 80 nodes adding H100 and L40S accelerators — described by MSI as introducing capabilities previously unavailable on its original systems and bridging toward a major system upgrade planned for 2027. The H100s are confirmed operational rather than announced, because MSI's own service unit pricing quotes a live H100 rate (1 SU buys 1.08 H100 GPU-hours, against 6.34 GPU-hours for an A40). Scale context: MSI serves over 900 research groups and four to five thousand unique researcher logins, so contention is real. Historical note — Minnesota was the first US university to buy a supercomputer, a Cray-1 in 1981, and MSI was founded in 1984. CROSS-REFERENCE WORTH FOLLOWING UP: MSI describes itself as serving faculty and researchers at the University AND at other institutions of higher education in Minnesota, with external users charged $3 per service unit. That is a possible, paid pathway for the other two Minnesota law schools in this dataset (Mitchell Hamline, standalone; St. Thomas, none), which neither row currently reflects. It was not verified in this pass and should be checked before either row is changed.",
     "networks": [],
     "sources": [
-      "https://msi.umn.edu/"
+      "https://msi.umn.edu/msi-research/msi-research-spotlights/agate-upgrade-boosts-ai-research-umn",
+      "https://msi.umn.edu/about-msi-services/agate/agate-a100-and-a40-gpus",
+      "https://msi.umn.edu/computing/dedicated-computing",
+      "https://msi.umn.edu/about-msi-services/high-performance-computing/agate",
+      "https://en.wikipedia.org/wiki/University_of_Minnesota_Supercomputing_Institute"
     ]
   },
   {
@@ -2019,15 +2093,20 @@
     "standalone": false,
     "tier": "frontier",
     "tierLabel": "Frontier — H100/H200/B200 confirmed",
-    "gpu": "NVIDIA H100, A100 (80G/40G), V100S, V100, T4, K20 GPUs (SXM + PCIe)",
-    "slurm": "Yes",
-    "hpcName": "Research Infrastructure Services (RIS) / Center for HPC (CHPC)",
-    "specs": "3 PFLOPS GPU-accelerated capacity; 18+PB tiered storage; HDR InfiniBand",
-    "notes": "Slurm reservations available for dedicated nodes; serves broad WashU research community",
+    "gpu": "The Research Computing and Informatics Facility's Center for High-Performance Computing provides over 80 NVIDIA A100 and H100 GPUs alongside over 2,500 CPU cores. RIS separately runs shared GPU and CPU resource pools on the Scientific Compute Platform. The Arts & Sciences condo on Compute2 adds 8 NVIDIA A100 PCIe 80GB across nodes totalling 500+ cores and 8TB RAM.",
+    "slurm": "Yes on Compute2, and this changed recently — Compute1 used LSF queues, while Compute2 runs Slurm, with Slurm reservations for dedicated CPU or GPU nodes available from 1 September 2026",
+    "hpcName": "RIS Scientific Compute Platform — Compute2 (Compute1 retiring); RCIF/CHPC",
+    "specs": "RCIF: multi-petabyte parallel filesystem with off-site disaster recovery, InfiniBand HDR. RIS platforms are container-based (Docker) so software environments deploy independently of one another, with Open OnDemand available for GUI access. All research faculty get 5TB of free Active storage. RIS also runs the WUSTL Secure Enclave supporting NIST SP 800-171 Rev. 2 for CMMC and NIH Genomic Data Sharing, and environments approved for NIH controlled-access data such as dbGaP. RCIF is an NIH Recharge Center with equipment from S10 grants 1S10OD025200-01A1 and 1S10OD030477-01.",
+    "notes": "Re-verified Sept 2026 — frontier CONFIRMED (over 80 A100 and H100 GPUs on the RCIF/CHPC side) with an important STRUCTURAL UPDATE this row was missing. WashU has launched Compute2, announced in October 2025 as the next-generation HPC platform, and COMPUTE1 IS BEING DECOMMISSIONED with an official end-of-life of 1 July 2027; new RIS account applications are provisioned on Compute2 by default and condo owners are being migrated in rounds. The scheduler changed with it — Compute1 documentation describes LSF queues, Compute2 uses Slurm. Anyone re-checking this row or following older WashU documentation should work from Compute2. Access is broad: RIS states research data storage and computing services are available to all WashU research faculty, with no disciplinary restriction, so a law faculty member qualifies. Note two distinct organisations are in play — RIS is WashU IT's central service, while the RCIF and its CHPC are a separate research core facility with its own hardware; the 80+ A100/H100 figure belongs to the latter.",
     "networks": [],
     "sources": [
-      "https://ris.wustl.edu/"
-    ]
+      "https://ris.wustl.edu/systems/",
+      "https://ris.wustl.edu/services/compute/",
+      "https://research.washu.edu/core-facilities/research-computing-and-informatics-facility/",
+      "https://it.wustl.edu/2025/10/available-now-computer2-the-future-of-high-performance-computing-at-washu/",
+      "https://it.artsci.washu.edu/questions-and-answers-about-ris"
+    ],
+    "caveat": "Onboarding is mandatory and costs are metered. Access to Compute2 requires completing an onboarding process — Arts & Sciences documentation states users must either attend a Zoom workshop or watch a training video before access is granted. RIS also publishes cost forecasting tooling for 'computing options, associated costs, and forecasting for future expenses', so this is a chargeback environment rather than a free allocation like Nebraska's or New Mexico's. Confirm pricing before planning a large GPU job."
   },
   {
     "state": "Missouri",
@@ -2053,19 +2132,21 @@
     "school": "University of Missouri-Columbia School of Law",
     "university": "University of Missouri",
     "standalone": false,
-    "tier": "frontier",
-    "tierLabel": "Frontier — H100/H200/B200 confirmed",
-    "gpu": "32 NVIDIA A100 nodes (Nautilus); V100/H100 GPUs (The Mill)",
-    "slurm": "Not confirmed for Mizzou specifically",
-    "hpcName": "UM System Research Support Solutions (The Mill/Foundry/Nautilus, based at Missouri S&T) - shared UM System resource",
-    "specs": "26PB DDN storage (Nautilus); 250TB flash (The Mill)",
-    "notes": "UM System-wide docs suggest access may extend to Columbia campus, but primary user base appears to be Missouri S&T; not confirmed specifically for Mizzou Law",
+    "tier": "modern",
+    "tierLabel": "Modern — A100/A40/L40-class confirmed",
+    "gpu": "Hellbender launched with 17 GPU nodes of four NVIDIA A100 80GB each (68 A100s), expanded since through researcher investment and by repurposing the newest parts of MU's previous cluster. NOTE: the 8 H100 GPUs sometimes attributed to Missouri sit in a single node of THE MILL at Missouri S&T in Rolla — a different UM System campus — whose 8 GPU nodes comprise 6 with four V100 each, 1 with eight H100 and 1 with two V100, 34 GPUs in total.",
+    "slurm": "Yes",
+    "hpcName": "Hellbender (MU research cluster) — ITRSS / Division of Research, Innovation & Impact",
+    "specs": "Hellbender (built at MU in 2023): initially 112 compute nodes with two AMD 7713 processors and 512GB RAM each, plus 17 GPU nodes with two Intel Xeon 6338 processors and 256GB system RAM alongside their four A100s. Access uses CILogon. Each PI or sponsor can request a 5TB storage group in MU's Research Data Ecosystem through the UM System service portal. The Mill (S&T, also 2023): 229 compute nodes, 15,200 cores.",
+    "notes": "RECLASSIFIED Sept 2026, frontier -> modern. This row conflated THREE separate systems and the correction is worth spelling out. (1) It named 'Nautilus', which is not a University of Missouri machine at all — Nautilus is the National Research Platform's hyperconverged GPU cluster, a national NSF resource whose documentation lives at other institutions entirely. (2) It attributed H100s to Missouri; those are in one node of The Mill at MISSOURI S&T in Rolla, a different campus. (3) MU Columbia's actual cluster, Hellbender, is an A100 machine — 17 nodes of four A100 80GB at launch — which is squarely 'modern', not frontier. MU's own ITRSS wiki states plainly that researchers are not limited to one resource but that 'due to differences in funding sources for the resource, some of them have different access rules', so cross-campus access to The Mill cannot be assumed from Columbia. The Division of Research, Innovation and Impact describes Hellbender's mission as accelerating the Mizzou Forward initiative.",
     "networks": [
       "UM System Research Support Solutions"
     ],
     "sources": [
-      "https://docs.itrss.umsystem.edu/pub/hpc/start"
-    ]
+      "https://itrss-wiki.rnet.missouri.edu/_export/raw/pub/hpc/start",
+      "https://its.ucsc.edu/services/research-computing/research-specific-computing-and-applications/national-research-platform-nautilus-hyperconverged-gpu-cluster/"
+    ],
+    "caveat": "Cross-campus access is not established. If a Mizzou law researcher specifically needs H100-class hardware, the nearest UM System option is The Mill at Missouri S&T, and MU's own documentation warns that access rules differ between resources by funding source. Confirm with ITRSS rather than assuming UM System membership grants it — the same failure mode documented for University of Baltimore and UMD's Zaratan elsewhere in this dataset."
   },
   {
     "state": "Missouri",
@@ -2171,15 +2252,19 @@
     "standalone": false,
     "tier": "modern",
     "tierLabel": "Modern — A100/A40/L40-class confirmed",
-    "gpu": "9 nodes w/ 2x K80 each; 1 node w/ V100; 14 nodes w/ A100",
-    "slurm": "Not confirmed by name (job-queue managed)",
+    "gpu": "Premise GPU inventory as published by UNH: 9 compute nodes with two NVIDIA K80 cards each (18 K80), 1 node with a single V100, 14-15 nodes with a single A100 each, and 1 node with a single NVIDIA H100. Total GPU contribution roughly 216 TFLOPS before Tensor Cores, which add a further ~147 TFLOPS across the A100s and ~30 on the H100.",
+    "slurm": "Yes",
     "hpcName": "Research Computing Center (RCC) - Premise cluster (USNH system-wide)",
-    "specs": "70 compute nodes; 225TB+777TB+160TB storage; HDR InfiniBand",
-    "notes": "USNH-wide (buy-in model); 4 nodes centrally funded for unfunded researchers; also has Cray 'Trillian' supercomputer",
+    "specs": "Premise is a Dell cluster in the RCC/Lenharth Data Center at Durham, built on a condo buy-in model: core infrastructure (racks, power, cooling, network, file storage and six servers) is funded centrally by ET&S and REEO for USNH researchers, with three standard node configurations quoted at roughly $20k base, $25k hi-ram and $30k+ GPU. RCC also runs BioMade (live 2019, 24 nodes, 228TB) and marvin, a Cray acquired under a 2020 NSF MRI (AGS-1919310). RCC has about 30 staff and a 2,000 sq ft research data centre, reporting to the CIO and Senior Vice Provost for Research.",
+    "notes": "Re-verified Sept 2026 — modern CONFIRMED, and an apparent inconsistency resolved. This row looked wrong at a glance because its visible hardware string began with K80 and V100, both 'older' tier parts. The truncated remainder is what carries the tier: the '14 nodes' each hold a single NVIDIA A100, which is squarely modern. UNH's published performance arithmetic also shows one H100 node, so a single Hopper card exists — but by the same reasoning applied to Hawai'i in this project, one card in a buy-in cluster does not make an institution a frontier site, so the row stays modern with the H100 noted rather than promoted. Access is reasonable for an unfunded researcher: Premise is a buy-in cluster, but RCC states the model 'enables researchers without funding to access the cluster' through a shared job queue available to all Premise users, with a Technology Governance Committee reviewing usage to keep availability equitable. Owners get a restricted priority queue on hardware they bought.",
     "networks": [],
     "sources": [
-      "https://www.unh.edu/research/research-computing-center"
-    ]
+      "https://premise.sr.unh.edu/",
+      "https://www.unh.edu/research/research-computing-center",
+      "https://www.usnh.edu/it/departments/research-computing-software-development",
+      "https://www.nhepscor.org/resource/premise-hpc-cluster"
+    ],
+    "caveat": "Buy-in cluster, and the law school is on a different campus. Priority goes to node owners; unfunded users share a general queue, so wait times depend on owner demand. Note also that UNH Franklin Pierce School of Law is in Concord while Premise sits in Durham — USNH operates data centres at Durham, Keene, Plymouth, Concord and Manchester and the infrastructure is described as serving USNH researchers generally, so this should not be a barrier, but a Concord-based researcher may want to confirm with RCC."
   },
   {
     "state": "New Jersey",
@@ -2188,17 +2273,22 @@
     "standalone": false,
     "tier": "modern",
     "tierLabel": "Modern — A100/A40/L40-class confirmed",
-    "gpu": "124+ NVIDIA GPUs (Tesla/Volta/Titan legacy; new NVIDIA L40S via 'Clark' expansion)",
+    "gpu": "Amarel's long-published figure is 124 NVIDIA GPUs of Tesla, Volta and Titan models. The current Clark phase, available to the research community from January 2026, adds NVIDIA 3x L40S GPU nodes, which is what places this row in the modern tier.",
     "slurm": "Yes",
     "hpcName": "OARC - Amarel cluster (+ campus-specific PRICE cluster at Newark)",
-    "specs": "~600 nodes; 15,500+ cores; 1.5TB RAM nodes; IBM Spectrum Scale storage",
-    "notes": "Free to all Rutgers faculty/staff/students across New Brunswick, Newark, AND Camden campuses; Newark also has dedicated PRICE cluster",
+    "specs": "Approximately 600 nodes providing 15,500 compute cores, with memory configurations from 128GB to 1.5TB including Intel Optane persistent memory, all connected over Mellanox InfiniBand FDR or EDR. Clark nodes use dual Intel Xeon Gold 6538Y+ (Emerald Rapids) 32-core processors (64 cores per node) with TruDDR5 memory, doubling standard node RAM from 256GB to 512GB. Amarel spans three Rutgers data centres — Piscataway, Newark and Camden — as a single unified system. Node ownership is priced at $11,435 per CPU node, $18,735 per high-memory node and $30,755 per 3x L40S GPU node, each including 1TB of complimentary storage on a four-year warranted lifetime.",
+    "notes": "Re-verified Sept 2026 — modern CONFIRMED. Amarel is a condominium-style cluster launched in July 2017, named for Saul Amarel, a founder of the Rutgers Computer Science Department. Since 2023 each hardware phase is named after a New Jersey city in alphabetical order; the dataset is current as of the transition from Bayonne to CLARK. Access is genuinely open: Rutgers describes Amarel as providing FREE ACCESS FOR RESEARCHERS ACROSS DISCIPLINES, available to all current Rutgers students, staff and faculty including professors emeritus, via a single access-request form, with centrally-funded general-access partitions named main, gpu, mem and nonpre. Buying nodes is optional and buys priority, not entry. Jobs are managed with SLURM. Newark hosts one of Amarel's three data centres, so this is a same-campus resource for Rutgers Law Newark.",
     "networks": [
       "Rutgers multi-campus (Amarel)"
     ],
     "sources": [
-      "https://oarc.rutgers.edu/"
-    ]
+      "https://oarc.rutgers.edu/resources/amarel/",
+      "https://it.rutgers.edu/2026/01/06/introducing-clark-the-next-generation-of-amarel-and-research-computing/",
+      "https://sites.google.com/view/cluster-user-guide/amarel",
+      "https://it.rutgers.edu/research-computing/amarel/",
+      "https://research.rutgers.edu/system/files/2021-08/OARC%20Facilities%20and%20Equipment.pdf"
+    ],
+    "caveat": "Guest accounts do not reach the central GPUs. Rutgers distinguishes sharply between members and guests: a guest affiliated with an owning department may use that host's partitions but is explicitly denied access to the University's centrally-funded main, gpu, mem and nonpre partitions. A law faculty member with a current Rutgers appointment is a full member and unaffected, but visiting scholars and external collaborators are not."
   },
   {
     "state": "New Jersey",
@@ -2207,17 +2297,22 @@
     "standalone": false,
     "tier": "modern",
     "tierLabel": "Modern — A100/A40/L40-class confirmed",
-    "gpu": "124+ NVIDIA GPUs incl. new NVIDIA L40S (same shared Amarel resource as Newark)",
+    "gpu": "Amarel's long-published figure is 124 NVIDIA GPUs of Tesla, Volta and Titan models. The current Clark phase, available to the research community from January 2026, adds NVIDIA 3x L40S GPU nodes, which is what places this row in the modern tier.",
     "slurm": "Yes",
     "hpcName": "OARC - Amarel cluster",
-    "specs": "Same as above",
-    "notes": "Same free system-wide access spanning Camden campus",
+    "specs": "Approximately 600 nodes providing 15,500 compute cores, with memory configurations from 128GB to 1.5TB including Intel Optane persistent memory, all connected over Mellanox InfiniBand FDR or EDR. Clark nodes use dual Intel Xeon Gold 6538Y+ (Emerald Rapids) 32-core processors (64 cores per node) with TruDDR5 memory, doubling standard node RAM from 256GB to 512GB. Amarel spans three Rutgers data centres — Piscataway, Newark and Camden — as a single unified system. Node ownership is priced at $11,435 per CPU node, $18,735 per high-memory node and $30,755 per 3x L40S GPU node, each including 1TB of complimentary storage on a four-year warranted lifetime.",
+    "notes": "Re-verified Sept 2026 — modern CONFIRMED. Amarel is a condominium-style cluster launched in July 2017, named for Saul Amarel, a founder of the Rutgers Computer Science Department. Since 2023 each hardware phase is named after a New Jersey city in alphabetical order; the dataset is current as of the transition from Bayonne to CLARK. Access is genuinely open: Rutgers describes Amarel as providing FREE ACCESS FOR RESEARCHERS ACROSS DISCIPLINES, available to all current Rutgers students, staff and faculty including professors emeritus, via a single access-request form, with centrally-funded general-access partitions named main, gpu, mem and nonpre. Buying nodes is optional and buys priority, not entry. Jobs are managed with SLURM. One Camden-specific advantage worth recording: OARC states that a researcher or student affiliated with RU-Camden also has access to AMAREL-C, the Camden-based subset of Amarel's compute and storage, in addition to the university-wide resources.",
     "networks": [
       "Rutgers multi-campus (Amarel)"
     ],
     "sources": [
-      "https://oarc.rutgers.edu/"
-    ]
+      "https://oarc.rutgers.edu/resources/amarel/",
+      "https://it.rutgers.edu/2026/01/06/introducing-clark-the-next-generation-of-amarel-and-research-computing/",
+      "https://sites.google.com/view/cluster-user-guide/amarel",
+      "https://it.rutgers.edu/research-computing/amarel/",
+      "https://research.rutgers.edu/system/files/2021-08/OARC%20Facilities%20and%20Equipment.pdf"
+    ],
+    "caveat": "Guest accounts do not reach the central GPUs. Rutgers distinguishes sharply between members and guests: a guest affiliated with an owning department may use that host's partitions but is explicitly denied access to the University's centrally-funded main, gpu, mem and nonpre partitions. A law faculty member with a current Rutgers appointment is a full member and unaffected, but visiting scholars and external collaborators are not."
   },
   {
     "state": "New Jersey",
@@ -2247,14 +2342,18 @@
     "standalone": false,
     "tier": "frontier",
     "tierLabel": "Frontier — H100/H200/B200 confirmed",
-    "gpu": "36 NVIDIA L40S + 8 H100 (Easley); 37 NVIDIA A100 (Hopper); K40 (Xena, legacy)",
+    "gpu": "Easley: 36 NVIDIA L40S + 8 NVIDIA H100. Hopper: 37 NVIDIA A100. Xena: NVIDIA K40 (legacy). Figures match CARC's own infrastructure page and its GitHub organisation README exactly.",
     "slurm": "Yes",
     "hpcName": "Center for Advanced Research Computing (CARC) - Easley/Hopper/Xena clusters",
-    "specs": "4,160+ cores (Easley); NDR 800Gbps InfiniBand",
-    "notes": "Free to UNM faculty, staff, and students; one of the largest computing centers in New Mexico",
+    "specs": "Easley (mixed CPU/GPU, Dell, replaced Wheeler): 65 compute nodes, 4,160 CPU cores, 23.3TB RAM, NVIDIA NDR 800 Gbps InfiniBand core with 200 Gbps to nodes, 768TB raw all-flash parallel filesystem plus IBM Storage. Hopper (condo cluster): 61 nodes, 2,176 cores, HDR 400 Gbps InfiniBand. Xena: 32 nodes, 720 cores, FDR 56 Gbps. Housed in CARC's dedicated research data center with 270 kVa UPS and 70 tons of cooling, on UNM's Science DMZ with 100G links to ESnet and the Western Regional Network via the Albuquerque Gigapop. CARC has operated since 1994.",
+    "notes": "Re-verified Sept 2026 — the figures in this row are EXACT, matching CARC's infrastructure page and its GitHub README independently. Easley is named for Annie Easley, the NASA computer programmer and mathematician. Access is excellent and explicitly free: CARC describes itself as providing high-performance computing, large-scale storage and expert support to UNM faculty, staff and students FREE OF CHARGE, courtesy of the Office of the Vice President for Research, with free baseline services, premium options and grant-writing boilerplate offered to researchers. The Hopper condo model is researcher-friendly in both directions — OVPR funded a set of nodes that the whole UNM computational research community may use free of charge, and buy-in researchers' nodes are available to others when idle. Leadership note for future re-checks: Tyson Swetnam became CARC Director in 2026, succeeding Patrick Bridges.",
     "networks": [],
     "sources": [
-      "https://carc.unm.edu/"
+      "https://carc.unm.edu/systems/carc-infrastructure.html",
+      "https://github.com/UNM-CARC",
+      "https://carc.unm.edu/news--events/News/easley-cluster.html",
+      "https://carc.unm.edu/news--events/News/carc-launches-hopper.html",
+      "https://carc.unm.edu/about-carc/facilities-description.html"
     ]
   },
   {
@@ -2646,5 +2745,134 @@
     "networks": [
       "Penn State ICDS (multi-campus)"
     ]
+  },
+  {
+    "state": "Oklahoma",
+    "school": "University of Oklahoma College of Law",
+    "university": "University of Oklahoma",
+    "standalone": false,
+    "tier": "modern",
+    "tierLabel": "Modern — A100/A40/L40-class confirmed",
+    "gpu": "OneOCII-RAML: 7 nodes each configured with an NVIDIA HGX A100 4-GPU board — 28 A100 GPUs total. A further CC* grant is expected to fund 10 NVIDIA H100 cards plus their servers; OSCER's own page describes these as anticipated rather than installed, so they are NOT counted toward this row's tier.",
+    "slurm": "Not confirmed — OSCER's public system page does not name its scheduler",
+    "hpcName": "OSCER (OU Supercomputing Center for Education & Research) — OneOCII-RAML",
+    "specs": "OSCER's supercomputer runs Enterprise Linux 9 (mostly Rocky Linux 9), with some nodes still on EL7 during transition. Interconnect is mixed: Mellanox FDR10 40 Gbps (3:1 oversubscribed) on Haswell and Broadwell nodes, HDR100 100 Gbps (4:1) elsewhere, with an EDR 100 Gbps super-core linking the two fabrics; some condo nodes have no InfiniBand at the owner's discretion. OneOCII-RAML reaches the state through the OneOklahoma Friction Free Network (OFFN), a 10 and 100 Gbps research network now spanning 21 campuses.",
+    "sources": [
+      "https://www.oneocii.okepscor.org/about/",
+      "https://www.oscer.ou.edu/supercomputer/",
+      "https://ui.adsabs.harvard.edu/abs/2022nsf....2201561E/abstract",
+      "https://www.oneocii.okepscor.org/services/",
+      "https://www.oneocii.okepscor.org/news/oklahoma-receives-2-1-million-from-national-science-foundation-to-expand-research-networking-and-computing-statewide/"
+    ],
+    "notes": "ADDED Sept 2026 — Oklahoma was one of the states missing entirely from this directory. Access runs through the OneOklahoma Cyberinfrastructure Initiative (OneOCII), which is the second genuinely inclusive statewide programme found in this project after Ohio's OSC. OneOCII describes itself as a statewide ALL-INCLUSIVE advanced digital services collaboration, and its stated aims are to reach institutions outside the mainstream of advanced computing and to SERVE EVERY HIGHER EDUCATION INSTITUTION IN OKLAHOMA that has relevant curricula. It has reached over 100 institutions and organisations statewide — more than 50 academic, including PhD-granting universities, primarily undergraduate institutions, community colleges and career techs — and runs over 1,000 HPC users at 20+ Oklahoma institutions. Crucially for this directory, the OneOCII-RAML grant abstract states the system supports educational programming to grow AI/ML use in research BEYOND COMPUTER SCIENCE DISCIPLINES and is a state-wide resource for non-commercial research institutions across Oklahoma. OSCER also runs the long-standing Oklahoma Supercomputing Symposium and the 'Supercomputing in Plain English' workshop series, which is an unusually low-jargon on-ramp for a researcher outside the computational sciences. OU is OSCER's home campus, so this is an on-campus resource and the strongest of the three Oklahoma rows. OSCER's Research IT group also writes letters of commitment and facilities descriptions for grant proposals, and its personnel can join as Co-PI or consultant.",
+    "caveat": "Statewide eligibility is broad but the compute is modest, and the H100s are not here yet. OneOCII's reach is real, but OneOCII-RAML is a 7-node, 28-GPU machine shared across a whole state, and its stated purpose is weighted toward STEM (weather and climate AI, high-energy physics). The 10 H100 cards are anticipated grant-funded hardware, not installed capacity — the same announced-versus-operational distinction that made Arizona's row wrong. Non-OU institutions reach it through OFFN and OneOCII rather than by direct account, so confirm the route with OSCER before relying on it.",
+    "networks": [
+      "OneOCII (Oklahoma statewide)"
+    ]
+  },
+  {
+    "state": "Oklahoma",
+    "school": "Oklahoma City University School of Law",
+    "university": "Oklahoma City University",
+    "standalone": false,
+    "tier": "modern",
+    "tierLabel": "Modern — A100/A40/L40-class confirmed",
+    "gpu": "OneOCII-RAML: 7 nodes each configured with an NVIDIA HGX A100 4-GPU board — 28 A100 GPUs total. A further CC* grant is expected to fund 10 NVIDIA H100 cards plus their servers; OSCER's own page describes these as anticipated rather than installed, so they are NOT counted toward this row's tier.",
+    "slurm": "Not confirmed — OSCER's public system page does not name its scheduler",
+    "hpcName": "OSCER (OU Supercomputing Center for Education & Research) — OneOCII-RAML",
+    "specs": "OSCER's supercomputer runs Enterprise Linux 9 (mostly Rocky Linux 9), with some nodes still on EL7 during transition. Interconnect is mixed: Mellanox FDR10 40 Gbps (3:1 oversubscribed) on Haswell and Broadwell nodes, HDR100 100 Gbps (4:1) elsewhere, with an EDR 100 Gbps super-core linking the two fabrics; some condo nodes have no InfiniBand at the owner's discretion. OneOCII-RAML reaches the state through the OneOklahoma Friction Free Network (OFFN), a 10 and 100 Gbps research network now spanning 21 campuses.",
+    "sources": [
+      "https://www.oneocii.okepscor.org/about/",
+      "https://www.oscer.ou.edu/supercomputer/",
+      "https://ui.adsabs.harvard.edu/abs/2022nsf....2201561E/abstract",
+      "https://www.oneocii.okepscor.org/services/",
+      "https://www.oneocii.okepscor.org/news/oklahoma-receives-2-1-million-from-national-science-foundation-to-expand-research-networking-and-computing-statewide/"
+    ],
+    "notes": "ADDED Sept 2026 — Oklahoma was one of the states missing entirely from this directory. Access runs through the OneOklahoma Cyberinfrastructure Initiative (OneOCII), which is the second genuinely inclusive statewide programme found in this project after Ohio's OSC. OneOCII describes itself as a statewide ALL-INCLUSIVE advanced digital services collaboration, and its stated aims are to reach institutions outside the mainstream of advanced computing and to SERVE EVERY HIGHER EDUCATION INSTITUTION IN OKLAHOMA that has relevant curricula. It has reached over 100 institutions and organisations statewide — more than 50 academic, including PhD-granting universities, primarily undergraduate institutions, community colleges and career techs — and runs over 1,000 HPC users at 20+ Oklahoma institutions. Crucially for this directory, the OneOCII-RAML grant abstract states the system supports educational programming to grow AI/ML use in research BEYOND COMPUTER SCIENCE DISCIPLINES and is a state-wide resource for non-commercial research institutions across Oklahoma. OSCER also runs the long-standing Oklahoma Supercomputing Symposium and the 'Supercomputing in Plain English' workshop series, which is an unusually low-jargon on-ramp for a researcher outside the computational sciences. OCU is a private institution. OneOCII's all-inclusive framing is what brings it into scope — the same public/private distinction that excluded private Mississippi College from MCSR. This row rests on the statewide policy rather than on any OCU resource of its own, which was not found.",
+    "caveat": "Statewide eligibility is broad but the compute is modest, and the H100s are not here yet. OneOCII's reach is real, but OneOCII-RAML is a 7-node, 28-GPU machine shared across a whole state, and its stated purpose is weighted toward STEM (weather and climate AI, high-energy physics). The 10 H100 cards are anticipated grant-funded hardware, not installed capacity — the same announced-versus-operational distinction that made Arizona's row wrong. Non-OU institutions reach it through OFFN and OneOCII rather than by direct account, so confirm the route with OSCER before relying on it.",
+    "networks": [
+      "OneOCII (Oklahoma statewide)"
+    ]
+  },
+  {
+    "state": "Oklahoma",
+    "school": "University of Tulsa College of Law",
+    "university": "University of Tulsa",
+    "standalone": false,
+    "tier": "modern",
+    "tierLabel": "Modern — A100/A40/L40-class confirmed",
+    "gpu": "OneOCII-RAML: 7 nodes each configured with an NVIDIA HGX A100 4-GPU board — 28 A100 GPUs total. A further CC* grant is expected to fund 10 NVIDIA H100 cards plus their servers; OSCER's own page describes these as anticipated rather than installed, so they are NOT counted toward this row's tier.",
+    "slurm": "Not confirmed — OSCER's public system page does not name its scheduler",
+    "hpcName": "OSCER (OU Supercomputing Center for Education & Research) — OneOCII-RAML",
+    "specs": "OSCER's supercomputer runs Enterprise Linux 9 (mostly Rocky Linux 9), with some nodes still on EL7 during transition. Interconnect is mixed: Mellanox FDR10 40 Gbps (3:1 oversubscribed) on Haswell and Broadwell nodes, HDR100 100 Gbps (4:1) elsewhere, with an EDR 100 Gbps super-core linking the two fabrics; some condo nodes have no InfiniBand at the owner's discretion. OneOCII-RAML reaches the state through the OneOklahoma Friction Free Network (OFFN), a 10 and 100 Gbps research network now spanning 21 campuses.",
+    "sources": [
+      "https://www.oneocii.okepscor.org/about/",
+      "https://www.oscer.ou.edu/supercomputer/",
+      "https://ui.adsabs.harvard.edu/abs/2022nsf....2201561E/abstract",
+      "https://www.oneocii.okepscor.org/services/",
+      "https://www.oneocii.okepscor.org/news/oklahoma-receives-2-1-million-from-national-science-foundation-to-expand-research-networking-and-computing-statewide/"
+    ],
+    "notes": "ADDED Sept 2026 — Oklahoma was one of the states missing entirely from this directory. Access runs through the OneOklahoma Cyberinfrastructure Initiative (OneOCII), which is the second genuinely inclusive statewide programme found in this project after Ohio's OSC. OneOCII describes itself as a statewide ALL-INCLUSIVE advanced digital services collaboration, and its stated aims are to reach institutions outside the mainstream of advanced computing and to SERVE EVERY HIGHER EDUCATION INSTITUTION IN OKLAHOMA that has relevant curricula. It has reached over 100 institutions and organisations statewide — more than 50 academic, including PhD-granting universities, primarily undergraduate institutions, community colleges and career techs — and runs over 1,000 HPC users at 20+ Oklahoma institutions. Crucially for this directory, the OneOCII-RAML grant abstract states the system supports educational programming to grow AI/ML use in research BEYOND COMPUTER SCIENCE DISCIPLINES and is a state-wide resource for non-commercial research institutions across Oklahoma. OSCER also runs the long-standing Oklahoma Supercomputing Symposium and the 'Supercomputing in Plain English' workshop series, which is an unusually low-jargon on-ramp for a researcher outside the computational sciences. TU is a private institution reached through OneOCII rather than through any TU cluster, which was not found in this pass. Note that Oral Roberts University in Tulsa is a named participant in OneOCII regional CC* awards, confirming that private Tulsa-area institutions do participate.",
+    "caveat": "Statewide eligibility is broad but the compute is modest, and the H100s are not here yet. OneOCII's reach is real, but OneOCII-RAML is a 7-node, 28-GPU machine shared across a whole state, and its stated purpose is weighted toward STEM (weather and climate AI, high-energy physics). The 10 H100 cards are anticipated grant-funded hardware, not installed capacity — the same announced-versus-operational distinction that made Arizona's row wrong. Non-OU institutions reach it through OFFN and OneOCII rather than by direct account, so confirm the route with OSCER before relying on it.",
+    "networks": [
+      "OneOCII (Oklahoma statewide)"
+    ]
+  },
+  {
+    "state": "North Carolina",
+    "school": "UNC School of Law",
+    "university": "University of North Carolina at Chapel Hill",
+    "standalone": false,
+    "tier": "modern",
+    "tierLabel": "Modern — A100/A40/L40-class confirmed",
+    "gpu": "Longleaf runs dedicated GPU partitions. UNC Research Computing's GPU page records the FY25/26 acquisition as three nodes of eight RTX Pro 6000 GPUs each (24 cards), described as a follow-on to the L40S with similar compute capacity and twice the GPU memory. RTX PRO 6000 sits in the modern tier under CONTRIBUTING.md's table, not frontier.",
+    "slurm": "Yes — Slurm, with Open OnDemand as a web portal alternative",
+    "specs": "Longleaf has over 300 nodes with dedicated GPU partitions and high-performance storage, optimised for memory- and I/O-intensive, loosely coupled workloads and high aggregate job throughput rather than individual job speed — well suited to many-small-jobs work. New hardware is added annually. Storage: home on /nas/longleaf/home, with /hickory/users as the default user space since 14 August 2026 at 2TB and 3 million files per user (not backed up), plus /work for high-throughput data-intensive computing. Open OnDemand provides job submission, file browsing and preconfigured applications without command-line work.",
+    "sources": [
+      "https://help.rc.unc.edu/getting-started-on-longleaf/",
+      "https://help.rc.unc.edu/gpu/",
+      "https://www.unc.edu/discover/7-decades-of-difference-carolinas-1st-computer-and-its-current-cluster-2/"
+    ],
+    "notes": "ADDED Sept 2026 — North Carolina was missing entirely from this directory despite having six ABA-accredited law schools. Access at UNC is broad and clearly stated: Research Computing describes Longleaf as available to RESEARCHERS, STUDENTS, FACULTY AND STAFF ACROSS THE UNIVERSITY, with no disciplinary restriction, so a law faculty member qualifies on its face. Open OnDemand matters here too — it gives browser-based access to preconfigured applications, which lowers the barrier for someone who does not work at a shell prompt. Longleaf's design emphasis on throughput over single-job speed suits the kind of many-small-jobs work common in empirical legal research (running a model across many jurisdictions, years or case sets).",
+    "caveat": "GPU inventory is partly forward-looking, and the default storage is not backed up. UNC's GPU page presents the three RTX Pro 6000 nodes as a 'Coming Soon' FY25/26 acquisition, so confirm availability before relying on them; the pre-existing GPU complement was not itemised in this pass. Also note new resource limits imposed in March 2026: a GPU job cannot request more than 16 CPUs and 128GB of system RAM, to stop GPUs being stranded. The default /hickory/users space is explicitly not backed up.",
+    "networks": [],
+    "hpcName": "Longleaf — UNC Research Computing (ITS)"
+  },
+  {
+    "state": "North Carolina",
+    "school": "Duke University School of Law",
+    "university": "Duke University",
+    "standalone": false,
+    "tier": "undetailed",
+    "tierLabel": "HPC exists, GPU support not publicly detailed",
+    "gpu": "Not itemised publicly for the shared cluster. Duke Research Computing clearly operates GPU hardware — a documented lab-dedicated allocation elsewhere on Duke infrastructure includes 6 servers of four NVIDIA A6000 Ada each and 3 servers of dual V100S — but that is a single lab's exclusive allocation, not the general Duke Compute Cluster complement, and this pass did not establish what GPUs the shared DCC partitions hold.",
+    "slurm": "Not confirmed in this pass",
+    "hpcName": "Duke Compute Cluster (DCC) — OIT Research Computing",
+    "specs": "The DCC is described as a generalised high-performance computing resource supporting research across Duke, accommodating interactive sessions with MATLAB, RStudio and Jupyter notebooks as well as massively parallel workflows. Access routes differ by role: faculty research groups request through Research Computing staff office hours, PhD students claim an allocation through Research Toolkits, and members of existing labs request from their lab point of contact.",
+    "sources": [
+      "https://oit-rc.pages.oit.duke.edu/rcsupportdocs/",
+      "https://cryoem.cs.duke.edu/compute-resources/"
+    ],
+    "notes": "ADDED Sept 2026. Scored 'undetailed' deliberately rather than guessing at a GPU tier. Duke plainly has substantial GPU capacity, but this pass could not establish what the SHARED Duke Compute Cluster offers as against what individual labs have purchased, and this project has now been bitten three times by exactly that conflation (Missouri, Tulane, Southern Illinois). Recording 'undetailed' with an honest caveat is more useful than an unverified 'modern'. What is confirmed is the access model, and it is good: Duke states that computing and storage allocations for faculty labs and PhD students are provided AT NO COST for most researchers, with buy-in or modest fees only if needs exceed those allocations. Faculty request through Research Computing staff office hours. NEXT STEP FOR A CONTRIBUTOR: the DCC's own partition and GPU documentation would settle the tier in a single visit.",
+    "caveat": "Tier not established. The A6000 Ada and V100S figures found in this pass belong to one lab's exclusive allocation (the Bartesaghi Lab, 100 nodes reserved to it), not to the general cluster, and must not be read as available to a law faculty member. Treat this row as 'resource confirmed, hardware unknown' until someone checks the DCC partition list.",
+    "networks": []
+  },
+  {
+    "state": "South Carolina",
+    "school": "University of South Carolina Joseph F. Rice School of Law",
+    "university": "University of South Carolina",
+    "standalone": false,
+    "tier": "older",
+    "tierLabel": "Older-gen GPUs confirmed (V100/T4/P100/K-series/etc.)",
+    "gpu": "44 GPU nodes with dual NVIDIA V100 GPUs each (88 V100), added in the 2019 hardware refresh. The original 2017 build had 8 GPU nodes with dual NVIDIA P100s. No Ampere or Hopper hardware was found on Hyperion in this pass.",
+    "slurm": "Yes — Slurm Workload Manager",
+    "hpcName": "Hyperion — USC Research Computing, Division of Information Technology",
+    "specs": "291 standard CPU compute nodes, 44 GPU nodes and 8 big-memory nodes, totalling 16,616 CPU cores. Compute and GPU nodes carry 128–256GB RAM; big-memory nodes 2TB. All nodes on EDR InfiniBand at 100 Gbit with access to 1.4PB of GPFS scratch, plus 100 Gbit Ethernet links to on-premises research storage via Globus data transfer nodes. Total single-precision performance 1,232 TFLOPS. Initially 240 nodes of 28-core Xeon E5-2680 in 2017; the 2019 refresh added 120 nodes of 48-core Xeon Platinum 8260 and the 44 V100 GPU nodes; a May 2023 upgrade added 86 nodes of 64-core Xeon Platinum 8358 and eight 2TB nodes while retiring the first-generation hardware. Housed in USC's DoIT data center with enterprise monitoring, cooling and backup power.",
+    "sources": [
+      "https://arxiv.org/pdf/2609.11946"
+    ],
+    "notes": "ADDED Sept 2026. South Carolina previously had only Charleston School of Law (standalone) in this directory, so the state's flagship public law school was missing. DISAMBIGUATION WORTH RECORDING: Hyperion belongs to the University of South CAROLINA, not the University of Southern California — both are 'USC' with a research computing group, and the California one runs Discovery and Endeavour under CARC. Conflating them would be an easy error in a dataset that already contains USC Gould. Access is stated broadly: Hyperion is described as the flagship HPC resource serving FACULTY, STAFF AND STUDENTS ACROSS ALL DOMAINS at USC, operated on a condo model where researchers who buy hardware get subsidised data-centre infrastructure in exchange for donating idle cycles back to the university via FREE, SHARED QUEUES. That donation arrangement is what makes this usable by a law faculty member who owns no hardware. Note the source is a peer-reviewed-style arXiv paper by the cluster's own operators, which is unusually detailed but is a single source — this row should gain a second before it is considered solid.",
+    "caveat": "Older-generation GPUs and a single source. Hyperion's GPU complement is V100-era; the 2023 upgrade added CPU and memory nodes but no newer GPUs that this pass could find. The operators' own paper notes the modest GPU complement was intended as a development environment for work that would then scale up on national resources — so for serious GPU work the NSF ACCESS route is the intended path, not Hyperion itself. Sourced from one document; verify against USC's own Research Computing pages.",
+    "networks": []
   }
 ]

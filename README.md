@@ -10,16 +10,16 @@ Live site: `https://nathanReitinger.github.io/law-schools-and-computing-resource
 
 ## What's here
 
-- **132 law schools listed** across 37 states/territories, data pulled September 2026, of roughly 198
+- **138 law schools listed** across 39 states/territories, data pulled September 2026, of roughly 198
   ABA-accredited schools total. **This is not a finished census — and the gap is systematic, not
   random.** The original pass worked alphabetically by state and stopped after New York, so states
   later in the alphabet are underrepresented; Ohio, Pennsylvania, Tennessee, Texas, Virginia and
-  Washington were never reached rather than checked and found empty. About 63 schools remain to be
-  added; `VERIFICATION-LOG.md` has the state-by-state checklist. The pull date is shown on the site
+  Washington were never reached rather than checked and found empty. About 60 schools remain to be added; **`TODO-missing-schools.csv`** lists every one with the
+  specific cluster or statewide programme to check first. The pull date is shown on the site
   itself and lives in `data/meta.json`.
-- **108 of the 132 rows have been through a deep re-verification pass** and carry the sources used;
-  their notes begin "Re-verified", "RECLASSIFIED", "CORRECTED", "UPDATED" or "ADDED". Rows with no
-  sources listed have not been verified and deserve more caution than the rest.
+- **All 138 listed rows have been through a deep re-verification pass** and carry the sources used
+  to check them; their notes begin "Re-verified", "RECLASSIFIED", "CORRECTED", "UPDATED" or "ADDED".
+  Six rows still rest on a single source for a positive tier claim — `audit.py` names them.
 - Each school is tagged with a **GPU support tier** (Frontier / Modern / Older-gen / present-but-unnamed /
   no confirmed GPU / no resource / standalone), the specific hardware named in public sources, whether
   SLURM was confirmed as the scheduler, and a link back to the source.
@@ -43,6 +43,20 @@ Live site: `https://nathanReitinger.github.io/law-schools-and-computing-resource
   tier means an account.
 - **This was compiled with AI (Claude) assistance and has not been hand-verified line by line.** Say so
   on the site, on purpose — see the disclaimer banner at the top of the page.
+
+## Checking the data
+
+`audit.py` validates `data/schools.json` against the rules in CONTRIBUTING.md and catches the
+failure modes this dataset has actually hit — a tier that contradicts its own hardware string,
+hardware attributed to the wrong machine, announced-but-not-operational GPUs, and big claims on a
+single source. Run it before opening a pull request:
+
+```bash
+python3 audit.py                            # every row
+python3 audit.py --sample 30 --seed 42      # reproducible spot check
+```
+
+It exits non-zero when anything is flagged, so it can gate CI.
 
 ## Running it locally
 
