@@ -2102,8 +2102,8 @@
   },
   {
     "state": "Mississippi",
-    "school": "Mississippi College School of Law",
-    "university": "Mississippi College",
+    "school": "Mississippi Christian University School of Law (formerly Mississippi College School of Law)",
+    "university": "Mississippi Christian University (formerly Mississippi College)",
     "standalone": false,
     "tier": "none",
     "tierLabel": "No HPC resource identified",
@@ -2111,7 +2111,7 @@
     "slurm": "No",
     "hpcName": "None found (MCSR is restricted to public institutions)",
     "specs": "",
-    "notes": "Re-verified Sept 2026 against the obvious statewide hypothesis, which fails on eligibility. Mississippi does run a statewide supercomputing center — MCSR, based at the University of Mississippi, whose Maple cluster carries 140 compute nodes, 5,454 CPU cores and a mix of NVIDIA K20, P100 and V100S GPUs — but MCSR states repeatedly and specifically that free accounts are for students, faculty and staff at Mississippi's PUBLIC institutions of higher learning, with account requests required to come from an email address at a Mississippi public IHL. Mississippi College is a private Baptist institution and is therefore outside that eligibility line. No separate Mississippi College research-computing resource was found. || National floor: this tier describes the PARENT INSTITUTION's own resource, not the ceiling on what a faculty member here can reach — see the NSF ACCESS note in the site header and README. That national route is tagged in this row's shared-networks field; it is not evidence about this school specifically, and the sources listed below are only those used to verify this row.",
+    "notes": "Re-verified Sept 2026 against the obvious statewide hypothesis, which fails on eligibility. Mississippi does run a statewide supercomputing center — MCSR, based at the University of Mississippi, whose Maple cluster carries 140 compute nodes, 5,454 CPU cores and a mix of NVIDIA K20, P100 and V100S GPUs — but MCSR states repeatedly and specifically that free accounts are for students, faculty and staff at Mississippi's PUBLIC institutions of higher learning, with account requests required to come from an email address at a Mississippi public IHL. Mississippi Christian University is a private Baptist institution and is therefore outside that eligibility line. No separate Mississippi College research-computing resource was found. || National floor: this tier describes the PARENT INSTITUTION's own resource, not the ceiling on what a faculty member here can reach — see the NSF ACCESS note in the site header and README. That national route is tagged in this row's shared-networks field; it is not evidence about this school specifically, and the sources listed below are only those used to verify this row. || UPDATED Oct 2026 (name, not hardware): Mississippi College was renamed Mississippi Christian University on June 1, 2026, and the law school with it; the ABA's approved-school list now carries the entry as \"Mississippi Christian\". The school still goes by MC Law. The rename does not touch accreditation or the MCSR eligibility finding above — it remains a private institution and so outside MCSR's public-IHL line.",
     "networks": [
       "NSF ACCESS (national — any US academic institution)"
     ],
@@ -2119,7 +2119,8 @@
       "https://mcsr.olemiss.edu/docs/getting-an-account/",
       "https://mcsr.olemiss.edu/",
       "https://mcsr.olemiss.edu/supercomputers/",
-      "https://mcsr.olemiss.edu/apply-for-accounts/"
+      "https://mcsr.olemiss.edu/apply-for-accounts/",
+      "https://magnoliatribune.com/2026/06/02/mississippi-college-now-mississippi-christian-university/"
     ]
   },
   {

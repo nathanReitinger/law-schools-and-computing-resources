@@ -1,7 +1,7 @@
 {
   "_about": "Maps every entry on the ABA's alphabetical list of Council-approved law schools to the row(s) in schools.json that cover it. audit.py uses this to catch missing schools. When the ABA adds, closes or renames a school, update this file, abaListCount and retrieved together. Two ABA entries map to two rows each (one per campus): Rutgers and Penn State-Dickinson Law.",
   "source": "https://www.americanbar.org/groups/legal_education/accreditation/approved-law-schools/alphabetical/",
-  "retrieved": "2026-10-01",
+  "retrieved": "2026-10-02",
   "abaListCount": 199,
   "abaListNote": "198 schools conferring the J.D., plus the U.S. Army Judge Advocate General's School (LL.M. only)",
   "map": {
@@ -314,8 +314,8 @@
     "Minnesota": [
       "University of Minnesota Law School"
     ],
-    "Mississippi College": [
-      "Mississippi College School of Law"
+    "Mississippi Christian": [
+      "Mississippi Christian University School of Law (formerly Mississippi College School of Law)"
     ],
     "Mississippi": [
       "University of Mississippi School of Law"
