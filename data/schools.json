@@ -702,13 +702,15 @@
     "slurm": "No",
     "hpcName": "None found",
     "specs": "",
-    "notes": "Re-verified Sept 2026 — GGU is a small, professional-graduate-focused institution (business, law, taxation, psychology; founded 1901) with no STEM PhD programs. Its \"Applied and Agentic AI\" doctorate is a practice-oriented professional program for working technologists, not a research lab; no shared HPC/GPU infrastructure found anywhere. || National floor: this tier describes the PARENT INSTITUTION's own resource, not the ceiling on what a faculty member here can reach — see the NSF ACCESS note in the site header and README. That national route is tagged in this row's shared-networks field; it is not evidence about this school specifically, and the sources listed below are only those used to verify this row.",
+    "notes": "Re-verified Sept 2026 — GGU is a small, professional-graduate-focused institution (business, law, taxation, psychology; founded 1901) with no STEM PhD programs. Its \"Applied and Agentic AI\" doctorate is a practice-oriented professional program for working technologists, not a research lab; no shared HPC/GPU infrastructure found anywhere. UPDATED Oct 2026: the ABA lists Golden Gate as on a teach-out plan. Its approved plan (Feb 2024) ends the J.D. program: no new students, no credit-bearing courses after summer 2024, and ABA approval continuing only until July 1, 2027 so remaining students can finish elsewhere and receive the degree. Kept in the directory because the ABA still lists it. || National floor: this tier describes the PARENT INSTITUTION's own resource, not the ceiling on what a faculty member here can reach — see the NSF ACCESS note in the site header and README. That national route is tagged in this row's shared-networks field; it is not evidence about this school specifically, and the sources listed below are only those used to verify this row.",
     "networks": [
       "NSF ACCESS (national — any US academic institution)"
     ],
     "sources": [
       "https://catalog.ggu.edu/preview_program.php?catoid=9&poid=886",
-      "https://ggu.edu/programs/applied-and-agentic-ai-dtech/"
+      "https://ggu.edu/programs/applied-and-agentic-ai-dtech/",
+      "https://www.americanbar.org/groups/legal_education/accreditation/approved-law-schools/additional-approvals/",
+      "https://dev.americanbar.org/content/dam/aba/administrative/legal_education_and_admissions_to_the_bar/PublicNoticeAnnouncements/2024/golden-gate-u-notice-teach-out-plan-february-2024.pdf"
     ]
   },
   {
@@ -2700,7 +2702,7 @@
   },
   {
     "state": "Pennsylvania",
-    "school": "Penn State Law (University Park)",
+    "school": "Penn State Dickinson Law (University Park; formerly Penn State Law)",
     "university": "Pennsylvania State University",
     "standalone": false,
     "tier": "modern",
@@ -2716,9 +2718,12 @@
       "https://icds.psu.edu/services/roar/details-rates/",
       "https://sites.psu.edu/cnmg/hpc/",
       "https://icds.psu.edu/services/roar/read-credits/",
-      "https://docs.icds.psu.edu/getting-started/tips-for-beginners/"
+      "https://docs.icds.psu.edu/getting-started/tips-for-beginners/",
+      "https://www.americanbar.org/groups/legal_education/accreditation/approved-law-schools/alphabetical/",
+      "https://www.psu.edu/news/academics/story/aba-approves-unified-law-school-penn-state-dickinson-law-and-penn-state-law",
+      "https://www.abajournal.com/web/article/aba-council-gives-thumbs-up-to-penn-state-plan-to-unify-its-law-schools"
     ],
-    "notes": "ADDED Sept 2026. Pennsylvania was missing entirely from this directory despite having roughly nine ABA-accredited law schools. Penn State's Institute for Computational and Data Sciences runs Roar Collab, and ICDS states that it supports faculty from dozens of departments in nearly all of Penn State's twenty-four campuses — which is what brings both of Penn State's law schools into scope. Every user receives an automatic monthly allocation of READ (Research Exploration And Discovery) credits usable on all hardware types including GPUs, with no action required. UPDATED Oct 2026: ICDS's READ Credits page (revised Sept 29, 2026) now sets that allotment at 3 credits a month, intended for exploration and testing, and says no additional READ credits are available for the rest of FY27 — the request route this row previously described is closed for the year. One credit is one Basic core-month and costs about $3 if purchased. Note that 'Roar' and 'Roar Collab' are different systems: Roar is a restricted-data environment available only through a paid allocation, while Roar Collab is the general cluster most users should use.",
+    "notes": "ADDED Sept 2026. Pennsylvania was missing entirely from this directory despite having roughly nine ABA-accredited law schools. Penn State's Institute for Computational and Data Sciences runs Roar Collab, and ICDS states that it supports faculty from dozens of departments in nearly all of Penn State's twenty-four campuses — which is what brings both of Penn State's law schools into scope. Every user receives an automatic monthly allocation of READ (Research Exploration And Discovery) credits usable on all hardware types including GPUs, with no action required. UPDATED Oct 2026: ICDS's READ Credits page (revised Sept 29, 2026) now sets that allotment at 3 credits a month, intended for exploration and testing, and says no additional READ credits are available for the rest of FY27 — the request route this row previously described is closed for the year. One credit is one Basic core-month and costs about $3 if purchased. Note that 'Roar' and 'Roar Collab' are different systems: Roar is a restricted-data environment available only through a paid allocation, while Roar Collab is the general cluster most users should use. UPDATED Oct 2026 (structure, not hardware): Penn State's two law schools are being reunified. The ABA's council approved a single, unified, two-location school called Penn State Dickinson Law in November 2024, with its primary location in Carlisle and an additional location at University Park; the first unified class enrolled in fall 2025. The ABA's approved-school list now carries one entry (\"Penn State-Dickinson Law\"). This directory keeps one row per location, as it does for Rutgers Camden and Newark, because the compute route is the same university-wide ICDS cluster either way.",
     "caveat": "GPU generation tops out at A100/A40, and the credit economics matter. Roar Collab lists A100, A40, V100 and P100 — no Hopper-class GPU was found — so this is 'modern', not frontier. Free GPU time is now minimal: ICDS's READ Credits page (revised Sept 29, 2026) gives every account 3 credits a month for exploration and testing, and says no additional READ credits are available for the rest of FY27, pointing researchers to their college or department instead. Plan on a paid allocation (a full A100 is $294.83 a month) or purchased credits ($3.11 each) for real projects.",
     "networks": [
       "Penn State ICDS (multi-campus)"
@@ -2742,9 +2747,12 @@
       "https://icds.psu.edu/services/roar/details-rates/",
       "https://sites.psu.edu/cnmg/hpc/",
       "https://icds.psu.edu/services/roar/read-credits/",
-      "https://docs.icds.psu.edu/getting-started/tips-for-beginners/"
+      "https://docs.icds.psu.edu/getting-started/tips-for-beginners/",
+      "https://www.americanbar.org/groups/legal_education/accreditation/approved-law-schools/alphabetical/",
+      "https://www.psu.edu/news/academics/story/aba-approves-unified-law-school-penn-state-dickinson-law-and-penn-state-law",
+      "https://www.abajournal.com/web/article/aba-council-gives-thumbs-up-to-penn-state-plan-to-unify-its-law-schools"
     ],
-    "notes": "ADDED Sept 2026. Pennsylvania was missing entirely from this directory despite having roughly nine ABA-accredited law schools. Penn State's Institute for Computational and Data Sciences runs Roar Collab, and ICDS states that it supports faculty from dozens of departments in nearly all of Penn State's twenty-four campuses — which is what brings both of Penn State's law schools into scope. Every user receives an automatic monthly allocation of READ (Research Exploration And Discovery) credits usable on all hardware types including GPUs, with no action required. UPDATED Oct 2026: ICDS's READ Credits page (revised Sept 29, 2026) now sets that allotment at 3 credits a month, intended for exploration and testing, and says no additional READ credits are available for the rest of FY27 — the request route this row previously described is closed for the year. One credit is one Basic core-month and costs about $3 if purchased. Note that 'Roar' and 'Roar Collab' are different systems: Roar is a restricted-data environment available only through a paid allocation, while Roar Collab is the general cluster most users should use.",
+    "notes": "ADDED Sept 2026. Pennsylvania was missing entirely from this directory despite having roughly nine ABA-accredited law schools. Penn State's Institute for Computational and Data Sciences runs Roar Collab, and ICDS states that it supports faculty from dozens of departments in nearly all of Penn State's twenty-four campuses — which is what brings both of Penn State's law schools into scope. Every user receives an automatic monthly allocation of READ (Research Exploration And Discovery) credits usable on all hardware types including GPUs, with no action required. UPDATED Oct 2026: ICDS's READ Credits page (revised Sept 29, 2026) now sets that allotment at 3 credits a month, intended for exploration and testing, and says no additional READ credits are available for the rest of FY27 — the request route this row previously described is closed for the year. One credit is one Basic core-month and costs about $3 if purchased. Note that 'Roar' and 'Roar Collab' are different systems: Roar is a restricted-data environment available only through a paid allocation, while Roar Collab is the general cluster most users should use. UPDATED Oct 2026 (structure, not hardware): Penn State's two law schools are being reunified. The ABA's council approved a single, unified, two-location school called Penn State Dickinson Law in November 2024, with its primary location in Carlisle and an additional location at University Park; the first unified class enrolled in fall 2025. The ABA's approved-school list now carries one entry (\"Penn State-Dickinson Law\"). Carlisle is the primary location. This directory keeps one row per location, as it does for Rutgers Camden and Newark, because the compute route is the same university-wide ICDS cluster either way.",
     "caveat": "GPU generation tops out at A100/A40, and the credit economics matter. Roar Collab lists A100, A40, V100 and P100 — no Hopper-class GPU was found — so this is 'modern', not frontier. Free GPU time is now minimal: ICDS's READ Credits page (revised Sept 29, 2026) gives every account 3 credits a month for exploration and testing, and says no additional READ credits are available for the rest of FY27, pointing researchers to their college or department instead. Plan on a paid allocation (a full A100 is $294.83 a month) or purchased credits ($3.11 each) for real projects.",
     "networks": [
       "Penn State ICDS (multi-campus)"
@@ -2881,7 +2889,7 @@
   },
   {
     "state": "Pennsylvania",
-    "school": "University of Pennsylvania Carey Law School (Penn Carey Law)",
+    "school": "Penn Carey Law (University of Pennsylvania Carey Law School)",
     "university": "University of Pennsylvania",
     "standalone": false,
     "tier": "frontier",
@@ -3049,6 +3057,30 @@
     "caveat": "Same situation as Widener's Harrisburg law school: the only cluster found is an undergraduate computer-science department cluster on the Chester, PA campus (roughly 15 miles from the Wilmington law campus), not a university-wide research service.",
     "notes": "ADDED Oct 2026. Delaware's only ABA-accredited law school. It has operated separately from Widener Commonwealth since 2015, with its own dean and faculty, but both remain part of Widener University, so the same university-level search applies.",
     "networks": []
+  },
+  {
+    "state": "Delaware",
+    "school": "Wilmington University Farnan School of Law",
+    "university": "Wilmington University",
+    "standalone": false,
+    "tier": "none",
+    "tierLabel": "No HPC resource identified",
+    "gpu": "",
+    "slurm": "No",
+    "hpcName": "None found",
+    "specs": "",
+    "notes": "ADDED Oct 2026. Missing from the directory until now because it is new: the first class enrolled in fall 2023, the ABA granted provisional approval in February 2025, and the school was renamed the Farnan School of Law on May 1, 2026 (the ABA's lists still say \"Wilmington University School of Law\"). Not to be confused with Widener's Delaware Law School, which is also in Wilmington. Wilmington University is a teaching-focused institution with no research-computing service; its AI Hub covers AI policy and guidance, not hardware. The nearest shared resource doesn't reach it today. Wilmington University is a named partner in the University of Delaware-led NSF E-CORE RII award (2025–2029), which aims to strengthen Delaware's data infrastructure but names no computing system. UD's DARWIN cluster, which had offered free use to outside academics, was decommissioned on October 1, 2025, according to UD's own HPC documentation. UD's remaining cluster, Caviness, is a condo system built from nodes bought by research groups. || National floor: this tier describes the PARENT INSTITUTION's own resource, not the ceiling on what a faculty member here can reach — see the NSF ACCESS note in the site header and README. That national route is tagged in this row's shared-networks field; it is not evidence about this school specifically, and the sources listed below are only those used to verify this row.",
+    "networks": [
+      "NSF ACCESS (national — any US academic institution)"
+    ],
+    "sources": [
+      "https://blog.wilmu.edu/news/2026/05/04/wilmington-university-names-farnan-school-of-law/",
+      "https://law.wilmu.edu/about/aba-approval-process.aspx",
+      "https://www.wilmu.edu/ai/index.aspx",
+      "https://www.nsf.gov/awardsearch/show-award/?AWD_ID=2438144",
+      "https://docs.hpc.udel.edu/start",
+      "https://docs.hpc.udel.edu/abstract/darwin/darwin"
+    ]
   },
   {
     "state": "North Dakota",
@@ -3613,6 +3645,30 @@
     ]
   },
   {
+    "state": "North Carolina",
+    "school": "High Point University Kenneth F. Kahn School of Law",
+    "university": "High Point University",
+    "standalone": false,
+    "tier": "unspecified",
+    "tierLabel": "GPUs present, specific model not named in source",
+    "gpu": "Webb School of Engineering HPC: \"several high-end Nvidia GPUs utilizing CUDA technology\" (model not named). The only models HPU has ever named publicly, in a 2015 article, were Nvidia Fermi and GTX Titan cards; whether they have since been replaced is unknown",
+    "slurm": "Not confirmed",
+    "hpcName": "Webb School of Engineering High-Performance Cluster (no formal name)",
+    "specs": "HPC with 10,000+ CPU cores; 50+ node Linux cluster; several dual multi-core Intel servers running Red Hat Enterprise Linux (as listed on HPU's computer science program pages)",
+    "notes": "ADDED Oct 2026. Missing from the directory until now because it is new: the law school's first class enrolled in fall 2024, and the ABA granted provisional approval in February 2026. High Point University's School of Engineering hosts the university's only research cluster. HPU's 2019 new-hires announcement says the engineering school's new scientific-computing system administrator would run the HPC server for several departments across campus (chemistry, physics, mathematics, computer science, engineering and others), so it is meant to serve more than one department. The hardware is documented only on the computer science program pages; there is no service page, user guide, scheduler documentation or account process, and central IT's site doesn't mention research computing. HPU isn't an NCShare participant either. NCShare's participant list includes nearby Elon, Guilford, Wake Forest and NC A&T, but not High Point, so the H200 route that gives three other North Carolina law schools a frontier tier isn't open here unless HPU joins.",
+    "caveat": "This is a department-level cluster, not a campus-wide research-computing service. It is housed in and run by the Webb School of Engineering, its GPUs are not identified by model, and no published policy says faculty outside the listed science and engineering departments can get an account. A law faculty member would need to ask the engineering school directly.",
+    "networks": [],
+    "sources": [
+      "https://www.highpoint.edu/computerscience/",
+      "https://wsoe.highpoint.edu/cs-academic-programs/b-s-in-computer-science/",
+      "https://www.highpoint.edu/blog/2019/10/hpu-announces-new-hires-sept-2019/",
+      "https://www.highpoint.edu/blog/2015/08/mymajorathpu-top-majors-at-hpu-21-25/",
+      "https://www.highpoint.edu/it/",
+      "https://userguide.ncshare.org/about/participants/",
+      "https://www.highpoint.edu/blog/2026/03/hpus-law-school-earns-accreditation-milestone/"
+    ]
+  },
+  {
     "state": "Texas",
     "school": "SMU Dedman School of Law",
     "university": "Southern Methodist University",
@@ -3939,6 +3995,27 @@
     ]
   },
   {
+    "state": "Virginia",
+    "school": "The Judge Advocate General's Legal Center and School (U.S. Army JAG School)",
+    "university": "",
+    "standalone": true,
+    "tier": "standalone",
+    "tierLabel": "N/A — standalone (no parent university)",
+    "gpu": "",
+    "slurm": "",
+    "hpcName": "None — U.S. Army school, not part of a university",
+    "specs": "",
+    "notes": "ADDED Oct 2026. Listed for completeness: the ABA's approved list includes the Army's JAG School alongside the 198 J.D. schools. It is a special case. It awards only an LL.M. in Military Law, and the ABA says it reviews the program against the relevant standards rather than formally accrediting it. It sits on the University of Virginia's North Grounds and its students often share courses with UVA Law, but it is run by the U.S. Army, not by UVA, so UVA's research-computing resources (see the UVA row) are not its own. Its faculty are serving judge advocates, mostly Army lieutenant colonels and majors.",
+    "caveat": "The NSF ACCESS route that applies to every other standalone row is less clear here. ACCESS treats a named list of military service academies as academic institutions, and the JAG School is not on that list. Federal agency research staff can qualify only if their agency doesn't usually give them access to other computing resources. Treat ACCESS eligibility as unconfirmed for this school.",
+    "networks": [],
+    "sources": [
+      "https://www.americanbar.org/groups/legal_education/accreditation/approved-law-schools/",
+      "https://www.americanbar.org/groups/legal_education/accreditation/approved-law-schools/alphabetical/",
+      "https://en.wikipedia.org/wiki/The_Judge_Advocate_General%27s_Legal_Center_and_School",
+      "https://allocations.access-ci.org/allocations-policy"
+    ]
+  },
+  {
     "state": "New York",
     "school": "University at Buffalo School of Law",
     "university": "University at Buffalo (SUNY)",
@@ -4082,6 +4159,32 @@
     "notes": "ADDED Oct 2026. Independent: the school describes itself as an independent law school established in 1999, and the Florida Bar News reported at the time of its move to Florida that it is not affiliated with Ave Maria University, despite the shared founder and name. || National floor: this tier describes the PARENT INSTITUTION's own resource, not the ceiling on what a faculty member here can reach — see the NSF ACCESS note in the site header and README.",
     "networks": [
       "NSF ACCESS (national — any US academic institution)"
+    ]
+  },
+  {
+    "state": "Florida",
+    "school": "Jacksonville University College of Law",
+    "university": "Jacksonville University",
+    "standalone": false,
+    "tier": "none",
+    "tierLabel": "No HPC resource identified",
+    "gpu": "",
+    "slurm": "No",
+    "hpcName": "None found",
+    "specs": "",
+    "notes": "ADDED Oct 2026. Missing from the directory until now because it is new: the law school opened in downtown Jacksonville in August 2022 and received ABA provisional approval in February 2024. Jacksonville University is a private, teaching-focused university. Its central IT site is a help desk (accounts, VPN, Blackboard) with no research-computing service. The Computing Science department teaches in computer classrooms, and the STEAM Institute's CyberRange, forensics and FinTech labs are teaching spaces, not shared research clusters. Nothing found on the Marine Science Research Institute's pages either. Statewide routes don't reach it today. UF's HiPerGator policy for other Florida universities is written for the public State University System, research use there must be paid for, and outside accounts go through an institutional liaison; JU isn't on UF's liaison list. JU is also absent from SSERCA's member list. || National floor: this tier describes the PARENT INSTITUTION's own resource, not the ceiling on what a faculty member here can reach — see the NSF ACCESS note in the site header and README. That national route is tagged in this row's shared-networks field; it is not evidence about this school specifically, and the sources listed below are only those used to verify this row.",
+    "networks": [
+      "NSF ACCESS (national — any US academic institution)"
+    ],
+    "sources": [
+      "https://www.ju.edu/it/",
+      "https://www.ju.edu/computingscience/",
+      "https://www.ju.edu/news/2022-08-01-ju-constructing-innovative-steam-institute-center.php",
+      "https://www.ju.edu/msri/",
+      "https://it.ufl.edu/rc/documentation/policies/other-universities/",
+      "https://docs.rc.ufl.edu/access/federated_liaisons/",
+      "https://sserca.flrnet.org/",
+      "https://www.abajournal.com/news/article/newer-law-school-in-florida-gets-provisional-accreditation-from-the-aba"
     ]
   },
   {

@@ -313,7 +313,7 @@
     if (listed["Puerto Rico"]) { extra.push("Puerto Rico"); }
     var where = nStates + " states" + (extra.length === 2 ? ", " + extra[0] + ", and " + extra[1]
                                       : extra.length === 1 ? " and " + extra[0] : "");
-    var parts = [(todoCount ? "Coverage so far: " : "Coverage: ") + state.all.length + " law schools in " + where + (/\.$/.test(where) ? "" : ".")];
+    var parts = [(todoCount ? "Coverage so far: " : "Coverage: ") + state.all.length + " law schools and campuses in " + where + (/\.$/.test(where) ? "" : ".")];
     if (todoCount) {
       var never = Object.keys(todo).filter(function (k) { return !listed[k]; }).sort();
       var partly = Object.keys(todo).filter(function (k) { return listed[k]; }).sort();
@@ -324,7 +324,7 @@
     if (todoCount) {
       parts.push("If a school isn't listed, it hasn't been checked yet. That doesn't mean it has no computing resources.");
     } else if (todoCsv) {
-      parts.push("Every ABA-accredited law school is now listed. If you spot a missing or outdated entry, please report it.");
+      parts.push("Every school on the ABA's approved list is now listed, checked name-by-name against that list. If you spot a missing or outdated entry, please report it.");
     }
     el.textContent = parts.join(" ") + " ";
     if (todoCount) {

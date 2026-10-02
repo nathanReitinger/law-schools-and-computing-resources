@@ -1,6 +1,8 @@
 # Re-verification log — September 2026
 
-> **Latest: October 1, 2026** — all 197 ABA-accredited law schools listed; the backlog is empty. See the October sections below.
+> **Latest: October 1, 2026 (third pass)** — checked name-by-name against the ABA's own list: three newly approved
+> schools were missing and are now added, along with the Army JAG School, and `audit.py` now enforces coverage. Every
+> school on the ABA's approved list is listed (201 rows). See the October sections below.
 
 **138 schools listed of ~195–198 ABA-accredited. ALL 138 ROWS RE-VERIFIED with their own sources.
 15 tier changes. 132 of 138 pass the full consistency audit; the 6 flags are single-source tier
@@ -33,6 +35,54 @@ Rule written down so it doesn't recur: **a finding that applies to every row is 
 not a per-row data change.**
 
 The zero-source count is now genuinely 0, reached by researching the nine rows individually.
+
+## October 1, 2026 (third pass) — a name-by-name check against the ABA list: 3 schools were still missing
+
+**201 rows; every entry on the ABA's approved list is covered.** The earlier passes said "all 197," but that number
+came from per-state counts, not from the ABA's list itself. The ABA's
+[approved-schools page](https://www.americanbar.org/groups/legal_education/accreditation/approved-law-schools/)
+says 198 schools grant the J.D., plus the Army JAG School (LL.M. only). A name-by-name diff against its
+[alphabetical list](https://www.americanbar.org/groups/legal_education/accreditation/approved-law-schools/alphabetical/)
+found three schools missing, all provisionally approved since 2024 and too new for the older lists the backlog
+was built from:
+
+| School | State | ABA provisional approval | Tier | Why |
+|---|---|---|---|---|
+| High Point University Kenneth F. Kahn School of Law | NC | Feb 2026 | `unspecified` | Engineering-school cluster with "several high-end Nvidia GPUs," model unnamed; no access policy. HPU isn't an NCShare participant. |
+| Jacksonville University College of Law | FL | Feb 2024 | `none` | No research computing. UF's HiPerGator policy for other schools is written for the public State University System, and JU isn't on UF's liaison list or SSERCA's member list. |
+| Wilmington University Farnan School of Law | DE | Feb 2025 | `none` | No research computing. A partner on UD's NSF E-CORE award, but UD's DARWIN cluster was decommissioned on Oct 1, 2025. Renamed Farnan School of Law on May 1, 2026; the ABA still uses the old name. |
+
+**Also added: the Army JAG School** (`standalone`). It is on the ABA's list, so a complete directory needs it, but it
+is run by the Army, not by UVA, whose grounds it sits on. Its caveat says NSF ACCESS eligibility is unconfirmed:
+ACCESS names the service academies it treats as academic institutions, and the JAG School isn't one of them.
+
+**Penn State — two rows kept, one renamed.** The ABA approved reunifying Penn State's two law schools in November
+2024 as one school, Penn State Dickinson Law, with Carlisle as the primary location and University Park as a
+second location. The ABA now lists one entry. Both rows stay, one per location (as with Rutgers), and the
+University Park row is now "Penn State Dickinson Law (University Park; formerly Penn State Law)." Tier unchanged.
+
+**Penn Carey Law — renamed so it can be found.** The row was "University of Pennsylvania Carey Law School (Penn
+Carey Law)", which sorts under U, so anyone scanning A–Z for Penn found only the two Penn State rows. It now leads
+with the school's own short name, "Penn Carey Law (University of Pennsylvania Carey Law School)", like the
+dataset's NYU, UCLA and UNC rows. Data unchanged.
+
+**Second check against the ABA's other lists.** The ABA's public list (86 schools) and private list (112) don't
+overlap, and together they give the same 198 J.D. schools as the alphabetical list, once the pages' small spelling
+differences are matched up (e.g. "IIT Chicago-Kent" and "Chicago-Kent").
+
+**Golden Gate — teach-out noted.** The ABA lists it as on a teach-out plan: no J.D. students admitted, and ABA
+approval continues only until July 1, 2027 so remaining students can finish. The row says so and stays listed for
+now, because the ABA still lists it.
+
+**The fix that matters: coverage is now checked, not counted.** `data/aba-crosswalk.json` maps every one of the
+ABA's 199 list entries to the row(s) that cover it. `audit.py` reports any ABA school with no row, any row with no
+ABA school, and any crosswalk target that has been renamed away. Before the three rows were added it flagged
+exactly those three. When the ABA adds or drops a school, update the crosswalk and the audit will show what is
+missing.
+
+**Not fixed, worth a look:** NCShare's live participant page no longer shows the legacy/current-environment
+columns that the Elon row's caveat cites. Elon is still listed as a participant, but the "needs testing" wording
+can no longer be checked against that page.
 
 ## October 1, 2026 — Pennsylvania and Delaware: 8 schools added, 2 corrected
 

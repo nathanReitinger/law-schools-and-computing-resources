@@ -1,7 +1,7 @@
 # Contributing
 
-This directory is only useful if it stays accurate, and it covers about 121 of ~200 US law schools so
-far. It was also compiled with AI (Claude) assistance and has **not** been hand-verified line by line —
+This directory is only useful if it stays accurate. It covers every school on the ABA's approved list
+(198 J.D. schools plus the Army JAG School). It was also compiled with AI (Claude) assistance and has **not** been hand-verified line by line —
 corrections, missing schools, and updated specs are all genuinely welcome. Pick whichever path is easier
 for you.
 
@@ -113,3 +113,9 @@ checked, not the repo's commit history.
 Same process — add a new object to the array in roughly alphabetical position by state, then by school
 name. If you're not sure a field applies (e.g. the school is standalone), see the schema notes above for
 what to leave blank vs. omit.
+
+Then add the school to `data/aba-crosswalk.json`: use the name exactly as it appears on the
+[ABA's alphabetical list](https://www.americanbar.org/groups/legal_education/accreditation/approved-law-schools/alphabetical/)
+as the key and your row's `school` name as the value, and bump `abaListCount` and `retrieved`. Renaming a
+row's `school` field means updating its crosswalk entry too. `audit.py` flags any ABA school without a row
+and any row without an ABA school.

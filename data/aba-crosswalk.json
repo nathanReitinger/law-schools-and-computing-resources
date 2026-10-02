@@ -1,0 +1,608 @@
+{
+  "_about": "Maps every entry on the ABA's alphabetical list of Council-approved law schools to the row(s) in schools.json that cover it. audit.py uses this to catch missing schools. When the ABA adds, closes or renames a school, update this file, abaListCount and retrieved together. Two ABA entries map to two rows each (one per campus): Rutgers and Penn State-Dickinson Law.",
+  "source": "https://www.americanbar.org/groups/legal_education/accreditation/approved-law-schools/alphabetical/",
+  "retrieved": "2026-10-01",
+  "abaListCount": 199,
+  "abaListNote": "198 schools conferring the J.D., plus the U.S. Army Judge Advocate General's School (LL.M. only)",
+  "map": {
+    "Akron": [
+      "University of Akron School of Law"
+    ],
+    "Alabama": [
+      "University of Alabama School of Law"
+    ],
+    "Albany": [
+      "Albany Law School"
+    ],
+    "American": [
+      "American University Washington College of Law"
+    ],
+    "Appalachian": [
+      "Appalachian School of Law"
+    ],
+    "Arizona": [
+      "James E. Rogers College of Law"
+    ],
+    "Arizona State": [
+      "Sandra Day O'Connor College of Law"
+    ],
+    "Arkansas - Fayetteville": [
+      "University of Arkansas School of Law (Fayetteville)"
+    ],
+    "Arkansas - Little Rock": [
+      "William H. Bowen School of Law"
+    ],
+    "Atlanta's John Marshall Law School": [
+      "Atlanta's John Marshall Law School"
+    ],
+    "Ave Maria School of Law": [
+      "Ave Maria School of Law"
+    ],
+    "Baltimore": [
+      "University of Baltimore School of Law"
+    ],
+    "Barry University": [
+      "Barry University School of Law"
+    ],
+    "Baylor": [
+      "Baylor Law School"
+    ],
+    "Belmont University": [
+      "Belmont University College of Law"
+    ],
+    "Boston College": [
+      "Boston College Law School"
+    ],
+    "Boston University": [
+      "Boston University School of Law"
+    ],
+    "Brigham Young": [
+      "J. Reuben Clark Law School"
+    ],
+    "Brooklyn": [
+      "Brooklyn Law School"
+    ],
+    "Buffalo": [
+      "University at Buffalo School of Law"
+    ],
+    "California - Berkeley": [
+      "UC Berkeley School of Law"
+    ],
+    "California - Davis": [
+      "UC Davis School of Law (King Hall)"
+    ],
+    "California - San Francisco": [
+      "UC College of the Law San Francisco (fka UC Hastings)"
+    ],
+    "California - Irvine": [
+      "UC Irvine School of Law"
+    ],
+    "California - Los Angeles": [
+      "UCLA School of Law"
+    ],
+    "California Western": [
+      "California Western School of Law"
+    ],
+    "Campbell": [
+      "Campbell University Norman Adrian Wiggins School of Law"
+    ],
+    "Capital": [
+      "Capital University Law School"
+    ],
+    "Case Western Reserve": [
+      "Case Western Reserve University School of Law"
+    ],
+    "Catholic University of America": [
+      "Columbus School of Law"
+    ],
+    "Chapman": [
+      "Dale E. Fowler School of Law"
+    ],
+    "Charleston": [
+      "Charleston School of Law"
+    ],
+    "Chicago": [
+      "University of Chicago Law School"
+    ],
+    "Chicago-Kent": [
+      "Chicago-Kent College of Law"
+    ],
+    "Cincinnati": [
+      "University of Cincinnati College of Law"
+    ],
+    "City University of New York": [
+      "CUNY School of Law"
+    ],
+    "Cleveland State": [
+      "Cleveland State University College of Law"
+    ],
+    "Colorado": [
+      "University of Colorado Law School"
+    ],
+    "Columbia": [
+      "Columbia Law School"
+    ],
+    "Connecticut": [
+      "University of Connecticut School of Law"
+    ],
+    "Cooley Law School": [
+      "Western Michigan University Cooley Law School"
+    ],
+    "Cornell": [
+      "Cornell Law School"
+    ],
+    "Creighton": [
+      "Creighton University School of Law"
+    ],
+    "Dayton": [
+      "University of Dayton School of Law"
+    ],
+    "Denver": [
+      "University of Denver Sturm College of Law"
+    ],
+    "Depaul": [
+      "DePaul University College of Law"
+    ],
+    "Detroit Mercy": [
+      "University of Detroit Mercy School of Law"
+    ],
+    "District of Columbia": [
+      "David A. Clarke School of Law"
+    ],
+    "Drake": [
+      "Drake University Law School"
+    ],
+    "Drexel": [
+      "Drexel University Thomas R. Kline School of Law"
+    ],
+    "Duke": [
+      "Duke University School of Law"
+    ],
+    "Duquesne": [
+      "Duquesne University Thomas R. Kline School of Law"
+    ],
+    "Elon": [
+      "Elon University School of Law"
+    ],
+    "Emory": [
+      "Emory University School of Law"
+    ],
+    "Faulkner": [
+      "Thomas Goode Jones School of Law"
+    ],
+    "Florida": [
+      "Fredric G. Levin College of Law"
+    ],
+    "Florida A&M": [
+      "Florida A&M University College of Law"
+    ],
+    "Florida International": [
+      "FIU College of Law"
+    ],
+    "Florida State": [
+      "Florida State University College of Law"
+    ],
+    "Fordham": [
+      "Fordham University School of Law"
+    ],
+    "George Mason": [
+      "Antonin Scalia Law School"
+    ],
+    "Georgetown": [
+      "Georgetown University Law Center"
+    ],
+    "George Washington": [
+      "George Washington University Law School"
+    ],
+    "Georgia": [
+      "University of Georgia School of Law"
+    ],
+    "Georgia State": [
+      "Georgia State University College of Law"
+    ],
+    "Golden Gate": [
+      "Golden Gate University School of Law"
+    ],
+    "Gonzaga": [
+      "Gonzaga University School of Law"
+    ],
+    "Harvard": [
+      "Harvard Law School"
+    ],
+    "Hawaii": [
+      "William S. Richardson School of Law"
+    ],
+    "High Point": [
+      "High Point University Kenneth F. Kahn School of Law"
+    ],
+    "Hofstra": [
+      "Maurice A. Deane School of Law (Hofstra)"
+    ],
+    "Houston": [
+      "University of Houston Law Center"
+    ],
+    "Howard": [
+      "Howard University School of Law"
+    ],
+    "Idaho": [
+      "University of Idaho College of Law"
+    ],
+    "Illinois Chicago": [
+      "UIC John Marshall Law School"
+    ],
+    "Illinois": [
+      "University of Illinois College of Law"
+    ],
+    "Indiana University - Bloomington": [
+      "Indiana University Maurer School of Law (Bloomington)"
+    ],
+    "Indiana University - Indianapolis": [
+      "IU Robert H. McKinney School of Law (Indianapolis)"
+    ],
+    "Inter American": [
+      "Inter American University of Puerto Rico School of Law"
+    ],
+    "Iowa": [
+      "University of Iowa College of Law"
+    ],
+    "Jacksonville": [
+      "Jacksonville University College of Law"
+    ],
+    "Judge Advocate General's School": [
+      "The Judge Advocate General's Legal Center and School (U.S. Army JAG School)"
+    ],
+    "Kansas": [
+      "University of Kansas School of Law"
+    ],
+    "Kentucky": [
+      "University of Kentucky College of Law"
+    ],
+    "Lewis and Clark": [
+      "Lewis & Clark Law School"
+    ],
+    "Liberty": [
+      "Liberty University School of Law"
+    ],
+    "Lincoln Memorial": [
+      "Lincoln Memorial University Duncan School of Law"
+    ],
+    "Louisiana State": [
+      "LSU Paul M. Hebert Law Center"
+    ],
+    "Louisville": [
+      "University of Louisville Brandeis School of Law"
+    ],
+    "Loyola - Chicago": [
+      "Loyola University Chicago School of Law"
+    ],
+    "Loyola - Los Angeles": [
+      "Loyola Law School Los Angeles"
+    ],
+    "Loyola - New Orleans": [
+      "Loyola University New Orleans College of Law"
+    ],
+    "Maine": [
+      "University of Maine School of Law"
+    ],
+    "Marquette": [
+      "Marquette University Law School"
+    ],
+    "Maryland": [
+      "University of Maryland Francis King Carey School of Law"
+    ],
+    "Massachusetts": [
+      "UMass School of Law - Dartmouth"
+    ],
+    "McGeorge": [
+      "McGeorge School of Law"
+    ],
+    "Memphis": [
+      "University of Memphis Cecil C. Humphreys School of Law"
+    ],
+    "Mercer": [
+      "Mercer University Law School"
+    ],
+    "Miami": [
+      "University of Miami School of Law"
+    ],
+    "Michigan State": [
+      "Michigan State University College of Law"
+    ],
+    "Michigan": [
+      "University of Michigan Law School"
+    ],
+    "Minnesota": [
+      "University of Minnesota Law School"
+    ],
+    "Mississippi College": [
+      "Mississippi College School of Law"
+    ],
+    "Mississippi": [
+      "University of Mississippi School of Law"
+    ],
+    "Missouri": [
+      "University of Missouri-Columbia School of Law"
+    ],
+    "Missouri - Kansas City": [
+      "University of Missouri-Kansas City School of Law"
+    ],
+    "Mitchell Hamline": [
+      "Mitchell Hamline School of Law"
+    ],
+    "Montana": [
+      "University of Montana School of Law"
+    ],
+    "Nebraska": [
+      "University of Nebraska College of Law"
+    ],
+    "Nevada": [
+      "William S. Boyd School of Law"
+    ],
+    "New England Law | Boston": [
+      "New England Law Boston"
+    ],
+    "New Hampshire": [
+      "University of New Hampshire School of Law"
+    ],
+    "New Mexico": [
+      "University of New Mexico School of Law"
+    ],
+    "New York Law School": [
+      "New York Law School"
+    ],
+    "New York University": [
+      "NYU School of Law"
+    ],
+    "North Carolina": [
+      "UNC School of Law"
+    ],
+    "North Carolina Central": [
+      "North Carolina Central University School of Law"
+    ],
+    "North Dakota": [
+      "University of North Dakota School of Law"
+    ],
+    "Northeastern": [
+      "Northeastern University School of Law"
+    ],
+    "Northern Illinois": [
+      "Northern Illinois University College of Law"
+    ],
+    "Northern Kentucky": [
+      "Salmon P. Chase College of Law"
+    ],
+    "Northwestern": [
+      "Northwestern University Pritzker School of Law"
+    ],
+    "Notre Dame": [
+      "Notre Dame Law School"
+    ],
+    "Nova Southeastern": [
+      "Nova Southeastern University Shepard Broad College of Law"
+    ],
+    "Ohio Northern": [
+      "Ohio Northern University Pettit College of Law"
+    ],
+    "The Ohio State": [
+      "The Ohio State University Moritz College of Law"
+    ],
+    "Oklahoma": [
+      "University of Oklahoma College of Law"
+    ],
+    "Oklahoma City": [
+      "Oklahoma City University School of Law"
+    ],
+    "Oregon": [
+      "University of Oregon School of Law"
+    ],
+    "Pace": [
+      "Elisabeth Haub School of Law"
+    ],
+    "Pennsylvania": [
+      "Penn Carey Law (University of Pennsylvania Carey Law School)"
+    ],
+    "Penn State-Dickinson Law": [
+      "Penn State Dickinson Law (Carlisle)",
+      "Penn State Dickinson Law (University Park; formerly Penn State Law)"
+    ],
+    "Pepperdine": [
+      "Pepperdine Caruso School of Law"
+    ],
+    "Pittsburgh": [
+      "University of Pittsburgh School of Law"
+    ],
+    "Pontifical Catholic of Puerto Rico": [
+      "Pontifical Catholic University of Puerto Rico School of Law"
+    ],
+    "Puerto Rico": [
+      "University of Puerto Rico School of Law"
+    ],
+    "Quinnipiac": [
+      "Quinnipiac University School of Law"
+    ],
+    "Regent": [
+      "Regent University School of Law"
+    ],
+    "Richmond": [
+      "University of Richmond School of Law"
+    ],
+    "Roger Williams": [
+      "Roger Williams University School of Law"
+    ],
+    "Rutgers": [
+      "Rutgers Law School - Camden",
+      "Rutgers Law School - Newark"
+    ],
+    "St. John's": [
+      "St. John's University School of Law"
+    ],
+    "Saint Louis": [
+      "Saint Louis University School of Law"
+    ],
+    "St. Mary's": [
+      "St. Mary's University School of Law"
+    ],
+    "St. Thomas (Florida)": [
+      "St. Thomas University School of Law"
+    ],
+    "St. Thomas (Minnesota)": [
+      "University of St. Thomas School of Law"
+    ],
+    "Samford": [
+      "Cumberland School of Law"
+    ],
+    "San Diego": [
+      "University of San Diego School of Law"
+    ],
+    "San Francisco": [
+      "University of San Francisco School of Law"
+    ],
+    "Santa Clara": [
+      "Santa Clara University School of Law"
+    ],
+    "Seattle": [
+      "Seattle University School of Law"
+    ],
+    "Seton Hall": [
+      "Seton Hall University School of Law"
+    ],
+    "South Carolina": [
+      "University of South Carolina Joseph F. Rice School of Law"
+    ],
+    "South Dakota": [
+      "University of South Dakota Knudson School of Law"
+    ],
+    "South Texas-Houston": [
+      "South Texas College of Law Houston"
+    ],
+    "Southern University": [
+      "Southern University Law Center"
+    ],
+    "Southern California": [
+      "USC Gould School of Law"
+    ],
+    "Southern Illinois": [
+      "Southern Illinois University School of Law"
+    ],
+    "Southern Methodist": [
+      "SMU Dedman School of Law"
+    ],
+    "Southwestern": [
+      "Southwestern Law School"
+    ],
+    "Stanford": [
+      "Stanford Law School"
+    ],
+    "Stetson": [
+      "Stetson University College of Law"
+    ],
+    "Suffolk": [
+      "Suffolk University Law School"
+    ],
+    "Syracuse": [
+      "Syracuse University College of Law"
+    ],
+    "Temple": [
+      "Temple University Beasley School of Law"
+    ],
+    "Tennessee": [
+      "University of Tennessee College of Law"
+    ],
+    "Texas": [
+      "University of Texas at Austin School of Law"
+    ],
+    "Texas A&M": [
+      "Texas A&M University School of Law"
+    ],
+    "Texas Southern": [
+      "Thurgood Marshall School of Law"
+    ],
+    "Texas Tech": [
+      "Texas Tech University School of Law"
+    ],
+    "Toledo": [
+      "University of Toledo College of Law"
+    ],
+    "Touro": [
+      "Touro Law Center"
+    ],
+    "Tulane": [
+      "Tulane University School of Law"
+    ],
+    "Tulsa": [
+      "University of Tulsa College of Law"
+    ],
+    "UNT Dallas": [
+      "UNT Dallas College of Law"
+    ],
+    "Utah": [
+      "S.J. Quinney College of Law"
+    ],
+    "Vanderbilt": [
+      "Vanderbilt University Law School"
+    ],
+    "Vermont": [
+      "Vermont Law and Graduate School"
+    ],
+    "Villanova": [
+      "Villanova University Charles Widger School of Law"
+    ],
+    "Virginia": [
+      "University of Virginia School of Law"
+    ],
+    "Wake Forest": [
+      "Wake Forest University School of Law"
+    ],
+    "Washburn": [
+      "Washburn University School of Law"
+    ],
+    "Washington and Lee": [
+      "Washington and Lee University School of Law"
+    ],
+    "Washington": [
+      "University of Washington School of Law"
+    ],
+    "Washington University": [
+      "Washington University School of Law"
+    ],
+    "Wayne State": [
+      "Wayne State University Law School"
+    ],
+    "Western New England": [
+      "Western New England University School of Law"
+    ],
+    "Western State": [
+      "Western State College of Law at Westcliff University"
+    ],
+    "West Virginia": [
+      "West Virginia University College of Law"
+    ],
+    "Widener-Delaware": [
+      "Widener University Delaware Law School"
+    ],
+    "Widener-Commonwealth": [
+      "Widener University Commonwealth Law School (Harrisburg)"
+    ],
+    "Willamette": [
+      "Willamette University College of Law"
+    ],
+    "William and Mary": [
+      "William & Mary Law School"
+    ],
+    "Wilmington": [
+      "Wilmington University Farnan School of Law"
+    ],
+    "Wisconsin": [
+      "University of Wisconsin Law School"
+    ],
+    "Wyoming": [
+      "University of Wyoming College of Law"
+    ],
+    "Yale": [
+      "Yale Law School"
+    ],
+    "Yeshiva": [
+      "Benjamin N. Cardozo School of Law"
+    ]
+  }
+}

@@ -10,12 +10,19 @@ Live site: `https://nathanReitinger.github.io/law-schools-and-computing-resource
 
 ## What's here
 
-- **All 197 ABA-accredited law schools are listed**, across 49 states, Washington, D.C., and Puerto Rico (Alaska has
-  none), data pulled September–October 2026. The original pass worked alphabetically by state and stopped after New York;
-  later passes filled in every remaining state, and a final per-state count against the ABA list caught two schools
-  the backlog itself had missed (Wayne State and Ohio Northern). **`TODO-missing-schools.csv`** is now empty but stays
-  in the repo for future additions, and the coverage line at the top of the site is generated from it. The pull date
-  is shown on the site itself and lives in `data/meta.json`.
+- **Every school on the ABA's approved list is listed**: all 198 schools that grant the J.D., plus the Army's JAG
+  School (LL.M. only), across 49 states, Washington, D.C., and Puerto Rico (Alaska has none). That is 201 rows,
+  because Rutgers (Camden, Newark) and Penn State Dickinson Law (Carlisle, University Park) get one row per campus.
+  Data pulled September–October 2026. The original pass worked alphabetically by state and stopped after New York;
+  later passes filled in every remaining state, and per-state counts caught two schools the backlog itself had
+  missed (Wayne State and Ohio Northern). A name-by-name check against the ABA's own list on October 1, 2026 then
+  caught three newly approved schools that were still missing: High Point, Jacksonville and Wilmington.
+- **`data/aba-crosswalk.json` keeps that from happening again.** It maps every entry on the
+  [ABA's alphabetical list](https://www.americanbar.org/groups/legal_education/accreditation/approved-law-schools/alphabetical/)
+  to the row(s) that cover it, and `audit.py` fails if any ABA school has no row or any row has no ABA school.
+  When the ABA approves, closes or renames a school, update the crosswalk along with `schools.json`.
+  **`TODO-missing-schools.csv`** is empty but stays in the repo for future additions, and the coverage line at the
+  top of the site is generated from it. The pull date is shown on the site itself and lives in `data/meta.json`.
 - **Every listed row has been through a deep re-verification pass or was researched fresh** and carry the sources used
   to check them; their notes begin "Re-verified", "RECLASSIFIED", "CORRECTED", "UPDATED" or "ADDED".
   Six rows still rest on a single source for a positive tier claim — `audit.py` names them.
@@ -91,6 +98,7 @@ css/style.css          styling
 js/app.js              search/filter/sort logic, reads data/*.json, no dependencies
 data/schools.json       the actual data — this is what a pull request usually touches
 data/meta.json          just the "data pulled" date shown at the top of the site
+data/aba-crosswalk.json maps each school on the ABA's approved list to its row(s); audit.py checks coverage with it
 CONTRIBUTING.md         field schema + how to submit a correction or a new school
 .github/workflows/deploy.yml       auto-deploys to Pages on every push to main
 .github/ISSUE_TEMPLATE/correction.yml   optional GitHub issue form (the site's primary

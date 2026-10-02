@@ -19,6 +19,9 @@ It catches the failure modes that have actually occurred in this dataset:
   * big claims resting on a single source
   * schema drift: missing fields, bad tier slugs, duplicate names, two label
     strings for one tier
+  * coverage gaps: an ABA-approved school with no row (High Point, Jacksonville
+    and Wilmington were missing while the site said every school was listed),
+    checked against data/aba-crosswalk.json
 
 Exit code is 1 if anything is flagged, so it can gate CI.
 """
@@ -111,6 +114,35 @@ def audit_row(i, s):
     return issues
 
 
+def coverage_issues(path, names):
+    """Check schools.json against the ABA's own list, via data/aba-crosswalk.json.
+
+    A hand-kept count is how three newly approved schools went missing while the
+    site said every school was listed. The crosswalk maps each ABA list entry to
+    the row(s) that cover it, so a missing school, a renamed row, or a row no ABA
+    entry accounts for all show up here instead of in a reader's email.
+    """
+    xw_path = os.path.join(os.path.dirname(path) or ".", "aba-crosswalk.json")
+    if not os.path.exists(xw_path):
+        return [f"no ABA crosswalk at {xw_path} — coverage not checked"]
+    xw = json.load(open(xw_path))
+    issues = []
+    covered = set()
+    for aba_name, rows in xw["map"].items():
+        if not rows:
+            issues.append(f"ABA school {aba_name!r} has no row in the crosswalk")
+        for r in rows:
+            covered.add(r)
+            if r not in names:
+                issues.append(f"ABA school {aba_name!r} maps to {r!r}, which is not in {path}")
+    for n in sorted(set(names) - covered):
+        issues.append(f"row {n!r} is not mapped to any ABA list entry")
+    if len(xw["map"]) != xw.get("abaListCount"):
+        issues.append(f"crosswalk has {len(xw['map'])} ABA entries but abaListCount says "
+                      f"{xw.get('abaListCount')} — re-check against the ABA list")
+    return issues
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--path", default="data/schools.json")
@@ -139,6 +171,7 @@ def main():
         labels = {s["tierLabel"] for s in data if s.get("tier") == t and "tierLabel" in s}
         if len(labels) > 1:
             globals_.append(f"tier {t!r} has {len(labels)} different tierLabel strings: {labels}")
+    globals_ += coverage_issues(path, names)
 
     flagged = []
     for i in idx:
