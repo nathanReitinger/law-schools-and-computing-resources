@@ -4,9 +4,9 @@ audit.py — consistency checker for data/schools.json
 
 Run it after any edit, or on a random sample, before opening a pull request:
 
-    python3 tools/audit.py                # audit every row
-    python3 tools/audit.py --sample 30    # random 30-row spot check
-    python3 tools/audit.py --sample 30 --seed 42   # reproducible sample
+    python3 audit.py                      # audit every row
+    python3 audit.py       --sample 30    # random 30-row spot check
+    python3 audit.py       --sample 30 --seed 42   # reproducible sample
 
 It catches the failure modes that have actually occurred in this dataset:
 

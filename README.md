@@ -10,14 +10,13 @@ Live site: `https://nathanReitinger.github.io/law-schools-and-computing-resource
 
 ## What's here
 
-- **138 law schools listed** across 39 states/territories, data pulled September 2026, of roughly 198
-  ABA-accredited schools total. **This is not a finished census — and the gap is systematic, not
-  random.** The original pass worked alphabetically by state and stopped after New York, so states
-  later in the alphabet are underrepresented; Ohio, Pennsylvania, Tennessee, Texas, Virginia and
-  Washington were never reached rather than checked and found empty. About 60 schools remain to be added; **`TODO-missing-schools.csv`** lists every one with the
-  specific cluster or statewide programme to check first. The pull date is shown on the site
-  itself and lives in `data/meta.json`.
-- **All 138 listed rows have been through a deep re-verification pass** and carry the sources used
+- **All 197 ABA-accredited law schools are listed**, across 49 states, Washington, D.C., and Puerto Rico (Alaska has
+  none), data pulled September–October 2026. The original pass worked alphabetically by state and stopped after New York;
+  later passes filled in every remaining state, and a final per-state count against the ABA list caught two schools
+  the backlog itself had missed (Wayne State and Ohio Northern). **`TODO-missing-schools.csv`** is now empty but stays
+  in the repo for future additions, and the coverage line at the top of the site is generated from it. The pull date
+  is shown on the site itself and lives in `data/meta.json`.
+- **Every listed row has been through a deep re-verification pass or was researched fresh** and carry the sources used
   to check them; their notes begin "Re-verified", "RECLASSIFIED", "CORRECTED", "UPDATED" or "ADDED".
   Six rows still rest on a single source for a positive tier claim — `audit.py` names them.
 - Each school is tagged with a **GPU support tier** (Frontier / Modern / Older-gen / present-but-unnamed /

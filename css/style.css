@@ -482,3 +482,15 @@ a:focus-visible, button:focus-visible, select:focus-visible, input:focus-visible
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
 }
+
+.coverage-note {
+  margin: 0 0 8px;
+  font-size: 12.5px;
+  line-height: 1.5;
+  color: var(--accent-ink);
+  max-width: 100ch;
+  padding: 6px 10px;
+  border-left: 3px solid var(--tier-older);
+  background: var(--surface);
+}
+.coverage-note a { color: var(--accent-ink); font-weight: 600; }

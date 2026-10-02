@@ -1,5 +1,7 @@
 # Re-verification log — September 2026
 
+> **Latest: October 1, 2026** — all 197 ABA-accredited law schools listed; the backlog is empty. See the October sections below.
+
 **138 schools listed of ~195–198 ABA-accredited. ALL 138 ROWS RE-VERIFIED with their own sources.
 15 tier changes. 132 of 138 pass the full consistency audit; the 6 flags are single-source tier
 claims, named below. An audit tool and a structured backlog of the 57 remaining schools both ship
@@ -31,6 +33,87 @@ Rule written down so it doesn't recur: **a finding that applies to every row is 
 not a per-row data change.**
 
 The zero-source count is now genuinely 0, reached by researching the nine rows individually.
+
+## October 1, 2026 — Pennsylvania and Delaware: 8 schools added, 2 corrected
+
+**146 schools listed; 49 remain in `TODO-missing-schools.csv`.** Each new row was researched fresh with
+its own sources (2–7 per row). All eight new rows and both corrected rows pass `audit.py`; the only flags
+are the six pre-existing single-source rows named above.
+
+**Penn Carey Law — frontier, and the backlog's lead was out of date.** The TODO row said Penn "has multiple
+school-level clusters rather than one campus system." That stopped being true when PARCC put Betty into
+production in 2025: an NVIDIA DGX B200 SuperPOD, 31 nodes x 8 B200 = 248 GPUs (PARCC's spec page and the
+integrator's page agree), built for all twelve Penn schools. Law access is documented, not inferred — Penn
+Today reports PARCC helped a Penn Carey Law team cut a month-long experiment to eight hours. Caveat: Betty
+bills per use, $1 per GPU-hour with no entry fee.
+
+**Pitt — frontier on its own hardware, not PSC's.** CRCD's GPU cluster has an `h200` partition (8x H200 per
+node) and an `rtx6k` partition (RTX PRO 6000 Blackwell); the tier rests on the H200s, since CONTRIBUTING.md
+files the RTX PRO 6000 under modern. The Pittsburgh Supercomputing Center is deliberately not credited — it
+is allocated nationally through ACCESS, and attributing it to Pitt would repeat the Missouri/Tulane mistake
+`audit.py` exists to catch. Every faculty PI gets 50,000 free service units per cluster, renewable yearly.
+
+**Penn State (both rows) — corrected, not just confirmed.** ICDS revised its READ Credits page on Sept 29,
+2026: 3 free credits a month, and no additional READ credits for the rest of FY27. Both rows described a
+request form for more credits; that route is closed this year, so the sentence was rewritten in place and
+marked UPDATED. ICDS's user guide and rate sheet also list A40 and V100, which the rows had omitted. Tier
+unchanged (modern).
+
+**Temple — older, with a staleness caveat.** Every public hardware description (a DGX-1 with 8x V100, a 4x
+V100 server, P100s on Owl's Nest) dates to 2017–2018. A second search for anything newer found nothing.
+
+**Drexel — older.** Picotte's 48 V100s, confirmed on four Drexel/URCF pages; free for all Drexel researchers.
+
+**Villanova — modern, but small.** Augie is open to all Villanova members, but Villanova describes a single
+A100 node. A caveat says so, so the chip doesn't oversell it.
+
+**Duquesne — none, after three searches** (general terms, NSF instrumentation grants, Duquesne's own domain).
+It is R2, so the caveat says to ask Computing and Technology Services before ruling out a departmental
+cluster. Tagged NSF ACCESS and given the standard national-floor pointer, like every other `none` row.
+
+**Widener Commonwealth and Widener Delaware — undetailed.** Verified separately, as the backlog asked. The
+only cluster in public sources is an undergraduate CS department cluster on the Chester campus; the
+Harrisburg campus IT guide covers wifi, labs and helpdesk only. Both are left untagged for ACCESS, matching
+how every other `undetailed` row is handled.
+
+**Site copy.** Hard-coded counts had already drifted: `index.html` and `meta.json` said 132 while the README
+said 138, and the ACCESS paragraph said "40 schools." Those numbers are gone. The coverage line at the top of
+the page is now generated from `data/schools.json` plus this backlog file, so deleting a row from
+`TODO-missing-schools.csv` updates the banner automatically. That also fixes the problem that prompted this
+pass: with no list of unresearched states on the page, Penn's absence read as "Penn has nothing."
+
+## October 1, 2026 (second pass) — the last 14 states, plus two schools the backlog missed
+
+**197 schools listed; `TODO-missing-schools.csv` is empty.** This pass added 51 rows (19 frontier, 16 none, 9 modern, 2 undetailed, 2 unspecified, 1 older, 1 cpuonly, 1 standalone): every
+remaining backlog school in North Carolina, North Dakota, Oregon, Puerto Rico, Rhode Island, South Dakota,
+Tennessee, Texas, Utah, Virginia, Washington, West Virginia, Wisconsin, Wyoming, New York and Florida. Each row was
+written through a helper that copies this file's conventions (tier labels, the NSF ACCESS tag and national-floor
+pointer, field order) and runs `audit.py`'s row check before saving; every row passed on insert.
+
+**Two schools were missing from the backlog itself.** A per-state count against the ABA list showed Michigan one
+short and Ohio one short: Wayne State University Law School (free HPC Grid with H200 nodes) and Ohio Northern's
+Pettit College of Law (OSC, like every other Ohio school, which makes all nine Ohio rows frontier). Neither was in
+the data or in `TODO-missing-schools.csv`. The page copy that said "eight Ohio law schools" now says nine.
+
+**Statewide routes worth knowing.** *NCShare* (North Carolina): 32 NVIDIA H200 GPUs, NSF-funded and free to
+participating institutions, which is how NC Central, Campbell and Elon rate frontier (Elon's access to the current
+environment is marked as needing testing, so its row says so). *South Dakota Board of Regents*: SDSU's Innovator
+cluster (A100) is documented as open to every Regents institution, including USD; SDSU's H100 cluster isn't, so USD
+is rated modern. Both are now filterable network tags.
+
+**Backlog questions answered.** Texas A&M: HPRC eligibility follows the employing System member's headquarters
+(Brazos County), not the faculty member's location, so the Fort Worth law school's faculty appear eligible — caveat
+says to confirm. UNT Dallas: a separate university within the UNT System, and no source extends UNT's Talon cluster
+to it — the Missouri/Baltimore pattern again, so `none`. George Mason: "Hopper" is the cluster's name *and* it has a
+real H100 node. Ave Maria: independent of Ave Maria University, so `standalone`.
+
+**Look-alikes ruled out.** Thurgood Marshall's TSU cluster uses Intel Xeon Phi coprocessors, not GPUs (`cpuonly`,
+same distinction as UNLV's Cherry Creek). Liberty's engineering school rents commercial cloud HPC (Rescale), which
+isn't a campus service. Wayne State searches kept surfacing Washington State's Kamiak cluster ("WSU"); it isn't used.
+
+**Free versus paid, per the rows' own sources.** Free general GPU access: BYU, UND, Utah (most clusters), UW–Madison,
+Texas Tech, Wayne State, GMU, W&M, UVA standard allocations, Pitt-style startup tiers elsewhere. Pay-per-use or rented:
+UW's Tillicum ($0.90/GPU-hour, 100 free hours per PI), Vanderbilt ACCRE (card rental), Wyoming above its annual quota.
 
 ## The slow pass: 10 rows, one at a time
 

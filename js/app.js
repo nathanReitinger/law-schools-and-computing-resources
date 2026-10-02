@@ -255,7 +255,52 @@
     updateSortIndicators();
   }
 
-  function init(data, meta) {
+  // Coverage line, generated from data/schools.json plus TODO-missing-schools.csv so it
+  // can't drift from the backlog the way hard-coded counts did. Removing a row from the
+  // TODO file is all it takes to update it.
+  function renderCoverage(todoCsv) {
+    var el = document.getElementById("coverage-note");
+    if (!el) return;
+    var listed = {};
+    state.all.forEach(function (s) { if (s.state) listed[s.state] = true; });
+    var todo = {}, todoCount = 0;
+    String(todoCsv || "").split(/\r?\n/).slice(1).forEach(function (line) {
+      var st = line.split(",")[0].replace(/^"|"$/g, "").trim();
+      if (st) { todo[st] = true; todoCount++; }
+    });
+    var nStates = Object.keys(listed).filter(function (k) {
+      return k !== "District of Columbia" && k !== "Puerto Rico";
+    }).length;
+    var extra = [];
+    if (listed["District of Columbia"]) { extra.push("Washington, D.C."); }
+    if (listed["Puerto Rico"]) { extra.push("Puerto Rico"); }
+    var where = nStates + " states" + (extra.length === 2 ? ", " + extra[0] + ", and " + extra[1]
+                                      : extra.length === 1 ? " and " + extra[0] : "");
+    var parts = [(todoCount ? "Coverage so far: " : "Coverage: ") + state.all.length + " law schools in " + where + (/\.$/.test(where) ? "" : ".")];
+    if (todoCount) {
+      var never = Object.keys(todo).filter(function (k) { return !listed[k]; }).sort();
+      var partly = Object.keys(todo).filter(function (k) { return listed[k]; }).sort();
+      parts.push(todoCount + " more are still to be added.");
+      if (never.length) { parts.push("Not yet researched at all: " + never.join(", ") + "."); }
+      if (partly.length) { parts.push("Partly researched: " + partly.join(", ") + "."); }
+    }
+    if (todoCount) {
+      parts.push("If a school isn't listed, it hasn't been checked yet. That doesn't mean it has no computing resources.");
+    } else if (todoCsv) {
+      parts.push("Every ABA-accredited law school is now listed. If you spot a missing or outdated entry, please report it.");
+    }
+    el.textContent = parts.join(" ") + " ";
+    if (todoCount) {
+      var a = document.createElement("a");
+      a.href = "https://github.com/nathanReitinger/law-schools-and-computing-resources/blob/main/TODO-missing-schools.csv";
+      a.target = "_blank"; a.rel = "noopener";
+      a.textContent = "See the full list.";
+      el.appendChild(a);
+    }
+    el.hidden = false;
+  }
+
+  function init(data, meta, todoCsv) {
     state.all = data.map(function (s, i) { s._id = i; return s; });
 
     els.q = $("q");
@@ -271,6 +316,7 @@
     els.pulledDate = $("pulled-date");
 
     els.pulledDate.textContent = (meta && meta.dataPulled) || "unknown";
+    renderCoverage(todoCsv);
 
     buildFilterOptions();
     renderStats();
@@ -286,9 +332,10 @@
 
   Promise.all([
     fetch("data/schools.json").then(function (r) { return r.json(); }),
-    fetch("data/meta.json").then(function (r) { return r.json(); }).catch(function () { return {}; })
+    fetch("data/meta.json").then(function (r) { return r.json(); }).catch(function () { return {}; }),
+    fetch("TODO-missing-schools.csv").then(function (r) { return r.ok ? r.text() : ""; }).catch(function () { return ""; })
   ])
-    .then(function (results) { init(results[0], results[1]); })
+    .then(function (results) { init(results[0], results[1], results[2]); })
     .catch(function (err) {
       document.getElementById("rows").innerHTML =
         '<tr><td colspan="7" style="padding:24px;color:var(--tier-frontier)">' +
