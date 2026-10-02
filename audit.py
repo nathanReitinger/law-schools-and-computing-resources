@@ -40,7 +40,8 @@ MODERN   = r"(A100|A40|A30|A16|A10\b|A2\b|L40S?|A6000|A5000|RTX\s?PRO\s?6000|RTX
 # honestly says "no Hopper-class hardware was found" gets flagged for naming
 # Hopper — which is exactly backwards.
 NEGATED = re.compile(
-    r"(no|without|not|lacks|absent|never)\b[^.;]{0,60}?" + FRONTIER, re.I)
+    r"(no|without|not|lacks|absent|never)\b[^.;]{0,60}?" + FRONTIER
+    + r"(?:\s*(?:/|,|or|and|nor)\s*" + FRONTIER + r")*", re.I)  # "no H100/H200" rules out both
 
 # RTX PRO 6000 is Blackwell-architecture but CONTRIBUTING.md's tier table lists it
 # under `modern`, not `frontier`. Strip that phrasing before the frontier check so

@@ -445,16 +445,24 @@
     "standalone": false,
     "tier": "frontier",
     "tierLabel": "Frontier — H100/H200/B200 confirmed",
-    "gpu": "Sherlock 4.0: NVIDIA H100 SXM5 (4x/8x per node) and NEW NVIDIA H200 (8x per node, SH4_G8TF64.1) and L40S; legacy V100/P100/P40/RTX2080Ti nodes still active",
+    "gpu": "Sherlock's free gpu partition, open to every Sherlock user: 16 NVIDIA H100 SXM5 (two 4-GPU nodes and one 8-GPU node) and 32 L40S (8 nodes x 4), plus older RTX 3090, RTX 2080 Ti, V100/V100S, TITAN Xp and P100 nodes (49 GPU nodes in all). The dev partition adds A30 MIG slices. Owner-only: PI groups can buy 8x NVIDIA H200 nodes (SH4_G8TF64.1, sold since Aug 2025), which run in the owners partition rather than the free pool. Separately, Marlowe has 248 NVIDIA H100 GPUs across 31 nodes.",
     "slurm": "Yes",
-    "hpcName": "Stanford Research Computing Center - Sherlock cluster",
-    "specs": "2,000+ compute nodes; 74,900+ CPU cores; 1,100+ GPUs; 15.9 PFLOPS; 9.7PB parallel filesystem (600GB/s I/O); 8,500+ users, 1,200+ PI groups",
-    "notes": "Open to all Stanford faculty incl. Law School (free base tier); condo/owner model for dedicated priority nodes; also HIPAA/PHI-compliant Carina environment. CORRECTED Sept 2026: initial research understated this — Sherlock is one of the most powerful academic clusters in the US.",
+    "hpcName": "Stanford Research Computing — Sherlock cluster; plus Marlowe (Stanford Data Science's NVIDIA H100 system)",
+    "specs": "Sherlock (as of October 2026): 2,056 compute nodes; 75,972 CPU cores; 1,256 GPUs; 18.78 PFLOPs (FP64); 14.6 PB Lustre scratch with over 600 GB/s of I/O; direct access to the 93.9 PB Oak research storage; 9,152 user accounts and 1,347 PI groups from all seven Stanford schools. Marlowe: 31 H100 nodes (248 GPUs), scheduled with Slurm.",
+    "notes": "Open to all Stanford faculty incl. Law School (free base tier); condo/owner model for dedicated priority nodes; also HIPAA/PHI-compliant Carina environment. CORRECTED Sept 2026: initial research understated this — Sherlock is one of the most powerful academic clusters in the US. UPDATED Oct 2026: Stanford also runs Marlowe, a 248-GPU NVIDIA H100 system open to all Stanford faculty PIs; the PI must apply personally. New PIs get 5,000 free introductory GPU-hours (Basic Access, preemptible, valid one year). Larger non-preemptible projects pay a subsidized recharge of $0.30 per GPU-hour from Sep 1, 2026 ($0.25 preemptible), and jobs run through Slurm. On Sherlock itself, the free pool every user can reach is the gpu partition, which includes 16 H100s. The 8x H200 nodes sold since Aug 2025 are owner-purchased and sit in the owner-only partition. Stanford has postponed indefinitely the planned retirement of its oldest Sherlock 2.0 nodes, so the legacy GPUs remain in service. Carina, the PHI/high-risk-data platform, is still offered to PI-led teams.",
     "networks": [],
     "sources": [
       "https://www.sherlock.stanford.edu/docs/tech/",
       "https://news.sherlock.stanford.edu/publications/sherlock-4-0-a-new-cluster-generation",
-      "https://news.sherlock.stanford.edu/labels/blog,data,hardware,new"
+      "https://news.sherlock.stanford.edu/labels/blog,data,hardware,new",
+      "https://www.sherlock.stanford.edu/docs/tech/facts/",
+      "https://www.sherlock.stanford.edu/docs/user-guide/gpu/",
+      "https://www.sherlock.stanford.edu/docs/",
+      "https://news.sherlock.stanford.edu/publications/introducing-sh4_g8tf64-1-now-with-8x-h200-gpus",
+      "https://news.sherlock.stanford.edu/publications/an-update-about-our-plans-to-retire-sherlock-2-0",
+      "https://marlowe-research.stanford.edu/access",
+      "https://marlowe-research.stanford.edu/",
+      "https://srcc.stanford.edu/systems"
     ]
   },
   {
@@ -464,17 +472,20 @@
     "standalone": false,
     "tier": "modern",
     "tierLabel": "Modern — A100/A40/L40-class confirmed",
-    "gpu": "Savio (general FCA pool): NVIDIA L40 + A5000 (savio4_gpu, 136 A5000 available), A40 (16 avail), V100 (2 avail), plus GTX2080TI/TITAN/1080TI legacy nodes. Individual dept condos go newer still (e.g. Statistics dept has 8x H200 and multiple A100 nodes, though those are lab-owned, not general-access)",
+    "gpu": "Savio regular-priority FCA pool: 136 RTX A5000 (savio4_gpu), 16 A40, 2 V100 and 28 GTX 2080Ti (savio3_gpu). L40 nodes (3 x 8 L40, savio4_gpu) and TITAN RTX nodes are reachable by FCA users only through the preemptible low-priority queue (savio_lowprio). GTX 1080Ti nodes were retired in summer 2026. No H100/H200 on Savio. Separately, the Statistics department's own SCF cluster (not part of Savio) has research-group-owned H200 and A100 servers.",
     "slurm": "Yes",
     "hpcName": "Berkeley Research Computing - Savio cluster",
-    "specs": "600+ nodes, 15,300+ cores cluster-wide; ~3PB storage",
-    "notes": "Free access to all faculty via Faculty Computing Allowance (FCA); condo option for dedicated priority nodes. CORRECTED Sept 2026 with specific hardware config table.",
+    "specs": "600 compute nodes and 15,300+ cores (BRC's April 2020 figure; the current hardware tables list roughly 785 nodes); 12 PB Lustre global scratch plus VAST home storage",
+    "notes": "Free access to all faculty via Faculty Computing Allowance (FCA); condo option for dedicated priority nodes. CORRECTED Sept 2026 with specific hardware config table. CORRECTED Oct 2026: Savio's GTX 1080Ti nodes were retired in summer 2026; its L40 and TITAN RTX nodes are open to Faculty Computing Allowance users only through the preemptible low-priority queue; and the campus H200s are on the Statistics department's separate SCF cluster, not Savio condos. Tier unchanged (modern).",
     "networks": [],
     "sources": [
       "https://docs-research-it.berkeley.edu/services/high-performance-computing/user-guide/hardware-config",
-      "https://docs-research-it.berkeley.edu/services/high-performance-computing/user-guide/running-your-jobs/specific-resources"
+      "https://docs-research-it.berkeley.edu/services/high-performance-computing/user-guide/running-your-jobs/specific-resources",
+      "https://docs-research-it.berkeley.edu/services/high-performance-computing/overview/system-overview/",
+      "https://docs-research-it.berkeley.edu/services/high-performance-computing/getting-account/faculty-computing-allowance/",
+      "https://computing.stat.berkeley.edu/servers/gpu-servers/"
     ],
-    "caveat": "The H200s are department condo nodes, not the general pool. Savio's general Faculty Computing Allowance pool tops out at L40 and A5000 (136 A5000, 16 A40, 2 V100, plus legacy consumer cards). Newer Hopper hardware — such as the Statistics department's 8x H200 — sits in individually owned condo partitions. This row is therefore scored modern on what a law faculty member could actually request through the FCA, by the same reasoning applied to Hawai'i and New Hampshire. Reaching the H200s would mean a collaboration with an owning department."
+    "caveat": "Savio itself has no Hopper-class GPUs. Its regular-priority Faculty Computing Allowance pool tops out at A40 and RTX A5000 (16 A40, 136 A5000, 2 V100, 28 GTX 2080Ti); the L40 and TITAN RTX nodes are open to FCA users only through the preemptible low-priority queue. The campus H200s (and many A100s) are on the Statistics department's own Statistical Computing Facility (SCF) cluster, which is separate from Savio; they are owned by research groups (e.g. Steinhardt, Song Mei, Berkeley NLP) and are available to other SCF users only at lower, preemptible priority. This row is therefore scored modern on what a law faculty member could actually request through the FCA, by the same reasoning applied to Hawai'i and New Hampshire. Reaching the H200s would mean an SCF account or a collaboration with an owning group."
   },
   {
     "state": "California",
@@ -483,34 +494,42 @@
     "standalone": false,
     "tier": "modern",
     "tierLabel": "Modern — A100/A40/L40-class confirmed",
-    "gpu": "NVIDIA A100 (80GB) confirmed and explicitly requestable, plus V100, RTX2080Ti, P4 legacy nodes",
+    "gpu": "Hoffman2 production (Altair Grid Engine) GPU table: NVIDIA H200 (141GB, 4 per node), H100 (96GB, 1 per node), L40S (48GB), A6000 (48GB, 2 per node), A100 (80GB or 40GB, 4 per node), plus older RTX 2080Ti, V100 (32GB), GTX 1080Ti, Tesla P4 and Tesla K40. Each type is requested explicitly (e.g. -l gpu,H200,cuda=1).",
     "slurm": "Transitioning",
     "hpcName": "UCLA OARC - Hoffman2 Cluster",
-    "specs": "800-1300+ nodes; 20-26k+ cores; 50-179TB aggregate RAM; 2PB Panasas storage",
-    "notes": "Free to entire UCLA campus incl. Law; historically Altair Grid Engine (qsub/qrsh), migrating to SLURM (Slurm preview partition live since ~2024). CORRECTED Sept 2026 — A100 80GB confirmed present.",
+    "specs": "800+ nodes; 26,000+ cores; 179TB+ aggregate memory; 3 PB NetApp plus 6 PB flash-based VAST storage (home, project, scratch)",
+    "notes": "Free to entire UCLA campus incl. Law; historically Altair Grid Engine (qsub/qrsh), migrating to SLURM (Slurm preview partition live since ~2024). CORRECTED Sept 2026 — A100 80GB confirmed present. CORRECTED Oct 2026: Hoffman2's GPU table now lists H200 and H100 cards alongside L40S, A6000 and A100; the tier stays modern until campus-user access to the Hopper nodes is documented (see caveat). The Slurm preview cluster (60 new dedicated nodes; 24-hour job limit unless the PI's nodes have migrated) was announced in 2026, not around 2024. Production still runs Altair Grid Engine.",
     "networks": [],
     "sources": [
       "https://www.hoffman2.idre.ucla.edu/Using-H2/Computing/Computing.html",
-      "https://www.hoffman2.idre.ucla.edu/About/System-overview.html"
-    ]
+      "https://www.hoffman2.idre.ucla.edu/About/System-overview.html",
+      "https://www.hoffman2.idre.ucla.edu/Using-H2/Computing/Computing-Altair-production.html",
+      "https://www.hoffman2.idre.ucla.edu/Policies/Job-scheduling-policy.html",
+      "https://www.hoffman2.idre.ucla.edu/Using-H2/Computing/Computing-Slurm-preview.html",
+      "https://www.hoffman2.idre.ucla.edu/News-archive/News.html"
+    ],
+    "caveat": "Hopper access for campus users isn't documented, which is why this row stays modern. OARC's GPU table lists H200 (4 per node) and H100 cards on the production Grid Engine cluster, but users whose PI hasn't bought nodes ('campus users') run only on OARC's base pool, with 24-hour jobs, and the docs don't say whether that pool includes the Hopper nodes or whether they are group-owned. A law faculty member should confirm with OARC before planning on H100/H200 time."
   },
   {
     "state": "California",
     "school": "UC Davis School of Law (King Hall)",
     "university": "University of California-Davis",
     "standalone": false,
-    "tier": "frontier",
-    "tierLabel": "Frontier — H100/H200/B200 confirmed",
-    "gpu": "Hive cluster: 4x NVIDIA H100 + 8x NVIDIA A100 + 9x A6000 in free/low-priority pool; Franklin cluster (Bio Sciences): 72x RTX A4000/A5000/RTX6000 Ada/RTX2080Ti",
+    "tier": "modern",
+    "tierLabel": "Modern — A100/A40/L40-class confirmed",
+    "gpu": "Hive general use: NVIDIA A6000 (5 for general use; the free publicgrp share in the high partition is 4 A6000s combined, max 1 GPU per job). PI-owned on Hive and reachable by any user only via the preemptible low partition: 4x H100, 8x A100, 4x A6000. Franklin (College of Biological Sciences, restricted): 72 RTX A4000/A5000/RTX 6000 Ada/RTX 2080 Ti.",
     "slurm": "Yes",
     "hpcName": "HPC@UCD (Farm, Franklin, Hive clusters)",
-    "specs": "48,000+ cores cluster-wide; 200+ GPUs; dozens of PB storage",
-    "notes": "Free access to all UC Davis staff, faculty, grad students on Hive; SLURM confirmed. CORRECTED Sept 2026 — H100/A100 confirmed present on Hive.",
+    "specs": "Hive: 20 core nodes x 128 CPU cores / 2 TB RAM; 6,720 CPU cores and 61 TiB RAM total (as of Sept 22, 2025); Quobyte parallel file system. Across all HPC@UCD-managed clusters (Farm, Franklin, Hive, HPC2, many restricted): 48,000+ CPU cores, 200+ GPUs, dozens of PB storage.",
+    "notes": "Free access to all UC Davis staff, faculty, grad students on Hive; SLURM confirmed. CORRECTED Sept 2026 — H100/A100 confirmed present on Hive. CORRECTED Oct 2026: tier frontier → modern. Hive's H100s/A100s are PI-owned and reachable by free users only in the preemptible low partition; the free share is A6000s. Same treatment as Hawai'i.",
     "networks": [],
     "sources": [
       "http://docs.hpc.ucdavis.edu/hive/",
-      "https://hpc.ucdavis.edu/clusters"
-    ]
+      "https://hpc.ucdavis.edu/clusters",
+      "https://docs.hpc.ucdavis.edu/scheduler/free-access/",
+      "https://docs.hpc.ucdavis.edu/franklin/"
+    ],
+    "caveat": "Hopper hardware exists on Hive but is PI-owned: 4 H100s (plus 8 A100s and 4 A6000s) sit in the low partition and can be used by any UC Davis user only when the owning groups are not using them; low jobs are capped at 7 days and are killed and requeued when owners need the nodes. The guaranteed free share for all users (publicgrp) is 128 CPUs, 2,000 GB RAM and 4 A6000 GPUs combined, one GPU per job. Scored modern on that general-use pool, consistent with Hawai'i."
   },
   {
     "state": "California",
@@ -519,14 +538,18 @@
     "standalone": false,
     "tier": "modern",
     "tierLabel": "Modern — A100/A40/L40-class confirmed",
-    "gpu": "4 nodes w/ 2x NVIDIA A100 (80GB); 18 nodes w/ 4x NVIDIA A30 (24GB); 14 nodes w/ 4x NVIDIA V100 (16GB) (as of May 2026)",
+    "gpu": "HPC3 (as of May 2026): 14 nodes x 4 NVIDIA V100 (16GB); 18 nodes x 4 A30 (24GB); 4 nodes x 2 A100 (80GB); 3 nodes x 4 L40S (48GB); 7 nodes x 4 RTX PRO 6000 Blackwell (96GB). V100/A30/A100 run in the gpu partition and L40S/RTX 6000 in gpu32; both need a GPU lab account requested by a faculty PI. Anyone can use idle GPUs without a special account through the preemptible free-gpu/free-gpu32 partitions. No H100/H200.",
     "slurm": "Yes",
     "hpcName": "Research Cyberinfrastructure Center (RCIC) - HPC3 cluster",
     "specs": "261+ batch-accessible nodes; DFSx/CRSP parallel storage",
-    "notes": "Open to all UCI researchers, no school/dept affiliation required; SLURM confirmed; allocation/banking model (no owner-dedicated queues). CORRECTED Sept 2026 with exact node counts.",
+    "notes": "Open to all UCI researchers, no school/dept affiliation required; SLURM confirmed; allocation/banking model (no owner-dedicated queues). CORRECTED Sept 2026 with exact node counts. UPDATED Oct 2026: HPC3 added L40S and RTX PRO 6000 Blackwell nodes (gpu32 partition); still no Hopper, so modern stands. Any UCInetID holder gets a free account. Faculty get a no-cost baseline of 100,000 CPU core-hours and 1,000 GPU-hours every 6 months. The allocated GPU partitions need a PI-requested GPU lab account; free-gpu is open to anyone but preemptible.",
     "networks": [],
     "sources": [
-      "https://rcic.uci.edu/hpc3/specs.html"
+      "https://rcic.uci.edu/hpc3/specs.html",
+      "https://rcic.uci.edu/slurm/slurm.html",
+      "https://rcic.uci.edu/about/allocations.html",
+      "https://rcic.uci.edu/account/getting-account.html",
+      "https://rcic.uci.edu/hpc3/hpc3.html"
     ]
   },
   {
@@ -534,21 +557,26 @@
     "school": "USC Gould School of Law",
     "university": "University of Southern California",
     "standalone": false,
-    "tier": "modern",
-    "tierLabel": "Modern — A100/A40/L40-class confirmed",
-    "gpu": "Over 180 NVIDIA GPUs across more than 200 GPU-equipped nodes on Discovery: A100 in both 40GB and 80GB variants, A40, and V100. Slurm exposes them as selectable types (for example --gpus-per-task=a40:1, or a100:1 with a 40GB/80GB constraint). No Hopper-class hardware was found on the general-use cluster, which is why this is modern rather than frontier. Endeavour, the condo cluster, may carry other GPU types or more than two per node depending on what each condo group bought.",
+    "tier": "frontier",
+    "tierLabel": "Frontier — H100/H200/B200 confirmed",
+    "gpu": "Discovery (general use, Slurm): over 180 NVIDIA GPUs across 200+ GPU nodes. Types: L40S (3 per node), A100 40GB and 80GB (2 per node, selected with --constraint=a100-40gb/a100-80gb), A40 (2), V100 (2) and P100 (2), requested as e.g. --gpus-per-task=a40:1; max 36 GPUs per user. No Hopper on Discovery. Topanga AI Computing (launched Sept 9, 2026; pay-as-you-go container sessions on Backend.AI instead of Slurm): NVIDIA H200 NVL 141GB, fractional GPUs up to 4 per session; max 4 GPUs per user. Endeavour condo lease options: V100, A40 and A100 80GB nodes.",
     "slurm": "Yes — Slurm with named partitions (gpu, epyc-64, largemem, main) and GPU type selection",
-    "hpcName": "CARC — Discovery (general use) and Endeavour (condo)",
-    "specs": "Discovery: 2 shared login nodes, roughly 20,000 CPU cores across about 500 compute nodes, typically dual 8-to-16-core processors. Includes AMD EPYC 7513 (32-core) and EPYC 7282 (16-core) nodes at 256GB, plus large-memory nodes at 1TB. Launched August 2020. A user may hold at most 36 GPUs at one time across all their jobs. CARC supports over 100 research groups across a range of academic disciplines and runs an annual project and allocation review cycle plus summer training workshops.",
-    "notes": "Re-verified Sept 2026 — modern CONFIRMED and the '180+ GPUs' figure in this row matches CARC's own services page. Discovery is the general-use cluster open to USC researchers, with Endeavour available as a condo option for groups that buy hardware. CARC describes its user base as spanning a variety of academic disciplines rather than being science-limited, so a Gould faculty member is in scope. CARC is also building out a regional role through an NSF CC* Regional Computing award aimed at forging a research computing alliance across Southern California, which is worth watching as a possible future network tag for other California schools in this dataset.",
+    "hpcName": "CARC — Discovery (general use), Endeavour (condo), and Topanga AI Computing (pay-as-you-go H200)",
+    "specs": "Discovery: 2 shared login nodes, roughly 20,000 CPU cores across about 500 compute nodes, typically dual 8-to-16-core processors. Node types include AMD EPYC 9534 (64-core, 748GB, 3x L40S), EPYC 7513 and 7313 (248GB, some with 2x A100 or A40), EPYC 7282 (32-core, 248GB, 2x A40), and largemem EPYC 9354 nodes with about 1.5 TB. Launched August 2020. A user may hold at most 36 GPUs at one time across all their jobs. Default Discovery allocations are free (Small: 12,000,000 SUs; up to 120,000,000 free). CARC supports over 100 research groups across a range of academic disciplines and runs an annual project and allocation review cycle plus summer training workshops.",
+    "notes": "Re-verified Sept 2026 — modern CONFIRMED and the '180+ GPUs' figure in this row matches CARC's own services page. Discovery is the general-use cluster open to USC researchers, with Endeavour available as a condo option for groups that buy hardware. CARC describes its user base as spanning a variety of academic disciplines rather than being science-limited, so a Gould faculty member is in scope. CARC is also building out a regional role through an NSF CC* Regional Computing award aimed at forging a research computing alliance across Southern California, which is worth watching as a possible future network tag for other California schools in this dataset. UPDATED Oct 2026: CARC launched Topanga AI Computing on Sept 9, 2026: pay-as-you-go H200 NVL sessions open to all CARC users with an active project and a USC billing worktag. The tier therefore moves to frontier, though Discovery itself still tops out at L40S/A100. The NSF CC* regional award (#2232917) has produced the Laguna cluster (16 CPU nodes plus 8 GPU nodes with 2 L40S each). USC CARC and Los Nettos run it for under-resourced Southern California institutions; the participating institutions are not listed publicly, so no network tag yet.",
     "networks": [],
     "sources": [
       "https://www.carc.usc.edu/about/services",
       "https://www.carc.usc.edu/user-guides/advanced-hpc-programming/gpu-programming",
       "https://www.carc.usc.edu/user-guides/hpc-systems/discovery/resource-overview-discovery",
-      "https://www.carc.usc.edu/"
+      "https://www.carc.usc.edu/",
+      "https://www.carc.usc.edu/latest-news/2026-09-09-topanga-ai-computing-launch",
+      "https://www.carc.usc.edu/user-guides/ai-computing/topanga-ai-computing/topanga-ai-computing-overview",
+      "https://www.carc.usc.edu/user-guides/project-and-allocation-management/allocation-types-and-requests",
+      "https://www.carc.usc.edu/research/awards/laguna-cluster-and-socal-research-computing-alliance",
+      "https://uschpc.github.io/regional-computing-website/user-guides/get-started-laguna/resource-overview.html"
     ],
-    "caveat": "No sensitive data, which matters more for law than for most fields. CARC states plainly that its systems DO NOT currently support the use or storage of sensitive data, explicitly including HIPAA-, FERPA- and CUI-regulated material, and that a secure computing environment is still being built. A law researcher working with confidential client files, sealed records, protected student data or any regulated dataset cannot use Discovery for it and should contact CARC before starting. This is the sharpest data-handling restriction found on any row in this dataset."
+    "caveat": "No sensitive data, which matters more for law than for most fields. CARC states plainly that its systems DO NOT currently support the use or storage of sensitive data, explicitly including HIPAA-, FERPA- and CUI-regulated material, and that a secure computing environment is still being built. A law researcher working with confidential client files, sealed records, protected student data or any regulated dataset cannot use Discovery for it and should contact CARC before starting. This is the sharpest data-handling restriction found on any row in this dataset. Hopper access is paid: the H200s are on Topanga, which bills each session-hour to a project's USC worktag (e.g. $3.00/hour for one full GPU), caps users at 4 GPUs. Discovery's free general-use GPUs top out at L40S/A100."
   },
   {
     "state": "California",
@@ -557,16 +585,18 @@
     "standalone": false,
     "tier": "modern",
     "tierLabel": "Modern — A100/A40/L40-class confirmed",
-    "gpu": "NVIDIA A16 GPU boards confirmed (Ampere-gen, 4 GPUs/board); 69 GPUs total across the cluster (specific models beyond A16 not itemized in public docs)",
+    "gpu": "General-use nodes open to all WAVE users: 1 hub node with 8x NVIDIA RTX PRO 6000, 1 AMD node with 8x AMD Instinct MI100, 4 GPU nodes with 2x NVIDIA Tesla V100 32GB each, and 2 login nodes with 1x NVIDIA A16 each. Lab-owned condo nodes that general users can use when idle, subject to preemption: 2 nodes with 1x NVIDIA GH200 Grace Hopper each, 1 node with 8x A100, 1 node with 4x L40S, 3 nodes with A16 (8/4/8), 1 node with 2x V100, plus older GeForce GTX 1080/1080 Ti and GTX Titan X nodes. 69 GPUs in total, per SCU's About WAVE page.",
     "slurm": "Yes",
     "hpcName": "WAVE HPC (Wiegand Advanced Visualization Environment)",
-    "specs": "2,076 CPU cores; 400TB VDURA parallel filesystem; 11 heterogeneous node types",
-    "notes": "All SCU faculty and staff eligible (students need faculty sponsor); SLURM confirmed. CORRECTED Sept 2026 — A16 (Ampere-gen) confirmed, total 69 GPUs.",
+    "specs": "2,076 CPU cores, 69 GPUs and 400TB of VDURA parallel storage (About WAVE). Main compute is 12 heterogeneous physical nodes of five types: 4 CPU nodes, 4 V100 GPU nodes, 2 high-memory nodes with 2TB RAM each, 1 AMD MI100 node and 1 RTX PRO 6000 hub node. Add 2 login nodes and lab-owned condo nodes. 100G InfiniBand (Mellanox QM8700). NSF-funded storage: a 92TB all-flash array and a 456TB HDD array. Access only through Slurm login nodes or Open OnDemand, behind the SCU VPN or campus network.",
+    "notes": "All SCU faculty and staff eligible (students need faculty sponsor); SLURM confirmed. CORRECTED Sept 2026 — A16 (Ampere-gen) confirmed, total 69 GPUs. CORRECTED Oct 2026: WAVE's technical-specifications page moved and now itemizes every GPU, so the A16-only description was out of date. General-use nodes carry RTX PRO 6000, MI100, V100 and A16 GPUs. Lab-owned condo nodes add GH200, A100, L40S and older GeForce cards (see caveat). Eligibility re-confirmed: all SCU faculty and staff can request an account through a WAVE support ticket, using SCU login with DUO from the campus network or VPN. Students need a faculty sponsor.",
     "networks": [],
     "sources": [
-      "https://www.scu.edu/wave/wave-hpc/about-wave/wave-hpc-technical-specifications/",
-      "https://www.scu.edu/wave/wave-hpc/about-wave/"
-    ]
+      "https://www.scu.edu/wave/wave-hpc-technical-specifications/",
+      "https://www.scu.edu/wave/about-wave/",
+      "https://www.scu.edu/wave/getting-started/"
+    ],
+    "caveat": "Rated on the general-use RTX PRO 6000 and MI100 nodes. The frontier-class GH200s (two nodes, one GPU each), the 8x A100 node and the 4x L40S node are lab-owned condo hardware. General users can run on them only when idle, and SCU says those jobs can be cancelled and rerun when the owning lab needs the node. Per-user limits are also tight: the gpu partition allows 4 GPUs for 2 days, the RTX PRO 6000 hub partition 1 GPU for 1 day, and the condo partition 2 days."
   },
   {
     "state": "California",
@@ -579,7 +609,7 @@
     "slurm": "Not confirmed — no scheduler named in the public documentation",
     "hpcName": "Pepperdine IT research computing environment (no named cluster)",
     "specs": "Two Cisco blades, each with 1TB of RAM and Intel Xeon Gold 6238 CPUs providing up to 44 cores per blade, plus 30TB of storage — described by Pepperdine IT as roughly eight times the processing power of a standard workstation. Housed in an energy-efficient data centre designed for high-density research computing clusters and storage.",
-    "notes": "Re-verified Sept 2026 — cpuonly CONFIRMED, and now with exact hardware rather than an assumption. Pepperdine IT, in partnership with the offices of the Vice Provost and of Research, Grants and Foundation Relations, offers a high-performance computing environment for qualified university research projects, and works directly with faculty to design and manage projects at scale. The full published system description is two Cisco blades with Xeon Gold 6238 CPUs — no GPU appears anywhere in it, which is what confirms the tier rather than merely failing to contradict it. Worth noting that Pepperdine is a Carnegie R2 institution with real AI activity: the Keck Data Science Institute is directed by Fabien Scalzo, whose work is in AI for medical imaging, and an undergraduate mentored there published 18 peer-reviewed articles and won an NSF GRFP. That AI work is evidently not running on these two blades, so there is likely lab-level or cloud GPU capacity somewhere at Pepperdine that public IT pages do not describe. The Caruso School of Law is one of Pepperdine's four graduate schools.",
+    "notes": "Re-verified Sept 2026 — cpuonly CONFIRMED, and now with exact hardware rather than an assumption. Pepperdine IT, in partnership with the offices of the Vice Provost and of Research, Grants and Foundation Relations, offers a high-performance computing environment for qualified university research projects, and works directly with faculty to design and manage projects at scale. The full published system description is two Cisco blades with Xeon Gold 6238 CPUs — no GPU appears anywhere in it, which is what confirms the tier rather than merely failing to contradict it. Worth noting that Pepperdine is a Carnegie R2 institution with real AI activity: the Keck Data Science Institute is directed by Fabien Scalzo, whose work is in AI for medical imaging, and an undergraduate mentored there published 18 peer-reviewed articles and won an NSF GRFP. That AI work is evidently not running on these two blades, so there is likely lab-level or cloud GPU capacity somewhere at Pepperdine that public IT pages do not describe. The Caruso School of Law is one of Pepperdine's four graduate schools. || National floor: this tier describes the PARENT INSTITUTION's own resource, not the ceiling on what a faculty member here can reach — see the NSF ACCESS note in the site header and README. That national route is tagged in this row's shared-networks field; it is not evidence about this school specifically, and the sources listed below are only those used to verify this row.",
     "networks": [
       "NSF ACCESS (national — any US academic institution)"
     ],
@@ -595,20 +625,22 @@
     "school": "Dale E. Fowler School of Law",
     "university": "Chapman University",
     "standalone": false,
-    "tier": "modern",
-    "tierLabel": "Modern — A100/A40/L40-class confirmed",
-    "gpu": "24 NVIDIA Tesla GPU modules (A100 and V100) — matching this row's original figure exactly against Chapman's own cluster page.",
-    "slurm": "Not confirmed — no scheduler named on Chapman's public cluster pages",
+    "tier": "older",
+    "tierLabel": "Older-gen GPUs confirmed (V100/T4/P100/K-series/etc.)",
+    "gpu": "24 NVIDIA Tesla GPUs, which Chapman's cluster summary describes as 'A100/V100'. The itemized server list on the same page names only V100s: one 8x V100 SXM2 node, two 5x V100 nodes and two AMD nodes with 3 V100s each.",
+    "slurm": "Likely — the Keck cluster page links a SLURM Scheduler Quickstart Guide and SLURM video tutorials, though it never states the scheduler in prose",
     "hpcName": "Keck Computational Research Cluster — IS&T Research Computing; plus Chapman SRE",
     "specs": "Over 2,560 Intel Xeon and AMD EPYC compute cores, 12.8TB of RAM, and direct access to all-flash and disk-storage SAN arrays. Located in the 140,000 sq ft Keck Center for Science & Engineering, opened 2018. Chapman can also instantiate up to 1,000 additional on-demand cloud nodes in AWS, Azure or Google, and can reserve dedicated physical, virtual or cloud instances for individual researchers or projects.",
-    "notes": "Re-verified Sept 2026 — modern CONFIRMED and the '24 Tesla A100/V100' figure in this row is EXACT, matching Chapman's own Keck Computational Research Cluster page word for word. Access and management run through the University's IS&T Research Computing team, which describes itself as mainly supporting faculty members and graduate students needing HPC for applications specific to their academic disciplines — a phrasing that neither excludes nor specifically invites law. NOTABLE FOR A LAW AUDIENCE: Chapman operates a Secure Research Environment on Microsoft Azure supporting NIST 800-171, CMMC, HIPAA and Controlled Unclassified Information, tailored per project with security logging, MFA and encryption, and explicitly supporting HPC, machine learning and AI use cases. Along with Emory's HIPAA-compliant HyPER C3 and Michigan's Armis2, that puts Chapman in the small group of institutions in this dataset where a researcher can compute on regulated or confidential material — directly relevant to legal work involving protected records. DISAMBIGUATION: Chapman has two units named for Dale E. Fowler. This row is the Dale E. Fowler School of LAW. The Keck Center houses Schmid College of Science and Technology and the Dale E. and Sarah Ann Fowler School of ENGINEERING — a different school, same donor.",
+    "notes": "Re-verified Sept 2026 — modern CONFIRMED and the '24 Tesla A100/V100' figure in this row is EXACT, matching Chapman's own Keck Computational Research Cluster page word for word. Access and management run through the University's IS&T Research Computing team, which describes itself as mainly supporting faculty members and graduate students needing HPC for applications specific to their academic disciplines — a phrasing that neither excludes nor specifically invites law. NOTABLE FOR A LAW AUDIENCE: Chapman operates a Secure Research Environment on Microsoft Azure supporting NIST 800-171, CMMC, HIPAA and Controlled Unclassified Information, tailored per project with security logging, MFA and encryption, and explicitly supporting HPC, machine learning and AI use cases. Along with Emory's HIPAA-compliant HyPER C3 and Michigan's Armis2, that puts Chapman in the small group of institutions in this dataset where a researcher can compute on regulated or confidential material — directly relevant to legal work involving protected records. DISAMBIGUATION: Chapman has two units named for Dale E. Fowler. This row is the Dale E. Fowler School of LAW. The Keck Center houses Schmid College of Science and Technology and the Dale E. and Sarah Ann Fowler School of ENGINEERING — a different school, same donor. CORRECTED Oct 2026: tier modern → older. Chapman's summary sentence ('24 Tesla A100/V100') is contradicted by the itemized server list on the same page, which accounts for all 24 GPUs as V100s (see caveat). The cluster page also links SLURM guides. The Secure Research Environment is billed per project: Chapman's budget examples run from $2,500 (small) to $12,000+ (large).",
     "networks": [],
     "sources": [
       "https://www.chapman.edu/campus-services/information-systems/research-technology-support/computational-resources/keck-cluster.aspx",
       "https://www.chapman.edu/campus-services/information-systems/research-technology-support/computational-resources/index.aspx",
       "https://blogs.chapman.edu/information-systems/2024/05/01/chapman-universitys-research-computing-services-and-resources/",
-      "https://en.wikipedia.org/wiki/Chapman_University"
-    ]
+      "https://en.wikipedia.org/wiki/Chapman_University",
+      "https://web.archive.org/web/20240404195038/https://www.chapman.edu/campus-services/information-systems/research-technology-support/computational-resources/keck-cluster.aspx"
+    ],
+    "caveat": "Rated on the itemized hardware. Chapman's one-sentence cluster summary mentions 'A100/V100', but the itemized server list on the same page accounts for all 24 GPUs as V100s (8 + 2x5 + 2x3), and before 2025 the page listed just 16 V100s. If A100s have been added, this row belongs in modern; a law researcher who needs A100-class GPUs should confirm with Chapman's Research Computing group first."
   },
   {
     "state": "California",
@@ -638,10 +670,10 @@
     "tier": "cpuonly",
     "tierLabel": "No GPU confirmed (CPU/RAM-only)",
     "gpu": "None confirmed — SABER1 (USD's only documented central HPC cluster) is CPU-only: Intel Xeon E5-2630 v3, 18 nodes, 288 cores total, no GPU hardware listed anywhere in the technical specification",
-    "slurm": "Not confirmed",
+    "slurm": "No (TORQUE/MOAB)",
     "hpcName": "SABER1",
     "specs": "SABER1: 18 nodes (17 compute + 1 master), 288 cores, 1,088GB cluster memory, TORQUE/MOAB scheduler (not SLURM)",
-    "notes": "Re-verified Sept 2026 by following USD's own site navigation to its dedicated \"Specifications\" page (not just the FAQ) — same stale 2015/2016 SABER1 CPU-only cluster confirmed both places. Moved from \"undetailed\" to \"no GPU confirmed\" since the spec sheet is actually complete, it just doesn't include a GPU. || National floor: this tier describes the PARENT INSTITUTION's own resource, not the ceiling on what a faculty member here can reach — see the NSF ACCESS note in the site header and README. That national route is tagged in this row's shared-networks field; it is not evidence about this school specifically, and the sources listed below are only those used to verify this row.",
+    "notes": "Re-verified Sept 2026 by following USD's own site navigation to its dedicated \"Specifications\" page (not just the FAQ) — same stale 2015/2016 SABER1 CPU-only cluster confirmed both places. Moved from \"undetailed\" to \"no GPU confirmed\" since the spec sheet is actually complete, it just doesn't include a GPU. CORRECTED Oct 2026: USD's spec sheet names the scheduler as TORQUE/MOAB, so SLURM is ruled out rather than unconfirmed. || National floor: this tier describes the PARENT INSTITUTION's own resource, not the ceiling on what a faculty member here can reach — see the NSF ACCESS note in the site header and README. That national route is tagged in this row's shared-networks field; it is not evidence about this school specifically, and the sources listed below are only those used to verify this row.",
     "networks": [
       "NSF ACCESS (national — any US academic institution)"
     ],
@@ -702,7 +734,7 @@
     "slurm": "No",
     "hpcName": "None found",
     "specs": "",
-    "notes": "Re-verified Sept 2026 — GGU is a small, professional-graduate-focused institution (business, law, taxation, psychology; founded 1901) with no STEM PhD programs. Its \"Applied and Agentic AI\" doctorate is a practice-oriented professional program for working technologists, not a research lab; no shared HPC/GPU infrastructure found anywhere. UPDATED Oct 2026: the ABA lists Golden Gate as on a teach-out plan. Its approved plan (Feb 2024) ends the J.D. program: no new students, no credit-bearing courses after summer 2024, and ABA approval continuing only until July 1, 2027 so remaining students can finish elsewhere and receive the degree. Kept in the directory because the ABA still lists it. || National floor: this tier describes the PARENT INSTITUTION's own resource, not the ceiling on what a faculty member here can reach — see the NSF ACCESS note in the site header and README. That national route is tagged in this row's shared-networks field; it is not evidence about this school specifically, and the sources listed below are only those used to verify this row.",
+    "notes": "Re-verified Sept 2026 — GGU is a small, professional-graduate-focused institution (business, law, taxation, psychology; founded 1901) with no STEM PhD programs. Its \"Applied and Agentic AI\" doctorate is a practice-oriented professional program for working technologists, not a research lab; no shared HPC/GPU infrastructure found anywhere. UPDATED Oct 2026: the ABA lists Golden Gate as on a teach-out plan. Its approved plan (Feb 2024) ends the J.D. program: no new students, no credit-bearing courses after summer 2024, and ABA approval continuing only until July 1, 2027 so remaining students can finish elsewhere and receive the degree. Kept in the directory because the ABA still lists it. UPDATED Oct 2026: GGU has not left the J.D. business for good. In October 2025 it asked the State Bar of California's Committee of Bar Examiners to let the law school restart as a California-accredited, non-ABA school; this check did not find the outcome. The ABA teach-out itself still runs only until July 1, 2027. || National floor: this tier describes the PARENT INSTITUTION's own resource, not the ceiling on what a faculty member here can reach — see the NSF ACCESS note in the site header and README. That national route is tagged in this row's shared-networks field; it is not evidence about this school specifically, and the sources listed below are only those used to verify this row.",
     "networks": [
       "NSF ACCESS (national — any US academic institution)"
     ],
@@ -710,7 +742,8 @@
       "https://catalog.ggu.edu/preview_program.php?catoid=9&poid=886",
       "https://ggu.edu/programs/applied-and-agentic-ai-dtech/",
       "https://www.americanbar.org/groups/legal_education/accreditation/approved-law-schools/additional-approvals/",
-      "https://dev.americanbar.org/content/dam/aba/administrative/legal_education_and_admissions_to_the_bar/PublicNoticeAnnouncements/2024/golden-gate-u-notice-teach-out-plan-february-2024.pdf"
+      "https://dev.americanbar.org/content/dam/aba/administrative/legal_education_and_admissions_to_the_bar/PublicNoticeAnnouncements/2024/golden-gate-u-notice-teach-out-plan-february-2024.pdf",
+      "https://www.abajournal.com/web/article/golden-gate-law-school-aims-to-reopen-with-california-accreditation"
     ]
   },
   {
@@ -730,7 +763,8 @@
     ],
     "sources": [
       "https://www.magnifiedmedia.net/uc-hastings-college-of-the-law/",
-      "https://www.uclawsf.edu/"
+      "https://www.uclawsf.edu/",
+      "https://www.uclawsf.edu/our-story/board-of-directors/"
     ]
   },
   {
@@ -1562,7 +1596,7 @@
     "slurm": "Not confirmed — no scheduler named in the public documentation",
     "hpcName": "HiPACE — High-Performance Academic Computing Environment (Natural Sciences Division)",
     "specs": "Three parts: (1) a cluster with a master node and 34 compute nodes, each with two dual-core Opteron processors and 4GB RAM; (2) an SMP system of 8 dual-core Opterons (16 cores) with 64GB RAM for large-memory jobs; (3) a 12TB file system. Paired gigabit Ethernet per machine, one for data and one for control. All nodes run OpenSuSE Linux 10.2.",
-    "notes": "RECLASSIFIED Sept 2026, none -> cpuonly. Washburn DOES have a named research-computing resource, which the previous 'none' missed: HiPACE, the High-Performance Academic Computing Environment, operated and administered by faculty and students primarily in Washburn's Natural Sciences Division, with its own site at hipace.washburn.edu. Its stated mission is to enrich science and technology education for Washburn students and enhance the capabilities of faculty, staff and community members. BUT READ THE SPECS BEFORE GETTING EXCITED — and this is exactly why the row is 'cpuonly' rather than 'undetailed'. The hardware is fully enumerated on the public page and contains no GPU at all: dual-core Opterons with 4GB of RAM per node. HiPACE was funded by a Washburn Innovation Grant covering 2006 to 2009, and the nodes are documented as running OpenSuSE Linux 10.2, a release that reached end of life in 2008. So this is a genuine resource on paper but an eighteen-year-old CPU cluster on an unsupported OS. A fast pass that saw the words 'high-performance computing system' and stopped there would have upgraded this row wrongly; reading the actual specification page is what produced the correct tier.",
+    "notes": "RECLASSIFIED Sept 2026, none -> cpuonly. Washburn DOES have a named research-computing resource, which the previous 'none' missed: HiPACE, the High-Performance Academic Computing Environment, operated and administered by faculty and students primarily in Washburn's Natural Sciences Division, with its own site at hipace.washburn.edu. Its stated mission is to enrich science and technology education for Washburn students and enhance the capabilities of faculty, staff and community members. BUT READ THE SPECS BEFORE GETTING EXCITED — and this is exactly why the row is 'cpuonly' rather than 'undetailed'. The hardware is fully enumerated on the public page and contains no GPU at all: dual-core Opterons with 4GB of RAM per node. HiPACE was funded by a Washburn Innovation Grant covering 2006 to 2009, and the nodes are documented as running OpenSuSE Linux 10.2, a release that reached end of life in 2008. So this is a genuine resource on paper but an eighteen-year-old CPU cluster on an unsupported OS. A fast pass that saw the words 'high-performance computing system' and stopped there would have upgraded this row wrongly; reading the actual specification page is what produced the correct tier. || National floor: this tier describes the PARENT INSTITUTION's own resource, not the ceiling on what a faculty member here can reach — see the NSF ACCESS note in the site header and README. That national route is tagged in this row's shared-networks field; it is not evidence about this school specifically, and the sources listed below are only those used to verify this row.",
     "networks": [
       "NSF ACCESS (national — any US academic institution)"
     ],
@@ -3013,7 +3047,7 @@
       "https://en.wikipedia.org/wiki/Pittsburgh_Quantum_Institute"
     ],
     "caveat": "Duquesne is an R2 research university, so a departmental cluster (for example in chemistry or pharmacy) may exist without a public page. Three separate searches found none — ask Duquesne Computing and Technology Services before ruling it out.",
-    "notes": "ADDED Oct 2026. Searched Sept 2026 three ways (general HPC/GPU terms, NSF instrumentation grants, and Duquesne's own domain): no shared research-computing service or cluster page found. Duquesne faculty do belong to cross-institution groups like the Pittsburgh Quantum Institute, but that is a research network, not a compute resource. Not to be confused with Drexel's law school, which is also named for Thomas R. Kline. || National floor: this tier describes the PARENT INSTITUTION's own resource, not the ceiling on what a faculty member here can reach — see the NSF ACCESS note in the site header and README.",
+    "notes": "ADDED Oct 2026. Searched Sept 2026 three ways (general HPC/GPU terms, NSF instrumentation grants, and Duquesne's own domain): no shared research-computing service or cluster page found. Duquesne faculty do belong to cross-institution groups like the Pittsburgh Quantum Institute, but that is a research network, not a compute resource. Not to be confused with Drexel's law school, which is also named for Thomas R. Kline. || National floor: this tier describes the PARENT INSTITUTION's own resource, not the ceiling on what a faculty member here can reach — see the NSF ACCESS note in the site header and README. That national route is tagged in this row's shared-networks field; it is not evidence about this school specifically, and the sources listed below are only those used to verify this row.",
     "networks": [
       "NSF ACCESS (national — any US academic institution)"
     ]
@@ -3118,7 +3152,7 @@
       "https://www.rwu.edu/who-we-are/administrative-offices/information-technology/staff-services",
       "https://its.uri.edu/research-computing/"
     ],
-    "notes": "ADDED Oct 2026. Roger Williams IT lists email, wireless, computer and software support, and classroom support for faculty, with no research-computing service. Rhode Island's shared HPC (Unity and SeaWulf) is run by the University of Rhode Island for URI researchers, so it doesn't extend to Roger Williams. || National floor: this tier describes the PARENT INSTITUTION's own resource, not the ceiling on what a faculty member here can reach — see the NSF ACCESS note in the site header and README.",
+    "notes": "ADDED Oct 2026. Roger Williams IT lists email, wireless, computer and software support, and classroom support for faculty, with no research-computing service. Rhode Island's shared HPC (Unity and SeaWulf) is run by the University of Rhode Island for URI researchers, so it doesn't extend to Roger Williams. || National floor: this tier describes the PARENT INSTITUTION's own resource, not the ceiling on what a faculty member here can reach — see the NSF ACCESS note in the site header and README. That national route is tagged in this row's shared-networks field; it is not evidence about this school specifically, and the sources listed below are only those used to verify this row.",
     "networks": [
       "NSF ACCESS (national — any US academic institution)"
     ]
@@ -3321,7 +3355,7 @@
       "https://willamette.edu/academics/computing/",
       "https://willamette.edu/academics/college/computer-science/"
     ],
-    "notes": "ADDED Oct 2026. Willamette's School of Computing and Information Sciences offers teaching programs in Salem and Portland, but no research-computing service or cluster was found on its IT or academic pages. || National floor: this tier describes the PARENT INSTITUTION's own resource, not the ceiling on what a faculty member here can reach — see the NSF ACCESS note in the site header and README.",
+    "notes": "ADDED Oct 2026. Willamette's School of Computing and Information Sciences offers teaching programs in Salem and Portland, but no research-computing service or cluster was found on its IT or academic pages. || National floor: this tier describes the PARENT INSTITUTION's own resource, not the ceiling on what a faculty member here can reach — see the NSF ACCESS note in the site header and README. That national route is tagged in this row's shared-networks field; it is not evidence about this school specifically, and the sources listed below are only those used to verify this row.",
     "networks": [
       "NSF ACCESS (national — any US academic institution)"
     ]
@@ -3364,7 +3398,7 @@
       "https://law.seattleu.edu/student-life/student-services/student-support/technology-and-media-services/",
       "https://www.seattleu.edu/science-engineering/academic-departments/department-of-computer-science/"
     ],
-    "notes": "ADDED Oct 2026. Seattle University's IT service catalog covers accounts, Microsoft 365, Zoom, computer labs and administrative systems, and the law school's own IT staff run a help desk and media services; no research-computing service or cluster was found in either. || National floor: this tier describes the PARENT INSTITUTION's own resource, not the ceiling on what a faculty member here can reach — see the NSF ACCESS note in the site header and README.",
+    "notes": "ADDED Oct 2026. Seattle University's IT service catalog covers accounts, Microsoft 365, Zoom, computer labs and administrative systems, and the law school's own IT staff run a help desk and media services; no research-computing service or cluster was found in either. || National floor: this tier describes the PARENT INSTITUTION's own resource, not the ceiling on what a faculty member here can reach — see the NSF ACCESS note in the site header and README. That national route is tagged in this row's shared-networks field; it is not evidence about this school specifically, and the sources listed below are only those used to verify this row.",
     "networks": [
       "NSF ACCESS (national — any US academic institution)"
     ]
@@ -3385,7 +3419,7 @@
       "https://support.gonzaga.edu/TDClient/30/Portal/Requests/ServicesAtoZ",
       "https://www.gonzaga.edu/school-of-engineering-applied-science/degrees-and-programs/computer-science/cs-labs"
     ],
-    "notes": "ADDED Oct 2026. Gonzaga's IT service catalog (136 services) has no research-computing entry. Computer Science runs instructional labs, multi-user Linux servers for its students, and an Advanced Computing Lab for cybersecurity and networking work, none of which is a shared HPC service. || National floor: this tier describes the PARENT INSTITUTION's own resource, not the ceiling on what a faculty member here can reach — see the NSF ACCESS note in the site header and README.",
+    "notes": "ADDED Oct 2026. Gonzaga's IT service catalog (136 services) has no research-computing entry. Computer Science runs instructional labs, multi-user Linux servers for its students, and an Advanced Computing Lab for cybersecurity and networking work, none of which is a shared HPC service. || National floor: this tier describes the PARENT INSTITUTION's own resource, not the ceiling on what a faculty member here can reach — see the NSF ACCESS note in the site header and README. That national route is tagged in this row's shared-networks field; it is not evidence about this school specifically, and the sources listed below are only those used to verify this row.",
     "networks": [
       "NSF ACCESS (national — any US academic institution)"
     ]
@@ -3405,9 +3439,10 @@
       "https://www.hpcf.upr.edu/",
       "https://www.hpcf.upr.edu/documentation/boqueron/",
       "https://www.hpcf.upr.edu/about/",
-      "https://natsci.uprrp.edu/biology/research-2/facilities-and-resources/high-performance-computing-facility/"
+      "https://natsci.uprrp.edu/biology/high-performance-computing-facility/",
+      "https://www.hpcf.upr.edu/account-request/"
     ],
-    "notes": "ADDED Oct 2026. The HPCf describes its mission as serving the research and education community of the University of Puerto Rico, and accounts for Boqueron are requested through its site. Its acknowledgment text credits UPR and an NIH INBRE grant, a sign the cluster leans toward bioinformatics. Whether any GPU nodes exist isn't stated, so this stays undetailed rather than cpuonly.",
+    "notes": "ADDED Oct 2026. The HPCf describes its mission as serving the research and education community of the University of Puerto Rico, and accounts for Boqueron are requested through its site. Its acknowledgment text credits UPR and an NIH INBRE grant, a sign the cluster leans toward bioinformatics. Whether any GPU nodes exist isn't stated, so this stays undetailed rather than cpuonly. UPDATED Oct 2026: Boqueron accounts must be tied to an existing HPCf group account, which the research group's PI requests through the HPCf site, so a law faculty member would apply as PI for a new group. The HPCf's newest posted notice dates from Aug 2024, and no newer UPR GPU or HPC system was found.",
     "networks": []
   },
   {
@@ -3426,7 +3461,7 @@
       "https://texascareercheck.com/SchoolInfo/SchoolSummary/6816/",
       "https://www.hpcf.upr.edu/about/"
     ],
-    "notes": "ADDED Oct 2026. Inter American is a private multi-campus university whose public profiles describe staffed computer labs but no research-computing service. The backlog asked about a Puerto Rico statewide route: the island's only HPC facility found, UPR's HPCf, describes itself as serving the University of Puerto Rico community, so it doesn't extend to Inter American. || National floor: this tier describes the PARENT INSTITUTION's own resource, not the ceiling on what a faculty member here can reach — see the NSF ACCESS note in the site header and README.",
+    "notes": "ADDED Oct 2026. Inter American is a private multi-campus university whose public profiles describe staffed computer labs but no research-computing service. The backlog asked about a Puerto Rico statewide route: the island's only HPC facility found, UPR's HPCf, describes itself as serving the University of Puerto Rico community, so it doesn't extend to Inter American. || National floor: this tier describes the PARENT INSTITUTION's own resource, not the ceiling on what a faculty member here can reach — see the NSF ACCESS note in the site header and README. That national route is tagged in this row's shared-networks field; it is not evidence about this school specifically, and the sources listed below are only those used to verify this row.",
     "networks": [
       "NSF ACCESS (national — any US academic institution)"
     ]
@@ -3447,7 +3482,7 @@
       "https://www.pucpr.edu/wp-content/uploads/2021/08/Undergraduate-Catalog-2019-2022.pdf",
       "https://en.wikipedia.org/wiki/Pontifical_Catholic_University_of_Puerto_Rico"
     ],
-    "notes": "ADDED Oct 2026. The university's accreditor lists its Carnegie classification as having no research designation. Its catalog describes an Academic Computer Center and a computer lab inside the College of Science research building, neither of which is a shared HPC resource; UPR's HPCf serves only the UPR community. || National floor: this tier describes the PARENT INSTITUTION's own resource, not the ceiling on what a faculty member here can reach — see the NSF ACCESS note in the site header and README.",
+    "notes": "ADDED Oct 2026. The university's accreditor lists its Carnegie classification as having no research designation. Its catalog describes an Academic Computer Center and a computer lab inside the College of Science research building, neither of which is a shared HPC resource; UPR's HPCf serves only the UPR community. || National floor: this tier describes the PARENT INSTITUTION's own resource, not the ceiling on what a faculty member here can reach — see the NSF ACCESS note in the site header and README. That national route is tagged in this row's shared-networks field; it is not evidence about this school specifically, and the sources listed below are only those used to verify this row.",
     "networks": [
       "NSF ACCESS (national — any US academic institution)"
     ]
@@ -3533,7 +3568,7 @@
       "https://www.belmont.edu/academics/majors-programs/computer-science/",
       "https://www.belmont.edu/about/glance/"
     ],
-    "notes": "ADDED Oct 2026. Belmont's Data & AI Collaborative is a university-wide analytics and curriculum initiative rather than computing infrastructure, and its Computer Science program is undergraduate-focused; no research-computing service or cluster was found. || National floor: this tier describes the PARENT INSTITUTION's own resource, not the ceiling on what a faculty member here can reach — see the NSF ACCESS note in the site header and README.",
+    "notes": "ADDED Oct 2026. Belmont's Data & AI Collaborative is a university-wide analytics and curriculum initiative rather than computing infrastructure, and its Computer Science program is undergraduate-focused; no research-computing service or cluster was found. || National floor: this tier describes the PARENT INSTITUTION's own resource, not the ceiling on what a faculty member here can reach — see the NSF ACCESS note in the site header and README. That national route is tagged in this row's shared-networks field; it is not evidence about this school specifically, and the sources listed below are only those used to verify this row.",
     "networks": [
       "NSF ACCESS (national — any US academic institution)"
     ]
@@ -3554,7 +3589,7 @@
       "https://nursingtampacatalog.lmunet.edu/computer-servicesresources",
       "https://graduatecatalog.lmunet.edu/student-computer-accounts-emailuniversity-computerswebadvisor"
     ],
-    "notes": "ADDED Oct 2026. LMU's Information Services pages cover the help desk, email, computer-use policy and student computer labs on each campus (including Knoxville, where the law school is); no research-computing service was found. || National floor: this tier describes the PARENT INSTITUTION's own resource, not the ceiling on what a faculty member here can reach — see the NSF ACCESS note in the site header and README.",
+    "notes": "ADDED Oct 2026. LMU's Information Services pages cover the help desk, email, computer-use policy and student computer labs on each campus (including Knoxville, where the law school is); no research-computing service was found. || National floor: this tier describes the PARENT INSTITUTION's own resource, not the ceiling on what a faculty member here can reach — see the NSF ACCESS note in the site header and README. That national route is tagged in this row's shared-networks field; it is not evidence about this school specifically, and the sources listed below are only those used to verify this row.",
     "networks": [
       "NSF ACCESS (national — any US academic institution)"
     ]
@@ -3794,7 +3829,7 @@
       "https://www.untdallas.edu/lawschool/students/technology.php",
       "https://www.untdallas.edu/lawschool/about/index.php"
     ],
-    "notes": "ADDED Oct 2026. UNT Dallas's Office of Information Technology covers the help desk, Microsoft 365, VPN, labs and licensed software such as Mathematica, and the law school's own IT team runs its help desk and practice software; no research-computing service was found. || National floor: this tier describes the PARENT INSTITUTION's own resource, not the ceiling on what a faculty member here can reach — see the NSF ACCESS note in the site header and README.",
+    "notes": "ADDED Oct 2026. UNT Dallas's Office of Information Technology covers the help desk, Microsoft 365, VPN, labs and licensed software such as Mathematica, and the law school's own IT team runs its help desk and practice software; no research-computing service was found. || National floor: this tier describes the PARENT INSTITUTION's own resource, not the ceiling on what a faculty member here can reach — see the NSF ACCESS note in the site header and README. That national route is tagged in this row's shared-networks field; it is not evidence about this school specifically, and the sources listed below are only those used to verify this row.",
     "caveat": "The backlog flagged UNT's Talon cluster in Denton as a possible route through the UNT System. UNT Dallas is a separate university within the system (the law school became part of it in 2015), and no source extends Talon access to UNT Dallas, the same pattern that failed for Missouri and Baltimore. Ask UNT Dallas OIT whether any cross-campus arrangement exists.",
     "networks": [
       "NSF ACCESS (national — any US academic institution)"
@@ -3816,7 +3851,7 @@
       "https://www.stmarytx.edu/academics/centers/cyber-excellence/",
       "https://www.stmarytx.edu/academics/school-of-science-engineering-and-technology/"
     ],
-    "notes": "ADDED Oct 2026. St. Mary's has a Computer Science, Electrical and Computer Engineering department and a Center for Cyber Excellence that includes a law professor among its affiliated faculty, but no shared research-computing cluster or service was found. || National floor: this tier describes the PARENT INSTITUTION's own resource, not the ceiling on what a faculty member here can reach — see the NSF ACCESS note in the site header and README.",
+    "notes": "ADDED Oct 2026. St. Mary's has a Computer Science, Electrical and Computer Engineering department and a Center for Cyber Excellence that includes a law professor among its affiliated faculty, but no shared research-computing cluster or service was found. || National floor: this tier describes the PARENT INSTITUTION's own resource, not the ceiling on what a faculty member here can reach — see the NSF ACCESS note in the site header and README. That national route is tagged in this row's shared-networks field; it is not evidence about this school specifically, and the sources listed below are only those used to verify this row.",
     "networks": [
       "NSF ACCESS (national — any US academic institution)"
     ]
@@ -3838,7 +3873,7 @@
       "https://coset.tsu.edu/lab16/",
       "https://coset.tsu.edu/labs/"
     ],
-    "notes": "ADDED Oct 2026. TSU-HPCC serves TSU faculty, staff and students and, notably, TSU's research office lists the Center for Justice Research and the Thurgood Marshall School of Law Student Bar Association among its internal collaborations for FY2022, so the center has worked with the law school before.",
+    "notes": "ADDED Oct 2026. TSU-HPCC serves TSU faculty, staff and students and, notably, TSU's research office lists the Center for Justice Research and the Thurgood Marshall School of Law Student Bar Association among its internal collaborations for FY2022, so the center has worked with the law school before. || National floor: this tier describes the PARENT INSTITUTION's own resource, not the ceiling on what a faculty member here can reach — see the NSF ACCESS note in the site header and README. That national route is tagged in this row's shared-networks field; it is not evidence about this school specifically, and the sources listed below are only those used to verify this row.",
     "caveat": "Every published hardware description dates to about 2014, so the cluster may have been upgraded since. Confirm current hardware with the HPCC director before ruling out GPUs.",
     "networks": [
       "NSF ACCESS (national — any US academic institution)"
@@ -3945,7 +3980,7 @@
       "https://www.wlu.edu/physics-and-engineering-department/about-the-department/facilities",
       "https://en.wikipedia.org/wiki/Washington_and_Lee_University_School_of_Law"
     ],
-    "notes": "ADDED Oct 2026. W&L is a small liberal arts university; no central research-computing service or shared cluster was found. || National floor: this tier describes the PARENT INSTITUTION's own resource, not the ceiling on what a faculty member here can reach — see the NSF ACCESS note in the site header and README.",
+    "notes": "ADDED Oct 2026. W&L is a small liberal arts university; no central research-computing service or shared cluster was found. || National floor: this tier describes the PARENT INSTITUTION's own resource, not the ceiling on what a faculty member here can reach — see the NSF ACCESS note in the site header and README. That national route is tagged in this row's shared-networks field; it is not evidence about this school specifically, and the sources listed below are only those used to verify this row.",
     "caveat": "Not a shared service, but worth asking about: W&L's computer science faculty run their own research servers, including deep-learning machines, and the campus IQ Center offers computational instruments and imaging. Either could support a collaboration.",
     "networks": [
       "NSF ACCESS (national — any US academic institution)"
@@ -3967,7 +4002,7 @@
       "https://www.regent.edu/program/bs-in-computer-science/",
       "https://en.wikipedia.org/wiki/Regent_University"
     ],
-    "notes": "ADDED Oct 2026. Regent's Engineering & Computer Science department offers teaching programs, many of them online; no research-computing service or cluster was found. || National floor: this tier describes the PARENT INSTITUTION's own resource, not the ceiling on what a faculty member here can reach — see the NSF ACCESS note in the site header and README.",
+    "notes": "ADDED Oct 2026. Regent's Engineering & Computer Science department offers teaching programs, many of them online; no research-computing service or cluster was found. || National floor: this tier describes the PARENT INSTITUTION's own resource, not the ceiling on what a faculty member here can reach — see the NSF ACCESS note in the site header and README. That national route is tagged in this row's shared-networks field; it is not evidence about this school specifically, and the sources listed below are only those used to verify this row.",
     "networks": [
       "NSF ACCESS (national — any US academic institution)"
     ]
@@ -3988,7 +4023,7 @@
       "https://www.liberty.edu/engineering/research/creationeering/",
       "https://www.liberty.edu/residential-at-liberty/bs-computer-science-general/"
     ],
-    "notes": "ADDED Oct 2026. No campus-wide research-computing service or on-premises cluster was found. || National floor: this tier describes the PARENT INSTITUTION's own resource, not the ceiling on what a faculty member here can reach — see the NSF ACCESS note in the site header and README.",
+    "notes": "ADDED Oct 2026. No campus-wide research-computing service or on-premises cluster was found. || National floor: this tier describes the PARENT INSTITUTION's own resource, not the ceiling on what a faculty member here can reach — see the NSF ACCESS note in the site header and README. That national route is tagged in this row's shared-networks field; it is not evidence about this school specifically, and the sources listed below are only those used to verify this row.",
     "caveat": "Liberty's School of Engineering runs its simulation work on Rescale's commercial cloud HPC platform, an engineering arrangement for its classes and research rather than a campus-wide service a law faculty member could join.",
     "networks": [
       "NSF ACCESS (national — any US academic institution)"
@@ -4093,7 +4128,7 @@
       "https://www.stjohns.edu/academics/programs/computing-and-machine-learning-bachelor-science",
       "https://www.stjohns.edu/academics/programs/computer-science-master-science"
     ],
-    "notes": "ADDED Oct 2026. St. John's offers computing and machine learning degrees and a Machine Learning Institute for seminars and student research, but no shared research-computing cluster or service was found. || National floor: this tier describes the PARENT INSTITUTION's own resource, not the ceiling on what a faculty member here can reach — see the NSF ACCESS note in the site header and README.",
+    "notes": "ADDED Oct 2026. St. John's offers computing and machine learning degrees and a Machine Learning Institute for seminars and student research, but no shared research-computing cluster or service was found. || National floor: this tier describes the PARENT INSTITUTION's own resource, not the ceiling on what a faculty member here can reach — see the NSF ACCESS note in the site header and README. That national route is tagged in this row's shared-networks field; it is not evidence about this school specifically, and the sources listed below are only those used to verify this row.",
     "networks": [
       "NSF ACCESS (national — any US academic institution)"
     ]
@@ -4114,7 +4149,7 @@
       "https://www.pace.edu/seidenberg/faculty-and-research/faculty-and-student-research",
       "https://www.pace.edu/seidenberg/academics/departments/computer-science/welcome-chair"
     ],
-    "notes": "ADDED Oct 2026. Pace's Seidenberg School of Computer Science and Information Systems does AI and data-science teaching and research, and its Data Science Club has worked with a commercial GPU cloud provider, but no shared research-computing cluster or service was found. || National floor: this tier describes the PARENT INSTITUTION's own resource, not the ceiling on what a faculty member here can reach — see the NSF ACCESS note in the site header and README.",
+    "notes": "ADDED Oct 2026. Pace's Seidenberg School of Computer Science and Information Systems does AI and data-science teaching and research, and its Data Science Club has worked with a commercial GPU cloud provider, but no shared research-computing cluster or service was found. || National floor: this tier describes the PARENT INSTITUTION's own resource, not the ceiling on what a faculty member here can reach — see the NSF ACCESS note in the site header and README. That national route is tagged in this row's shared-networks field; it is not evidence about this school specifically, and the sources listed below are only those used to verify this row.",
     "networks": [
       "NSF ACCESS (national — any US academic institution)"
     ]
@@ -4135,7 +4170,7 @@
       "https://rmi.touro.edu/ihe/",
       "https://las.touro.edu/academics/computer-science/"
     ],
-    "notes": "ADDED Oct 2026. Touro's university-wide AI initiative, led by an associate provost for AI, focuses on teaching, policy and operations, and its Research Council includes the law school's associate dean for research; no shared research-computing cluster or service was found. || National floor: this tier describes the PARENT INSTITUTION's own resource, not the ceiling on what a faculty member here can reach — see the NSF ACCESS note in the site header and README.",
+    "notes": "ADDED Oct 2026. Touro's university-wide AI initiative, led by an associate provost for AI, focuses on teaching, policy and operations, and its Research Council includes the law school's associate dean for research; no shared research-computing cluster or service was found. || National floor: this tier describes the PARENT INSTITUTION's own resource, not the ceiling on what a faculty member here can reach — see the NSF ACCESS note in the site header and README. That national route is tagged in this row's shared-networks field; it is not evidence about this school specifically, and the sources listed below are only those used to verify this row.",
     "networks": [
       "NSF ACCESS (national — any US academic institution)"
     ]
@@ -4156,7 +4191,7 @@
       "https://www.floridabar.org/the-florida-bar-news/ave-maria-school-of-law-headed-to-collier-county/",
       "https://en.wikipedia.org/wiki/Ave_Maria_School_of_Law"
     ],
-    "notes": "ADDED Oct 2026. Independent: the school describes itself as an independent law school established in 1999, and the Florida Bar News reported at the time of its move to Florida that it is not affiliated with Ave Maria University, despite the shared founder and name. || National floor: this tier describes the PARENT INSTITUTION's own resource, not the ceiling on what a faculty member here can reach — see the NSF ACCESS note in the site header and README.",
+    "notes": "ADDED Oct 2026. Independent: the school describes itself as an independent law school established in 1999, and the Florida Bar News reported at the time of its move to Florida that it is not affiliated with Ave Maria University, despite the shared founder and name. || National floor: this tier describes the PARENT INSTITUTION's own resource, not the ceiling on what a faculty member here can reach — see the NSF ACCESS note in the site header and README. That national route is tagged in this row's shared-networks field; it is not evidence about this school specifically, and the sources listed below are only those used to verify this row.",
     "networks": [
       "NSF ACCESS (national — any US academic institution)"
     ]

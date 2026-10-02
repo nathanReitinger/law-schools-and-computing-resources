@@ -23,9 +23,9 @@ Live site: `https://nathanReitinger.github.io/law-schools-and-computing-resource
   When the ABA approves, closes or renames a school, update the crosswalk along with `schools.json`.
   **`TODO-missing-schools.csv`** is empty but stays in the repo for future additions, and the coverage line at the
   top of the site is generated from it. The pull date is shown on the site itself and lives in `data/meta.json`.
-- **Every listed row has been through a deep re-verification pass or was researched fresh** and carry the sources used
-  to check them; their notes begin "Re-verified", "RECLASSIFIED", "CORRECTED", "UPDATED" or "ADDED".
-  Six rows still rest on a single source for a positive tier claim — `audit.py` names them.
+- **Every listed row has been through a deep re-verification pass or was researched fresh** and carries the sources
+  used to check it; their notes begin "Re-verified", "RECLASSIFIED", "CORRECTED", "UPDATED" or "ADDED".
+  Five rows still rest on a single source for a positive tier claim — `audit.py` names them.
 - Each school is tagged with a **GPU support tier** (Frontier / Modern / Older-gen / present-but-unnamed /
   no confirmed GPU / no resource / standalone), the specific hardware named in public sources, whether
   SLURM was confirmed as the scheduler, and a link back to the source.
@@ -40,8 +40,8 @@ Live site: `https://nathanReitinger.github.io/law-schools-and-computing-resource
 - **A grey chip means no *institutional* resource — not no compute.** NSF ACCESS allocates national
   supercomputing time to any researcher at a US academic institution, in any field, at no cost and
   with no supporting grant; the entry tier needs only a short abstract, and the hardware is
-  frontier-class (NCSA DeltaAI is 608 GH200 superchips; Delta adds H200s). The 40 rows where this is
-  the operative route are tagged `NSF ACCESS (national — any US academic institution)` in the
+  frontier-class (NCSA DeltaAI is 608 GH200 superchips; Delta adds H200s). Every row where this is
+  the operative route is tagged `NSF ACCESS (national — any US academic institution)` in the
   `networks` field, so they're filterable on the site.
 - Some rows carry a **caveat** flagging that the hardware tier and actual *law-school* access can
   diverge. Harvard is the clearest case: Cannon is frontier-class, but FASRC lists its supported
