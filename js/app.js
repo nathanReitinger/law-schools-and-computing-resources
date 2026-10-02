@@ -114,6 +114,39 @@
     return 0;
   }
 
+  // Search: every word in the query must appear in the record, either exactly
+  // (as a substring) or within a small typo distance of one of the record's words,
+  // so "penn cary" still finds Penn Carey Law and "upenn" finds Penn.
+  function editDistance(a, b, max) {
+    if (Math.abs(a.length - b.length) > max) return max + 1;
+    var prev = [], cur, i, j, rowMin;
+    for (j = 0; j <= b.length; j++) { prev[j] = j; }
+    for (i = 1; i <= a.length; i++) {
+      cur = [i]; rowMin = i;
+      for (j = 1; j <= b.length; j++) {
+        cur[j] = Math.min(prev[j] + 1, cur[j - 1] + 1,
+                          prev[j - 1] + (a.charAt(i - 1) === b.charAt(j - 1) ? 0 : 1));
+        if (cur[j] < rowMin) { rowMin = cur[j]; }
+      }
+      if (rowMin > max) { return max + 1; }
+      prev = cur;
+    }
+    return prev[b.length];
+  }
+
+  function tokenMatches(tok, hay, words) {
+    if (hay.indexOf(tok) !== -1) return true;
+    if (tok.length < 4) return false;
+    var max = tok.length >= 8 ? 2 : 1;
+    for (var i = 0; i < words.length; i++) {
+      var w = words[i];
+      if (!w) continue;
+      if (editDistance(tok, w, max) <= max) return true;
+      if (tok.length >= 6 && w.length > tok.length && editDistance(tok, w.slice(0, tok.length), max) <= max) return true;
+    }
+    return false;
+  }
+
   function matches(s) {
     if (state.stateFilter && s.state !== state.stateFilter) return false;
     if (state.tierFilter && s.tier !== state.tierFilter) return false;
@@ -121,7 +154,11 @@
     if (state.q) {
       var hay = (s.school + " " + s.university + " " + (s.networks || []).join(" ") + " " + s.hpcName)
         .toLowerCase();
-      if (hay.indexOf(state.q.toLowerCase()) === -1) return false;
+      var words = hay.split(/[^a-z0-9]+/);
+      var toks = state.q.toLowerCase().split(/\s+/);
+      for (var t = 0; t < toks.length; t++) {
+        if (toks[t] && !tokenMatches(toks[t], hay, words)) return false;
+      }
     }
     return true;
   }
